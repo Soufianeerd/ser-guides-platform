@@ -1,0 +1,1 @@
+export default function Account(){return <main className="section"><div className="eyebrow">Espace client</div><h1>Mes guides</h1><div className="card"><h2>Votre bibliothèque SER</h2><p>La connexion et la synchronisation automatique des achats seront activées ici. L’architecture est réservée pour associer chaque achat Stripe à un droit d’accès.</p></div></main>}

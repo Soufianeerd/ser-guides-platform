@@ -1,0 +1,3 @@
+import './globals.css';
+export const metadata={title:'SER Guides',description:'Des guides pratiques pour passer de la question à l’action.'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="fr"><body><header><a className="brand" href="/">SER Guides</a><nav><a href="/guides">Guides</a><a href="/compte">Mon espace</a></nav></header>{children}<footer>© 2026 SER Guides · Guides pratiques et indépendants</footer></body></html>}
