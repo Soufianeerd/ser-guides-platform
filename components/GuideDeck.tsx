@@ -19,6 +19,5 @@ export default function GuideDeck({compact=false}:{compact?:boolean}){
     <button className="deckArrow deckNext" onClick={()=>go(active+1)} aria-label="Visuel suivant">›</button>
     <span className="deckCount">{active+1} / {slides.length}</span>
    </div>
-   <div className="deckThumbs">{slides.map((s,i)=><button key={s.src} className={i===active?'active':''} onClick={()=>setActive(i)} aria-label={'Afficher le visuel '+(i+1)}><img src={s.src} alt=""/></button>)}</div>
  </div>
 }
