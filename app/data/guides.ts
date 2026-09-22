@@ -23,8 +23,8 @@ export const guides: Guide[] = [
     price: '12,99 €',
     checkout: 'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',
     slides: {
-      fr: ['/guides/micro-entreprise-2026/fr/01-hook.jpg','/guides/micro-entreprise-2026/fr/02-sources.jpg','/guides/micro-entreprise-2026/fr/03-guide.jpg'],
-      en: ['/guides/micro-entreprise-2026/en/01-hook.jpg','/guides/micro-entreprise-2026/en/02-sources.jpg','/guides/micro-entreprise-2026/en/03-guide.jpg']
+      fr: ['/guides/micro-entreprise-2026/fr/01-hook.png','/guides/micro-entreprise-2026/fr/02-sources.png','/guides/micro-entreprise-2026/fr/03-guide.png'],
+      en: ['/guides/micro-entreprise-2026/en/01-hook.png','/guides/micro-entreprise-2026/en/02-sources.png','/guides/micro-entreprise-2026/en/03-guide.png']
     }
   }
 ];
