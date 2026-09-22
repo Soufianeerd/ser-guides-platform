@@ -1,3 +1,26 @@
-const checkout='https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06';
+import GuideDeck from '../../components/GuideDeck';
+import { guideBySlug } from '../../data/guides';
 
-export default function Guide(){return <main><section className="hero"><div><div className="eyebrow">Guide 01 · Administratif & fiscal</div><h1>Micro-entreprise 2026</h1><p className="lead">Un guide numérique structuré pour comprendre les démarches essentielles de la micro-entreprise, organiser vos obligations et passer à l’action avec une méthode claire.</p><div className="price">12,99 €</div><a className="btn" href={checkout}>Acheter maintenant — 12,99 €</a><p className="muted">Paiement sécurisé par Stripe. Après confirmation du paiement, le guide est envoyé automatiquement à l’adresse e-mail utilisée lors de l’achat.</p></div><div className="book"><div><div className="eyebrow">SER GUIDES · GUIDE 01</div><h2>MICRO-ENTREPRISE<br/>2026</h2><p>Administratif · fiscal · démarches</p></div><div><div className="price">12,99 €</div><div>Édition numérique</div></div></div></section><section className="section"><div className="eyebrow">Conçu pour agir</div><h2>Un seul support pour avancer étape par étape.</h2><div className="grid"><div className="card"><h3>Démarches structurées</h3><p>Les informations sont organisées pour vous aider à savoir quoi vérifier, quoi faire et dans quel ordre.</p></div><div className="card"><h3>Édition 2026</h3><p>Une édition clairement identifiée pour suivre les évolutions et distinguer les futures mises à jour.</p></div><div className="card"><h3>Livraison automatique</h3><p>Une fois le paiement confirmé, l’envoi du guide est déclenché automatiquement par e-mail.</p></div></div></section><section className="cta"><div><div className="eyebrow">SER Guide 01</div><h2>Prêt à commencer ?</h2><p>Accédez au Guide Micro-entreprise 2026 pour 12,99 €.</p></div><a className="btn light" href={checkout}>Acheter le guide</a></section></main>}
+export default function Guide() {
+  const guide = guideBySlug('micro-entreprise-2026')!;
+  const slides = guide.slides.fr.map((src, i) => ({ src, alt: `${guide.title.fr} — visuel ${i + 1}` }));
+  return <main>
+    <section className="productHero">
+      <GuideDeck slides={slides} />
+      <div className="productCopy">
+        <div className="eyebrow">SER GUIDE {guide.number} · {guide.category.fr}</div>
+        <h1>{guide.title.fr}</h1>
+        <p className="lead">{guide.subtitle.fr}</p>
+        <div className="benefitList">
+          <div><strong>Diagnostic rapide</strong><span>Situez votre projet et les démarches qui vous concernent.</span></div>
+          <div><strong>Aides & optimisation</strong><span>Identifiez les dispositifs et points de vigilance utiles.</span></div>
+          <div><strong>Déclarations simplifiées</strong><span>Avancez avec une feuille de route plus lisible.</span></div>
+        </div>
+        <div className="purchaseRow"><div><span className="muted">Guide numérique</span><div className="price">{guide.price}</div></div><a className="btn" href={guide.checkout}>Acheter le guide</a></div>
+        <p className="muted">Paiement sécurisé. Accès envoyé automatiquement par e-mail après confirmation du paiement.</p>
+      </div>
+    </section>
+    <section className="section"><div className="eyebrow">À L’INTÉRIEUR</div><h2>Pas un PDF oublié dans un dossier. Un guide conçu pour être utilisé.</h2><div className="grid"><div className="card"><h3>Comprendre</h3><p>Les notions importantes expliquées dans un ordre logique et exploitable.</p></div><div className="card"><h3>Vérifier</h3><p>Des repères et sources pour contrôler les informations avant d’agir.</p></div><div className="card"><h3>Passer à l’action</h3><p>Checklists et étapes concrètes pour avancer sans vous perdre dans le jargon.</p></div></div></section>
+    <section className="cta"><div><div className="eyebrow">SER GUIDE {guide.number}</div><h2>Micro-entreprise 2026</h2><p>Accès numérique après achat.</p></div><a className="btn light" href={guide.checkout}>Acheter — {guide.price}</a></section>
+  </main>;
+}
