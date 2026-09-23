@@ -2,7 +2,17 @@
   "guide_id": "02",
   "niche_id": "ecommerce-social",
   "title": "E-commerce & Shopify 2026",
-  "status": "production",
+  "status": "content-v1-complete",
   "format": "web-book interactif",
-  "purpose": "Créer une boutique en ligne cohérente, conforme et mesurable, puis aller jusqu’aux premières ventes sans confondre chiffre d’affaires et rentabilité."
+  "purpose": "Créer une boutique en ligne cohérente, conforme et mesurable, puis aller jusqu’aux premières ventes sans confondre chiffre d’affaires et rentabilité.",
+  "chapter_count": 17,
+  "last_reviewed": "2026-09-23",
+  "next_steps": [
+    "fact-check final",
+    "interactive calculators",
+    "FR web-book rendering",
+    "English edition",
+    "3 visual assets",
+    "Stripe product and delivery automation"
+  ]
 }
