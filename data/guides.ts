@@ -1,27 +1,28 @@
 export type Locale='fr'|'en';
-export type Guide={
- slug:string;number:string;category:{fr:string;en:string};title:{fr:string;en:string};description:{fr:string;en:string};price:string;edition:string;available:boolean;checkout?:string;deck?:{fr:string[];en?:string[]};
-};
+export type Guide={slug:string;number:string;category:{fr:string;en:string};title:{fr:string;en:string};description:{fr:string;en:string};price:string;edition:string;available:boolean;checkout?:string;deck?:{fr:string[];en?:string[]};};
 export const guides:Guide[]=[{
- slug:'micro-entreprise-2026',number:'01',category:{fr:'Administratif & fiscal',en:'Administration & tax'},title:{fr:'Micro-entreprise 2026',en:'French Micro-business 2026'},description:{fr:'Démarrer et gérer avec une feuille de route claire.',en:'Start and manage a French micro-business with a clear roadmap.'},price:'12,99 €',edition:'2026',available:true,checkout:'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',deck:{fr:['/guides/micro-entreprise-2026/fr/01-hook.png','/guides/micro-entreprise-2026/fr/02-sources.png','/guides/micro-entreprise-2026/fr/03-guide.png']}
+ slug:'micro-entreprise-2026',number:'01',category:{fr:'Entreprise & fiscalité',en:'Business & tax'},title:{fr:'Micro-entreprise 2026',en:'French Micro-business 2026'},description:{fr:'Créer, déclarer, optimiser et gérer sa micro-entreprise avec une feuille de route claire.',en:'Start, declare, optimize and manage a French micro-business with a clear roadmap.'},price:'12,99 €',edition:'2026',available:true,checkout:'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',deck:{fr:['/guides/micro-entreprise-2026/fr/01-hook.png','/guides/micro-entreprise-2026/fr/02-sources.png','/guides/micro-entreprise-2026/fr/03-guide.png']}
 }];
 
 export const niches=[
- {slug:'reparation-smartphone-electronique',fr:'Smartphone & électronique',en:'Smartphone & electronics',descFr:'Diagnostiquer, réparer et éviter les mauvais achats.',descEn:'Diagnose, repair and avoid bad purchases.'},
- {slug:'electromenager-reparation',fr:'Électroménager & réparation',en:'Appliances & repair',descFr:'Pannes, entretien et décisions de réparation.',descEn:'Breakdowns, maintenance and repair decisions.'},
- {slug:'bricolage-renovation',fr:'Bricolage & rénovation',en:'DIY & renovation',descFr:'Travaux, matériaux, devis et méthodes.',descEn:'Projects, materials, quotes and methods.'},
- {slug:'mecanique-automobile',fr:'Mécanique automobile',en:'Car mechanics',descFr:'Entretien, diagnostic et coûts automobiles.',descEn:'Maintenance, diagnosis and car costs.'},
- {slug:'administratif-fiscal',fr:'Administratif & fiscal',en:'Administration & tax',descFr:'Démarches, fiscalité et micro-entreprise.',descEn:'Paperwork, taxes and French micro-business.'},
- {slug:'fitness-challenges',fr:'Fitness & transformation',en:'Fitness & transformation',descFr:'Programmes, progression et repères pratiques.',descEn:'Programs, progress and practical guidance.'},
- {slug:'jardinage-potager',fr:'Jardinage & potager',en:'Gardening & growing',descFr:'Cultiver, entretenir et résoudre les problèmes courants.',descEn:'Grow, maintain and solve common problems.'},
- {slug:'immobilier-location',fr:'Immobilier & location',en:'Property & renting',descFr:'Louer, acheter, gérer et comprendre ses démarches.',descEn:'Rent, buy, manage and understand the process.'},
- {slug:'informatique-domestique',fr:'Informatique domestique',en:'Home computing',descFr:'Dépannage, sécurité, matériel et usages numériques.',descEn:'Troubleshooting, security, hardware and digital use.'},
- {slug:'parental-scolaire',fr:'Parental & scolaire',en:'Parenting & school',descFr:'Orientation, école et démarches pour les familles.',descEn:'School choices, guidance and family procedures.'},
- {slug:'animaux',fr:'Animaux',en:'Pets',descFr:'Soins du quotidien, équipement et responsabilités.',descEn:'Everyday care, equipment and responsibilities.'},
- {slug:'cuisine-contraintes',fr:'Cuisine & contraintes alimentaires',en:'Cooking & dietary needs',descFr:'Mieux cuisiner selon ses besoins et contraintes.',descEn:'Cook better around needs and dietary constraints.'},
- {slug:'langues',fr:'Langues',en:'Languages',descFr:'Méthodes concrètes pour apprendre et progresser.',descEn:'Practical methods to learn and improve.'},
- {slug:'revente-business',fr:'Revente & petit business',en:'Reselling & side business',descFr:'Vinted, revente, organisation et rentabilité.',descEn:'Reselling, organization and profitability.'},
- {slug:'creatif',fr:'Musique, photo & vidéo',en:'Music, photo & video',descFr:'Apprendre, créer et progresser dans les pratiques créatives.',descEn:'Learn, create and improve creative skills.'}
+ {slug:'entreprise-business',fr:'Entreprise & Business',en:'Business',descFr:'Créer, gérer, structurer et développer son activité.',descEn:'Start, manage and grow a business.',examples:'Micro-entreprise · Freelance · Business plan'},
+ {slug:'ecommerce-social',fr:'E-commerce & Réseaux sociaux',en:'E-commerce & Social',descFr:'Shopify, TikTok Shop, acquisition et vente en ligne.',descEn:'Shopify, TikTok Shop, acquisition and online sales.',examples:'Shopify · TikTok Shop · Instagram'},
+ {slug:'administratif-fiscal',fr:'Administratif & Fiscalité',en:'Administration & Tax',descFr:'Démarches, impôts, aides et obligations expliqués clairement.',descEn:'Paperwork, taxes, support and obligations.',examples:'Fiscalité · Aides · Déclarations'},
+ {slug:'immobilier-maison',fr:'Immobilier & Maison',en:'Property & Home',descFr:'Location, achat, travaux et gestion du logement.',descEn:'Renting, buying, renovation and home management.',examples:'Location · Achat · Rénovation'},
+ {slug:'tech-informatique',fr:'Tech & Informatique',en:'Tech & Computing',descFr:'Matériel, dépannage, sécurité et outils numériques.',descEn:'Hardware, troubleshooting, security and digital tools.',examples:'Mac/PC · Cybersécurité · Outils'},
+ {slug:'auto-mobilite',fr:'Auto & Mobilité',en:'Cars & Mobility',descFr:'Achat, entretien, diagnostic et budget automobile.',descEn:'Buying, maintenance, diagnosis and car budgets.',examples:'Occasion · Entretien · Diagnostic'},
+ {slug:'revente-seconde-main',fr:'Revente & Seconde main',en:'Reselling & Second hand',descFr:'Vinted, sourcing, annonces, marges et organisation.',descEn:'Vinted, sourcing, listings, margins and organization.',examples:'Vinted · Sourcing · Marges'},
+ {slug:'sante-bienetre',fr:'Santé & Bien-être',en:'Health & Wellness',descFr:'Des repères pratiques de prévention et de bien-être.',descEn:'Practical prevention and wellness guidance.',examples:'Nutrition · Sport · Bien-être'},
+ {slug:'famille-education',fr:'Famille & Éducation',en:'Family & Education',descFr:'École, orientation, parentalité et démarches familiales.',descEn:'School, guidance, parenting and family procedures.',examples:'École · Orientation · Parentalité'},
+ {slug:'loisirs-creation',fr:'Loisirs & Création',en:'Hobbies & Creation',descFr:'Photo, vidéo, musique et projets créatifs.',descEn:'Photo, video, music and creative projects.',examples:'Photo · Vidéo · Musique'},
+ {slug:'animaux',fr:'Animaux',en:'Pets',descFr:'Soins quotidiens, équipement et responsabilités.',descEn:'Everyday care, equipment and responsibilities.',examples:'Chien · Chat · Soins'},
+ {slug:'emploi-carriere',fr:'Emploi & Carrière',en:'Jobs & Career',descFr:'CV, entretiens, reconversion, freelance et progression.',descEn:'CVs, interviews, career changes and progression.',examples:'CV · Entretien · Reconversion'},
+ {slug:'argent-budget',fr:'Argent & Budget',en:'Money & Budget',descFr:'Budget, dépenses, épargne et décisions financières du quotidien.',descEn:'Budgeting, spending, saving and everyday money decisions.',examples:'Budget · Épargne · Dépenses'},
+ {slug:'voyage-expatriation',fr:'Voyage & Expatriation',en:'Travel & Expatriation',descFr:'Préparer ses démarches, son budget et son installation.',descEn:'Plan paperwork, budgets and relocation.',examples:'Voyage · Frontière · Installation'},
+ {slug:'langues-competences',fr:'Langues & Compétences',en:'Languages & Skills',descFr:'Méthodes concrètes pour apprendre et progresser.',descEn:'Practical methods to learn and improve.',examples:'Anglais · Méthodes · Compétences'}
 ];
 
+export const plannedGuides=[
+ ['02','E-commerce & Shopify 2026','ecommerce-social'],['03','TikTok Shop : premières ventes','ecommerce-social'],['04','Vinted : vendre comme un pro','revente-seconde-main'],['05','Optimisation fiscale 2026','administratif-fiscal'],['06','Freelance : trouver ses premiers clients','entreprise-business'],['07','Instagram Business : contenu qui convertit','ecommerce-social'],['08','Produits digitaux : créer et vendre','ecommerce-social'],['09','Etsy : lancer sa boutique','ecommerce-social'],['10','Budget personnel : reprendre le contrôle','argent-budget'],['11','Acheter une voiture d’occasion','auto-mobilite'],['12','Louer son premier appartement','immobilier-maison'],['13','Cybersécurité personnelle','tech-informatique'],['14','CV & entretien : décrocher le poste','emploi-carriere'],['15','Sourcing & marges pour la revente','revente-seconde-main']
+].map(([number,title,category])=>({number,title,category}));
 export const upcoming=niches.map(n=>({slug:n.slug,title:{fr:n.fr,en:n.en},category:{fr:'SER Guides',en:'SER Guides'}}));
