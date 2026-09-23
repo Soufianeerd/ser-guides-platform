@@ -1,0 +1,2 @@
+import AuthPanel from '../../components/AuthPanel';
+export default function Connexion(){return <main className="authPage"><section className="authIntro"><span className="serLabel">ESPACE SER</span><h1>Votre bibliothèque vous suit partout.</h1><p>Connectez-vous pour retrouver vos guides, vos achats et les avantages réservés aux lecteurs SER.</p></section><AuthPanel/></main>}
