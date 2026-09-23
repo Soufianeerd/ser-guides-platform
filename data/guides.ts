@@ -23,6 +23,19 @@ export const niches=[
 ];
 
 export const plannedGuides=[
- ['02','E-commerce & Shopify 2026','ecommerce-social'],['03','TikTok Shop : premières ventes','ecommerce-social'],['04','Vinted : vendre comme un pro','revente-seconde-main'],['05','Optimisation fiscale 2026','administratif-fiscal'],['06','Freelance : trouver ses premiers clients','entreprise-business'],['07','Instagram Business : contenu qui convertit','ecommerce-social'],['08','Produits digitaux : créer et vendre','ecommerce-social'],['09','Etsy : lancer sa boutique','ecommerce-social'],['10','Budget personnel : reprendre le contrôle','argent-budget'],['11','Acheter une voiture d’occasion','auto-mobilite'],['12','Louer son premier appartement','immobilier-maison'],['13','Cybersécurité personnelle','tech-informatique'],['14','CV & entretien : décrocher le poste','emploi-carriere'],['15','Sourcing & marges pour la revente','revente-seconde-main']
-].map(([number,title,category])=>({number,title,category}));
+ {number:'02',title:'E-commerce & Shopify 2026',titleEn:'E-commerce & Shopify 2026',category:'ecommerce-social'},
+ {number:'03',title:'TikTok Shop : premières ventes',titleEn:'TikTok Shop: first sales',category:'ecommerce-social'},
+ {number:'04',title:'Vinted : vendre comme un pro',titleEn:'Vinted: sell like a pro',category:'revente-seconde-main'},
+ {number:'05',title:'Optimisation fiscale 2026',titleEn:'Tax optimization 2026',category:'administratif-fiscal'},
+ {number:'06',title:'Freelance : trouver ses premiers clients',titleEn:'Freelance: find your first clients',category:'entreprise-business'},
+ {number:'07',title:'Instagram Business : contenu qui convertit',titleEn:'Instagram Business: content that converts',category:'ecommerce-social'},
+ {number:'08',title:'Produits digitaux : créer et vendre',titleEn:'Digital products: create and sell',category:'ecommerce-social'},
+ {number:'09',title:'Etsy : lancer sa boutique',titleEn:'Etsy: launch your shop',category:'ecommerce-social'},
+ {number:'10',title:'Budget personnel : reprendre le contrôle',titleEn:'Personal budget: take back control',category:'argent-budget'},
+ {number:'11',title:'Acheter une voiture d’occasion',titleEn:'Buy a used car',category:'auto-mobilite'},
+ {number:'12',title:'Louer son premier appartement',titleEn:'Rent your first apartment',category:'immobilier-maison'},
+ {number:'13',title:'Cybersécurité personnelle',titleEn:'Personal cybersecurity',category:'tech-informatique'},
+ {number:'14',title:'CV & entretien : décrocher le poste',titleEn:'CV & interview: land the job',category:'emploi-carriere'},
+ {number:'15',title:'Sourcing & marges pour la revente',titleEn:'Sourcing & margins for reselling',category:'revente-seconde-main'}
+];
 export const upcoming=niches.map(n=>({slug:n.slug,title:{fr:n.fr,en:n.en},category:{fr:'SER Guides',en:'SER Guides'}}));
