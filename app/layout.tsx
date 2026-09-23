@@ -1,3 +1,3 @@
 import './globals.css';
-export const metadata={title:'SER Guides',description:'Des guides pratiques pour passer de la question à l’action.'};
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="fr"><body><header><a className="brand" href="/">SER Guides</a><nav><a href="/guides">Guides</a><a href="/compte">Mon espace</a></nav></header>{children}<footer>© 2026 SER Guides · Guides pratiques et indépendants</footer></body></html>}
+export const metadata={title:'SER Guides — La bibliothèque pratique',description:'Des guides numériques concrets pour comprendre, vérifier et agir.'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="fr"><body><header className="siteHeader"><a className="brand" href="/fr"><strong>SER</strong><span>GUIDES</span></a><nav><a href="/fr/guides">Guides</a><a href="/fr#categories">Catégories</a><a href="/fr#how">Comment ça marche ?</a><a href="/compte">Mon espace</a></nav></header>{children}<footer><b>SER GUIDES</b><span>© 2026 · Guides numériques pratiques</span><span>Informer · clarifier · faire avancer</span></footer></body></html>}
