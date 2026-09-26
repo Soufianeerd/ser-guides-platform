@@ -45,20 +45,37 @@ Le checkout Guide 01 est actuellement aussi référencé dans `data/guides.ts`.
 
 ## Domaine
 
-Ajouter dans Netlify :
+État observé dans Netlify le 26/09/2026 :
 
-- `serguides.fr`
-- `www.serguides.fr`
+- Netlify subdomain : `ser-guides-platform.netlify.app`
+- `serguides.fr` : Primary domain, **Pending DNS verification**
+- `www.serguides.fr` : redirect vers le primary, **Pending DNS verification**
+- SSL Let's Encrypt : en attente tant que le DNS ne pointe pas correctement vers Netlify
 
-Choisir `serguides.fr` comme domaine principal.
+### DNS externe (OVH ou autre registrar)
 
-Si le DNS reste chez un registrar externe, utiliser **les valeurs DNS affichées par Netlify dans Domain management**, car elles peuvent dépendre de la configuration du site / réseau. Ne pas copier une valeur ancienne depuis un tutoriel.
+Pour le réseau Netlify standard :
 
-Lorsque Netlify valide le DNS :
+| Type | Sous-domaine / host | Cible |
+|---|---|---|
+| A | `@` (ou vide selon l'interface) | `75.2.60.5` |
+| CNAME | `www` | `ser-guides-platform.netlify.app` |
 
-- activer / vérifier HTTPS ;
-- attendre le certificat ;
-- vérifier redirection www ↔ domaine principal.
+Alternative si le fournisseur DNS supporte ALIAS/ANAME/CNAME flattening à l'apex :
+
+- `@` → `apex-loadbalancer.netlify.com`
+
+Ne pas conserver en parallèle un ancien A/AAAA/CNAME pour `@` ou `www` qui pointerait vers un ancien hébergement.
+Ne pas supprimer les MX/TXT utilisés par l'e-mail, SPF, DKIM, DMARC ou d'autres services.
+
+Après modification DNS :
+
+1. attendre la propagation ;
+2. dans Netlify > Domain management, cliquer **Verify DNS configuration** ;
+3. quand les deux domaines sont vérifiés, laisser Netlify provisionner automatiquement le certificat Let's Encrypt ;
+4. vérifier `https://serguides.fr` et `https://www.serguides.fr`.
+
+Le primary domain doit rester `serguides.fr`.
 
 ## Smoke test après mise en ligne
 
