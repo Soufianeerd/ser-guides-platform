@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "tsc --noEmit",
+    "check": "npm run lint && npm run build"
   },
   "dependencies": {
     "@neondatabase/serverless": "latest",
@@ -20,5 +21,8 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=20 <23"
   }
 }
