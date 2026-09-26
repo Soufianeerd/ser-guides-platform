@@ -23,19 +23,19 @@ export const niches=[
 ];
 
 export const plannedGuides=[
- {number:'02',title:'E-commerce & Shopify 2026',titleEn:'E-commerce & Shopify 2026',category:'ecommerce-social'},
- {number:'03',title:'TikTok Shop : premières ventes',titleEn:'TikTok Shop: first sales',category:'ecommerce-social'},
- {number:'04',title:'Vinted : vendre comme un pro',titleEn:'Vinted: sell like a pro',category:'revente-seconde-main'},
- {number:'05',title:'Optimisation fiscale 2026',titleEn:'Tax optimization 2026',category:'administratif-fiscal'},
- {number:'06',title:'Freelance : trouver ses premiers clients',titleEn:'Freelance: find your first clients',category:'entreprise-business'},
- {number:'07',title:'Instagram Business : contenu qui convertit',titleEn:'Instagram Business: content that converts',category:'ecommerce-social'},
- {number:'08',title:'Produits digitaux : créer et vendre',titleEn:'Digital products: create and sell',category:'ecommerce-social'},
- {number:'09',title:'Etsy : lancer sa boutique',titleEn:'Etsy: launch your shop',category:'ecommerce-social'},
- {number:'10',title:'Budget personnel : reprendre le contrôle',titleEn:'Personal budget: take back control',category:'argent-budget'},
- {number:'11',title:'Acheter une voiture d’occasion',titleEn:'Buy a used car',category:'auto-mobilite'},
- {number:'12',title:'Louer son premier appartement',titleEn:'Rent your first apartment',category:'immobilier-maison'},
- {number:'13',title:'Cybersécurité personnelle',titleEn:'Personal cybersecurity',category:'tech-informatique'},
- {number:'14',title:'CV & entretien : décrocher le poste',titleEn:'CV & interview: land the job',category:'emploi-carriere'},
- {number:'15',title:'Sourcing & marges pour la revente',titleEn:'Sourcing & margins for reselling',category:'revente-seconde-main'}
+ {number:'02',title:'E-commerce & Shopify 2026 — de zéro aux premières ventes',titleEn:'E-commerce & Shopify 2026 — from zero to first sales',category:'ecommerce-social'},
+ {number:'03',title:'TikTok Shop 2026 — lancer sa boutique et obtenir ses premières ventes',titleEn:'TikTok Shop 2026 — launch your shop and get first sales',category:'ecommerce-social'},
+ {number:'04',title:'Vinted 2026 — vendre plus vite et mieux marger',titleEn:'Vinted 2026 — sell faster and improve margins',category:'revente-seconde-main'},
+ {number:'05',title:'Optimisation fiscale 2026 — payer ce qu’il faut, pas plus',titleEn:'Tax optimization 2026 — pay what you owe, not more',category:'administratif-fiscal'},
+ {number:'06',title:'Dropshipping 2026 France / UE',titleEn:'Dropshipping 2026 France / EU',category:'ecommerce-social'},
+ {number:'07',title:'TikTok 2026 — construire une audience qui convertit',titleEn:'TikTok 2026 — build an audience that converts',category:'ecommerce-social'},
+ {number:'08',title:'Produits digitaux — créer et vendre sans stock',titleEn:'Digital products — create and sell without inventory',category:'ecommerce-social'},
+ {number:'09',title:'Etsy 2026 — lancer une boutique rentable',titleEn:'Etsy 2026 — launch a profitable shop',category:'ecommerce-social'},
+ {number:'10',title:'UGC Creator — décrocher ses premières collaborations',titleEn:'UGC Creator — land your first collaborations',category:'ecommerce-social'},
+ {number:'11',title:'Instagram & Reels — transformer du contenu en clients',titleEn:'Instagram & Reels — turn content into customers',category:'ecommerce-social'},
+ {number:'12',title:'Freelance — trouver ses 10 premiers clients',titleEn:'Freelance — find your first 10 clients',category:'entreprise-business'},
+ {number:'13',title:'IA & automatisation pour indépendant',titleEn:'AI & automation for freelancers',category:'entreprise-business'},
+ {number:'14',title:'Trouver un produit à vendre — sourcing & validation',titleEn:'Find a product to sell — sourcing & validation',category:'ecommerce-social'},
+ {number:'15',title:'Créer une marque sans stock — Print-on-Demand',titleEn:'Build a brand without inventory — Print-on-Demand',category:'ecommerce-social'}
 ];
 export const upcoming=niches.map(n=>({slug:n.slug,title:{fr:n.fr,en:n.en},category:{fr:'SER Guides',en:'SER Guides'}}));
