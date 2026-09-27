@@ -1,4 +1,5 @@
 import HomeGuideCarousel from '../../components/HomeGuideCarousel';
+import SerIcon from '../../components/SerIcon';
 import {niches,type Locale} from '../../data/guides';
 
 export default async function LocaleHome({params}:{params:Promise<{locale:Locale}>}){
@@ -53,17 +54,20 @@ export default async function LocaleHome({params}:{params:Promise<{locale:Locale
   </section>
 
   <section className="categoryIcons" id="categories">
-    {niches.slice(0,10).map((n,i)=><a href={'/'+locale+'/guides#'+n.slug} key={n.slug}>
-      <span className={'catIcon ci'+i}>{['▣','▥','▤','⌂','▰','◉','◇','♡','♙','◎'][i]}</span>
-      <b>{n[locale]}</b>
-    </a>)}
-    <a className="allCats" href={'/'+locale+'/guides'}><span className="catIcon">▦</span><b>{fr?'Voir toutes les catégories':'All categories'}</b></a>
+    {niches.slice(0,10).map((n,i)=>{
+      const icons=['business','ecommerce','admin','immobilier','tech','auto','revente','sante','famille','loisirs'] as const;
+      return <a href={'/'+locale+'/guides#'+n.slug} key={n.slug}>
+        <span className="catIcon"><SerIcon name={icons[i]}/></span>
+        <b>{n[locale]}</b>
+      </a>
+    })}
+    <a className="allCats" href={'/'+locale+'/guides'}><span className="catIcon"><SerIcon name="all"/></span><b>{fr?'Voir toutes les catégories':'All categories'}</b></a>
   </section>
 
   <section className="premiumTrust" id="how">
-    <article><span className="trustIcon">▤</span><div><h3>{fr?'Des guides conçus pour être utiles':'Guides designed to be useful'}</h3><p>{fr?'Des informations structurées, sourcées et mises à jour selon le sujet.':'Structured, sourced information maintained by topic.'}</p></div></article>
-    <article><span className="trustIcon">ϟ</span><div><h3>{fr?'Accès immédiat':'Instant access'}</h3><p>{fr?'Retrouvez vos guides sur vos appareils, avec un parcours clair et actionnable.':'Access your guides across devices with a clear, actionable journey.'}</p></div></article>
-    <article><span className="trustIcon">◆</span><div><h3>{fr?'Une bibliothèque qui se complète intelligemment':'A library that grows intelligently'}</h3><p>{fr?'Les guides complémentaires sont proposés uniquement quand ils ont un vrai sens dans votre parcours.':'Related guides are suggested only when they genuinely fit your journey.'}</p></div></article>
+    <article><span className="trustIcon"><SerIcon name="useful"/></span><div><h3>{fr?'Des guides conçus pour être utiles':'Guides designed to be useful'}</h3><p>{fr?'Des informations structurées, sourcées et mises à jour selon le sujet.':'Structured, sourced information maintained by topic.'}</p></div></article>
+    <article><span className="trustIcon"><SerIcon name="instant"/></span><div><h3>{fr?'Accès immédiat':'Instant access'}</h3><p>{fr?'Retrouvez vos guides sur vos appareils, avec un parcours clair et actionnable.':'Access your guides across devices with a clear, actionable journey.'}</p></div></article>
+    <article><span className="trustIcon"><SerIcon name="ecosystem"/></span><div><h3>{fr?'Une bibliothèque qui se complète intelligemment':'A library that grows intelligently'}</h3><p>{fr?'Les guides complémentaires sont proposés uniquement quand ils ont un vrai sens dans votre parcours.':'Related guides are suggested only when they genuinely fit your journey.'}</p></div></article>
     <a className="serButton trustCta" href={'/'+locale+'/guides'}>{fr?'Découvrir tous les guides':'Discover all guides'} →</a>
   </section>
  </main>
