@@ -1,0 +1,25 @@
+name: Renouveler jeton Meta @mrliptn
+
+on:
+  schedule:
+    - cron: '0 3 1,16 * *'
+  workflow_dispatch:
+
+jobs:
+  renouveler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pynacl
+      - name: Renouveler IG_TOKEN_MRLIPTN
+        env:
+          META_APP_ID: ${{ secrets.META_APP_ID }}
+          META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+          GH_PAT_SECRETS: ${{ secrets.GH_PAT_SECRETS }}
+          IG_TOKEN_MRLIPTN: ${{ secrets.IG_TOKEN_MRLIPTN }}
+          META_API_VERSION: v26.0
+        run: python renouveler_token_ser.py

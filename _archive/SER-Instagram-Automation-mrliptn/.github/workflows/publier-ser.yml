@@ -1,0 +1,50 @@
+name: Publier SER Guides sur @mrliptn
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 08:00 Paris en heure d'été
+    - cron: '30 11 * * *' # 13:30 Paris en heure d'été
+    - cron: '0 17 * * *'  # 19:00 Paris en heure d'été
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Tester sans publier
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Installer dépendances
+        run: pip install requests Pillow python-dotenv cloudinary
+      - name: Publier sur @mrliptn
+        env:
+          IG_USER_ID_MRLIPTN: ${{ secrets.IG_USER_ID_MRLIPTN }}
+          IG_TOKEN_MRLIPTN: ${{ secrets.IG_TOKEN_MRLIPTN }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          META_API_VERSION: v26.0
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python publier_ser.py --dry-run
+          else
+            python publier_ser.py
+          fi
+      - name: Sauvegarder historique
+        if: success() && inputs.dry_run != true
+        run: |
+          git config user.name "SER Instagram Bot"
+          git config user.email "actions@github.com"
+          git add niches/mrliptn/historique.json
+          git commit -m "SER: historique Instagram $(date -u +'%Y-%m-%d %H:%M UTC')" || exit 0
+          git push

@@ -1,0 +1,365 @@
+{
+  "posts": [
+    {
+      "id": "p01",
+      "hook": "Avant de créer ta micro, ne commence pas par le formulaire.",
+      "title": "Commence par protéger ton argent",
+      "bullets": [
+        "Vérifie ton éligibilité à l’ACRE",
+        "Compare ARE et ARCE si tu es inscrit à France Travail",
+        "Choisis ta fiscalité avant les premières échéances"
+      ],
+      "source_label": "Sources officielles : Urssaf • France Travail • impots.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p02",
+      "hook": "Tu peux perdre une aide juste parce que tu t’y prends trop tard.",
+      "title": "L’ACRE se prépare dès le départ",
+      "bullets": [
+        "Vérifie ton éligibilité avant la création",
+        "Note la date de début d’activité",
+        "Dépose la demande dans le délai applicable à ta situation"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p03",
+      "hook": "Micro-entrepreneur : ton chiffre d’affaires n’est pas ton salaire.",
+      "title": "Ne dépense pas tout ce qui entre",
+      "bullets": [
+        "Sépare le CA encaissé de ton revenu disponible",
+        "Provisionne les cotisations dès chaque paiement client",
+        "Garde une réserve pour l’impôt et les dépenses pro"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p04",
+      "hook": "Tu fais 0 € de chiffre d’affaires ? La déclaration reste à faire.",
+      "title": "Zéro ne veut pas dire “rien à déclarer”",
+      "bullets": [
+        "Ouvre ton espace à chaque échéance",
+        "Déclare 0 lorsque tu n’as rien encaissé",
+        "Conserve la confirmation de déclaration"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p05",
+      "hook": "Ne confonds jamais facturé et encaissé en micro.",
+      "title": "La base, c’est le CA encaissé",
+      "bullets": [
+        "Suis les paiements réellement reçus",
+        "Ne compte pas une facture encore impayée",
+        "Tiens un suivi mensuel simple"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p06",
+      "hook": "ARE ou ARCE : choisir au hasard peut te coûter cher.",
+      "title": "Compare avant de décider",
+      "bullets": [
+        "Calcule tes droits restants",
+        "Compare revenu mensuel et besoin de trésorerie immédiate",
+        "Vérifie les conditions ACRE liées à l’ARCE"
+      ],
+      "source_label": "Source officielle : France Travail",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p07",
+      "hook": "Le versement libératoire n’est pas automatiquement une bonne affaire.",
+      "title": "Éligible ≠ rentable",
+      "bullets": [
+        "Vérifie ton revenu fiscal de référence",
+        "Compare avec l’imposition classique de ton foyer",
+        "Décide avant le délai d’option"
+      ],
+      "source_label": "Source officielle : impots.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p08",
+      "hook": "Micro ou réel ? Tes dépenses peuvent changer la réponse.",
+      "title": "Regarde tes charges avant de choisir",
+      "bullets": [
+        "Liste tes dépenses pro prévues",
+        "Compare-les avec l’abattement forfaitaire",
+        "Si les frais sont élevés, simule un régime réel"
+      ],
+      "source_label": "Sources officielles : Service Public • impots.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p09",
+      "hook": "Le piège : fixer ton prix sans penser à la TVA.",
+      "title": "Anticipe avant d’annoncer tes tarifs",
+      "bullets": [
+        "Estime ton CA annuel",
+        "Surveille les seuils de franchise",
+        "Prévois comment tes prix évolueront si tu deviens redevable"
+      ],
+      "source_label": "Source officielle : economie.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p10",
+      "hook": "La première année, la CFE ne fonctionne pas comme les suivantes.",
+      "title": "Prépare-la au lieu de la découvrir",
+      "bullets": [
+        "Vérifie l’exonération de l’année de création",
+        "Dépose la déclaration initiale quand elle est requise",
+        "Anticipe la CFE des années suivantes"
+      ],
+      "source_label": "Source officielle : Service Public",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p11",
+      "hook": "Ton compte bancaire perso n’est pas toujours suffisant à long terme.",
+      "title": "Sépare rapidement tes flux",
+      "bullets": [
+        "Vérifie si un compte dédié devient obligatoire",
+        "Utilise un compte séparé même avant si ça simplifie le suivi",
+        "Évite de mélanger achats perso et activité"
+      ],
+      "source_label": "Source officielle : Service Public",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p12",
+      "hook": "Une erreur simple : oublier la contribution formation.",
+      "title": "Ton taux réel ne se limite pas aux cotisations",
+      "bullets": [
+        "Identifie ton type d’activité",
+        "Ajoute la CFP dans tes prévisions",
+        "Vérifie le taux affiché dans ton espace Urssaf"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p13",
+      "hook": "Vendre, faire du service ou exercer en libéral : ce n’est pas le même calcul.",
+      "title": "Ton activité change les règles",
+      "bullets": [
+        "Identifie la bonne catégorie de CA",
+        "Vérifie le taux social correspondant",
+        "Vérifie aussi l’abattement fiscal associé"
+      ],
+      "source_label": "Sources officielles : Urssaf • impots.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p14",
+      "hook": "Ta déclaration d’impôt n’est pas ta déclaration Urssaf.",
+      "title": "Deux obligations différentes",
+      "bullets": [
+        "Urssaf : CA et cotisations pendant l’année",
+        "Impôts : déclaration annuelle des revenus",
+        "Fais correspondre tes totaux avant validation"
+      ],
+      "source_label": "Sources officielles : Urssaf • impots.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p15",
+      "hook": "Le meilleur moment pour mettre de l’argent de côté ? Le jour où le client paie.",
+      "title": "La trésorerie se protège à l’encaissement",
+      "bullets": [
+        "Crée une réserve dédiée",
+        "Transfère ta provision à chaque encaissement",
+        "Ne touche pas à cette somme avant l’échéance"
+      ],
+      "source_label": "Conseil de gestion basé sur les échéances Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p16",
+      "hook": "Créer une micro en 10 minutes ne veut pas dire qu’il faut décider en 10 minutes.",
+      "title": "Les choix avant création comptent",
+      "bullets": [
+        "Aides",
+        "Fiscalité",
+        "TVA et tarification"
+      ],
+      "source_label": "SER Guide 01 regroupe les vérifications dans l’ordre",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p17",
+      "hook": "Ton premier client ne doit pas arriver avant ton organisation.",
+      "title": "Prépare 4 choses avant d’encaisser",
+      "bullets": [
+        "Mode de facturation",
+        "Suivi des encaissements",
+        "Provision cotisations/impôt",
+        "Documents et justificatifs"
+      ],
+      "source_label": "Sources officielles : Urssaf • economie.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p18",
+      "hook": "La facturation électronique change progressivement les habitudes.",
+      "title": "Prépare ton organisation maintenant",
+      "bullets": [
+        "Vérifie les échéances qui concernent les micro-entreprises",
+        "Choisis une solution compatible",
+        "Ne confonds pas réception et émission obligatoire"
+      ],
+      "source_label": "Source officielle : economie.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p19",
+      "hook": "Tu peux avoir un bon chiffre d’affaires et manquer de trésorerie.",
+      "title": "Le CA ne paie pas tout seul",
+      "bullets": [
+        "Provisionne avant l’échéance",
+        "Suis les dépenses réellement payées",
+        "Regarde ton net, pas seulement ton CA"
+      ],
+      "source_label": "Méthode de gestion SER Guides",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p20",
+      "hook": "Le plus gros risque administratif ? Faire les choses dans le mauvais ordre.",
+      "title": "Utilise un parcours, pas une liste infinie",
+      "bullets": [
+        "Optimiser",
+        "Créer",
+        "Déclarer"
+      ],
+      "source_label": "SER Guide 01 suit cet ordre",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p21",
+      "hook": "Avant de cliquer sur “Créer mon entreprise”, vérifie ces 3 points.",
+      "title": "Checklist express",
+      "bullets": [
+        "ACRE et aides",
+        "ARE/ARCE si concerné",
+        "Fiscalité et TVA"
+      ],
+      "source_label": "Sources officielles : Urssaf • France Travail • impots.gouv.fr",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p22",
+      "hook": "Tu es déjà micro-entrepreneur ? Commence par vérifier tes échéances.",
+      "title": "Évite les oublis inutiles",
+      "bullets": [
+        "Périodicité mensuelle ou trimestrielle",
+        "Dates de déclaration",
+        "Montants provisionnés"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p23",
+      "hook": "Tu dois déclarer maintenant ? Ne relis pas 40 pages.",
+      "title": "Va directement à l’action",
+      "bullets": [
+        "Totalise le CA encaissé",
+        "Vérifie la bonne catégorie",
+        "Déclare et sauvegarde la confirmation"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p24",
+      "hook": "Les aides régionales peuvent exister… mais elles dépendent de ton territoire.",
+      "title": "Cherche localement, pas seulement nationalement",
+      "bullets": [
+        "Base nationale des aides",
+        "Région",
+        "CCI/CMA/BGE selon ton activité"
+      ],
+      "source_label": "Source officielle : aides-entreprises.fr / collectivités",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p25",
+      "hook": "Tu vends en ligne ? Ne pars pas du principe que “micro = aucune règle”.",
+      "title": "Sépare statut et obligations commerciales",
+      "bullets": [
+        "Mentions de facturation",
+        "CGV si nécessaire",
+        "TVA et information client"
+      ],
+      "source_label": "Sources officielles : economie.gouv.fr • Service Public",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p26",
+      "hook": "Ton activité est mixte ? Les calculs deviennent plus faciles à rater.",
+      "title": "Sépare chaque catégorie de CA",
+      "bullets": [
+        "Vente",
+        "Prestations de services",
+        "Suivi distinct dans ton livre de recettes"
+      ],
+      "source_label": "Source officielle : Urssaf",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p27",
+      "hook": "Le vrai bon réflexe : vérifier les sources avant de suivre un TikTok fiscal.",
+      "title": "Les règles changent",
+      "bullets": [
+        "Urssaf",
+        "impots.gouv.fr",
+        "France Travail / Service Public"
+      ],
+      "source_label": "SER Guide 01 renvoie vers les sources officielles",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p28",
+      "hook": "Un guide utile doit te dire quoi faire maintenant, pas te noyer.",
+      "title": "Le parcours SER en 3 étapes",
+      "bullets": [
+        "2 questions au départ",
+        "Un plan adapté",
+        "Les démarches seulement quand elles deviennent utiles"
+      ],
+      "source_label": "SER Guide 01 — guide web interactif",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p29",
+      "hook": "Tu veux lancer ta micro sans passer ta soirée sur 12 sites publics ?",
+      "title": "Centralise le parcours",
+      "bullets": [
+        "Aides",
+        "Calculs",
+        "Liens officiels et checklist"
+      ],
+      "source_label": "SER Guide 01 — lien en bio",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    },
+    {
+      "id": "p30",
+      "hook": "Micro-entreprise 2026 : le guide n’est pas un PDF de 80 pages.",
+      "title": "C’est un parcours interactif",
+      "bullets": [
+        "Tu réponds à 2 questions",
+        "Le guide adapte les informations",
+        "Tu avances étape par étape"
+      ],
+      "source_label": "SER Guide 01 — lien en bio",
+      "hashtags": "#microentreprise #autoentrepreneur #entrepreneur #urssaf"
+    }
+  ]
+}

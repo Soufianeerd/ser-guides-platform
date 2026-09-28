@@ -8,3 +8,6 @@ dist/
 .env.*.local
 *.log
 .DS_Store
+
+# Dépôt git séparé (github.com/Soufianeerd/SER-Module)
+ser-module/

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SER Guide {{NUMERO}} — {{TITRE}} · {{SOUS_TITRE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="theme-color" content="#0F172A">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+/* CSS copié tel quel du Guide 01. Pour une autre niche : ne modifier que les couleurs de :root (palette de ser-module/config/catalog.json). */
+:root{
+  --noir:#0F172A;
+  --noir-2:#111827;
+  --paper:#F8FAFC;
+  --card:#FFFFFF;
+  --ink:#0F172A;
+  --soft:#64748B;
+  --rule:#E2E8F0;
+  --emeraude:#06B6D4;
+  --emeraude-pale:#ECFEFF;
+  --or:#06B6D4;
+  --or-pale:#ECFEFF;
+  --brique:#A33E2C;
+  --brique-pale:#F8EAE6;
+  --shadow:0 1px 2px rgba(15,23,42,.05),0 12px 32px -16px rgba(15,23,42,.22);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Inter",Georgia,serif;font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overscroll-behavior-y:none;
+}
+.ui,h1,h2,h3,button,th{font-family:"Inter",system-ui,sans-serif}
+.display{font-family:"Manrope",system-ui,sans-serif}
+p{margin:0 0 1.05em}
+a{color:var(--emeraude)}
+.wrap{max-width:620px;margin:0 auto;padding:0 22px}
+
+/* ───────── Monogramme ───────── */
+.seal{
+  width:52px;height:52px;flex:0 0 52px;display:grid;place-items:center;position:relative;
+  border:1.5px solid currentColor;border-radius:2px;transform:rotate(-2deg);
+}
+.seal::after{
+  content:"";position:absolute;inset:4px;border:1px solid currentColor;opacity:.35;border-radius:1px;
+}
+.seal b{font-family:"Inter",sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em;line-height:1;transform:rotate(2deg)}
+.seal.sm{width:34px;height:34px;flex:0 0 34px}
+.seal.sm b{font-size:9px}
+
+/* ───────── Couverture ───────── */
+#cover{
+  min-height:100dvh;background:var(--noir);color:#EDF2EF;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:max(38px,env(safe-area-inset-top)) 0 38px;
+  background-image:radial-gradient(120% 70% at 50% 0%,rgba(6,182,212,.22),transparent 62%);
+}
+#cover .wrap{width:100%}
+.cov-top{display:flex;align-items:center;gap:14px;color:var(--or)}
+.cov-top .meta{font-family:"Inter",sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.02em;line-height:1.45;color:#CBD5E1}
+.cov-top .meta i{display:block;font-style:normal;color:var(--or)}
+.cov-mid{padding:44px 0}
+.cov-mid h1{
+  font-family:"Manrope",system-ui,sans-serif;font-weight:800;font-size:clamp(38px,11vw,64px);
+  line-height:.99;letter-spacing:-.025em;margin:0 0 22px;
+}
+.cov-mid h1 em{font-style:normal;font-weight:600;display:block;color:#CBD5E1}
+.rule-or{width:64px;height:2px;background:var(--or);margin:0 0 22px}
+.cov-mid p{font-size:18.5px;color:#CBD5E1;max-width:30em;margin:0}
+.devise{
+  font-family:"Inter",system-ui,sans-serif;font-style:normal;font-weight:600;font-size:15px;color:var(--or);
+  border-top:1px solid rgba(6,182,212,.28);padding-top:16px;margin-bottom:22px;
+}
+.cta{
+  display:block;width:100%;background:var(--or);color:var(--noir);border:none;cursor:pointer;
+  font-family:"Inter",sans-serif;font-size:16.5px;font-weight:600;
+  padding:17px;border-radius:3px;transition:transform .12s,background .15s;
+}
+.cta:hover{background:#22D3EE}
+.cta:active{transform:scale(.985)}
+.cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
+
+/* ───────── Sélecteur ───────── */
+#setup{min-height:100dvh;display:none;flex-direction:column;justify-content:center;padding:44px 0}
+#setup h2{font-family:"Manrope",serif;font-weight:600;font-size:28px;margin:0 0 8px;letter-spacing:-.02em}
+#setup .lede{color:var(--soft);font-size:16.5px;margin-bottom:26px}
+.choice{
+  width:100%;text-align:left;cursor:pointer;background:var(--card);
+  border:1px solid var(--rule);border-radius:5px;padding:16px 18px;margin-bottom:9px;
+  color:inherit;display:flex;align-items:center;gap:14px;
+  transition:border-color .15s,box-shadow .15s,transform .12s;
+}
+.choice:hover{border-color:var(--emeraude);box-shadow:var(--shadow)}
+.choice:active{transform:scale(.99)}
+.choice:focus-visible{outline:2px solid var(--emeraude);outline-offset:2px}
+.choice .txt{flex:1}
+.choice b{display:block;font-family:"Inter",sans-serif;font-weight:600;font-size:16.5px;margin-bottom:2px}
+.choice span{font-size:15px;color:var(--soft);font-family:"Inter",serif}
+.choice .arw{color:var(--rule);font-size:20px;transition:color .15s}
+.choice:hover .arw{color:var(--emeraude)}
+
+/* ───────── Lecteur ───────── */
+#reader{display:none;padding-bottom:96px}
+.topbar{
+  position:sticky;top:0;z-index:30;background:rgba(244,245,242,.93);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);
+  padding-top:env(safe-area-inset-top);
+}
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:54px}
+.iconbtn{
+  background:none;border:none;cursor:pointer;color:var(--ink);padding:8px;margin:-8px;
+  display:grid;place-items:center;border-radius:4px;
+}
+.iconbtn:focus-visible{outline:2px solid var(--emeraude);outline-offset:0}
+.iconbtn svg{display:block}
+.topmeta{flex:1;min-width:0}
+.topmeta .k{font-family:"Inter",sans-serif;font-size:11.5px;font-weight:600;color:var(--emeraude)}
+.topmeta .t{
+  font-family:"Inter",sans-serif;font-size:14.5px;font-weight:600;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.bar{height:2px;background:var(--rule)}
+.bar i{display:block;height:100%;background:var(--emeraude);width:0;transition:width .35s ease}
+
+.chap{display:none;padding:34px 0 10px;animation:in .32s ease both}
+.chap.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.chap{animation:none}}
+.chap-k{
+  display:inline-flex;align-items:center;gap:8px;font-family:"Inter",sans-serif;
+  font-size:12px;font-weight:600;color:var(--emeraude);margin-bottom:12px;
+}
+.chap-k s{width:22px;height:1px;background:var(--emeraude);opacity:.45;text-decoration:none}
+.chap h2{
+  font-family:"Manrope",system-ui,sans-serif;font-weight:700;color:var(--ink);font-size:clamp(28px,7.2vw,38px);
+  line-height:1.08;letter-spacing:-.025em;margin:0 0 18px;
+}
+.chap h3{font-size:18px;font-weight:600;margin:32px 0 10px;letter-spacing:-.01em}
+.lead{font-size:19px;color:#475569;margin-bottom:22px}
+ul,ol{margin:0 0 1.1em;padding-left:1.2em}
+li{margin-bottom:.5em}
+
+/* étapes */
+.steps{list-style:none;padding:0;margin:24px 0}
+.step{background:var(--card);border:1px solid var(--rule);border-radius:5px;margin-bottom:8px;overflow:hidden}
+.step.open{border-color:var(--emeraude);box-shadow:var(--shadow)}
+.sh{
+  display:flex;gap:13px;align-items:center;width:100%;text-align:left;cursor:pointer;
+  background:none;border:none;padding:15px 16px;color:inherit;
+  font-family:"Inter",sans-serif;font-size:16px;font-weight:600;line-height:1.35;
+}
+.sh:focus-visible{outline:2px solid var(--emeraude);outline-offset:-2px}
+.sn{
+  flex:0 0 27px;height:27px;border-radius:3px;background:var(--emeraude-pale);color:var(--emeraude);
+  display:grid;place-items:center;font-size:13.5px;font-weight:600;
+}
+.step.open .sn{background:var(--emeraude);color:#fff}
+.sh .chev{margin-left:auto;color:var(--soft);transition:transform .2s;flex:0 0 auto}
+.step.open .chev{transform:rotate(180deg)}
+.sb{padding:2px 16px 17px 56px;font-size:16.5px}
+.sb[hidden]{display:none}
+.sb p:last-child{margin-bottom:0}
+
+/* encadrés */
+.box{border-radius:5px;padding:16px 18px;margin:24px 0;font-size:16.5px}
+.box p:last-child{margin-bottom:0}
+.box .bt{
+  display:flex;align-items:center;gap:8px;font-family:"Inter",sans-serif;
+  font-weight:600;font-size:14.5px;margin-bottom:7px;
+}
+.warn{background:var(--brique-pale);box-shadow:inset 3px 0 0 var(--brique)}
+.warn .bt{color:var(--brique)}
+.tip{background:var(--emeraude-pale);box-shadow:inset 3px 0 0 var(--emeraude)}
+.tip .bt{color:var(--emeraude)}
+.note{background:var(--or-pale);box-shadow:inset 3px 0 0 var(--or)}
+.note .bt{color:#0E7490}
+
+/* simulateur */
+.sim{background:var(--noir);color:#EDF2EF;border-radius:7px;padding:22px;margin:26px 0;box-shadow:var(--shadow)}
+.sim label{font-family:"Inter",sans-serif;font-size:13px;font-weight:600;color:#94A3B8;display:block;margin-bottom:9px}
+.sim .field{position:relative}
+.sim input{
+  width:100%;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:34px;letter-spacing:-.02em;
+  padding:8px 44px 8px 0;border:none;border-bottom:1.5px solid rgba(237,242,239,.22);
+  background:transparent;color:#fff;
+}
+.sim input:focus{outline:none;border-bottom-color:var(--or)}
+.sim .cur{position:absolute;right:4px;bottom:12px;font-family:"IBM Plex Mono",monospace;font-size:26px;color:#94A3B8}
+.seg{display:flex;gap:0;margin:20px 0 4px;border:1px solid rgba(237,242,239,.2);border-radius:4px;overflow:hidden}
+.seg button{
+  flex:1;padding:11px 6px;border:none;background:transparent;color:#94A3B8;cursor:pointer;
+  font-family:"Inter",sans-serif;font-size:13.5px;font-weight:600;transition:background .15s,color .15s;
+}
+.seg button[aria-pressed="true"]{background:var(--or);color:var(--noir)}
+.res{margin-top:20px;border-top:1px solid rgba(237,242,239,.16);padding-top:8px}
+.ln{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;font-size:15.5px;color:#CBD5E1}
+.ln span:last-child{font-family:"Inter",sans-serif;font-weight:600;color:#EDF2EF}
+.ln.tot{
+  border-top:1px solid rgba(237,242,239,.16);margin-top:8px;padding-top:15px;
+  font-family:"Inter",sans-serif;font-size:16px;font-weight:600;color:#EDF2EF;
+}
+.ln.tot span:last-child{font-family:"IBM Plex Mono",monospace;font-size:31px;color:var(--or);font-weight:700;letter-spacing:-.02em}
+.simnote{font-size:14.5px;color:#94A3B8;margin:14px 0 0;line-height:1.5}
+
+/* tableau */
+.tbl{width:100%;border-collapse:collapse;margin:22px 0;font-size:15.5px;background:var(--card);border-radius:5px;overflow:hidden;box-shadow:var(--shadow)}
+.tbl th,.tbl td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule)}
+.tbl th{font-size:12.5px;font-weight:600;color:var(--soft);background:#FAFBF9}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr.me td{background:var(--or-pale);font-weight:600}
+
+/* échéances */
+.ech{list-style:none;padding:0;margin:22px 0}
+.ech li{display:flex;gap:15px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.ech li:last-child{border-bottom:none}
+.ech .d{
+  flex:0 0 74px;font-family:"Inter",sans-serif;font-weight:600;font-size:14.5px;
+  color:var(--emeraude);padding-top:2px;
+}
+.ech .w{flex:1;font-size:16px}
+
+/* checklist */
+.ck{list-style:none;padding:0;margin:22px 0}
+.ck li{
+  display:flex;gap:13px;align-items:flex-start;background:var(--card);border:1px solid var(--rule);
+  border-radius:5px;padding:14px 16px;margin-bottom:8px;font-size:16.5px;transition:border-color .15s;
+}
+.ck li:has(input:checked){border-color:var(--emeraude);background:var(--emeraude-pale)}
+.ck input{width:20px;height:20px;margin-top:3px;accent-color:var(--emeraude);flex:0 0 auto;cursor:pointer}
+.ck label{cursor:pointer}
+.ckbar{display:flex;align-items:center;gap:12px;margin:20px 0 6px}
+.ckbar .n{font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:30px;color:var(--emeraude);letter-spacing:-.02em}
+.ckbar .l{font-family:"Inter",sans-serif;font-size:14px;color:var(--soft)}
+
+/* colophon */
+.colo{
+  background:var(--noir);color:#CBD5E1;border-radius:7px;padding:30px 24px;margin:30px 0 10px;text-align:center;
+}
+.colo .seal{margin:0 auto 18px;color:var(--or)}
+.colo .dv{font-family:"Inter",system-ui,sans-serif;font-style:normal;font-weight:600;font-size:17px;color:#EDF2EF;margin:0 0 14px}
+.colo p{font-size:14.5px;line-height:1.6;margin:0 0 10px}
+.colo .fine{font-size:13px;color:#94A3B8;border-top:1px solid rgba(237,242,239,.14);padding-top:14px;margin-top:16px;text-align:left}
+
+/* nav bas */
+.navbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(244,245,242,.94);
+  backdrop-filter:blur(10px);border-top:1px solid var(--rule);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.navbar .wrap{display:flex;gap:10px;height:66px;align-items:center}
+.nb{
+  flex:1;border:1px solid var(--rule);background:var(--card);border-radius:4px;cursor:pointer;
+  font-family:"Inter",sans-serif;font-size:15px;font-weight:600;color:var(--ink);
+  padding:13px 10px;transition:border-color .15s,background .15s;
+}
+.nb:disabled{opacity:.34;cursor:default}
+.nb:not(:disabled):hover{border-color:var(--emeraude)}
+.nb.primary{background:var(--emeraude);border-color:var(--emeraude);color:#fff;flex:1.7}
+.nb.primary:not(:disabled):hover{background:#0891B2}
+.nb:focus-visible{outline:2px solid var(--emeraude);outline-offset:2px}
+
+/* sommaire */
+.scrim{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:40;opacity:0;pointer-events:none;transition:opacity .22s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;top:0;bottom:0;left:0;width:min(340px,86vw);background:var(--paper);z-index:50;
+  transform:translateX(-101%);transition:transform .26s cubic-bezier(.32,.72,0,1);
+  display:flex;flex-direction:column;box-shadow:0 0 40px rgba(15,23,42,.2);
+}
+.drawer.on{transform:none}
+.dr-top{
+  background:var(--noir);color:#EDF2EF;padding:calc(22px + env(safe-area-inset-top)) 20px 20px;
+  display:flex;align-items:center;gap:13px;
+}
+.dr-top .seal{color:var(--or)}
+.dr-top b{font-family:"Inter",sans-serif;font-size:14.5px;display:block}
+.dr-top span{font-size:13px;color:#94A3B8}
+.dr-list{flex:1;overflow-y:auto;padding:10px 0 20px}
+.dr-item{
+  display:flex;gap:13px;align-items:baseline;width:100%;text-align:left;background:none;border:none;
+  cursor:pointer;padding:12px 20px;color:var(--ink);font-family:"Inter",sans-serif;
+  font-size:15.5px;font-weight:500;line-height:1.35;
+}
+.dr-item i{font-style:normal;font-size:12.5px;color:var(--soft);flex:0 0 20px}
+.dr-item:hover{background:var(--emeraude-pale)}
+.dr-item[aria-current="true"]{color:var(--emeraude);font-weight:600;box-shadow:inset 3px 0 0 var(--emeraude)}
+.dr-item[aria-current="true"] i{color:var(--emeraude)}
+.dr-foot{padding:16px 20px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--rule)}
+.dr-foot .prof{font-family:"Inter",sans-serif;font-size:13px;color:var(--soft)}
+.dr-foot .prof b{display:block;color:var(--ink);font-size:14.5px;margin-top:2px}
+.dr-foot button{
+  margin-top:10px;background:none;border:1px solid var(--rule);border-radius:4px;padding:9px 12px;
+  font-family:"Inter",sans-serif;font-size:13.5px;cursor:pointer;color:var(--ink);width:100%;
+}
+.dr-foot button:hover{border-color:var(--emeraude);color:var(--emeraude)}
+
+/* ===== SER Guides v2 — couche produit ===== */
+:root{--ser-navy:#0F172A;--ser-cyan:#0891B2;--ser-ice:#F8FAFC;--ser-slate:#475569}
+body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2;font:700 9px/1 "Inter",sans-serif;letter-spacing:.22em;color:rgba(15,23,42,.16);writing-mode:vertical-rl;pointer-events:none}
+.hero-badge{display:inline-flex;gap:8px;align-items:center;padding:7px 10px;border:1px solid rgba(6,182,212,.35);border-radius:999px;font:600 11px/1 "Inter",sans-serif;color:var(--or);letter-spacing:.04em;margin-bottom:18px}
+.hero-badge:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--or);box-shadow:0 0 0 4px rgba(6,182,212,.12)}
+.quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:22px 0}
+.quick-card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:16px;box-shadow:var(--shadow)}
+.quick-card b{display:block;font:600 13px/1.2 "Inter",sans-serif;color:var(--soft);margin-bottom:7px}.quick-card strong{font:700 24px/1 "Manrope",serif;color:var(--emeraude)}
+.source-row{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0}.source-pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule);border-radius:999px;padding:7px 10px;font:600 11.5px/1 "Inter",sans-serif;text-decoration:none;color:var(--ink);background:white}.source-pill:hover{border-color:var(--emeraude);color:var(--emeraude)}
+.aid-grid{display:grid;gap:10px;margin:20px 0}.aid-card{background:white;border:1px solid var(--rule);border-radius:8px;padding:17px;position:relative}.aid-card .tag{display:inline-block;font:700 10px/1 "Inter",sans-serif;letter-spacing:.06em;text-transform:uppercase;background:var(--or-pale);color:#7d5a1f;padding:6px 8px;border-radius:999px;margin-bottom:10px}.aid-card h4{font:700 18px/1.2 "Inter",sans-serif;margin:0 0 7px}.aid-card p{font-size:15.5px;margin:0}.money{font:700 27px/1 "Manrope",serif;color:var(--emeraude);margin:9px 0}.decision{background:linear-gradient(135deg,var(--noir),#0E3040);color:#edf2ef;border-radius:10px;padding:20px;margin:24px 0}.decision h3{margin-top:0;color:white}.decision label{display:block;font:600 12px/1.3 "Inter",sans-serif;color:#a9beb6;margin:14px 0 6px}.decision select,.decision input{width:100%;background:rgba(255,255,255,.08);color:white;border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:12px;font:500 14px/1 "Inter",sans-serif}.decision option{color:#111}.decision .answer{margin-top:16px;padding:14px;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.08);border-radius:7px;color:#fff;font-size:15px}.mini-kpi{display:flex;gap:9px;overflow:auto;padding-bottom:4px;margin:18px 0}.mini-kpi span{min-width:max-content;border:1px solid var(--rule);background:white;border-radius:999px;padding:8px 11px;font:600 11.5px/1 "Inter",sans-serif;color:var(--soft)}
+@media(min-width:760px){.wrap{max-width:760px}.aid-grid{grid-template-columns:1fr 1fr}.quick-grid{grid-template-columns:repeat(4,1fr)}}
+
+
+/* ───────── Actions & services officiels ───────── */
+.action-link{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;text-decoration:none;
+  background:var(--noir);color:#fff;border:1px solid var(--noir);border-radius:6px;
+  padding:14px 16px;margin:14px 0;font-family:"Inter",system-ui,sans-serif;font-weight:600;font-size:15px;
+  box-shadow:var(--shadow);transition:transform .12s,background .15s,border-color .15s;
+}
+.action-link:hover{background:#111827;border-color:var(--emeraude);transform:translateY(-1px)}
+.action-link.secondary{background:var(--card);color:var(--ink);border-color:var(--rule);box-shadow:none}
+.action-link.secondary:hover{border-color:var(--emeraude);color:#0E7490}
+.action-link small{font:500 12px/1.35 "Inter",system-ui,sans-serif;color:#94A3B8;text-align:right}
+.action-link.secondary small{color:var(--soft)}
+
+.os-cap{padding:11px 15px;background:#fff;color:var(--soft);font:500 12.5px/1.5 "Inter",system-ui,sans-serif;border-top:1px solid var(--rule)}
+.os-cap strong{color:var(--ink)}
+.preflight{display:grid;grid-template-columns:1fr;gap:10px;margin:22px 0}
+.pre-card{background:var(--card);border:1px solid var(--rule);border-radius:7px;padding:16px;box-shadow:0 4px 18px -16px rgba(15,23,42,.35)}
+.pre-card .num{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:4px;background:var(--emeraude-pale);color:#0E7490;font:700 12px "Inter",system-ui,sans-serif;margin-bottom:8px}
+.pre-card h4{font:600 17px/1.3 "Inter",system-ui,sans-serif;margin:0 0 6px;color:var(--ink)}
+.pre-card p{font-size:15.5px;color:var(--soft);margin:0 0 10px}
+.pre-card .mini{display:inline-flex;text-decoration:none;color:#0E7490;font:600 13.5px "Inter",system-ui,sans-serif;border-bottom:1px solid rgba(6,182,212,.35);padding-bottom:2px}
+.pre-card.urgent{border-color:#F59E0B;background:#FFFBEB}.pre-card.urgent .num{background:#FEF3C7;color:#92400E}
+.pre-card.money{border-color:#67E8F9;background:#ECFEFF}
+.path-note{display:flex;gap:12px;padding:14px 15px;border:1px dashed #67E8F9;background:#F0FDFF;border-radius:7px;margin:18px 0;font-size:15px}
+.path-note b{font-family:"Inter",system-ui,sans-serif}
+.region-tool{background:var(--noir);color:#E2E8F0;border-radius:8px;padding:20px;margin:24px 0}
+.region-tool h3{margin:0 0 6px;color:#fff}.region-tool p{color:#CBD5E1;font-size:15.5px}.region-tool label{display:block;font:600 12px "Inter",system-ui,sans-serif;color:#94A3B8;margin:12px 0 6px}
+.region-tool select{width:100%;padding:12px 13px;border-radius:5px;border:1px solid #334155;background:#fff;color:var(--ink);font:600 14px "Inter",system-ui,sans-serif}
+.region-result{margin-top:12px;padding:12px 13px;border-radius:5px;background:#111827;border:1px solid #334155;font-size:14.5px;color:#E2E8F0}
+.region-result strong{color:#67E8F9}
+.keyline{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0}.keyline>div{background:#fff;border:1px solid var(--rule);padding:12px;border-radius:6px}.keyline b{display:block;font:700 20px "Manrope",serif;color:#0E7490}.keyline span{font:500 12.5px "Inter",system-ui,sans-serif;color:var(--soft)}
+@media(max-width:560px){.keyline{grid-template-columns:1fr}}
+
+/* ───────── Diagnostic personnalisé ───────── */
+#setup{min-height:100dvh;display:none;padding:34px 0 56px;background:linear-gradient(180deg,#F8FAFC 0%,#F1F5F9 100%)}
+.diag-shell{max-width:720px;margin:0 auto;padding:0 22px}
+.diag-brand{display:flex;align-items:center;gap:12px;margin-bottom:30px}.diag-brand .seal{color:var(--emeraude)}
+.diag-brand b{display:block;font:700 14px "Inter",system-ui,sans-serif}.diag-brand span{display:block;font:500 12px "Inter",system-ui,sans-serif;color:var(--soft)}
+.diag-topline{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:10px}.diag-stepcount{font:700 12px "Inter",system-ui,sans-serif;color:#0891B2;text-transform:uppercase;letter-spacing:.04em}.diag-mini{font:600 12px "Inter",system-ui,sans-serif;color:var(--soft)}
+.diag-progress{height:5px;background:#E2E8F0;border-radius:99px;overflow:hidden;margin-bottom:28px}.diag-progress i{display:block;height:100%;width:14.28%;background:var(--emeraude);transition:width .25s ease}
+.diag-panel{display:none}.diag-panel.on{display:block;animation:in .22s ease both}.diag-panel h2{font-family:"Manrope",serif;font-size:clamp(29px,6vw,40px);line-height:1.08;margin:0 0 10px;letter-spacing:-.025em}.diag-panel>.lede{font-size:17px;color:var(--soft);margin-bottom:22px}
+.diag-options{display:grid;gap:9px}.diag-option{display:flex;align-items:flex-start;gap:13px;width:100%;text-align:left;padding:15px 16px;border:1px solid var(--rule);background:#fff;border-radius:7px;cursor:pointer;color:var(--ink);font-family:"Inter",system-ui,sans-serif;transition:.15s}.diag-option:hover{border-color:#67E8F9;box-shadow:var(--shadow)}.diag-option.sel{border-color:var(--emeraude);box-shadow:0 0 0 2px rgba(6,182,212,.10);background:#ECFEFF}.diag-option .dot{width:20px;height:20px;border:1.5px solid #CBD5E1;border-radius:50%;flex:0 0 20px;margin-top:1px;display:grid;place-items:center}.diag-option.sel .dot{border-color:var(--emeraude)}.diag-option.sel .dot:after{content:"";width:10px;height:10px;background:var(--emeraude);border-radius:50%}.diag-option b{display:block;font-size:15.5px;margin-bottom:2px}.diag-option small{display:block;font:400 14px/1.45 "Inter",serif;color:var(--soft)}
+.diag-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.diag-field label{display:block;font:700 12px "Inter",system-ui,sans-serif;color:var(--soft);margin-bottom:6px}.diag-field input,.diag-field select{width:100%;padding:13px 13px;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--ink);font:600 15px "Inter",system-ui,sans-serif}.diag-field input:focus,.diag-field select:focus{outline:2px solid rgba(6,182,212,.2);border-color:var(--emeraude)}
+.diag-help{font-size:14px;color:var(--soft);margin-top:10px}.diag-nav{display:flex;gap:10px;margin-top:26px}.diag-nav button{border:1px solid var(--rule);background:#fff;color:var(--ink);padding:13px 16px;border-radius:6px;cursor:pointer;font:700 14px "Inter",system-ui,sans-serif}.diag-nav .grow{flex:1;background:var(--noir);border-color:var(--noir);color:#fff}.diag-nav .grow:hover{background:#1E293B}.diag-error{display:none;background:#FEF2F2;color:#991B1B;border:1px solid #FECACA;padding:10px 12px;border-radius:6px;margin-top:12px;font:600 13px "Inter",system-ui,sans-serif}.diag-error.on{display:block}
+.diag-result{display:none}.diag-result.on{display:block}.plan-hero{background:var(--noir);color:#E2E8F0;border-radius:10px;padding:22px;margin-bottom:16px}.plan-hero .eyebrow{font:700 11px "Inter",system-ui,sans-serif;color:#67E8F9;text-transform:uppercase;letter-spacing:.08em}.plan-hero h2{font:600 32px/1.04 "Manrope",serif;color:#fff;margin:8px 0 10px}.plan-hero p{margin:0;color:#CBD5E1;font-size:15.5px}.plan-list{display:grid;gap:10px}.plan-item{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:16px}.plan-item.urgent{border-color:#F59E0B;background:#FFFBEB}.plan-item.good{border-color:#67E8F9;background:#ECFEFF}.plan-item .tag{display:inline-flex;padding:4px 7px;border-radius:4px;background:#E2E8F0;font:700 10px "Inter",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.05em;color:#475569;margin-bottom:7px}.plan-item.urgent .tag{background:#FEF3C7;color:#92400E}.plan-item.good .tag{background:#CFFAFE;color:#0E7490}.plan-item h3{font-size:16.5px;margin:0 0 5px}.plan-item p{font-size:15px;color:var(--soft);margin:0 0 9px}.plan-item a{font:700 13px "Inter",system-ui,sans-serif;text-decoration:none}.plan-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.plan-summary div{background:#fff;border:1px solid var(--rule);padding:11px;border-radius:7px}.plan-summary b{display:block;font:700 18px "Manrope",serif;color:#0E7490}.plan-summary span{font:600 11px "Inter",system-ui,sans-serif;color:var(--soft)}
+@media(max-width:620px){.diag-grid,.plan-summary{grid-template-columns:1fr}.diag-shell{padding:0 18px}.diag-nav{position:sticky;bottom:0;background:linear-gradient(180deg,rgba(248,250,252,0),#F8FAFC 26%);padding-top:26px;padding-bottom:max(8px,env(safe-area-inset-bottom))}}
+
+/* ───────── V5 · Entrée express ───────── */
+#quickSetup{display:block}
+#diagWizard{display:none}
+.quick-kicker{font:700 11px/1 "Inter",system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#0891B2;margin-bottom:10px}
+.quick-title{font:750 clamp(30px,7vw,44px)/1.05 "Manrope",system-ui,sans-serif;margin:0 0 10px;letter-spacing:-.03em}
+.quick-lede{font:400 17px/1.55 "Inter",system-ui,sans-serif;color:var(--soft);margin:0 0 22px}
+.quick-screen{display:none}.quick-screen.on{display:block;animation:in .2s ease both}
+.quick-options{display:grid;gap:10px;margin:18px 0}
+.quick-choice{display:flex;align-items:center;gap:14px;width:100%;border:1px solid var(--rule);background:#fff;border-radius:12px;padding:17px;text-align:left;cursor:pointer;color:var(--ink);transition:.15s;box-shadow:0 6px 20px -18px rgba(15,23,42,.35)}
+.quick-choice:hover{border-color:#67E8F9;transform:translateY(-1px)}
+.quick-choice.sel{border-color:#06B6D4;background:#ECFEFF;box-shadow:0 0 0 2px rgba(6,182,212,.08)}
+.quick-icon{width:38px;height:38px;border-radius:10px;background:#F1F5F9;display:grid;place-items:center;font:800 15px "IBM Plex Mono",monospace;color:#0F172A;flex:0 0 38px}
+.quick-choice.sel .quick-icon{background:#CFFAFE;color:#0E7490}
+.quick-choice b{display:block;font:700 16px/1.25 "Manrope",system-ui,sans-serif;margin-bottom:3px}
+.quick-choice small{display:block;font:400 14px/1.4 "Inter",system-ui,sans-serif;color:var(--soft)}
+.quick-actions{display:flex;gap:10px;margin-top:22px}
+.quick-actions button{border:1px solid var(--rule);border-radius:9px;padding:13px 15px;background:#fff;color:var(--ink);font:700 14px "Inter",system-ui,sans-serif;cursor:pointer}
+.quick-actions .primary{flex:1;background:#0F172A;color:#fff;border-color:#0F172A}
+.quick-plan{background:#0F172A;color:#E2E8F0;border-radius:14px;padding:20px;margin-bottom:14px}
+.quick-plan .eyebrow{font:700 11px "Inter",system-ui,sans-serif;color:#67E8F9;text-transform:uppercase;letter-spacing:.08em}
+.quick-plan h2{font:750 29px/1.06 "Manrope",system-ui,sans-serif;color:#fff;margin:7px 0 8px}
+.quick-plan p{font:400 15px/1.5 "Inter",system-ui,sans-serif;color:#CBD5E1;margin:0}
+.quick-tasks{display:grid;gap:9px;margin:14px 0}
+.quick-task{display:flex;gap:12px;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 15px}
+.quick-task .n{width:26px;height:26px;border-radius:7px;background:#ECFEFF;color:#0E7490;display:grid;place-items:center;font:700 12px "IBM Plex Mono",monospace;flex:0 0 26px}
+.quick-task b{display:block;font:700 15px "Manrope",system-ui,sans-serif;margin-bottom:3px}.quick-task span{display:block;font:400 13.5px/1.45 "Inter",system-ui,sans-serif;color:var(--soft)}
+.quick-advanced{display:block;width:100%;margin-top:10px;background:none;border:0;color:#0E7490;text-decoration:underline;text-underline-offset:3px;font:650 13.5px "Inter",system-ui,sans-serif;cursor:pointer}
+.quick-note{font:400 12.5px/1.5 "Inter",system-ui,sans-serif;color:var(--soft);text-align:center;margin-top:12px}
+
+
+
+/* ───────── FINAL · commercial release ───────── */
+.release-strip{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 0}
+.release-strip span{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(103,232,249,.28);background:rgba(8,145,178,.08);color:#CFFAFE;border-radius:999px;padding:7px 10px;font:700 11px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.02em}
+.scope-note{margin:18px 0 0;padding:12px 14px;border:1px solid rgba(148,163,184,.22);border-radius:8px;background:rgba(255,255,255,.05);color:#CBD5E1;font:500 12.5px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.service-card{margin:18px 0;border:1px solid var(--rule);background:#fff;border-radius:10px;padding:16px;box-shadow:var(--shadow)}
+.service-card .eyebrow{font:800 10px/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#0891B2;margin-bottom:8px}
+.service-card h3{margin:0 0 6px;font:800 18px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif}
+.service-card p{margin:0;color:var(--soft);font-size:15px}
+.version-line{font:600 12px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--soft);margin-top:16px}
+@media print{#cover,#setup,.topbar,.navbar,.drawer,.scrim{display:none!important}#reader{display:block!important;padding:0}.chap{display:block!important;page-break-before:always;animation:none}.chap:first-child{page-break-before:auto}.wrap{max-width:760px}.action-link{color:#000;background:#fff;border:1px solid #CBD5E1}.action-link small{color:#475569}}
+
+</style>
+</head>
+<body>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GABARIT SER GUIDES — reproduit le format du Guide 01            ║
+  ║  (Micro-entreprise 2026). Remplacer chaque {{…}}.                ║
+  ║  Parcours : couverture → questions express → diagnostic          ║
+  ║  (facultatif) → plan → lecteur paginé (1 chapitre = 1 écran).    ║
+  ║  Cible : ~20 écrans max, 3 à 7 questions au démarrage.           ║
+  ║  Ne pas renommer les id/classes : le CSS et le JS en dépendent.  ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+
+<!-- ══════════ COUVERTURE ══════════ -->
+<section id="cover">
+  <div class="wrap cov-top">
+    <div class="seal"><b>SER</b></div>
+    <div class="meta"><i>Guide {{NUMERO}}</i>SER Guides · Collection {{COLLECTION}}<br>Édition {{ANNEE}}</div>
+  </div>
+  <div class="wrap cov-mid">
+    <div class="hero-badge">GUIDE WEB INTERACTIF · DONNÉES VÉRIFIÉES LE {{DATE_VERIFICATION}}</div>
+    <h1 class="display">{{TITRE}}<em>{{SOUS_TITRE}}</em></h1>
+    <div class="rule-or"></div>
+    <p>{{PROMESSE — 2 à 3 phrases : ce que le lecteur sécurise d’abord, puis ce qu’il sait faire à la fin.}}
+    <div class="release-strip"><span>✓ {{ANNEE}} vérifié</span><span>✓ parcours personnalisé</span><span>✓ {{ATOUT_3}}</span><span>✓ liens officiels</span></div>
+    <div class="scope-note"><strong>Périmètre :</strong> {{CE QUE LE GUIDE COUVRE et les cas exclus.}}</div></p>
+  </div>
+  <div class="wrap">
+    <p class="devise">« Décider juste. Agir simple. »</p>
+    <button class="cta" id="go">Construire mon parcours en 30 secondes</button>
+  </div>
+</section>
+
+<!-- ══════════ PARCOURS EXPRESS + DIAGNOSTIC ══════════ -->
+<section id="setup">
+  <div class="diag-shell">
+    <div class="diag-brand"><div class="seal sm"><b>SER</b></div><div><b>SER Guides · Diagnostic {{ANNEE}}</b><span>Vos réponses restent dans votre navigateur.</span></div></div>
+    <div id="quickSetup">
+      <!-- Question express 1 : situation / niveau du lecteur (data-stage = clé de NIVEAUX dans le script) -->
+      <section class="quick-screen on" id="quickStage">
+        <div class="quick-kicker">30 secondes · aucun compte requis</div>
+        <h2 class="quick-title">{{QUESTION_1 — ex. Où en êtes-vous ?}}</h2>
+        <p class="quick-lede">On vous montre d’abord uniquement ce qui est utile maintenant. Vous pourrez affiner plus tard si vous le souhaitez.</p>
+        <div class="quick-options" id="quickStageOptions">
+          <button type="button" class="quick-choice" data-stage="debutant"><span class="quick-icon">01</span><span><b>{{Je débute}}</b><small>{{Description courte}}</small></span></button>
+          <button type="button" class="quick-choice" data-stage="intermediaire"><span class="quick-icon">02</span><span><b>{{J’ai déjà commencé}}</b><small>{{Description courte}}</small></span></button>
+          <button type="button" class="quick-choice" data-stage="avance"><span class="quick-icon">03</span><span><b>{{Je dois agir maintenant}}</b><small>{{Description courte}}</small></span></button>
+        </div>
+      </section>
+
+      <!-- Question express 2 : profil (data-activity = clé de PROFILS dans le script) -->
+      <section class="quick-screen" id="quickActivity">
+        <div class="quick-kicker">Dernière question</div>
+        <h2 class="quick-title">{{QUESTION_2 — ex. Quelle est votre situation ?}}</h2>
+        <p class="quick-lede">C’est tout ce qu’il nous faut pour adapter le guide.</p>
+        <div class="quick-options" id="quickActivityOptions">
+          <button type="button" class="quick-choice" data-activity="profilA"><span class="quick-icon">A</span><span><b>{{Profil A}}</b><small>{{Exemples}}</small></span></button>
+          <button type="button" class="quick-choice" data-activity="profilB"><span class="quick-icon">B</span><span><b>{{Profil B}}</b><small>{{Exemples}}</small></span></button>
+          <button type="button" class="quick-choice" data-activity="profilC"><span class="quick-icon">C</span><span><b>{{Profil C}}</b><small>{{Exemples}}</small></span></button>
+        </div>
+        <div class="quick-actions"><button type="button" id="quickBack">Retour</button></div>
+      </section>
+
+      <section class="quick-screen" id="quickResult">
+        <div class="quick-plan"><div class="eyebrow">Votre parcours express</div><h2 id="quickResultTitle">Votre guide est prêt</h2><p id="quickResultText">—</p></div>
+        <div class="quick-tasks" id="quickTasks"></div>
+        <div class="quick-actions"><button type="button" id="quickEdit">Modifier</button><button type="button" class="primary" id="quickOpen">Ouvrir mon guide</button></div>
+        <button type="button" class="quick-advanced" id="quickAdvanced">Affiner mon parcours (facultatif · 2 min)</button>
+        <p class="quick-note">Vous pouvez commencer immédiatement. Le diagnostic avancé sert uniquement à affiner {{…}}.</p>
+      </section>
+    </div>
+
+    <!-- Diagnostic avancé : 3 à 7 panneaux. Chaque .diag-options porte data-key (nom de la réponse dans DIAG). -->
+    <div id="diagWizard">
+      <div class="diag-topline"><div class="diag-stepcount" id="diagStepCount">Étape 1</div><div class="diag-mini">≈ 2 min</div></div>
+      <div class="diag-progress"><i id="diagBar"></i></div>
+
+      <section class="diag-panel on" data-diag-step="0">
+        <h2>{{Question diagnostic 1}}</h2><p class="lede">{{Pourquoi on la pose.}}</p>
+        <div class="diag-options" data-key="profil">
+          <button type="button" class="diag-option" data-value="profilA"><span class="dot"></span><span><b>{{Profil A}}</b><small>{{Détail}}</small></span></button>
+          <button type="button" class="diag-option" data-value="profilB"><span class="dot"></span><span><b>{{Profil B}}</b><small>{{Détail}}</small></span></button>
+          <button type="button" class="diag-option" data-value="profilC"><span class="dot"></span><span><b>{{Profil C}}</b><small>{{Détail}}</small></span></button>
+        </div><div class="diag-error">Choisissez une réponse.</div>
+      </section>
+
+      <section class="diag-panel" data-diag-step="1">
+        <h2>{{Question diagnostic 2}}</h2><p class="lede">{{Pourquoi on la pose.}}</p>
+        <div class="diag-options" data-key="q2">
+          <button type="button" class="diag-option" data-value="oui"><span class="dot"></span><span><b>{{Oui}}</b><small>{{Conséquence}}</small></span></button>
+          <button type="button" class="diag-option" data-value="non"><span class="dot"></span><span><b>{{Non}}</b><small>{{Conséquence}}</small></span></button>
+        </div><div class="diag-error">Choisissez une réponse.</div>
+      </section>
+
+      <section class="diag-panel" data-diag-step="2">
+        <h2>{{Question diagnostic 3 (champ libre)}}</h2><p class="lede">{{Pourquoi on la pose.}}</p>
+        <div class="diag-field"><label for="q3">{{Libellé}}</label><select id="q3" data-key="q3"><option value="">Choisir…</option><option value="a">{{Option a}}</option><option value="b">{{Option b}}</option></select><p class="diag-help">{{Aide}}</p></div>
+        <div class="diag-error">Complétez ce champ.</div>
+      </section>
+
+      <div class="diag-nav" id="diagNav"><button type="button" id="diagBack">Retour</button><button type="button" class="grow" id="diagNext">Continuer</button></div>
+    </div>
+
+    <section class="diag-result" id="diagResult">
+      <div class="plan-hero"><div class="eyebrow">Votre diagnostic SER · {{ANNEE}}</div><h2>{{Votre plan avant de commencer}}</h2><p id="planIntro">—</p></div>
+      <div class="plan-summary" id="planSummary"></div>
+      <div class="plan-list" id="planList"></div>
+      <div class="diag-nav"><button type="button" id="diagRestart">Modifier mes réponses</button><button type="button" class="grow" id="startGuide">Ouvrir mon guide personnalisé</button></div>
+    </section>
+  </div>
+</section>
+
+<!-- ══════════ LECTEUR ══════════ -->
+<main id="reader">
+  <div class="topbar">
+    <div class="wrap">
+      <button class="iconbtn" id="menu" aria-label="Sommaire">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 5.5h15M3 10.5h15M3 15.5h10"/></svg>
+      </button>
+      <div class="topmeta">
+        <div class="k" id="tk">Étape 1</div>
+        <div class="t" id="tt">—</div>
+      </div>
+      <div class="seal sm" style="color:var(--emeraude)"><b>SER</b></div>
+    </div>
+    <div class="bar"><i id="barfill"></i></div>
+  </div>
+
+  <div class="wrap">
+
+  <!-- Chapitre = <article class="chap" data-t="Titre court du sommaire">. Guide 01 : 13 chapitres (10 de contenu + sources + checklist + colophon).
+       Contenu adaptatif : data-profils="profilA profilB" et/ou data-niveaux="debutant avance" masquent un bloc hors cible.
+       Valeurs dynamiques : <b data-champ="cle"></b> est rempli avec PROFILS[profil].cle. -->
+
+  <!-- 1 -->
+  <article class="chap" data-t="{{Avant toute démarche}}">
+    <span class="chap-k"><s></s>{{À faire en premier}}</span>
+    <h2 class="display">{{Titre du chapitre}}</h2>
+    <p class="lead">{{Chapeau : pourquoi ce chapitre compte.}}</p>
+    <div class="service-card"><div class="eyebrow">{{Ce qui change en ANNEE}}</div><h3>{{Accroche}}</h3><p>{{Texte}} Votre profil : <b data-champ="name">—</b>.</p></div>
+    <div class="pre-card urgent"><span class="num">1</span><h4>{{Point urgent}}</h4><p>{{Explication}}</p><a class="mini" href="{{URL_OFFICIELLE}}" target="_blank" rel="noopener">{{Ouvrir le service officiel}} ↗</a></div>
+    <div class="pre-card money"><span class="num">2</span><h4>{{Point argent}}</h4><p>{{Explication}}</p></div>
+    <div class="pre-card"><span class="num">3</span><h4>{{Point standard}}</h4><p>{{Explication}}</p></div>
+    <p data-niveaux="debutant">{{Paragraphe visible uniquement pour les débutants.}}</p>
+  </article>
+
+  <!-- 2 -->
+  <article class="chap" data-t="{{Pas à pas}}">
+    <span class="chap-k"><s></s>Chapitre 2</span>
+    <h2 class="display">{{Titre du chapitre}}</h2>
+    <p class="lead">{{Chapeau}}</p>
+    <ol class="steps">
+      <li class="step"><button class="sh"><span class="sn">1</span><span>{{Étape 1}}</span></button><div class="sb" hidden><p>{{Détail}}</p><a class="mini" href="{{URL}}" target="_blank" rel="noopener">{{Lien}} ↗</a></div></li>
+      <li class="step"><button class="sh"><span class="sn">2</span><span>{{Étape 2}}</span></button><div class="sb" hidden><p>{{Détail}}</p></div></li>
+      <li class="step"><button class="sh"><span class="sn">3</span><span>{{Étape 3}}</span></button><div class="sb" hidden><p>{{Détail}}</p></div></li>
+    </ol>
+    <div class="box tip"><span class="bt">◆ {{La règle qui sauve}}</span><p>{{Conseil}}</p></div>
+  </article>
+
+  <!-- 3 -->
+  <article class="chap" data-t="{{Points de vigilance}}">
+    <span class="chap-k"><s></s>Chapitre 3</span>
+    <h2 class="display">{{Titre du chapitre}}</h2>
+    <p class="lead">{{Chapeau}}</p>
+    <div class="box warn"><span class="bt">⚠ {{Attention}}</span><p>{{Texte}}</p></div>
+    <div class="box note"><span class="bt">ℹ {{À savoir}}</span><p>{{Texte}}</p></div>
+    <h3>{{Tableau de référence}}</h3>
+    <table class="tbl"><thead><tr><th>{{Colonne 1}}</th><th>{{Colonne 2}}</th></tr></thead><tbody><tr><td>{{…}}</td><td>{{…}}</td></tr></tbody></table>
+    <div data-profils="profilB"><p>{{Bloc visible uniquement pour le profil B.}}</p></div>
+  </article>
+
+  <!-- Dupliquer les chapitres de contenu ci-dessus (Guide 01 : 10). -->
+
+  <article class="chap" data-t="Sources officielles {{ANNEE}}">
+    <span class="chap-k"><s></s>Vérification</span>
+    <h2 class="display">Sources officielles et mises à jour</h2>
+    <p class="lead">Chaque chiffre sensible doit pouvoir être revérifié en un clic. Vérification réalisée le {{DATE_VERIFICATION}}. C’est une règle de la collection SER Guides.</p>
+    <div class="source-row">
+      <a class="source-pill" href="{{URL}}" target="_blank" rel="noopener">{{Organisme · sujet}} ↗</a>
+      <a class="source-pill" href="{{URL}}" target="_blank" rel="noopener">{{Organisme · sujet}} ↗</a>
+    </div>
+  </article>
+
+  <article class="chap" data-t="Votre checklist">
+    <span class="chap-k"><s></s>Checklist</span>
+    <h2 class="display">Votre checklist</h2>
+    <p class="lead">{{N}} points. Si tout est coché, vous êtes prêt.</p>
+    <div class="ckbar"><span class="n" id="ckn">0</span><span class="l">sur <span id="cktotal">0</span> points validés</span></div>
+    <ul class="ck" id="ck">
+      <li><input type="checkbox" id="c1"><label for="c1">{{Point 1}}</label></li>
+      <li><input type="checkbox" id="c2"><label for="c2">{{Point 2}}</label></li>
+      <li><input type="checkbox" id="c3"><label for="c3">{{Point 3}}</label></li>
+    </ul>
+  </article>
+
+  <article class="chap" data-t="Colophon">
+    <span class="chap-k"><s></s>Fin du guide</span>
+    <h2 class="display">{{Vous savez faire.}}</h2>
+    <p class="lead">{{Conclusion}}</p>
+    <div class="colo">
+      <div class="seal"><b>SER</b></div>
+      <p class="dv">« Décider juste. Agir simple. »</p>
+      <p>Guide {{NUMERO}} — SER Guides · Collection {{COLLECTION}}<br>Édition {{ANNEE}} · Version 1.0 · Vérifiée le {{DATE_VERIFICATION}}</p>
+      <p class="fine"><strong>Guide d’information, pas de conseil personnalisé.</strong> {{Avertissement adapté à la niche.}}</p><p class="fine">© {{ANNEE}} SER Guides. Tous droits réservés. Reproduction, revente ou diffusion non autorisée interdites.</p>
+    </div>
+  </article>
+
+  </div>
+
+  <nav class="navbar"><div class="wrap">
+    <button class="nb" id="prev">Précédent</button>
+    <button class="nb primary" id="next">Étape suivante</button>
+  </div></nav>
+</main>
+
+<!-- ══════════ SOMMAIRE ══════════ -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer">
+  <div class="dr-top">
+    <div class="seal sm"><b>SER</b></div>
+    <div><b>{{TITRE}} : {{SOUS_TITRE}}</b><span>SER Guides · Guide {{NUMERO}} · {{ANNEE}}</span></div>
+  </div>
+  <div class="dr-list" id="drlist"></div>
+  <div class="dr-foot">
+    <div class="prof">Votre profil<b id="pn">—</b></div>
+    <button id="chg">Changer de profil</button>
+  </div>
+</aside>
+
+<script>
+/* ─── 1. CONFIGURATION DU GUIDE ─── */
+const GUIDE_KEY='serGuideXX';          // préfixe localStorage unique par guide (Guide 01 : serGuide01)
+const PROFILS={                        // équivalent de l'objet P du Guide 01 (5 profils d'activité)
+  profilA:{name:'{{Profil A}}'},
+  profilB:{name:'{{Profil B}}'},
+  profilC:{name:'{{Profil C}}'}
+};
+const NIVEAUX={                        // réponses de la question express 1
+  debutant:{titre:'{{Titre du parcours débutant}}',texte:p=>`${p.name}. {{On commence par…}}`,taches:[['{{Tâche 1}}','{{Détail}}'],['{{Tâche 2}}','{{Détail}}'],['{{Tâche 3}}','{{Détail}}']],chapitre:0},
+  intermediaire:{titre:'{{…}}',texte:p=>`${p.name}. {{…}}`,taches:[['{{Tâche 1}}','{{Détail}}']],chapitre:0},
+  avance:{titre:'{{…}}',texte:p=>`${p.name}. {{…}}`,taches:[['{{Tâche 1}}','{{Détail}}']],chapitre:1}
+};
+/* Plan personnalisé après le diagnostic : renvoie une liste de planItem(...) */
+function reglesPlan(d,p){
+  const items=[];
+  items.push(planItem('good','À faire d’abord','{{Titre}}','{{Texte}}','{{URL}}','{{Libellé du lien}}'));
+  if(d.q2==='oui')items.push(planItem('urgent','Urgent','{{Titre}}','{{Texte}}'));
+  items.push(planItem('','À vérifier','{{Titre}}','{{Texte}}'));
+  return items;
+}
+function resumePlan(d,p){return [['{{Valeur}}','{{libellé}}'],[p.name,'votre profil']];}
+
+/* ─── 2. MOTEUR (identique au Guide 01, généralisé) ─── */
+const $=s=>document.getElementById(s);
+const chaps=[...document.querySelectorAll('.chap')];
+let cur=null,niveau=null,idx=0;
+const store={get:k=>{try{return localStorage.getItem(GUIDE_KEY+k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(GUIDE_KEY+k,v)}catch(e){}}};
+
+const QUICK={stage:null,activity:null};
+const qStage=$('quickStage'),qActivity=$('quickActivity'),qResult=$('quickResult');
+function qShow(el){[qStage,qActivity,qResult].forEach(x=>x.classList.toggle('on',x===el));window.scrollTo({top:0,behavior:'instant'});}
+document.querySelectorAll('#quickStageOptions .quick-choice').forEach(b=>b.onclick=()=>{QUICK.stage=b.dataset.stage;document.querySelectorAll('#quickStageOptions .quick-choice').forEach(x=>x.classList.toggle('sel',x===b));setTimeout(()=>qShow(qActivity),90);});
+document.querySelectorAll('#quickActivityOptions .quick-choice').forEach(b=>b.onclick=()=>{QUICK.activity=b.dataset.activity;document.querySelectorAll('#quickActivityOptions .quick-choice').forEach(x=>x.classList.toggle('sel',x===b));setTimeout(buildQuickPlan,90);});
+$('quickBack').onclick=()=>qShow(qStage);
+$('quickEdit').onclick=()=>qShow(qStage);
+function buildQuickPlan(){
+  const p=PROFILS[QUICK.activity],n=NIVEAUX[QUICK.stage]||NIVEAUX.debutant;
+  $('quickResultTitle').textContent=n.titre;$('quickResultText').textContent=n.texte(p);
+  $('quickTasks').innerHTML=n.taches.map((t,i)=>`<div class="quick-task"><span class="n">${i+1}</span><div><b>${t[0]}</b><span>${t[1]}</span></div></div>`).join('');
+  qShow(qResult);
+}
+function openReader(target){$('cover').style.display='none';$('setup').style.display='none';$('reader').style.display='block';render();show(target||0);}
+$('quickOpen').onclick=()=>{cur=QUICK.activity;niveau=QUICK.stage;store.set('Quick',JSON.stringify(QUICK));openReader((NIVEAUX[niveau]||{}).chapitre||0);};
+$('quickAdvanced').onclick=()=>{$('quickSetup').style.display='none';$('diagWizard').style.display='block';showDiag(0);};
+
+const DIAG={step:0};
+const diagPanels=[...document.querySelectorAll('.diag-panel')],NSTEPS=diagPanels.length;
+document.querySelectorAll('.diag-options[data-key]').forEach(g=>g.querySelectorAll('.diag-option').forEach(b=>b.onclick=()=>{g.querySelectorAll('.diag-option').forEach(x=>x.classList.toggle('sel',x===b));DIAG[g.dataset.key]=b.dataset.value;}));
+function showDiag(n){DIAG.step=Math.max(0,Math.min(NSTEPS-1,n));diagPanels.forEach((p,i)=>p.classList.toggle('on',i===DIAG.step));$('diagStepCount').textContent=`Étape ${DIAG.step+1} sur ${NSTEPS}`;$('diagBar').style.width=((DIAG.step+1)/NSTEPS*100)+'%';$('diagBack').style.visibility=DIAG.step===0?'hidden':'visible';$('diagNext').textContent=DIAG.step===NSTEPS-1?'Voir mon plan':'Continuer';document.querySelectorAll('.diag-error').forEach(e=>e.classList.remove('on'));window.scrollTo({top:0,behavior:'instant'});}
+function validDiag(){const panel=diagPanels[DIAG.step];let ok=true;
+  panel.querySelectorAll('[data-key]').forEach(el=>{const k=el.dataset.key;if(el.matches('select,input'))DIAG[k]=el.value;if(!DIAG[k])ok=false;});
+  const e=panel.querySelector('.diag-error');if(e)e.classList.toggle('on',!ok);return ok;}
+function planItem(kind,tag,title,body,href,label){return `<div class="plan-item ${kind||''}"><span class="tag">${tag}</span><h3>${title}</h3><p>${body}</p>${href?`<a href="${href}" target="_blank" rel="noopener">${label||'Ouvrir le service officiel'} ↗</a>`:''}</div>`;}
+function buildPlan(){cur=DIAG.profil||QUICK.activity||Object.keys(PROFILS)[0];niveau=niveau||QUICK.stage;const p=PROFILS[cur],items=reglesPlan(DIAG,p);
+  $('planIntro').textContent=`Profil : ${p.name}.`;
+  $('planSummary').innerHTML=resumePlan(DIAG,p).map(r=>`<div><b>${r[0]}</b><span>${r[1]}</span></div>`).join('');
+  $('planList').innerHTML=items.join('');$('diagWizard').style.display='none';$('diagResult').classList.add('on');store.set('Diag',JSON.stringify(DIAG));window.scrollTo({top:0,behavior:'instant'});}
+$('go').onclick=()=>{$('cover').style.display='none';$('setup').style.display='block';$('quickSetup').style.display='block';$('diagWizard').style.display='none';qShow(qStage)};
+$('diagBack').onclick=()=>showDiag(DIAG.step-1);$('diagNext').onclick=()=>{if(!validDiag())return;if(DIAG.step<NSTEPS-1)showDiag(DIAG.step+1);else buildPlan();};
+$('diagRestart').onclick=()=>{$('diagResult').classList.remove('on');$('diagWizard').style.display='block';showDiag(0)};
+$('startGuide').onclick=()=>openReader(0);
+
+/* Contenu adaptatif */
+function render(){
+  const p=PROFILS[cur]||{};
+  $('pn').textContent=p.name||'—';
+  document.querySelectorAll('[data-champ]').forEach(el=>{const v=p[el.dataset.champ];if(v!==undefined)el.innerHTML=v;});
+  document.querySelectorAll('[data-profils]').forEach(el=>el.hidden=!!cur&&!el.dataset.profils.split(/\s+/).includes(cur));
+  document.querySelectorAll('[data-niveaux]').forEach(el=>el.hidden=!!niveau&&!el.dataset.niveaux.split(/\s+/).includes(niveau));
+  $('drlist').innerHTML=chaps.map((c,n)=>`<button class="dr-item"><i>${n===chaps.length-1?'—':n+1}</i><span>${c.dataset.t}</span></button>`).join('');
+  [...$('drlist').children].forEach((b,n)=>b.onclick=()=>show(n));
+}
+
+document.querySelectorAll('.sh').forEach(h=>h.onclick=()=>{const s=h.parentElement,b=h.nextElementSibling;b.hidden=!b.hidden;s.classList.toggle('open',!b.hidden);});
+if($('ck')){$('cktotal').textContent=$('ck').querySelectorAll('input').length;$('ck').onchange=()=>$('ckn').textContent=$('ck').querySelectorAll('input:checked').length;}
+
+$('prev').onclick=()=>show(idx-1);
+$('next').onclick=()=>show(idx+1);
+$('menu').onclick=()=>toggle(true);
+$('scrim').onclick=()=>toggle(false);
+$('chg').onclick=()=>{toggle(false);$('reader').style.display='none';$('setup').style.display='block';$('diagResult').classList.remove('on');$('diagWizard').style.display='none';$('quickSetup').style.display='block';qShow(qStage);window.scrollTo(0,0)};
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')toggle(false);
+  if($('reader').style.display!=='block'||$('drawer').classList.contains('on'))return;
+  if(e.key==='ArrowRight')show(idx+1);
+  if(e.key==='ArrowLeft')show(idx-1);
+});
+function toggle(on){$('drawer').classList.toggle('on',on);$('scrim').classList.toggle('on',on)}
+function show(i){
+  if(i<0||i>=chaps.length)return;
+  idx=i;store.set('Idx',String(i));store.set('Reader','1');chaps.forEach((c,n)=>c.classList.toggle('on',n===i));
+  const last=i===chaps.length-1;
+  $('tk').textContent=last?'Fin du guide':`Étape ${i+1} sur ${chaps.length-1}`;
+  $('tt').textContent=chaps[i].dataset.t;
+  $('barfill').style.width=((i+1)/chaps.length*100)+'%';
+  $('prev').disabled=i===0;$('next').disabled=last;
+  $('next').textContent=last?'Terminé':'Étape suivante';
+  [...$('drlist').children].forEach((b,n)=>b.setAttribute('aria-current',n===i));
+  toggle(false);window.scrollTo({top:0,behavior:'instant'});
+}
+
+/* Reprise automatique de la lecture */
+window.addEventListener('load',()=>{
+  try{
+    const savedIdx=parseInt(store.get('Idx')||'',10),wasReader=store.get('Reader')==='1';
+    const d=JSON.parse(store.get('Diag')||'null'),q=JSON.parse(store.get('Quick')||'null');
+    if(q)Object.assign(QUICK,q);if(d)Object.assign(DIAG,d);
+    const profil=(d&&d.profil)||(q&&q.activity);
+    if(wasReader&&Number.isFinite(savedIdx)&&PROFILS[profil]){cur=profil;niveau=QUICK.stage;openReader(Math.min(savedIdx,chaps.length-1));}
+  }catch(e){}
+});
+</script>
+</body>
+</html>
