@@ -1,0 +1,205 @@
+export type GuideCommerceStatus = 'live' | 'prepublication';
+
+export type GuideCommerceEntry = {
+  guideId: string;
+  catalogSlug: string;
+  contentSlug: string;
+  title: string;
+  status: GuideCommerceStatus;
+  price: string | null;
+  checkoutUrl: string | null;
+  stripeProductId: string | null;
+  stripePriceId: string | null;
+  deliveryFile: string;
+};
+
+export const guideCommerceRegistry: GuideCommerceEntry[] = [
+  {
+    guideId: '01',
+    catalogSlug: 'micro-entreprise-2026',
+    contentSlug: 'ser-01-micro-entreprise-2026',
+    title: 'Micro-entreprise 2026',
+    status: 'live',
+    price: '12,99 €',
+    checkoutUrl: 'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-01-micro-entreprise-2026/contenu/SER-Guide-01-Micro-entreprise-2026.html',
+  },
+  {
+    guideId: '02',
+    catalogSlug: 'ecommerce-shopify-2026',
+    contentSlug: 'ser-02-ecommerce-shopify-2026',
+    title: 'E-commerce & Shopify 2026',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-02-ecommerce-shopify-2026/contenu/SER-Guide-02-Ecommerce-Shopify-2026.html',
+  },
+  {
+    guideId: '03',
+    catalogSlug: 'tiktok-shop-2026',
+    contentSlug: 'ser-03-tiktok-shop-2026',
+    title: 'TikTok Shop 2026',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-03-tiktok-shop-2026/contenu/SER-Guide-03-TikTok-Shop-2026.html',
+  },
+  {
+    guideId: '04',
+    catalogSlug: 'vinted-2026',
+    contentSlug: 'ser-04-vinted-2026',
+    title: 'Vinted 2026',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-04-vinted-2026/contenu/SER-Guide-04-Vinted-2026.html',
+  },
+  {
+    guideId: '05',
+    catalogSlug: 'optimisation-fiscale-2026',
+    contentSlug: 'ser-05-optimisation-fiscale-2026',
+    title: 'Optimisation fiscale 2026',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-05-optimisation-fiscale-2026/contenu/SER-Guide-05-Optimisation-Fiscale-2026.html',
+  },
+  {
+    guideId: '06',
+    catalogSlug: 'dropshipping-2026',
+    contentSlug: 'ser-06-dropshipping-2026',
+    title: 'Dropshipping 2026 France / UE',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-06-dropshipping-2026/contenu/SER-Guide-06-Dropshipping-2026-France-UE.html',
+  },
+  {
+    guideId: '07',
+    catalogSlug: 'tiktok-audience-2026',
+    contentSlug: 'ser-07-tiktok-audience-2026',
+    title: 'TikTok 2026',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-07-tiktok-audience-2026/contenu/SER-Guide-07-TikTok-Audience-2026.html',
+  },
+  {
+    guideId: '08',
+    catalogSlug: 'produits-digitaux',
+    contentSlug: 'ser-08-produits-digitaux',
+    title: 'Produits digitaux',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-08-produits-digitaux/contenu/SER-Guide-08-Produits-Digitaux.html',
+  },
+  {
+    guideId: '09',
+    catalogSlug: 'etsy-2026',
+    contentSlug: 'ser-09-etsy-2026',
+    title: 'Etsy 2026',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-09-etsy-2026/contenu/SER-Guide-09-Etsy-2026.html',
+  },
+  {
+    guideId: '10',
+    catalogSlug: 'ugc-creator',
+    contentSlug: 'ser-10-ugc-creator',
+    title: 'UGC Creator',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-10-ugc-creator/contenu/SER-Guide-10-UGC-Creator.html',
+  },
+  {
+    guideId: '11',
+    catalogSlug: 'instagram-reels',
+    contentSlug: 'ser-11-instagram-reels',
+    title: 'Instagram & Reels',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-11-instagram-reels/contenu/SER-Guide-11-Instagram-Reels.html',
+  },
+  {
+    guideId: '12',
+    catalogSlug: 'freelance-premiers-clients',
+    contentSlug: 'ser-12-freelance-premiers-clients',
+    title: 'Freelance — trouver ses 10 premiers clients',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-12-freelance-premiers-clients/contenu/SER-Guide-12-Freelance-10-Premiers-Clients.html',
+  },
+  {
+    guideId: '13',
+    catalogSlug: 'ia-automatisation-independant',
+    contentSlug: 'ser-13-ia-automatisation-independant',
+    title: 'IA & automatisation pour indépendant',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-13-ia-automatisation-independant/contenu/SER-Guide-13-IA-Automatisation-Independant.html',
+  },
+  {
+    guideId: '14',
+    catalogSlug: 'trouver-produit-sourcing',
+    contentSlug: 'ser-14-trouver-produit-sourcing',
+    title: 'Trouver un produit à vendre — sourcing & validation',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-14-trouver-produit-sourcing/contenu/SER-Guide-14-Sourcing-Validation.html',
+  },
+  {
+    guideId: '15',
+    catalogSlug: 'print-on-demand',
+    contentSlug: 'ser-15-print-on-demand',
+    title: 'Créer une marque sans stock — Print-on-Demand',
+    status: 'prepublication',
+    price: null,
+    checkoutUrl: null,
+    stripeProductId: null,
+    stripePriceId: null,
+    deliveryFile: 'content/guides/ser-15-print-on-demand/contenu/SER-Guide-15-Print-On-Demand.html',
+  },
+];
+
+export function getGuideCommerceByCatalogSlug(slug: string) {
+  return guideCommerceRegistry.find((guide) => guide.catalogSlug === slug);
+}
+
+export function getGuideCommerceById(guideId: string) {
+  return guideCommerceRegistry.find((guide) => guide.guideId === guideId);
+}
