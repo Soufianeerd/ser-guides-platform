@@ -295,6 +295,46 @@ Refaites un calcul de marge avec les frais actuels.
 
 ---
 
+## 25. Recalculer les frais avant chaque prix
+Frais de mise en ligne, transaction, paiement, publicité éventuelle et autres frais peuvent évoluer. Le prix doit partir du coût réel daté.
+### Action maintenant
+Recalculez la marge sur trois prix en utilisant les pages Etsy actuelles.
+### Checkpoint
+- [ ] Votre marge n’utilise aucun pourcentage mémorisé d’une ancienne vidéo.
+
+---
+## 26. Vérifier propriété intellectuelle avant publication
+Mot-clé populaire, personnage, marque ou visuel trouvé en ligne n’est pas libre d’usage.
+### Action maintenant
+Contrôlez nom, design, police, illustration et éléments tiers avant chaque nouvelle gamme.
+### Checkpoint
+- [ ] Vous pouvez expliquer l’origine et la licence de chaque élément.
+
+---
+## 27. Standardiser les variantes
+Taille, couleur, personnalisation et délai doivent rester compréhensibles. Trop de variantes créent erreurs et SAV.
+### Action maintenant
+Supprimez les variantes qui ne changent pas réellement la proposition de valeur.
+### Checkpoint
+- [ ] Le client peut choisir sans ambiguïté.
+
+---
+## 28. Analyser les requêtes et conversions
+Une impression n’est pas une vente. Comparez requêtes, clics, favoris, paniers et commandes pour décider quoi modifier.
+### Action maintenant
+Choisissez cinq fiches et notez la fuite principale de chacune.
+### Checkpoint
+- [ ] Le prochain changement répond à une métrique précise.
+
+---
+## 29. Revue trimestrielle de catalogue
+Supprimez ou retravaillez les fiches sans demande, marge ou cohérence de marque. Un catalogue plus gros n’est pas automatiquement meilleur.
+### Action maintenant
+Classez les produits : garder, améliorer, arrêter.
+### Checkpoint
+- [ ] Le catalogue concentre le trafic sur les offres les plus solides.
+
+---
 ## Fin du parcours
 
 Vous devez terminer avec un système mesurable, documenté et révisable. Aucun résultat financier, de portée ou de vente n’est garanti : les décisions se prennent sur vos propres données.
