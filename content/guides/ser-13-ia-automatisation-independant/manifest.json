@@ -1,0 +1,21 @@
+{
+  "guide_id": "13",
+  "title": "IA & automatisation",
+  "subtitle": "Pour indépendant : gagner du temps sans perdre le contrôle",
+  "edition": "2026",
+  "locale": [
+    "fr"
+  ],
+  "status": "fact-check",
+  "price": null,
+  "page_target": 30,
+  "page_max": 35,
+  "reviewed_at": "2026-09-29",
+  "review_due_at": "2026-11-29",
+  "publication_blockers": [
+    "QA liens finale",
+    "visuels boutique/Instagram",
+    "prix Stripe",
+    "mapping livraison"
+  ]
+}
