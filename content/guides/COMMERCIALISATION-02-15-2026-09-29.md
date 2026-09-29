@@ -80,3 +80,16 @@ La migration Neon est préparée mais le repo la documente encore comme non appl
 Neon Auth / bibliothèque sont encore en scaffolding.
 
 Donc aucune publication commerciale 02–15 ne doit être activée avant test d'un premier guide pilote, idéalement SER 02.
+
+
+## Guide 01 — référence Stripe canonique vérifiée le 29/09/2026
+
+- Product : `prod_VFSGDr1MDdaVgh`
+- Price utilisé par le site à 12,99 € : `price_1UGXyjHWJZWsPOa4GQx4aTfl`
+- Payment Link canonique : `plink_1UGXyuHWJZWsPOa4Cd9FgmZw`
+- URL canonique : `https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06`
+
+Un autre Payment Link actif du même produit existe encore à 19,90 € :
+`plink_1UExLqHWJZWsPOa4tYhHojai`.
+
+Il est considéré comme **legacy / non canonique** pour SER Guides tant qu'il n'est pas volontairement réutilisé. Ne pas le recopier dans le catalogue 02–15.
