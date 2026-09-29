@@ -1,21 +1,29 @@
-# SER 02 — E-commerce & Shopify 2026 · de zéro aux premières ventes
+# SER 02 — E-commerce & Shopify 2026 — de zéro aux premières ventes
 
 | Champ | Valeur |
 |---|---|
-| Statut | **en préparation** — rédaction v1 terminée (`manifest.json` : `content-v1-complete`) |
-| Prix | à définir |
-| Niveau | débutant → premières ventes (diagnostic 7 questions) |
-| Catégorie | E-commerce & Réseaux sociaux |
-| Date de mise à jour | 2026-09-23 |
+| Statut | **web-book v1 finalisé — QA publication requise** |
+| Prix | à définir avant mise en vente |
+| Niveau | débutant → autonome |
+| Catégorie | `ecommerce-social` (`data/guides.ts`) |
+| Format | web-book HTML autonome · **28 étapes** · progression locale · export impression/PDF |
+| Sources | pack revu le **29/09/2026** |
+| Publication | **non activée** dans `data/guides.ts` tant que checkout, livraison et visuels ne sont pas prêts |
 
-## Où est quoi (structure d'origine conservée)
-| Rôle standard | Fichier(s) ici |
-|---|---|
-| contenu | `ebook.md` (version assemblée) + `chapters/00…16.md` (17 chapitres) |
-| sources | `SOURCE_PACK.md`, `BRIEF.md`, `BOOK_MAP.md` |
-| images / prompts-images / promo | dossiers créés, vides |
-| métadonnées | `manifest.json` |
+## Fichiers de production
+- `contenu/SER-Guide-02-Ecommerce-Shopify-2026.html` — web-book interactif complet.
+- `sources/SOURCE_PACK.md` — sources primaires/plateformes et notes de revue.
+- `images/` — assets éditoriaux à produire si nécessaires.
+- `promo/` — pack de lancement à produire avant publication.
+- `prompts-images/` — prompts/briefs visuels éventuels.
 
-Les fichiers existants n'ont pas été déplacés : ce dossier est alimenté par un autre outil qui s'attend à ces chemins.
+## Avant mise en ligne
+1. QA factuelle et re-test de tous les liens.
+2. QA mobile / impression PDF / reprise localStorage.
+3. Produire les 3 visuels de lancement SER.
+4. Créer le produit/prix/checkout et la livraison automatique.
+5. Ajouter le guide à `guides` dans `data/guides.ts` et le retirer de `plannedGuides`.
+6. Vérifier le parcours complet : catalogue → fiche → paiement → livraison → ouverture.
 
-Prochaines étapes (manifest) : fact-check final, interactive calculators, FR web-book rendering, English edition, 3 visual assets, Stripe product and delivery automation.
+## Matériel de rédaction conservé
+Les anciens `BRIEF.md`, `BOOK_MAP.md`, `ebook.md` et `chapters/` sont conservés comme historique de production. Le fichier HTML dans `contenu/` est désormais la version web-book à QA.
