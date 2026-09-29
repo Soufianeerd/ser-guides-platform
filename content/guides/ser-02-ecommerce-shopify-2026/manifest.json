@@ -2,7 +2,7 @@
   "guide_id": "02",
   "niche_id": "ecommerce-social",
   "title": "E-commerce & Shopify 2026",
-  "status": "content-v1-complete",
+  "status": "fact-check",
   "format": "web-book interactif",
   "purpose": "Créer une boutique en ligne cohérente, conforme et mesurable, puis aller jusqu’aux premières ventes sans confondre chiffre d’affaires et rentabilité.",
   "chapter_count": 17,
@@ -14,5 +14,15 @@
     "English edition",
     "3 visual assets",
     "Stripe product and delivery automation"
+  ],
+  "page_target": 30,
+  "page_max": 35,
+  "rendered_html": "contenu/SER-Guide-02-Ecommerce-Shopify-2026.html",
+  "reviewed_at": "2026-09-29",
+  "publication_blockers": [
+    "QA liens finale",
+    "visuels boutique/Instagram",
+    "prix Stripe",
+    "mapping livraison"
   ]
 }
