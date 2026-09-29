@@ -295,6 +295,46 @@ Faites un achat test de bout en bout avant trafic.
 
 ---
 
+## 25. Définir la licence client
+Usage personnel, commercial, multi-utilisateur, modification et redistribution doivent être explicités. Un fichier vendu sans licence claire crée des conflits évitables.
+### Action maintenant
+Écrivez en une page ce que l’acheteur peut et ne peut pas faire.
+### Checkpoint
+- [ ] La licence correspond réellement aux droits que vous détenez.
+
+---
+## 26. Vérifier le parcours de rétractation
+Le contenu numérique fourni immédiatement nécessite un parcours juridique adapté si vous voulez invoquer la perte du droit de rétractation dans les cas prévus par la loi.
+### Action maintenant
+Auditez consentement, information préalable, confirmation et preuve du checkout.
+### Checkpoint
+- [ ] La politique de remboursement n’est pas une phrase copiée d’un autre site.
+
+---
+## 27. Construire une version et un changelog
+Un produit digital évolue. Numéro de version, date, corrections et compatibilités évitent les fichiers dispersés.
+### Action maintenant
+Ajoutez version, date et changelog au livrable.
+### Checkpoint
+- [ ] Un client sait quelle version il possède.
+
+---
+## 28. Tester la livraison après paiement
+Lien expiré, email absent, mauvais fichier ou accès trop permissif sont des bugs commerciaux.
+### Action maintenant
+Effectuez un achat test et vérifiez paiement, email, accès, téléchargement et récupération.
+### Checkpoint
+- [ ] La livraison fonctionne sans intervention manuelle imprévue.
+
+---
+## 29. Mesurer support et remboursement
+Un produit qui génère beaucoup de questions peut nécessiter onboarding, FAQ ou simplification plutôt que plus de marketing.
+### Action maintenant
+Classez les demandes support par motif chaque mois.
+### Checkpoint
+- [ ] Le produit réduit ses frictions à chaque version.
+
+---
 ## Fin du parcours
 
 Vous devez terminer avec un système mesurable, documenté et révisable. Aucun résultat financier, de portée ou de vente n’est garanti : les décisions se prennent sur vos propres données.
