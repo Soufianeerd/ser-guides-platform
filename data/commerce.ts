@@ -10,6 +10,7 @@ export type GuideCommerceEntry = {
   checkoutUrl: string | null;
   stripeProductId: string | null;
   stripePriceId: string | null;
+  stripePaymentLinkId: string | null;
   deliveryFile: string;
 };
 
@@ -22,8 +23,9 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     status: 'live',
     price: '12,99 €',
     checkoutUrl: 'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',
-    stripeProductId: null,
-    stripePriceId: null,
+    stripeProductId: 'prod_VFSGDr1MDdaVgh',
+    stripePriceId: 'price_1UGXyjHWJZWsPOa4GQx4aTfl',
+    stripePaymentLinkId: 'plink_1UGXyuHWJZWsPOa4Cd9FgmZw',
     deliveryFile: 'content/guides/ser-01-micro-entreprise-2026/contenu/SER-Guide-01-Micro-entreprise-2026.html',
   },
   {
@@ -36,6 +38,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-02-ecommerce-shopify-2026/contenu/SER-Guide-02-Ecommerce-Shopify-2026.html',
   },
   {
@@ -48,6 +51,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-03-tiktok-shop-2026/contenu/SER-Guide-03-TikTok-Shop-2026.html',
   },
   {
@@ -60,6 +64,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-04-vinted-2026/contenu/SER-Guide-04-Vinted-2026.html',
   },
   {
@@ -72,6 +77,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-05-optimisation-fiscale-2026/contenu/SER-Guide-05-Optimisation-Fiscale-2026.html',
   },
   {
@@ -84,6 +90,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-06-dropshipping-2026/contenu/SER-Guide-06-Dropshipping-2026-France-UE.html',
   },
   {
@@ -96,6 +103,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-07-tiktok-audience-2026/contenu/SER-Guide-07-TikTok-Audience-2026.html',
   },
   {
@@ -108,6 +116,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-08-produits-digitaux/contenu/SER-Guide-08-Produits-Digitaux.html',
   },
   {
@@ -120,6 +129,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-09-etsy-2026/contenu/SER-Guide-09-Etsy-2026.html',
   },
   {
@@ -132,6 +142,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-10-ugc-creator/contenu/SER-Guide-10-UGC-Creator.html',
   },
   {
@@ -144,6 +155,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-11-instagram-reels/contenu/SER-Guide-11-Instagram-Reels.html',
   },
   {
@@ -156,6 +168,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-12-freelance-premiers-clients/contenu/SER-Guide-12-Freelance-10-Premiers-Clients.html',
   },
   {
@@ -168,6 +181,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-13-ia-automatisation-independant/contenu/SER-Guide-13-IA-Automatisation-Independant.html',
   },
   {
@@ -180,6 +194,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-14-trouver-produit-sourcing/contenu/SER-Guide-14-Sourcing-Validation.html',
   },
   {
@@ -192,6 +207,7 @@ export const guideCommerceRegistry: GuideCommerceEntry[] = [
     checkoutUrl: null,
     stripeProductId: null,
     stripePriceId: null,
+    stripePaymentLinkId: null,
     deliveryFile: 'content/guides/ser-15-print-on-demand/contenu/SER-Guide-15-Print-On-Demand.html',
   },
 ];
