@@ -295,6 +295,46 @@ Refaites un achat de bout en bout.
 
 ---
 
+## 25. Distinguer fabrication à la demande et personnalisation
+Le fait qu’un produit soit imprimé après commande ne signifie pas automatiquement que le droit de rétractation disparaît. Vérifiez si le produit est réellement personnalisé selon les conditions légales applicables.
+### Action maintenant
+Classez chaque offre : standard fabriquée à la demande ou personnalisée pour le client.
+### Checkpoint
+- [ ] Votre politique de retour correspond à la nature réelle du produit.
+
+---
+## 26. Auditer les droits créatifs
+Police, illustration, photo, slogan, personnage et marque doivent être utilisables pour impression et vente.
+### Action maintenant
+Créez un registre des licences et sources de chaque élément graphique.
+### Checkpoint
+- [ ] Chaque design peut être exploité commercialement selon sa licence.
+
+---
+## 27. Tester plusieurs fournisseurs sans changer la promesse
+Qualité textile, coupe, impression et délai varient. Comparez mais gardez des spécifications cohérentes avant de basculer.
+### Action maintenant
+Commandez le même design auprès de deux options et notez qualité, coût et délai.
+### Checkpoint
+- [ ] Un fournisseur secondaire est évalué avant urgence.
+
+---
+## 28. Mesurer les défauts et remplacements
+Mauvais centrage, couleur, taille ou impression créent un coût invisible si vous ne les suivez pas.
+### Action maintenant
+Ajoutez motif de défaut et coût de résolution à chaque ticket.
+### Checkpoint
+- [ ] Vous connaissez le vrai coût qualité par fournisseur.
+
+---
+## 29. Gate READY de collection
+Avant campagne, vérifiez échantillons, tailles, mockups fidèles, licences, marge, retours, fiscalité du flux et capacité support.
+### Action maintenant
+Validez une checklist par produit, pas seulement par boutique.
+### Checkpoint
+- [ ] Une collection peut être stoppée si sa qualité ou conformité n’est pas prête.
+
+---
 ## Fin du parcours
 
 Le système doit rester documenté, mesurable et révisable. Ce guide ne garantit ni audience, ni clients, ni revenus.
