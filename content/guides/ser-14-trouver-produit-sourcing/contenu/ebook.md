@@ -295,6 +295,66 @@ Ne commandez pas tant qu’un élément critique est inconnu.
 
 ---
 
+## 25. Créer une fiche conformité par référence
+
+Deux produits ressemblants peuvent relever de documents différents. Reliez chaque document au modèle exact, fournisseur et version.
+
+### Action maintenant
+Créez une fiche avec référence, lot, documents, date et source.
+
+### Checkpoint
+- [ ] Aucun certificat générique n’est attribué à plusieurs produits sans preuve.
+
+---
+
+## 26. Tester emballage et transport
+
+Un produit correct peut arriver cassé, humide ou inutilisable. Le packaging fait partie de l’expérience et du coût.
+
+### Action maintenant
+Effectuez un test d’expédition réel vers votre marché cible.
+
+### Checkpoint
+- [ ] Le taux de dommage potentiel est pris en compte.
+
+---
+
+## 27. Vérifier le nom de marque avant investissement
+
+Une recherche à l’identique est un premier filtre, pas une garantie juridique.
+
+### Action maintenant
+Recherchez le nom sur DATA INPI et identifiez les classes/activités pertinentes avant packaging.
+
+### Checkpoint
+- [ ] Vous n’investissez pas dans une identité sans vérification minimale.
+
+---
+
+## 28. Faire un pré-mortem produit
+
+Imaginez que le lancement échoue : marge, conformité, fournisseur, retours, demande, différenciation, acquisition. Cherchez les causes avant de commander.
+
+### Action maintenant
+Écrivez 10 raisons d’échec et une mesure préventive pour chacune.
+
+### Checkpoint
+- [ ] Les risques majeurs ont une réponse ou un NO-GO.
+
+---
+
+## 29. Décision GO / TEST / STOP
+
+Un produit ne doit pas passer directement d’idée à commande importante. Utilisez trois états avec critères chiffrés et réglementaires.
+
+### Action maintenant
+Définissez vos seuils GO, TEST et STOP.
+
+### Checkpoint
+- [ ] La décision finale ne dépend pas d’un coup de cœur fournisseur.
+
+---
+
 ## Fin du parcours
 
 Le système doit rester documenté, mesurable et révisable. Ce guide ne garantit ni audience, ni clients, ni revenus.
