@@ -283,6 +283,54 @@ Faites une commande test si votre environnement vendeur le permet.
 
 ---
 
+## 24. Organiser les droits et accès équipe
+Seller Center, compte officiel, créateurs et outils publicitaires ne doivent pas reposer sur un mot de passe partagé. Documentez propriétaire, administrateurs et procédure de récupération.
+### Action maintenant
+Créez une matrice simple : accès, rôle, responsable, récupération.
+### Checkpoint
+- [ ] Aucun accès critique ne dépend d’une seule personne.
+
+---
+## 25. Construire un tableau de marge par offre
+Un produit peut être rentable seul et devenir déficitaire après coupon, commission créateur ou livraison offerte. Calculez la marge pour chaque combinaison réellement proposée.
+### Action maintenant
+Créez une ligne par offre : prix encaissé, coûts variables, commission, remboursement estimé, marge.
+### Checkpoint
+- [ ] Chaque promotion a une marge minimale explicite.
+
+---
+## 26. Tester un live sans dépendre du live
+Le live peut accélérer la démonstration, mais ne doit pas masquer une fiche faible. Préparez démonstrations, objections, stock et modération avant de chercher du volume.
+### Action maintenant
+Écrivez un conducteur de 30 minutes avec 4 démonstrations et 8 réponses aux objections.
+### Checkpoint
+- [ ] Le live repose sur des preuves produit, pas sur l’urgence artificielle.
+
+---
+## 27. Mettre en place une boucle créateur → vente → retour
+Une collaboration utile relie contenu publié, clics, commandes, remboursements et marge. Le nombre de vidéos reçues n’est pas un KPI suffisant.
+### Action maintenant
+Ajoutez un identifiant ou suivi par créateur dans votre tableau de pilotage.
+### Checkpoint
+- [ ] Vous pouvez distinguer portée, ventes brutes et marge nette par créateur.
+
+---
+## 28. Auditer les avis et la satisfaction
+Les avis négatifs répétés signalent souvent produit, délai, emballage ou promesse. Traitez la cause avant d’augmenter le trafic.
+### Action maintenant
+Classez les 20 derniers retours/avis par motif et fréquence.
+### Checkpoint
+- [ ] Le principal motif d’insatisfaction a un plan correctif.
+
+---
+## 29. Gate READY avant montée en volume
+Avant d’augmenter budget, affiliation ou lives, vérifiez conformité, stock, marge, retours, temps de réponse SAV et stabilité du checkout.
+### Action maintenant
+Bloquez la montée en volume si un indicateur critique est rouge.
+### Checkpoint
+- [ ] Le scale est autorisé par des conditions écrites, pas par l’enthousiasme.
+
+---
 ## Conclusion
 
 Le bon résultat n’est pas un écran de statistiques : c’est un système que vous comprenez, pouvez expliquer et améliorer sans masquer ses risques.
