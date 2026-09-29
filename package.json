@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit",
-    "check": "npm run lint && npm run build"
+    "validate:guides": "node scripts/validate-guides.mjs",
+    "check": "npm run validate:guides && npm run lint && npm run build"
   },
   "dependencies": {
     "@neondatabase/serverless": "latest",

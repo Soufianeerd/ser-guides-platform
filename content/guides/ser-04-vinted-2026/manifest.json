@@ -1,0 +1,22 @@
+{
+  "guide_id": "04",
+  "title": "Vinted 2026",
+  "subtitle": "Vendre plus vite et mieux marger",
+  "edition": "2026",
+  "locale": [
+    "fr"
+  ],
+  "status": "fact-check",
+  "page_target": 30,
+  "page_max": 35,
+  "price": null,
+  "reviewed_at": "2026-09-29",
+  "review_due_at": "2026-11-29",
+  "format": "web-book interactif",
+  "publication_blockers": [
+    "QA liens finale",
+    "visuels boutique/Instagram",
+    "prix Stripe",
+    "mapping livraison"
+  ]
+}
