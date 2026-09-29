@@ -295,6 +295,46 @@ Ne lancez rien tant qu’un point critique est rouge.
 
 ---
 
+## 25. Vérifier l’étiquetage et les informations produit
+Selon la catégorie, des informations de sécurité, avertissements, instructions, identité des opérateurs ou marquages peuvent être requis. Ne copiez pas une fiche fournisseur sans contrôle.
+### Action maintenant
+Comparez emballage, produit et fiche en ligne avec les exigences de la catégorie.
+### Checkpoint
+- [ ] Les informations obligatoires sont cohérentes sur le produit et l’offre.
+
+---
+## 26. Préparer une procédure de rappel
+Un produit dangereux ou non conforme ne se traite pas comme un simple retour. Il faut pouvoir identifier les commandes concernées et contacter les clients.
+### Action maintenant
+Documentez comment retrouver clients, lots et fournisseurs en cas d’alerte.
+### Checkpoint
+- [ ] Vous pouvez lancer une action corrective sans chercher les données pendant la crise.
+
+---
+## 27. Tester les douanes avec un vrai colis
+Les délais et coûts théoriques ne remplacent pas un test réel du flux choisi.
+### Action maintenant
+Faites expédier un échantillon selon le même pays, transporteur et mode que les futures commandes.
+### Checkpoint
+- [ ] Le coût rendu observé est comparé au coût prévu.
+
+---
+## 28. Mesurer le coût du SAV
+Une marge brute correcte peut disparaître si beaucoup de commandes génèrent plusieurs échanges, remboursements ou remplacements.
+### Action maintenant
+Chronométrez et valorisez le temps SAV d’un échantillon de commandes.
+### Checkpoint
+- [ ] Le coût de support entre dans la décision de scale.
+
+---
+## 29. Gate READY produit
+Aucun trafic important tant que conformité, échantillon, marge, délai, retours, fournisseur secondaire et procédure incident ne sont pas validés.
+### Action maintenant
+Créez une grille GO / NO-GO par produit.
+### Checkpoint
+- [ ] Un produit non vérifié ne peut pas être lancé par simple opportunité marketing.
+
+---
 ## Conclusion
 
 Le bon résultat n’est pas un écran de statistiques : c’est un système que vous comprenez, pouvez expliquer et améliorer sans masquer ses risques.
