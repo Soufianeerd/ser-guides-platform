@@ -295,6 +295,46 @@ Relisez chaque montant significatif avec son justificatif.
 
 ---
 
+## 25. Vérifier les avantages préremplis
+Un montant prérempli facilite la déclaration mais ne dispense pas de vérifier l’année, le bénéficiaire, le plafond et les justificatifs.
+### Action maintenant
+Comparez chaque avantage prérempli avec votre justificatif source.
+### Checkpoint
+- [ ] Aucun montant n’est accepté uniquement parce qu’il est prérempli.
+
+---
+## 26. Comparer avant / après impôt et trésorerie
+Une dépense déductible reste une dépense. Mesurez économie fiscale, décaissement, immobilisation éventuelle et risque.
+### Action maintenant
+Pour toute décision motivée fiscalement, calculez coût brut, économie estimée et coût net.
+### Checkpoint
+- [ ] Vous ne dépensez pas 1 € uniquement pour économiser une fraction de 1 € d’impôt.
+
+---
+## 27. Traiter les revenus de plateformes séparément
+Vente occasionnelle, prestation, location et achat-revente n’ont pas les mêmes règles. Le reporting d’une plateforme n’est pas une qualification fiscale.
+### Action maintenant
+Listez vos plateformes et la nature économique réelle de chaque revenu.
+### Checkpoint
+- [ ] Chaque flux est classé avant déclaration.
+
+---
+## 28. Préparer un dossier de contrôle lisible
+Un bon dossier relie montant déclaré, justificatif, règle appliquée et calcul. Cela réduit les erreurs et accélère toute vérification.
+### Action maintenant
+Créez un index avec quatre colonnes : rubrique, montant, preuve, source.
+### Checkpoint
+- [ ] Un tiers peut comprendre vos principaux choix sans reconstruire toute l’année.
+
+---
+## 29. Revue fiscale de fin d’année
+Les décisions de décembre doivent être prises avec les règles à jour et votre situation réelle, pas avec des contenus anciens ou des objectifs d’économie arbitraires.
+### Action maintenant
+Planifiez une revue en novembre avec simulateur officiel et sources datées.
+### Checkpoint
+- [ ] Les décisions de fin d’année sont prises avant l’urgence et avec des sources actuelles.
+
+---
 ## Conclusion
 
 Le bon résultat n’est pas un écran de statistiques : c’est un système que vous comprenez, pouvez expliquer et améliorer sans masquer ses risques.
