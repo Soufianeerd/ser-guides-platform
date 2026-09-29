@@ -295,6 +295,66 @@ Simulez un projet de A à Z avant le premier client.
 
 ---
 
+## 25. Séparer création et droits d’usage
+
+Le prix de production d’une vidéo et le droit de l’utiliser en publicité, sur plusieurs territoires ou pendant plusieurs mois sont des sujets distincts.
+
+### Action maintenant
+Créez une grille avec production, durée d’usage, supports, territoire et amplification payante.
+
+### Checkpoint
+- [ ] Aucun devis n’accorde « tous droits pour toujours » par défaut.
+
+---
+
+## 26. Documenter les preuves de performance
+
+Montrez portfolio, process, qualité et résultats vérifiables sans inventer de ROAS ou attribuer une vente que vous ne pouvez pas prouver.
+
+### Action maintenant
+Transformez trois missions en mini études de cas factuelles.
+
+### Checkpoint
+- [ ] Chaque chiffre présenté a une source ou un contexte clair.
+
+---
+
+## 27. Organiser le pipeline commercial
+
+Prospect, réponse, brief, devis, contrat, tournage, validation, facture, relance : visualisez tout le cycle.
+
+### Action maintenant
+Créez un pipeline avec une prochaine action obligatoire par opportunité.
+
+### Checkpoint
+- [ ] Aucun prospect chaud n’est oublié faute de suivi.
+
+---
+
+## 28. Préparer les retours client
+
+Définissez nombre de retours inclus, délai de feedback et ce qui constitue une nouvelle demande.
+
+### Action maintenant
+Ajoutez une règle de révision à votre devis ou contrat.
+
+### Checkpoint
+- [ ] Les modifications illimitées ne sont pas implicites.
+
+---
+
+## 29. Revue mensuelle de positionnement
+
+Identifiez secteurs, formats et clients qui paient correctement, reviennent et respectent le process.
+
+### Action maintenant
+Classez vos missions par marge, plaisir, récurrence et potentiel portfolio.
+
+### Checkpoint
+- [ ] Votre prospection cible davantage les missions qui renforcent votre activité.
+
+---
+
 ## Fin du parcours
 
 Vous devez terminer avec un système mesurable, documenté et révisable. Aucun résultat financier, de portée ou de vente n’est garanti : les décisions se prennent sur vos propres données.
