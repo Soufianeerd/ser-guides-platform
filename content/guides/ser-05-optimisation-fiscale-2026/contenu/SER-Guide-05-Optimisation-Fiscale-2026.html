@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SER Guide 05 — Optimisation fiscale 2026</title><meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{--navy:#071a2d;--ink:#102238;--muted:#64748b;--paper:#f8f7f3;--card:#fff;--accent:#8a6a2f;--accent2:#d9bd72;--rule:rgba(15,35,55,.13);--warn:#a84c3b}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}button,input,select{font:inherit}.wrap{width:min(760px,calc(100% - 36px));margin:auto}
+#cover{min-height:100dvh;background:radial-gradient(900px 600px at 90% -20%,color-mix(in srgb,var(--accent) 32%,transparent),transparent 70%),var(--navy);color:#f8fafc;padding:36px 0;display:flex}.coverin{display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100dvh - 72px)}.brand{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.seal{border:1px solid color-mix(in srgb,var(--accent) 60%,white);padding:10px 12px;font-weight:900;letter-spacing:.18em;color:var(--accent2)}.meta{font-size:12px;color:#b9c5d2;text-align:right}.hero{padding:44px 0}.tag{color:var(--accent2);font-size:12px;font-weight:800;letter-spacing:.15em}.hero h1{font-family:Manrope,Inter,sans-serif;font-size:clamp(40px,9vw,70px);line-height:.95;letter-spacing:-.045em;margin:14px 0 18px;max-width:12ch}.hero h1 span{display:block;color:#bdcad6;font-weight:600}.hero p{max-width:46rem;color:#d7e0e9;font-size:18px}.cta{width:100%;border:0;border-radius:12px;background:var(--accent);color:#fff;padding:16px 18px;font-weight:850;cursor:pointer}.small{font-size:12px;color:#91a2b4;margin-top:12px}
+#setup,#reader{display:none}.setup{min-height:100dvh;padding:60px 0}.setup h2,.page h2{font-family:Manrope,Inter,sans-serif;letter-spacing:-.035em}.setup h2{font-size:36px;margin:0 0 8px}.setup p{color:var(--muted)}.field{margin:18px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.field select{width:100%;padding:14px;border-radius:10px;border:1px solid var(--rule);background:#fff;color:var(--ink)}.diagbox{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:20px;margin:22px 0}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}.toprow{height:58px;display:flex;align-items:center;gap:12px}.menub{border:0;background:transparent;font-size:24px;cursor:pointer}.topmeta{flex:1;min-width:0}.topmeta b{display:block;font-size:12px;color:var(--accent)}.topmeta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700}.prog{height:3px;background:#dbe3e8}.prog i{display:block;height:100%;width:0;background:var(--accent);transition:.2s}
+.page{display:none;padding:42px 0 110px}.page.on{display:block}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin-bottom:12px}.page h2{font-size:clamp(30px,7vw,45px);line-height:1.03;margin:0 0 18px}.lead{font-size:18px;color:#42566e}.page ol{padding-left:22px}.page li{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:9px 0}.avoid,.checkpoint{display:grid;gap:5px;border-radius:12px;padding:15px 16px;margin:18px 0}.avoid{background:#fff2ee;border-left:4px solid var(--warn)}.checkpoint{background:color-mix(in srgb,var(--accent) 10%,white);border-left:4px solid var(--accent)}.avoid span,.checkpoint span{color:#3e5268}.done{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--rule);padding:14px;border-radius:12px;margin-top:22px;font-weight:750}.done input{width:20px;height:20px;accent-color:var(--accent)}.sources{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.sources a{font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--rule);background:white;padding:8px 10px;border-radius:999px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--rule);padding:10px 0 calc(10px + env(safe-area-inset-bottom));z-index:20}.navin{display:flex;gap:10px}.nav button{flex:1;padding:12px;border:1px solid var(--rule);background:#fff;border-radius:10px;font-weight:800}.nav .next{background:var(--accent);color:white;border-color:var(--accent);flex:1.5}
+.scrim{position:fixed;inset:0;background:#071a2db8;z-index:30;display:none}.drawer{position:fixed;left:0;top:0;bottom:0;width:min(360px,88vw);background:var(--paper);z-index:40;transform:translateX(-102%);transition:.22s;overflow:auto}.drawer.on{transform:none}.scrim.on{display:block}.drhead{background:var(--navy);color:white;padding:28px 20px}.drhead b{display:block}.drlist{padding:10px}.drlist button{width:100%;text-align:left;border:0;background:transparent;padding:11px;border-radius:8px;color:var(--ink)}.drlist button.cur{background:color-mix(in srgb,var(--accent) 12%,white);color:var(--accent);font-weight:800}
+@media print{#cover,#setup,.top,.nav,.drawer,.scrim{display:none!important}#reader{display:block!important}.page{display:block!important;page-break-before:always;padding:20mm 12mm}.page:first-child{page-break-before:auto}.done{display:none}}
+</style></head><body>
+<section id="cover"><div class="wrap coverin"><div class="brand"><div class="seal">SER</div><div class="meta">SER Guides · Guide 05<br>Édition 2026 · revue 29/09/2026</div></div><div class="hero"><div class="tag">ADMINISTRATIF &amp; FISCALITÉ</div><h1>Optimisation fiscale 2026<span>payer ce qu’il faut, pas plus</span></h1><p>Comprendre les leviers légaux qui changent réellement la facture : régime, TVA, dépenses, facturation, calendrier et preuves — sans montage artificiel ni conseil personnalisé.</p></div><div><button class="cta" id="start">Construire mon parcours</button><div class="small">Web-book interactif · 28 étapes · progression sauvegardée localement · export impression/PDF</div></div></div></section>
+<section id="setup"><div class="wrap setup"><div class="tag">DIAGNOSTIC EXPRESS</div><h2>Commencez par votre situation réelle.</h2><p>Trois réponses suffisent pour cadrer votre lecture. Vous pourrez les modifier ensuite.</p><div class="diagbox">
+<div class="field"><label>Où en êtes-vous ?</label><select id="d1"><option>Je pars de zéro</option><option>J’ai déjà commencé</option><option>Je veux optimiser ce qui existe</option></select></div>
+<div class="field"><label>Votre objectif prioritaire</label><select id="d2"><option>Comprendre mon régime et mes seuils</option><option>Réduire les erreurs et dépenses non pilotées</option><option>Préparer un changement de régime ou de structure</option></select></div>
+<div class="field"><label>Votre contrainte principale</label><select id="d3"><option>Je suis en micro et mes charges augmentent</option><option>Je ne comprends pas la TVA</option><option>Je mélange optimisation légale et astuces risquées</option></select></div>
+<button class="cta" id="open">Ouvrir mon guide</button></div></div></section>
+<main id="reader"><div class="top"><div class="wrap toprow"><button class="menub" id="menu">☰</button><div class="topmeta"><b id="step">Étape 1 / 28</b><span id="ptitle"></span></div><div class="seal">SER</div></div><div class="prog"><i id="bar"></i></div></div><div class="wrap"><article class="page" data-title="Ce que vous allez obtenir">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 01 / 28</div>
+ <h2>Ce que vous allez obtenir</h2><p class="lead">Comprendre les leviers légaux qui changent réellement la facture : régime, TVA, dépenses, facturation, calendrier et preuves — sans montage artificiel ni conseil personnalisé.</p>
+ <ol><li>Résultat visé : une cartographie de votre régime actuel, des seuils à surveiller et des décisions à faire valider avant qu’elles ne coûtent cher.</li><li>Niveau : débutant à autonome. Le parcours reste utile si vous avez déjà commencé.</li><li>Temps conseillé : 2 à 7 jours pour l’audit initial, puis suivi mensuel. Avancez en appliquant, pas en lisant tout d’un bloc.</li><li>Le guide ne promet ni revenu, ni résultat garanti : il vous aide à décider, exécuter et mesurer.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne cherchez pas la perfection avant le premier test réel.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous pouvez reformuler votre objectif en une phrase.</span></div>
+ <label class="done"><input type="checkbox" data-done="0"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Diagnostic express">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 02 / 28</div>
+ <h2>Diagnostic express</h2><p class="lead">Répondez au diagnostic de départ puis utilisez-le pour choisir votre priorité.</p>
+ <ol><li>Identifiez votre activité, régime fiscal, régime TVA et année de création.</li><li>Calculez le poids réel de vos dépenses professionnelles par rapport au chiffre d’affaires.</li><li>Listez les seuils que vous approchez : micro, TVA, autres obligations propres à l’activité.</li><li>Séparez les décisions certaines des questions à valider avec votre SIE ou un professionnel.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne répondez pas selon ce que vous aimeriez avoir : partez de votre situation réelle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez exactement où vous bloquez aujourd’hui.</span></div>
+ <label class="done"><input type="checkbox" data-done="1"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Roadmap">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 03 / 28</div>
+ <h2>Roadmap</h2><p class="lead">Le parcours SER suit toujours la même logique : comprendre → vérifier → agir → mesurer → corriger.</p>
+ <ol><li>Photographier la situation fiscale actuelle.</li><li>Comprendre ce qui est forfaitaire et ce qui est déductible selon le régime.</li><li>Anticiper TVA, facturation et changement de seuil.</li><li>Documenter chaque décision et revoir le cadre avant la date critique.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne sautez pas les étapes qui valident l’économie, la conformité ou le risque.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez quelle est la prochaine action concrète.</span></div>
+ <label class="done"><input type="checkbox" data-done="2"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Les chiffres à piloter">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 04 / 28</div>
+ <h2>Les chiffres à piloter</h2><p class="lead">Quelques indicateurs suffisent pour éviter de décider à l’aveugle.</p>
+ <ol><li>CA encaissé / facturé selon l’indicateur pertinent.</li><li>Ratio dépenses professionnelles / CA.</li><li>Marge après cotisations, impôts estimés et dépenses.</li><li>Distance aux seuils micro et TVA applicables.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Un chiffre isolé n’explique rien : comparez-le à une période, un coût et un objectif.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez choisi 3 à 5 indicateurs à suivre chaque semaine.</span></div>
+ <label class="done"><input type="checkbox" data-done="3"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Optimiser ≠ frauder">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 05 / 28</div>
+ <h2>Optimiser ≠ frauder</h2><p class="lead">Une optimisation solide tient devant une source officielle et des justificatifs.</p>
+ <ol><li>Écartez dissimulation, fausse facture et dépense personnelle déguisée.</li><li>Distinguez choix de régime, calendrier, organisation et dépenses réellement professionnelles.</li><li>Documentez pourquoi une décision est légale et adaptée.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="4"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Cartographier son régime">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 06 / 28</div>
+ <h2>Cartographier son régime</h2><p class="lead">Vous ne pouvez pas optimiser ce que vous ne savez pas nommer.</p>
+ <ol><li>Notez forme juridique, régime d’imposition et catégorie BIC/BNC/IS selon le cas.</li><li>Notez régime TVA : franchise, réel simplifié ou normal selon votre situation.</li><li>Ajoutez régime social et obligations de facturation.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/tva" target="_blank" rel="noopener">S2 · impots.gouv.fr — TVA ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="5"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Micro : charges réelles">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 07 / 28</div>
+ <h2>Micro : charges réelles</h2><p class="lead">En micro-fiscal, les dépenses professionnelles ne sont pas déduites pour leur montant réel.</p>
+ <ol><li>Déclarez le chiffre d’affaires/recettes selon les règles applicables.</li><li>Comprenez que l’abattement forfaitaire remplace la déduction réelle des charges fiscales.</li><li>Surveillez le moment où vos charges réelles rendent le régime moins adapté économiquement.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="6"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Seuils micro 2026">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 08 / 28</div>
+ <h2>Seuils micro 2026</h2><p class="lead">Les seuils 2026 ont évolué et dépendent de l’activité.</p>
+ <ol><li>Vérifiez votre catégorie exacte.</li><li>Suivez le CA sur deux années lorsque la règle le demande.</li><li>Ne mélangez pas seuil micro et seuil TVA : ce sont deux mécanismes distincts.</li></ol>
+ <div class="sources"><a href="https://entreprendre.service-public.fr/vosdroits/F32353" target="_blank" rel="noopener">S3 · Service Public Entreprendre — dépassement des seuils micro ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="7"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="TVA : franchise">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 09 / 28</div>
+ <h2>TVA : franchise</h2><p class="lead">La franchise en base a ses propres seuils.</p>
+ <ol><li>Vérifiez si votre activité relève du seuil vente ou services.</li><li>Suivez le seuil de base et le seuil de dépassement applicable.</li><li>Anticipez l’impact commercial et comptable avant de devenir redevable.</li></ol>
+ <div class="sources"><a href="https://entreprendre.service-public.fr/vosdroits/F33339" target="_blank" rel="noopener">S4 · Service Public Entreprendre — activités multiples ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="8"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="TVA : prix et marge">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 10 / 28</div>
+ <h2>TVA : prix et marge</h2><p class="lead">Passer à la TVA ne se résume pas à « ajouter 20 % ».</p>
+ <ol><li>Séparez clients B2C et B2B.</li><li>Simulez prix TTC, prix HT et TVA collectée selon le taux applicable.</li><li>Mesurez l’effet de la TVA déductible sur vos achats lorsque vous y avez droit.</li></ol>
+ <div class="sources"><a href="https://entreprendre.service-public.fr/vosdroits/F33339" target="_blank" rel="noopener">S4 · Service Public Entreprendre — activités multiples ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="9"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Régime réel">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 11 / 28</div>
+ <h2>Régime réel</h2><p class="lead">Au réel, une charge n’est pas déductible simplement parce qu’elle est payée par l’entreprise.</p>
+ <ol><li>Vérifiez intérêt de l’entreprise, justificatif et rattachement correct.</li><li>Séparez dépenses mixtes et personnelles.</li><li>Demandez validation sur les cas sensibles ou importants.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel" target="_blank" rel="noopener">S5 · impots.gouv.fr — espace professionnel ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="10"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Justificatifs">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 12 / 28</div>
+ <h2>Justificatifs</h2><p class="lead">Une économie sans preuve peut devenir un redressement.</p>
+ <ol><li>Conservez factures lisibles et complètes.</li><li>Associez chaque dépense à sa finalité professionnelle.</li><li>Organisez les pièces par mois et catégorie.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel" target="_blank" rel="noopener">S5 · impots.gouv.fr — espace professionnel ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="11"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Compte dédié et flux">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 13 / 28</div>
+ <h2>Compte dédié et flux</h2><p class="lead">La séparation des flux améliore le pilotage même lorsqu’elle n’est pas le levier fiscal principal.</p>
+ <ol><li>Centralisez encaissements professionnels.</li><li>Évitez les remboursements improvisés sans pièce.</li><li>Faites correspondre banque, facture et comptabilité.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="12"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Factures 2026">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 14 / 28</div>
+ <h2>Factures 2026</h2><p class="lead">La réforme de facturation électronique a commencé par l’obligation de réception pour toutes les entreprises au 1er septembre 2026.</p>
+ <ol><li>Identifiez si vous êtes dans le champ.</li><li>Choisissez une organisation compatible avec les plateformes agréées lorsque nécessaire.</li><li>Préparez les nouvelles mentions au calendrier applicable à votre taille.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/mentions-obligatoires-dune-facture-tout-savoir" target="_blank" rel="noopener">S6 · Bercy — mentions obligatoires d’une facture ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="13"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Calendrier 2027 PME/micro">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 15 / 28</div>
+ <h2>Calendrier 2027 PME/micro</h2><p class="lead">L’émission/e-reporting des PME et micro-entreprises arrive selon le calendrier officiel en 2027.</p>
+ <ol><li>Ne confondez pas réception 2026 et émission 2027.</li><li>Cartographiez vos flux B2B/B2C/international.</li><li>Mettez à jour votre logiciel avant l’échéance, pas la veille.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/mentions-obligatoires-dune-facture-tout-savoir" target="_blank" rel="noopener">S6 · Bercy — mentions obligatoires d’une facture ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="14"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Versement libératoire">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 16 / 28</div>
+ <h2>Versement libératoire</h2><p class="lead">Ce choix ne se juge pas avec une phrase TikTok.</p>
+ <ol><li>Vérifiez les conditions d’éligibilité de l’année concernée.</li><li>Comparez avec votre foyer et votre situation fiscale réelle.</li><li>Faites une simulation officielle ou demandez validation avant option.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="15"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="CFE et taxes locales">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 17 / 28</div>
+ <h2>CFE et taxes locales</h2><p class="lead">Les taxes locales doivent entrer dans le budget annuel.</p>
+ <ol><li>Identifiez les avis reçus dans votre espace fiscal professionnel.</li><li>Vérifiez exonérations ou situations particulières sur source officielle.</li><li>Provisionnez plutôt que découvrir la dépense en fin d’année.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="16"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Investir ou changer de régime">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 18 / 28</div>
+ <h2>Investir ou changer de régime</h2><p class="lead">Une dépense n’est pas rentable parce qu’elle réduit l’impôt.</p>
+ <ol><li>Décidez d’abord si la dépense crée de la valeur.</li><li>Comparez coût net, trésorerie et économie fiscale potentielle.</li><li>N’achetez jamais pour « défiscaliser » sans besoin économique.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="17"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Rémunération / dividendes">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 19 / 28</div>
+ <h2>Rémunération / dividendes</h2><p class="lead">Ce sujet dépend fortement de la structure et de la situation personnelle.</p>
+ <ol><li>Ne transposez pas une stratégie SASU/EURL à une micro-entreprise.</li><li>Comparez fiscalité, social, trésorerie et protection sociale.</li><li>Faites valider les arbitrages significatifs.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="18"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Changer de structure">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 20 / 28</div>
+ <h2>Changer de structure</h2><p class="lead">Le bon moment dépend des chiffres, du risque et du projet.</p>
+ <ol><li>Simulez 12 mois dans le régime actuel et l’alternative.</li><li>Intégrez comptabilité, banque, assurance et temps administratif.</li><li>Décidez sur un scénario réaliste, pas sur le seul taux d’impôt.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="19"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="International">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 21 / 28</div>
+ <h2>International</h2><p class="lead">Les règles changent avec le pays, le client, le bien/service et le lieu de consommation.</p>
+ <ol><li>Cartographiez vos flux internationaux.</li><li>Vérifiez TVA et obligations déclaratives avant la première opération atypique.</li><li>Conservez preuve de localisation et documents douaniers lorsque nécessaire.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="20"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Tableau fiscal mensuel">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 22 / 28</div>
+ <h2>Tableau fiscal mensuel</h2><p class="lead">Une revue mensuelle de 20 minutes évite beaucoup de surprises.</p>
+ <ol><li>CA période et cumul annuel.</li><li>TVA/seuils/charges provisionnées.</li><li>Échéances et pièces manquantes.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="21"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Quand demander de l’aide">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 23 / 28</div>
+ <h2>Quand demander de l’aide</h2><p class="lead">Le coût d’un conseil peut être inférieur au coût d’une mauvaise hypothèse.</p>
+ <ol><li>Changement de régime/structure.</li><li>Flux international ou activité réglementée.</li><li>Montant important, doute sur déductibilité ou opération exceptionnelle.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="22"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Revue annuelle">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 24 / 28</div>
+ <h2>Revue annuelle</h2><p class="lead">L’optimisation légale commence par revalider les règles qui ont changé.</p>
+ <ol><li>Mettez à jour seuils et barèmes.</li><li>Comparez réel vs prévision.</li><li>Écrivez les trois décisions fiscales à prendre avant leurs échéances.</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne prenez jamais une décision fiscale engageante sur une règle non datée ou une vidéo non sourcée.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>La décision est documentée, chiffrée et reliée à une source officielle.</span></div>
+ <label class="done"><input type="checkbox" data-done="23"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Les erreurs qui coûtent le plus">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 25 / 28</div>
+ <h2>Les erreurs qui coûtent le plus</h2><p class="lead">Relisez cette page avant toute dépense importante.</p>
+ <ol><li>Chercher à déduire ses dépenses réelles en micro-fiscal comme au régime réel.</li><li>Confondre seuils micro et franchise de TVA.</li><li>Acheter une dépense inutile uniquement pour réduire l’assiette.</li><li>Copier un arbitrage de structure trouvé en ligne sans simulation personnelle.</li><li>Attendre le dépassement de seuil pour comprendre ses conséquences.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne corrigez pas dix choses à la fois : identifiez la friction principale.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez identifié votre erreur la plus probable et l’action corrective.</span></div>
+ <label class="done"><input type="checkbox" data-done="24"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Plan d’action 7 jours">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 26 / 28</div>
+ <h2>Plan d’action 7 jours</h2><p class="lead">Une semaine pour transformer le guide en actions observables.</p>
+ <ol><li>J1 : régime, TVA, activité, statut.</li><li>J2 : CA, charges, marge, seuils.</li><li>J3 : justificatifs et séparation des flux.</li><li>J4 : simulation micro/réel si pertinente.</li><li>J5 : facturation électronique et outils.</li><li>J6 : questions à valider avec SIE/comptable.</li><li>J7 : calendrier fiscal 12 mois et revue mensuelle.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne remplacez pas l’exécution par de la recherche infinie.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Chaque journée a une tâche livrable et vérifiable.</span></div>
+ <label class="done"><input type="checkbox" data-done="25"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Checklist finale">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 27 / 28</div>
+ <h2>Checklist finale</h2><p class="lead">Si tout est coché, votre système est suffisamment propre pour passer à l’étape suivante.</p>
+ <ol><li>Régime fiscal identifié.</li><li>Régime TVA identifié.</li><li>Seuils 2026 applicables notés.</li><li>Charges et marge suivies.</li><li>Justificatifs classés.</li><li>Calendrier facturation électronique compris.</li><li>Décisions sensibles listées pour validation.</li><li>Revue mensuelle planifiée.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Une case cochée doit correspondre à une preuve réelle : page, test, chiffre, document ou décision.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve pour chaque point critique.</span></div>
+ <label class="done"><input type="checkbox" data-done="26"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Sources &amp; date de revue">
+ <div class="eyebrow">SER GUIDE 05 · ÉTAPE 28 / 28</div>
+ <h2>Sources &amp; date de revue</h2><p class="lead">Les éléments sensibles de ce guide ont été construits à partir des sources ci-dessous, revues le 29 septembre 2026.</p>
+ <ol><li>S1 — impots.gouv.fr — micro-entrepreneur et déduction des charges</li><li>S2 — impots.gouv.fr — TVA</li><li>S3 — Service Public Entreprendre — dépassement des seuils micro</li><li>S4 — Service Public Entreprendre — activités multiples</li><li>S5 — impots.gouv.fr — espace professionnel</li><li>S6 — Bercy — mentions obligatoires d’une facture</li><li>S7 — Service Public — généralisation facturation électronique</li><li>S8 — Guichet unique des formalités</li></ol>
+ <div class="sources"><a href="https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges" target="_blank" rel="noopener">S1 · impots.gouv.fr — micro-entrepreneur et déduction des charges ↗</a><a href="https://www.impots.gouv.fr/professionnel/tva" target="_blank" rel="noopener">S2 · impots.gouv.fr — TVA ↗</a><a href="https://entreprendre.service-public.fr/vosdroits/F32353" target="_blank" rel="noopener">S3 · Service Public Entreprendre — dépassement des seuils micro ↗</a><a href="https://entreprendre.service-public.fr/vosdroits/F33339" target="_blank" rel="noopener">S4 · Service Public Entreprendre — activités multiples ↗</a><a href="https://www.impots.gouv.fr/professionnel" target="_blank" rel="noopener">S5 · impots.gouv.fr — espace professionnel ↗</a><a href="https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/mentions-obligatoires-dune-facture-tout-savoir" target="_blank" rel="noopener">S6 · Bercy — mentions obligatoires d’une facture ↗</a><a href="https://entreprendre.service-public.fr/actualites/A17450" target="_blank" rel="noopener">S7 · Service Public — généralisation facturation électronique ↗</a><a href="https://formalites.entreprises.gouv.fr/" target="_blank" rel="noopener">S8 · Guichet unique des formalités ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Recontrôlez les tarifs, seuils et règles avant une décision engageante.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez où revenir vérifier une information qui peut évoluer.</span></div>
+ <label class="done"><input type="checkbox" data-done="27"><span>J’ai terminé cette étape</span></label>
+ </article></div><div class="nav"><div class="wrap navin"><button id="prev">Précédent</button><button class="next" id="next">Étape suivante</button></div></div></main>
+<div class="scrim" id="scrim"></div><aside class="drawer" id="drawer"><div class="drhead"><b>Optimisation fiscale 2026</b><span>Guide 05 · 28 étapes</span></div><div class="drlist" id="drlist"></div></aside>
+<script>
+const KEY="serGuide05";const pages=[...document.querySelectorAll(".page")];let idx=0;const $=id=>document.getElementById(id);
+function save(k,v){try{localStorage.setItem(KEY+k,v)}catch(e){}}function get(k){try{return localStorage.getItem(KEY+k)}catch(e){return null}}
+function show(i){if(i<0||i>=pages.length)return;idx=i;pages.forEach((p,n)=>p.classList.toggle("on",n===i));$("step").textContent="Étape "+(i+1)+" / "+pages.length;$("ptitle").textContent=pages[i].dataset.title;$("bar").style.width=((i+1)/pages.length*100)+"%";$("prev").disabled=i===0;$("next").disabled=i===pages.length-1;$("next").textContent=i===pages.length-1?"Terminé":"Étape suivante";[...$("drlist").children].forEach((b,n)=>b.classList.toggle("cur",n===i));save("Idx",i);closeMenu();scrollTo(0,0)}
+function openReader(){ $("cover").style.display="none";$("setup").style.display="none";$("reader").style.display="block";show(Number(get("Idx")||0));save("Reader","1") }
+$("start").onclick=()=>{$("cover").style.display="none";$("setup").style.display="block"};$("open").onclick=()=>{save("Diag",JSON.stringify({stage:$("d1").value,goal:$("d2").value,constraint:$("d3").value}));openReader()};$("prev").onclick=()=>show(idx-1);$("next").onclick=()=>show(idx+1);
+function closeMenu(){$("drawer").classList.remove("on");$("scrim").classList.remove("on")} $("menu").onclick=()=>{$("drawer").classList.add("on");$("scrim").classList.add("on")};$("scrim").onclick=closeMenu;
+$("drlist").innerHTML=pages.map((p,n)=>"<button>"+String(n+1).padStart(2,"0")+" · "+p.dataset.title+"</button>").join("");[...$("drlist").children].forEach((b,n)=>b.onclick=()=>show(n));
+document.querySelectorAll("[data-done]").forEach(c=>{c.checked=get("D"+c.dataset.done)==="1";c.onchange=()=>save("D"+c.dataset.done,c.checked?"1":"0")});
+addEventListener("load",()=>{if(get("Reader")==="1")openReader()});addEventListener("keydown",e=>{if(e.key==="ArrowRight")show(idx+1);if(e.key==="ArrowLeft")show(idx-1);if(e.key==="Escape")closeMenu()});
+</script></body></html>
