@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SER Guide 03 — TikTok Shop 2026</title><meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{--navy:#071a2d;--ink:#102238;--muted:#64748b;--paper:#fbf4f4;--card:#fff;--accent:#b23a54;--accent2:#77e6df;--rule:rgba(15,35,55,.13);--warn:#a84c3b}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}button,input,select{font:inherit}.wrap{width:min(760px,calc(100% - 36px));margin:auto}
+#cover{min-height:100dvh;background:radial-gradient(900px 600px at 90% -20%,color-mix(in srgb,var(--accent) 32%,transparent),transparent 70%),var(--navy);color:#f8fafc;padding:36px 0;display:flex}.coverin{display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100dvh - 72px)}.brand{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.seal{border:1px solid color-mix(in srgb,var(--accent) 60%,white);padding:10px 12px;font-weight:900;letter-spacing:.18em;color:var(--accent2)}.meta{font-size:12px;color:#b9c5d2;text-align:right}.hero{padding:44px 0}.tag{color:var(--accent2);font-size:12px;font-weight:800;letter-spacing:.15em}.hero h1{font-family:Manrope,Inter,sans-serif;font-size:clamp(40px,9vw,70px);line-height:.95;letter-spacing:-.045em;margin:14px 0 18px;max-width:12ch}.hero h1 span{display:block;color:#bdcad6;font-weight:600}.hero p{max-width:46rem;color:#d7e0e9;font-size:18px}.cta{width:100%;border:0;border-radius:12px;background:var(--accent);color:#fff;padding:16px 18px;font-weight:850;cursor:pointer}.small{font-size:12px;color:#91a2b4;margin-top:12px}
+#setup,#reader{display:none}.setup{min-height:100dvh;padding:60px 0}.setup h2,.page h2{font-family:Manrope,Inter,sans-serif;letter-spacing:-.035em}.setup h2{font-size:36px;margin:0 0 8px}.setup p{color:var(--muted)}.field{margin:18px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.field select{width:100%;padding:14px;border-radius:10px;border:1px solid var(--rule);background:#fff;color:var(--ink)}.diagbox{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:20px;margin:22px 0}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}.toprow{height:58px;display:flex;align-items:center;gap:12px}.menub{border:0;background:transparent;font-size:24px;cursor:pointer}.topmeta{flex:1;min-width:0}.topmeta b{display:block;font-size:12px;color:var(--accent)}.topmeta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700}.prog{height:3px;background:#dbe3e8}.prog i{display:block;height:100%;width:0;background:var(--accent);transition:.2s}
+.page{display:none;padding:42px 0 110px}.page.on{display:block}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin-bottom:12px}.page h2{font-size:clamp(30px,7vw,45px);line-height:1.03;margin:0 0 18px}.lead{font-size:18px;color:#42566e}.page ol{padding-left:22px}.page li{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:9px 0}.avoid,.checkpoint{display:grid;gap:5px;border-radius:12px;padding:15px 16px;margin:18px 0}.avoid{background:#fff2ee;border-left:4px solid var(--warn)}.checkpoint{background:color-mix(in srgb,var(--accent) 10%,white);border-left:4px solid var(--accent)}.avoid span,.checkpoint span{color:#3e5268}.done{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--rule);padding:14px;border-radius:12px;margin-top:22px;font-weight:750}.done input{width:20px;height:20px;accent-color:var(--accent)}.sources{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.sources a{font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--rule);background:white;padding:8px 10px;border-radius:999px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--rule);padding:10px 0 calc(10px + env(safe-area-inset-bottom));z-index:20}.navin{display:flex;gap:10px}.nav button{flex:1;padding:12px;border:1px solid var(--rule);background:#fff;border-radius:10px;font-weight:800}.nav .next{background:var(--accent);color:white;border-color:var(--accent);flex:1.5}
+.scrim{position:fixed;inset:0;background:#071a2db8;z-index:30;display:none}.drawer{position:fixed;left:0;top:0;bottom:0;width:min(360px,88vw);background:var(--paper);z-index:40;transform:translateX(-102%);transition:.22s;overflow:auto}.drawer.on{transform:none}.scrim.on{display:block}.drhead{background:var(--navy);color:white;padding:28px 20px}.drhead b{display:block}.drlist{padding:10px}.drlist button{width:100%;text-align:left;border:0;background:transparent;padding:11px;border-radius:8px;color:var(--ink)}.drlist button.cur{background:color-mix(in srgb,var(--accent) 12%,white);color:var(--accent);font-weight:800}
+@media print{#cover,#setup,.top,.nav,.drawer,.scrim{display:none!important}#reader{display:block!important}.page{display:block!important;page-break-before:always;padding:20mm 12mm}.page:first-child{page-break-before:auto}.done{display:none}}
+</style></head><body>
+<section id="cover"><div class="wrap coverin"><div class="brand"><div class="seal">SER</div><div class="meta">SER Guides · Guide 03<br>Édition 2026 · revue 29/09/2026</div></div><div class="hero"><div class="tag">E-COMMERCE &amp; RÉSEAUX SOCIAUX</div><h1>TikTok Shop 2026<span>lancer sa boutique et obtenir ses premières ventes</span></h1><p>Passer d’un compte vendeur à une machine de test propre : catalogue, marge, contenu shoppable, affiliation, logistique et pilotage — sans prendre les vues pour des ventes.</p></div><div><button class="cta" id="start">Construire mon parcours</button><div class="small">Web-book interactif · 28 étapes · progression sauvegardée localement · export impression/PDF</div></div></div></section>
+<section id="setup"><div class="wrap setup"><div class="tag">DIAGNOSTIC EXPRESS</div><h2>Commencez par votre situation réelle.</h2><p>Trois réponses suffisent pour cadrer votre lecture. Vous pourrez les modifier ensuite.</p><div class="diagbox">
+<div class="field"><label>Où en êtes-vous ?</label><select id="d1"><option>Je pars de zéro</option><option>J’ai déjà commencé</option><option>Je veux optimiser ce qui existe</option></select></div>
+<div class="field"><label>Votre objectif prioritaire</label><select id="d2"><option>Ouvrir et configurer ma boutique</option><option>Trouver un produit compatible TikTok Shop</option><option>Obtenir mes premières commandes sans brûler mon budget</option></select></div>
+<div class="field"><label>Votre contrainte principale</label><select id="d3"><option>Je ne comprends pas les règles TikTok Shop</option><option>Je manque de contenu/créateurs</option><option>Je ne connais pas ma marge après commissions</option></select></div>
+<button class="cta" id="open">Ouvrir mon guide</button></div></div></section>
+<main id="reader"><div class="top"><div class="wrap toprow"><button class="menub" id="menu">☰</button><div class="topmeta"><b id="step">Étape 1 / 28</b><span id="ptitle"></span></div><div class="seal">SER</div></div><div class="prog"><i id="bar"></i></div></div><div class="wrap"><article class="page" data-title="Ce que vous allez obtenir">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 01 / 28</div>
+ <h2>Ce que vous allez obtenir</h2><p class="lead">Passer d’un compte vendeur à une machine de test propre : catalogue, marge, contenu shoppable, affiliation, logistique et pilotage — sans prendre les vues pour des ventes.</p>
+ <ol><li>Résultat visé : une boutique TikTok Shop conforme, un catalogue resserré et un système de tests contenu/affiliation mesurable.</li><li>Niveau : débutant à autonome. Le parcours reste utile si vous avez déjà commencé.</li><li>Temps conseillé : 7 à 21 jours. Avancez en appliquant, pas en lisant tout d’un bloc.</li><li>Le guide ne promet ni revenu, ni résultat garanti : il vous aide à décider, exécuter et mesurer.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne cherchez pas la perfection avant le premier test réel.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous pouvez reformuler votre objectif en une phrase.</span></div>
+ <label class="done"><input type="checkbox" data-done="0"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Diagnostic express">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 02 / 28</div>
+ <h2>Diagnostic express</h2><p class="lead">Répondez au diagnostic de départ puis utilisez-le pour choisir votre priorité.</p>
+ <ol><li>Vérifiez que votre structure, identité et coordonnées bancaires sont prêtes pour les contrôles de la plateforme.</li><li>Choisissez un produit démontrable en vidéo et compatible avec les politiques TikTok Shop.</li><li>Calculez la marge après coût produit, livraison, frais plateforme, affiliation et retours.</li><li>Décidez si votre premier levier sera contenu propre, affiliation créateurs ou combinaison des deux.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne répondez pas selon ce que vous aimeriez avoir : partez de votre situation réelle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez exactement où vous bloquez aujourd’hui.</span></div>
+ <label class="done"><input type="checkbox" data-done="1"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Roadmap">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 03 / 28</div>
+ <h2>Roadmap</h2><p class="lead">Le parcours SER suit toujours la même logique : comprendre → vérifier → agir → mesurer → corriger.</p>
+ <ol><li>Créer et vérifier le compte vendeur.</li><li>Construire un catalogue minimal avec fiches propres et stock fiable.</li><li>Brancher logistique, retours et service client.</li><li>Publier et recruter des créateurs, puis mesurer commande par commande.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne sautez pas les étapes qui valident l’économie, la conformité ou le risque.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez quelle est la prochaine action concrète.</span></div>
+ <label class="done"><input type="checkbox" data-done="2"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Les chiffres à piloter">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 04 / 28</div>
+ <h2>Les chiffres à piloter</h2><p class="lead">Quelques indicateurs suffisent pour éviter de décider à l’aveugle.</p>
+ <ol><li>Marge nette avant charges générales par commande.</li><li>Taux clic produit → commande.</li><li>Commandes et GMV par contenu/créateur.</li><li>Taux d’annulation, retour et retard d’expédition.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Un chiffre isolé n’explique rien : comparez-le à une période, un coût et un objectif.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez choisi 3 à 5 indicateurs à suivre chaque semaine.</span></div>
+ <label class="done"><input type="checkbox" data-done="3"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Éligibilité vendeur">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 05 / 28</div>
+ <h2>Éligibilité vendeur</h2><p class="lead">Commencez par les prérequis, pas par les vidéos.</p>
+ <ol><li>Préparez identité de l’entreprise, représentant, coordonnées et banque.</li><li>Utilisez uniquement les informations réelles et cohérentes entre documents.</li><li>Conservez la trace des validations et demandes de complément.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="4"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Politiques produit">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 06 / 28</div>
+ <h2>Politiques produit</h2><p class="lead">Un produit viral mais interdit ou mal documenté n’est pas une opportunité.</p>
+ <ol><li>Vérifiez catégorie, restrictions et exigences avant sourcing.</li><li>Contrôlez sécurité, étiquetage et documents applicables.</li><li>Écartez les produits qui nécessitent des preuves que votre fournisseur ne peut pas fournir.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?from=feature_guide&amp;identity=1&amp;knowledge_id=6600445775071008&amp;role=2" target="_blank" rel="noopener">S2 · TikTok Shop — Règles commissions affiliation créateurs ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="5"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Commission et marge">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 07 / 28</div>
+ <h2>Commission et marge</h2><p class="lead">Les taux et réductions peuvent varier : votre calcul doit être paramétrable.</p>
+ <ol><li>Relevez le taux applicable à votre catégorie dans Seller Center.</li><li>Ajoutez affiliation, livraison, retours et remises au coût complet.</li><li>Fixez un seuil de marge sous lequel vous arrêtez le test.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?from=policy&amp;identity=1&amp;knowledge_id=262878913709857&amp;role=2" target="_blank" rel="noopener">S3 · TikTok Shop — vérification identité créateurs ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="6"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Catalogue minimal">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 08 / 28</div>
+ <h2>Catalogue minimal</h2><p class="lead">Mieux vaut trois produits bien exécutés que cinquante fiches faibles.</p>
+ <ol><li>Choisissez 1 à 5 références maximum au départ.</li><li>Standardisez titres, images, variantes et informations de conformité.</li><li>Synchronisez stock et prix avec votre source réelle.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="7"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Fiche produit">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 09 / 28</div>
+ <h2>Fiche produit</h2><p class="lead">La vidéo crée l’intérêt ; la fiche doit fermer les objections.</p>
+ <ol><li>Titre explicite, caractéristiques utiles et photos propres.</li><li>Expliquez dimensions, usage, contenu du colis, livraison et limites.</li><li>Ne faites aucune allégation que vous ne pouvez pas prouver.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="8"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Prix et offre">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 10 / 28</div>
+ <h2>Prix et offre</h2><p class="lead">Une remise ne remplace pas une proposition de valeur.</p>
+ <ol><li>Construisez prix normal, éventuelle offre lancement et panier moyen cible.</li><li>Testez bundles seulement si la marge reste saine.</li><li>Évitez la fausse urgence et les comparaisons trompeuses.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="9"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Logistique">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 11 / 28</div>
+ <h2>Logistique</h2><p class="lead">La promesse de contenu doit correspondre à la réalité du colis.</p>
+ <ol><li>Choisissez le mode d’expédition selon les options Seller Center.</li><li>Testez emballage, suivi et temps de traitement.</li><li>Prévoyez un stock de sécurité ou un mécanisme d’arrêt.</li></ol>
+ <div class="sources"><a href="https://ads.tiktok.com/help/article/creative-center?lang=fr" target="_blank" rel="noopener">S4 · TikTok Creative Center ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="10"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="SAV et retours">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 12 / 28</div>
+ <h2>SAV et retours</h2><p class="lead">Une croissance rapide révèle vite les faiblesses opérationnelles.</p>
+ <ol><li>Préparez réponses types pour retard, défaut, erreur et retour.</li><li>Mesurez les motifs de remboursement.</li><li>Corrigez la source du problème avant d’accélérer les ventes.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="11"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Contenu shoppable">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 13 / 28</div>
+ <h2>Contenu shoppable</h2><p class="lead">Chaque vidéo doit démontrer une raison d’acheter.</p>
+ <ol><li>Un hook sur le problème ou le résultat.</li><li>Une preuve visuelle ou démonstration.</li><li>Un CTA produit clair sans surpromesse.</li></ol>
+ <div class="sources"><a href="https://ads.tiktok.com/help/article/how-to-use-trends?lang=fr" target="_blank" rel="noopener">S5 · TikTok Creative Center — Tendances ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="12"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Angles créatifs">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 14 / 28</div>
+ <h2>Angles créatifs</h2><p class="lead">Testez des familles d’angles, pas des vidéos aléatoires.</p>
+ <ol><li>Problème/solution.</li><li>Démonstration/avant-après lorsque loyal et vérifiable.</li><li>FAQ/objection/preuve d’usage.</li></ol>
+ <div class="sources"><a href="https://ads.tiktok.com/help/article/how-to-use-trends?lang=fr" target="_blank" rel="noopener">S5 · TikTok Creative Center — Tendances ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="13"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Creative Center">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 15 / 28</div>
+ <h2>Creative Center</h2><p class="lead">Utilisez les tendances comme signal, pas comme verdict commercial.</p>
+ <ol><li>Filtrez par secteur et région.</li><li>Étudiez formats, hooks et moments d’engagement dans Top Ads.</li><li>Réécrivez l’idée pour votre produit au lieu de copier.</li></ol>
+ <div class="sources"><a href="https://ads.tiktok.com/help/article/how-to-use-trends?lang=fr" target="_blank" rel="noopener">S5 · TikTok Creative Center — Tendances ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="14"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Affiliation créateurs">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 16 / 28</div>
+ <h2>Affiliation créateurs</h2><p class="lead">Le bon créateur est celui qui sait vendre l’usage du produit.</p>
+ <ol><li>Définissez commission, cible et règles d’éligibilité.</li><li>Préparez un brief court avec bénéfice, preuve et limites.</li><li>Suivez ventes, retours et marge par créateur.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">S6 · DGCCRF — e-commerce B2C ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="15"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="KYC créateur">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 17 / 28</div>
+ <h2>KYC créateur</h2><p class="lead">Les commissions impliquent des contrôles d’identité et de paiement.</p>
+ <ol><li>Vérifiez que le créateur comprend les étapes KYC.</li><li>Ne contournez jamais les contrôles de paiement.</li><li>Anticipez les délais administratifs dans le calendrier de campagne.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">S6 · DGCCRF — e-commerce B2C ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="16"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Échantillons">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 18 / 28</div>
+ <h2>Échantillons</h2><p class="lead">Un échantillon doit produire un test exploitable.</p>
+ <ol><li>Fixez critères d’envoi : audience, qualité, fit produit.</li><li>Demandez un livrable clair sans imposer un faux avis.</li><li>Mesurez coût échantillon par commande obtenue.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="17"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Live shopping">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 19 / 28</div>
+ <h2>Live shopping</h2><p class="lead">Le live exige une vraie préparation commerciale.</p>
+ <ol><li>Script : problème, démonstration, FAQ, offre.</li><li>Préparez réponses produit et logistique.</li><li>Analysez pics d’audience, clics produits et conversion.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="18"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Publicité Shop">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 20 / 28</div>
+ <h2>Publicité Shop</h2><p class="lead">N’amplifiez que les contenus qui montrent déjà un signal utile.</p>
+ <ol><li>Définissez la créa et l’offre testées.</li><li>Budget plafonné et durée minimale cohérente.</li><li>Coupez selon marge et données, pas selon émotions.</li></ol>
+ <div class="sources"><a href="https://ads.tiktok.com/help/article/how-to-use-trends?lang=fr" target="_blank" rel="noopener">S5 · TikTok Creative Center — Tendances ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="19"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Conformité publicité">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 21 / 28</div>
+ <h2>Conformité publicité</h2><p class="lead">La promotion reste soumise aux règles de transparence et de loyauté.</p>
+ <ol><li>Distinguez avis réel, contenu sponsorisé et affiliation.</li><li>Utilisez les mentions requises lorsque contrepartie existe.</li><li>Conservez les accords et droits d’usage.</li></ol>
+ <div class="sources"><a href="https://europa.eu/youreurope/business/product-rules-compliance/product-safety-and-liability/selling-products-safely/index_en.htm" target="_blank" rel="noopener">S7 · Your Europe — sécurité des produits ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="20"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Tableau de bord créateurs">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 22 / 28</div>
+ <h2>Tableau de bord créateurs</h2><p class="lead">Ne mélangez pas performance média et performance économique.</p>
+ <ol><li>Vues et clics.</li><li>Commandes et revenu.</li><li>Commission, retours et marge nette par créateur.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="21"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Premier sprint 20 contenus">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 23 / 28</div>
+ <h2>Premier sprint 20 contenus</h2><p class="lead">Le volume sert à apprendre, pas à saturer.</p>
+ <ol><li>5 hooks problème.</li><li>5 démonstrations.</li><li>5 réponses objections.</li><li>5 variations des meilleurs concepts.</li></ol>
+ <div class="sources"><a href="https://ads.tiktok.com/help/article/how-to-use-trends?lang=fr" target="_blank" rel="noopener">S5 · TikTok Creative Center — Tendances ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="22"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Décision scale/pivot">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 24 / 28</div>
+ <h2>Décision scale/pivot</h2><p class="lead">Accélérez uniquement quand l’économie et l’opérationnel tiennent.</p>
+ <ol><li>Scale : marge saine + retours maîtrisés + créas répétables.</li><li>Pivot offre : clics mais conversion faible.</li><li>Stop produit : retours élevés, conformité douteuse ou marge structurellement insuffisante.</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne confondez pas signal de plateforme et preuve de rentabilité.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez un test mesurable ou une validation documentée.</span></div>
+ <label class="done"><input type="checkbox" data-done="23"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Les erreurs qui coûtent le plus">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 25 / 28</div>
+ <h2>Les erreurs qui coûtent le plus</h2><p class="lead">Relisez cette page avant toute dépense importante.</p>
+ <ol><li>Sourcer avant de vérifier politiques et conformité produit.</li><li>Copier un taux de commission trouvé dans une vieille vidéo.</li><li>Envoyer des échantillons sans brief ni mesure.</li><li>Optimiser les vues plutôt que la marge et les commandes.</li><li>Accélérer alors que retours ou retards augmentent.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne corrigez pas dix choses à la fois : identifiez la friction principale.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez identifié votre erreur la plus probable et l’action corrective.</span></div>
+ <label class="done"><input type="checkbox" data-done="24"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Plan d’action 7 jours">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 26 / 28</div>
+ <h2>Plan d’action 7 jours</h2><p class="lead">Une semaine pour transformer le guide en actions observables.</p>
+ <ol><li>J1 : compte vendeur, KYC, banque, politiques.</li><li>J2 : produit, conformité, échantillon.</li><li>J3 : prix, commission, marge et stock.</li><li>J4 : catalogue, fiche et logistique.</li><li>J5 : 10 contenus + liste de créateurs.</li><li>J6 : affiliation/échantillons + premiers posts.</li><li>J7 : tableau de bord et décision de test suivante.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne remplacez pas l’exécution par de la recherche infinie.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Chaque journée a une tâche livrable et vérifiable.</span></div>
+ <label class="done"><input type="checkbox" data-done="25"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Checklist finale">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 27 / 28</div>
+ <h2>Checklist finale</h2><p class="lead">Si tout est coché, votre système est suffisamment propre pour passer à l’étape suivante.</p>
+ <ol><li>Compte vendeur vérifié.</li><li>Produit compatible et documenté.</li><li>Marge calculée avec frais variables.</li><li>Stock et expédition testés.</li><li>Fiche produit complète.</li><li>20 idées de contenu prêtes.</li><li>Brief créateur prêt.</li><li>KPI ventes/retours/marge suivis.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Une case cochée doit correspondre à une preuve réelle : page, test, chiffre, document ou décision.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve pour chaque point critique.</span></div>
+ <label class="done"><input type="checkbox" data-done="26"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Sources &amp; date de revue">
+ <div class="eyebrow">SER GUIDE 03 · ÉTAPE 28 / 28</div>
+ <h2>Sources &amp; date de revue</h2><p class="lead">Les éléments sensibles de ce guide ont été construits à partir des sources ci-dessous, revues le 29 septembre 2026.</p>
+ <ol><li>S1 — TikTok Shop — Politique de taux de commission UE</li><li>S2 — TikTok Shop — Règles commissions affiliation créateurs</li><li>S3 — TikTok Shop — vérification identité créateurs</li><li>S4 — TikTok Creative Center</li><li>S5 — TikTok Creative Center — Tendances</li><li>S6 — DGCCRF — e-commerce B2C</li><li>S7 — Your Europe — sécurité des produits</li><li>S8 — Règlement UE 2023/988 — GPSR</li></ol>
+ <div class="sources"><a href="https://seller-fr.tiktok.com/university/essay?knowledge_id=1743723416618774" target="_blank" rel="noopener">S1 · TikTok Shop — Politique de taux de commission UE ↗</a><a href="https://seller-fr.tiktok.com/university/essay?from=feature_guide&amp;identity=1&amp;knowledge_id=6600445775071008&amp;role=2" target="_blank" rel="noopener">S2 · TikTok Shop — Règles commissions affiliation créateurs ↗</a><a href="https://seller-fr.tiktok.com/university/essay?from=policy&amp;identity=1&amp;knowledge_id=262878913709857&amp;role=2" target="_blank" rel="noopener">S3 · TikTok Shop — vérification identité créateurs ↗</a><a href="https://ads.tiktok.com/help/article/creative-center?lang=fr" target="_blank" rel="noopener">S4 · TikTok Creative Center ↗</a><a href="https://ads.tiktok.com/help/article/how-to-use-trends?lang=fr" target="_blank" rel="noopener">S5 · TikTok Creative Center — Tendances ↗</a><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">S6 · DGCCRF — e-commerce B2C ↗</a><a href="https://europa.eu/youreurope/business/product-rules-compliance/product-safety-and-liability/selling-products-safely/index_en.htm" target="_blank" rel="noopener">S7 · Your Europe — sécurité des produits ↗</a><a href="https://eur-lex.europa.eu/eli/reg/2023/988" target="_blank" rel="noopener">S8 · Règlement UE 2023/988 — GPSR ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Recontrôlez les tarifs, seuils et règles avant une décision engageante.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez où revenir vérifier une information qui peut évoluer.</span></div>
+ <label class="done"><input type="checkbox" data-done="27"><span>J’ai terminé cette étape</span></label>
+ </article></div><div class="nav"><div class="wrap navin"><button id="prev">Précédent</button><button class="next" id="next">Étape suivante</button></div></div></main>
+<div class="scrim" id="scrim"></div><aside class="drawer" id="drawer"><div class="drhead"><b>TikTok Shop 2026</b><span>Guide 03 · 28 étapes</span></div><div class="drlist" id="drlist"></div></aside>
+<script>
+const KEY="serGuide03";const pages=[...document.querySelectorAll(".page")];let idx=0;const $=id=>document.getElementById(id);
+function save(k,v){try{localStorage.setItem(KEY+k,v)}catch(e){}}function get(k){try{return localStorage.getItem(KEY+k)}catch(e){return null}}
+function show(i){if(i<0||i>=pages.length)return;idx=i;pages.forEach((p,n)=>p.classList.toggle("on",n===i));$("step").textContent="Étape "+(i+1)+" / "+pages.length;$("ptitle").textContent=pages[i].dataset.title;$("bar").style.width=((i+1)/pages.length*100)+"%";$("prev").disabled=i===0;$("next").disabled=i===pages.length-1;$("next").textContent=i===pages.length-1?"Terminé":"Étape suivante";[...$("drlist").children].forEach((b,n)=>b.classList.toggle("cur",n===i));save("Idx",i);closeMenu();scrollTo(0,0)}
+function openReader(){ $("cover").style.display="none";$("setup").style.display="none";$("reader").style.display="block";show(Number(get("Idx")||0));save("Reader","1") }
+$("start").onclick=()=>{$("cover").style.display="none";$("setup").style.display="block"};$("open").onclick=()=>{save("Diag",JSON.stringify({stage:$("d1").value,goal:$("d2").value,constraint:$("d3").value}));openReader()};$("prev").onclick=()=>show(idx-1);$("next").onclick=()=>show(idx+1);
+function closeMenu(){$("drawer").classList.remove("on");$("scrim").classList.remove("on")} $("menu").onclick=()=>{$("drawer").classList.add("on");$("scrim").classList.add("on")};$("scrim").onclick=closeMenu;
+$("drlist").innerHTML=pages.map((p,n)=>"<button>"+String(n+1).padStart(2,"0")+" · "+p.dataset.title+"</button>").join("");[...$("drlist").children].forEach((b,n)=>b.onclick=()=>show(n));
+document.querySelectorAll("[data-done]").forEach(c=>{c.checked=get("D"+c.dataset.done)==="1";c.onchange=()=>save("D"+c.dataset.done,c.checked?"1":"0")});
+addEventListener("load",()=>{if(get("Reader")==="1")openReader()});addEventListener("keydown",e=>{if(e.key==="ArrowRight")show(idx+1);if(e.key==="ArrowLeft")show(idx-1);if(e.key==="Escape")closeMenu()});
+</script></body></html>
