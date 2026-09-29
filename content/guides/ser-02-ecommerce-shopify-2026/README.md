@@ -9,7 +9,7 @@
 | Date de mise à jour | 29/09/2026 |
 
 ## Livrables présents sur la branche de production
-- `contenu/ebook.md` : source éditoriale existante + web-book consolidé.
+- `contenu/ebook.md` : source éditoriale.
 - `contenu/` : web-book HTML interactif autonome.
 - `sources/SOURCE_PACK.md` : base de sources à contrôler avant passage READY.
 - `manifest.json` : état de production et bloqueurs de publication.
