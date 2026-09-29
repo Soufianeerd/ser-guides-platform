@@ -295,6 +295,46 @@ Auditez vos 10 dernières vidéos.
 
 ---
 
+## 25. Construire une bibliothèque de preuves
+Avis, démonstrations, coulisses, résultats vérifiables et réponses aux objections donnent plus de matière que la recherche permanente de tendances.
+### Action maintenant
+Classez 20 preuves ou exemples que vous pouvez montrer sans exagération.
+### Checkpoint
+- [ ] Votre contenu peut prouver, pas seulement promettre.
+
+---
+## 26. Séparer contenu d’acquisition et contenu de conversion
+Un contenu attire une audience ; un autre peut répondre à une objection ou pousser vers une action. Ne jugez pas chaque vidéo avec le même KPI.
+### Action maintenant
+Étiquetez vos 20 dernières vidéos : découverte, preuve, considération, conversion.
+### Checkpoint
+- [ ] Chaque vidéo a un objectif principal.
+
+---
+## 27. Créer une boucle de commentaires
+Les commentaires révèlent vocabulaire, objections et sujets futurs. Répondez, regroupez et transformez les questions récurrentes en contenu.
+### Action maintenant
+Extrayez 30 commentaires et créez 5 nouvelles idées de vidéos.
+### Checkpoint
+- [ ] Votre calendrier utilise les questions réelles de l’audience.
+
+---
+## 28. Tester une série éditoriale
+Une série facilite la répétition sans dupliquer exactement la même vidéo. Format, promesse et progression deviennent reconnaissables.
+### Action maintenant
+Planifiez une série de 7 épisodes avec un angle commun.
+### Checkpoint
+- [ ] Le format peut être reproduit sans dépendre d’une tendance.
+
+---
+## 29. Revue mensuelle de conversion
+Mesurez ce qui produit des visites qualifiées, inscriptions, demandes ou ventes, pas uniquement les vues.
+### Action maintenant
+Identifiez les 5 contenus ayant généré le plus d’actions utiles et leurs points communs.
+### Checkpoint
+- [ ] Votre stratégie du mois suivant est fondée sur des conversions observées.
+
+---
 ## Fin du parcours
 
 Vous devez terminer avec un système mesurable, documenté et révisable. Aucun résultat financier, de portée ou de vente n’est garanti : les décisions se prennent sur vos propres données.
