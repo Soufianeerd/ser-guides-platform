@@ -295,6 +295,66 @@ Auditez profil + 9 derniers contenus.
 
 ---
 
+## 25. Créer une architecture de profil
+
+Bio, preuve, highlights, posts épinglés et lien doivent expliquer rapidement qui vous aidez et l’action suivante.
+
+### Action maintenant
+Testez votre profil auprès d’une personne qui ne vous connaît pas pendant 10 secondes.
+
+### Checkpoint
+- [ ] Elle comprend l’offre et la prochaine action.
+
+---
+
+## 26. Organiser les Reels par intention
+
+Découverte, preuve, objection, démonstration et conversion ne poursuivent pas le même résultat.
+
+### Action maintenant
+Étiquetez votre calendrier par intention avant de publier.
+
+### Checkpoint
+- [ ] Votre semaine ne contient pas cinq contenus avec le même rôle.
+
+---
+
+## 27. Exploiter les DM sans spam
+
+Un CTA vers les messages privés peut aider à qualifier une demande, mais la conversation doit rester pertinente et conforme aux règles de prospection.
+
+### Action maintenant
+Préparez trois réponses de qualification courtes et humaines.
+
+### Checkpoint
+- [ ] Le passage contenu → conversation est clair et non agressif.
+
+---
+
+## 28. Construire des actifs réutilisables
+
+Une FAQ, un témoignage, un carrousel ou une démonstration peuvent nourrir plusieurs Reels sans recopier mécaniquement le même contenu.
+
+### Action maintenant
+Transformez un actif long en cinq formats courts avec angles distincts.
+
+### Checkpoint
+- [ ] Votre production devient plus efficace sans devenir répétitive.
+
+---
+
+## 29. Revue mensuelle clients, pas seulement portée
+
+Mesurez demandes, appels, leads, ventes, coût de production et temps passé par format.
+
+### Action maintenant
+Reliez vos cinq meilleurs contenus du mois à une action commerciale réelle.
+
+### Checkpoint
+- [ ] Le plan du mois suivant optimise les résultats business, pas seulement la visibilité.
+
+---
+
 ## Fin du parcours
 
 Le système doit rester documenté, mesurable et révisable. Ce guide ne garantit ni audience, ni clients, ni revenus.
