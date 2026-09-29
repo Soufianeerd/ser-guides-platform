@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SER Guide 02 — E-commerce &amp; Shopify 2026</title><meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{--navy:#071a2d;--ink:#102238;--muted:#64748b;--paper:#fbf7ef;--card:#fff;--accent:#37745a;--accent2:#d7b16a;--rule:rgba(15,35,55,.13);--warn:#a84c3b}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}button,input,select{font:inherit}.wrap{width:min(760px,calc(100% - 36px));margin:auto}
+#cover{min-height:100dvh;background:radial-gradient(900px 600px at 90% -20%,color-mix(in srgb,var(--accent) 32%,transparent),transparent 70%),var(--navy);color:#f8fafc;padding:36px 0;display:flex}.coverin{display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100dvh - 72px)}.brand{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.seal{border:1px solid color-mix(in srgb,var(--accent) 60%,white);padding:10px 12px;font-weight:900;letter-spacing:.18em;color:var(--accent2)}.meta{font-size:12px;color:#b9c5d2;text-align:right}.hero{padding:44px 0}.tag{color:var(--accent2);font-size:12px;font-weight:800;letter-spacing:.15em}.hero h1{font-family:Manrope,Inter,sans-serif;font-size:clamp(40px,9vw,70px);line-height:.95;letter-spacing:-.045em;margin:14px 0 18px;max-width:12ch}.hero h1 span{display:block;color:#bdcad6;font-weight:600}.hero p{max-width:46rem;color:#d7e0e9;font-size:18px}.cta{width:100%;border:0;border-radius:12px;background:var(--accent);color:#fff;padding:16px 18px;font-weight:850;cursor:pointer}.small{font-size:12px;color:#91a2b4;margin-top:12px}
+#setup,#reader{display:none}.setup{min-height:100dvh;padding:60px 0}.setup h2,.page h2{font-family:Manrope,Inter,sans-serif;letter-spacing:-.035em}.setup h2{font-size:36px;margin:0 0 8px}.setup p{color:var(--muted)}.field{margin:18px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.field select{width:100%;padding:14px;border-radius:10px;border:1px solid var(--rule);background:#fff;color:var(--ink)}.diagbox{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:20px;margin:22px 0}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}.toprow{height:58px;display:flex;align-items:center;gap:12px}.menub{border:0;background:transparent;font-size:24px;cursor:pointer}.topmeta{flex:1;min-width:0}.topmeta b{display:block;font-size:12px;color:var(--accent)}.topmeta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700}.prog{height:3px;background:#dbe3e8}.prog i{display:block;height:100%;width:0;background:var(--accent);transition:.2s}
+.page{display:none;padding:42px 0 110px}.page.on{display:block}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin-bottom:12px}.page h2{font-size:clamp(30px,7vw,45px);line-height:1.03;margin:0 0 18px}.lead{font-size:18px;color:#42566e}.page ol{padding-left:22px}.page li{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:9px 0}.avoid,.checkpoint{display:grid;gap:5px;border-radius:12px;padding:15px 16px;margin:18px 0}.avoid{background:#fff2ee;border-left:4px solid var(--warn)}.checkpoint{background:color-mix(in srgb,var(--accent) 10%,white);border-left:4px solid var(--accent)}.avoid span,.checkpoint span{color:#3e5268}.done{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--rule);padding:14px;border-radius:12px;margin-top:22px;font-weight:750}.done input{width:20px;height:20px;accent-color:var(--accent)}.sources{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.sources a{font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--rule);background:white;padding:8px 10px;border-radius:999px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--rule);padding:10px 0 calc(10px + env(safe-area-inset-bottom));z-index:20}.navin{display:flex;gap:10px}.nav button{flex:1;padding:12px;border:1px solid var(--rule);background:#fff;border-radius:10px;font-weight:800}.nav .next{background:var(--accent);color:white;border-color:var(--accent);flex:1.5}
+.scrim{position:fixed;inset:0;background:#071a2db8;z-index:30;display:none}.drawer{position:fixed;left:0;top:0;bottom:0;width:min(360px,88vw);background:var(--paper);z-index:40;transform:translateX(-102%);transition:.22s;overflow:auto}.drawer.on{transform:none}.scrim.on{display:block}.drhead{background:var(--navy);color:white;padding:28px 20px}.drhead b{display:block}.drlist{padding:10px}.drlist button{width:100%;text-align:left;border:0;background:transparent;padding:11px;border-radius:8px;color:var(--ink)}.drlist button.cur{background:color-mix(in srgb,var(--accent) 12%,white);color:var(--accent);font-weight:800}
+@media print{#cover,#setup,.top,.nav,.drawer,.scrim{display:none!important}#reader{display:block!important}.page{display:block!important;page-break-before:always;padding:20mm 12mm}.page:first-child{page-break-before:auto}.done{display:none}}
+</style></head><body>
+<section id="cover"><div class="wrap coverin"><div class="brand"><div class="seal">SER</div><div class="meta">SER Guides · Guide 02<br>Édition 2026 · revue 29/09/2026</div></div><div class="hero"><div class="tag">E-COMMERCE &amp; RÉSEAUX SOCIAUX</div><h1>E-commerce &amp; Shopify 2026<span>de zéro aux premières ventes</span></h1><p>Construire une boutique lançable : offre, marge, Shopify, paiement, livraison, conformité, acquisition et pilotage — sans confondre design et business.</p></div><div><button class="cta" id="start">Construire mon parcours</button><div class="small">Web-book interactif · 28 étapes · progression sauvegardée localement · export impression/PDF</div></div></div></section>
+<section id="setup"><div class="wrap setup"><div class="tag">DIAGNOSTIC EXPRESS</div><h2>Commencez par votre situation réelle.</h2><p>Trois réponses suffisent pour cadrer votre lecture. Vous pourrez les modifier ensuite.</p><div class="diagbox">
+<div class="field"><label>Où en êtes-vous ?</label><select id="d1"><option>Je pars de zéro</option><option>J’ai déjà commencé</option><option>Je veux optimiser ce qui existe</option></select></div>
+<div class="field"><label>Votre objectif prioritaire</label><select id="d2"><option>Valider une idée et un produit</option><option>Construire une boutique Shopify propre</option><option>Obtenir et analyser mes premières ventes</option></select></div>
+<div class="field"><label>Votre contrainte principale</label><select id="d3"><option>Budget limité</option><option>Je ne sais pas quoi vendre</option><option>J’ai du trafic mais peu de conversions</option></select></div>
+<button class="cta" id="open">Ouvrir mon guide</button></div></div></section>
+<main id="reader"><div class="top"><div class="wrap toprow"><button class="menub" id="menu">☰</button><div class="topmeta"><b id="step">Étape 1 / 28</b><span id="ptitle"></span></div><div class="seal">SER</div></div><div class="prog"><i id="bar"></i></div></div><div class="wrap"><article class="page" data-title="Ce que vous allez obtenir">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 01 / 28</div>
+ <h2>Ce que vous allez obtenir</h2><p class="lead">Construire une boutique lançable : offre, marge, Shopify, paiement, livraison, conformité, acquisition et pilotage — sans confondre design et business.</p>
+ <ol><li>Résultat visé : une boutique testée de bout en bout avec une offre claire, une économie unitaire connue et un plan d’acquisition mesurable.</li><li>Niveau : débutant à autonome. Le parcours reste utile si vous avez déjà commencé.</li><li>Temps conseillé : 7 à 30 jours selon l’état du projet. Avancez en appliquant, pas en lisant tout d’un bloc.</li><li>Le guide ne promet ni revenu, ni résultat garanti : il vous aide à décider, exécuter et mesurer.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne cherchez pas la perfection avant le premier test réel.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous pouvez reformuler votre objectif en une phrase.</span></div>
+ <label class="done"><input type="checkbox" data-done="0"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Diagnostic express">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 02 / 28</div>
+ <h2>Diagnostic express</h2><p class="lead">Répondez au diagnostic de départ puis utilisez-le pour choisir votre priorité.</p>
+ <ol><li>Définissez le produit ou problème que vous voulez vendre en une phrase.</li><li>Notez le budget maximal que vous acceptez de risquer sur le premier test.</li><li>Identifiez votre canal d’acquisition prioritaire avant de toucher au thème Shopify.</li><li>Calculez votre coût complet par commande, même avec des estimations.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne répondez pas selon ce que vous aimeriez avoir : partez de votre situation réelle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez exactement où vous bloquez aujourd’hui.</span></div>
+ <label class="done"><input type="checkbox" data-done="1"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Roadmap">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 03 / 28</div>
+ <h2>Roadmap</h2><p class="lead">Le parcours SER suit toujours la même logique : comprendre → vérifier → agir → mesurer → corriger.</p>
+ <ol><li>Valider le problème et la demande avant de construire.</li><li>Choisir le modèle logistique puis calculer prix, marge et CAC maximal.</li><li>Configurer Shopify, paiement, livraison, retours et pages obligatoires.</li><li>Lancer un trafic test, mesurer le tunnel et corriger la friction principale.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne sautez pas les étapes qui valident l’économie, la conformité ou le risque.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez quelle est la prochaine action concrète.</span></div>
+ <label class="done"><input type="checkbox" data-done="2"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Les chiffres à piloter">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 04 / 28</div>
+ <h2>Les chiffres à piloter</h2><p class="lead">Quelques indicateurs suffisent pour éviter de décider à l’aveugle.</p>
+ <ol><li>Marge de contribution par commande.</li><li>Taux de conversion et ajout panier.</li><li>Coût d’acquisition client et panier moyen.</li><li>Taux de remboursement/retour et taux de réachat.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Un chiffre isolé n’explique rien : comparez-le à une période, un coût et un objectif.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez choisi 3 à 5 indicateurs à suivre chaque semaine.</span></div>
+ <label class="done"><input type="checkbox" data-done="3"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Client avant produit">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 05 / 28</div>
+ <h2>Client avant produit</h2><p class="lead">Une boutique claire part d’un client précis, pas d’une liste de fonctionnalités.</p>
+ <ol><li>Décrivez une personne réelle et la situation qui déclenche l’achat.</li><li>Listez les trois objections qui peuvent bloquer la commande.</li><li>Reformulez la promesse avec les mots du client.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="4"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Valider le problème">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 06 / 28</div>
+ <h2>Valider le problème</h2><p class="lead">Cherchez des preuves de demande avant d’acheter du stock.</p>
+ <ol><li>Analysez requêtes, avis, forums et concurrents sans confondre popularité et rentabilité.</li><li>Recueillez au moins dix objections/questions répétées.</li><li>Testez une page, une précommande ou un petit lot avant de vous engager.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="5"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Choisir le modèle">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 07 / 28</div>
+ <h2>Choisir le modèle</h2><p class="lead">Stock, fabrication, POD, dropshipping ou digital n’ont pas le même risque.</p>
+ <ol><li>Comparez contrôle qualité, délai, capital, marge et SAV.</li><li>Choisissez le modèle qui reste gérable à votre volume actuel.</li><li>Documentez ce qui dépend d’un fournisseur externe.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="6"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Économie unitaire">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 08 / 28</div>
+ <h2>Économie unitaire</h2><p class="lead">Le prix doit survivre aux coûts réels.</p>
+ <ol><li>Additionnez produit, emballage, paiement, livraison, retours et acquisition.</li><li>Calculez la marge avant charges générales et fiscalité.</li><li>Définissez votre CAC maximal avant de lancer de la publicité.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="7"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Sourcing fournisseur">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 09 / 28</div>
+ <h2>Sourcing fournisseur</h2><p class="lead">Un bon fournisseur se vérifie par des preuves, pas par un catalogue.</p>
+ <ol><li>Commandez un échantillon représentatif.</li><li>Vérifiez délais réels, conditions de retour et responsabilité en cas de défaut.</li><li>Conservez factures, échanges, spécifications et preuves de conformité.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="8"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Architecture Shopify">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 10 / 28</div>
+ <h2>Architecture Shopify</h2><p class="lead">La boutique doit permettre de comprendre et acheter sans friction.</p>
+ <ol><li>Domaine propre, identité simple, navigation courte.</li><li>Configurez informations légales, politiques, e-mail expéditeur et moyens de paiement.</li><li>Supprimez les applications non indispensables au lancement.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-custom-page" target="_blank" rel="noopener">S2 · Shopify — politiques et informations juridiques en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="9"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Fiche produit">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 11 / 28</div>
+ <h2>Fiche produit</h2><p class="lead">Une page doit répondre aux questions avant qu’elles deviennent des objections.</p>
+ <ol><li>Montrez usage, bénéfice, caractéristiques et limites.</li><li>Affichez prix, variantes, livraison, retours et éléments de confiance près du CTA.</li><li>Testez la page sur téléphone avant ordinateur.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-custom-page" target="_blank" rel="noopener">S2 · Shopify — politiques et informations juridiques en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="10"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Checkout et paiement">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 12 / 28</div>
+ <h2>Checkout et paiement</h2><p class="lead">Une vente ratée au checkout est souvent un problème concret.</p>
+ <ol><li>Passez une commande test complète.</li><li>Vérifiez devise, taxes, moyens de paiement, e-mails et redirections.</li><li>Simulez un échec de paiement et un remboursement.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-custom-page" target="_blank" rel="noopener">S2 · Shopify — politiques et informations juridiques en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="11"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Livraison">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 13 / 28</div>
+ <h2>Livraison</h2><p class="lead">Le délai promis doit être réaliste et maîtrisé.</p>
+ <ol><li>Affichez délai, coût et zones de livraison avant paiement.</li><li>Testez les règles de livraison sur plusieurs paniers.</li><li>Prévoyez le traitement des retards et colis perdus.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/new-to-shopify-checklists/general-checklist" target="_blank" rel="noopener">S3 · Shopify — checklist générale nouvelle boutique ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="12"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Retours et SAV">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 14 / 28</div>
+ <h2>Retours et SAV</h2><p class="lead">Le fournisseur n’efface pas votre responsabilité envers le client.</p>
+ <ol><li>Définissez le canal de contact et le délai de réponse.</li><li>Écrivez la procédure retour/remboursement.</li><li>Mesurez les motifs de retour pour corriger la cause.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/new-to-shopify-checklists/general-checklist" target="_blank" rel="noopener">S3 · Shopify — checklist générale nouvelle boutique ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="13"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Conformité France B2C">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 15 / 28</div>
+ <h2>Conformité France B2C</h2><p class="lead">Les informations précontractuelles ne sont pas facultatives.</p>
+ <ol><li>Identifiez clairement le vendeur et les caractéristiques essentielles.</li><li>Rendez visibles prix, paiement, livraison, rétractation et garanties applicables.</li><li>Faites valider les cas particuliers si votre produit est réglementé.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">S4 · DGCCRF — e-commerce B2C ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="14"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Cookies et données">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 16 / 28</div>
+ <h2>Cookies et données</h2><p class="lead">Chaque outil marketing ajoute un traitement de données à comprendre.</p>
+ <ol><li>Listez vos traceurs et leur finalité.</li><li>Distinguez les traceurs strictement nécessaires des autres.</li><li>Ne collectez que les données utiles et documentez vos prestataires.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">S4 · DGCCRF — e-commerce B2C ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="15"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="TVA et international">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 17 / 28</div>
+ <h2>TVA et international</h2><p class="lead">La fiscalité dépend du statut, du flux et du pays.</p>
+ <ol><li>Cartographiez pays de vente, lieu du stock et type de client.</li><li>Vérifiez TVA/OSS/IOSS auprès des sources officielles avant d’automatiser.</li><li>Ne recopiez jamais un réglage fiscal d’une autre boutique sans vérifier votre cas.</li></ol>
+ <div class="sources"><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/livraison-quelles-sont-les-obligations-du-professionnel-et-les-recours" target="_blank" rel="noopener">S5 · DGCCRF — livraison ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="16"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Acquisition organique">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 18 / 28</div>
+ <h2>Acquisition organique</h2><p class="lead">Le contenu sert d’abord à tester des angles et objections.</p>
+ <ol><li>Créez 10 contenus autour de trois angles : problème, preuve, démonstration.</li><li>Ajoutez un CTA unique et mesurable.</li><li>Comparez clics qualifiés, pas seulement vues.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="17"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="UGC et créateurs">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 19 / 28</div>
+ <h2>UGC et créateurs</h2><p class="lead">Choisissez des créateurs par adéquation, pas par taille d’audience.</p>
+ <ol><li>Rédigez un brief avec message, preuve, contraintes et livrables.</li><li>Définissez droits d’usage, durée et rémunération.</li><li>Mesurez les contenus individuellement avec liens ou codes.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="18"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Publicité">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 20 / 28</div>
+ <h2>Publicité</h2><p class="lead">La publicité accélère ce qui existe déjà ; elle ne répare pas une offre confuse.</p>
+ <ol><li>Testez une hypothèse par campagne.</li><li>Plafonnez le budget et définissez un critère d’arrêt.</li><li>Séparez problème créatif, problème d’offre et problème de page.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="19"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Email et réachat">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 21 / 28</div>
+ <h2>Email et réachat</h2><p class="lead">Le premier achat n’est pas la fin du parcours.</p>
+ <ol><li>Configurez confirmation, suivi et demande d’avis utiles.</li><li>Segmentez les relances selon le comportement.</li><li>Mesurez revenu de réachat sans sur-solliciter.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="20"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Analytics">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 22 / 28</div>
+ <h2>Analytics</h2><p class="lead">Un tableau de bord simple vaut mieux que vingt rapports.</p>
+ <ol><li>Suivez visites, ajout panier, checkout, commandes et marge.</li><li>Ajoutez la source d’acquisition à chaque lecture.</li><li>Écrivez chaque semaine une seule décision issue des données.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="21"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Lancement contrôlé">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 23 / 28</div>
+ <h2>Lancement contrôlé</h2><p class="lead">Lancez petit pour apprendre vite.</p>
+ <ol><li>Ouvrez à un trafic limité.</li><li>Observez les sessions et retours clients.</li><li>Corrigez la friction principale avant d’augmenter le budget.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="22"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Itération 30 jours">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 24 / 28</div>
+ <h2>Itération 30 jours</h2><p class="lead">Le but du premier mois est d’apprendre ce qui doit être renforcé.</p>
+ <ol><li>Semaine 1 : offre et tunnel.</li><li>Semaine 2 : créatifs et trafic.</li><li>Semaine 3 : conversion et SAV.</li><li>Semaine 4 : réachat, marge et décision de poursuivre/pivoter.</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Ne transformez pas cette étape en projet parallèle.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve ou un test concret avant de passer à la suite.</span></div>
+ <label class="done"><input type="checkbox" data-done="23"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Les erreurs qui coûtent le plus">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 25 / 28</div>
+ <h2>Les erreurs qui coûtent le plus</h2><p class="lead">Relisez cette page avant toute dépense importante.</p>
+ <ol><li>Construire le site avant de vérifier le produit et la marge.</li><li>Copier un concurrent sans comprendre son trafic, ses coûts et son SAV.</li><li>Sous-estimer retours, livraison, frais de paiement et acquisition.</li><li>Lancer de la publicité sans hypothèse ni critère d’arrêt.</li><li>Négliger les obligations de vente à distance et la sécurité produit.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne corrigez pas dix choses à la fois : identifiez la friction principale.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez identifié votre erreur la plus probable et l’action corrective.</span></div>
+ <label class="done"><input type="checkbox" data-done="24"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Plan d’action 7 jours">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 26 / 28</div>
+ <h2>Plan d’action 7 jours</h2><p class="lead">Une semaine pour transformer le guide en actions observables.</p>
+ <ol><li>J1 : client, problème, proposition de valeur.</li><li>J2 : validation produit + échantillon ou preuve de demande.</li><li>J3 : prix, coûts, marge et CAC maximal.</li><li>J4 : Shopify, domaine, navigation, fiche produit.</li><li>J5 : paiement, livraison, retours, conformité.</li><li>J6 : 10 créatifs et un canal d’acquisition.</li><li>J7 : lancement contrôlé + tableau de bord.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Ne remplacez pas l’exécution par de la recherche infinie.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Chaque journée a une tâche livrable et vérifiable.</span></div>
+ <label class="done"><input type="checkbox" data-done="25"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Checklist finale">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 27 / 28</div>
+ <h2>Checklist finale</h2><p class="lead">Si tout est coché, votre système est suffisamment propre pour passer à l’étape suivante.</p>
+ <ol><li>Client et problème formulés clairement.</li><li>Coût complet et marge connus.</li><li>Échantillon ou preuve produit validé.</li><li>Checkout mobile testé.</li><li>Livraison et retours visibles.</li><li>Pages légales et informations vendeur vérifiées.</li><li>Un canal d’acquisition prêt.</li><li>Un tableau de bord hebdomadaire défini.</li></ol>
+ 
+ <div class="avoid"><b>À éviter</b><span>Une case cochée doit correspondre à une preuve réelle : page, test, chiffre, document ou décision.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous avez une preuve pour chaque point critique.</span></div>
+ <label class="done"><input type="checkbox" data-done="26"><span>J’ai terminé cette étape</span></label>
+ </article>
+<article class="page" data-title="Sources &amp; date de revue">
+ <div class="eyebrow">SER GUIDE 02 · ÉTAPE 28 / 28</div>
+ <h2>Sources &amp; date de revue</h2><p class="lead">Les éléments sensibles de ce guide ont été construits à partir des sources ci-dessous, revues le 29 septembre 2026.</p>
+ <ol><li>S1 — Shopify — Liste de contrôle pour vendre en France</li><li>S2 — Shopify — politiques et informations juridiques en France</li><li>S3 — Shopify — checklist générale nouvelle boutique</li><li>S4 — DGCCRF — e-commerce B2C</li><li>S5 — DGCCRF — livraison</li><li>S6 — CNIL — cookies</li><li>S7 — Commission européenne — OSS TVA</li><li>S8 — Your Europe — sécurité des produits</li></ol>
+ <div class="sources"><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">S1 · Shopify — Liste de contrôle pour vendre en France ↗</a><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-custom-page" target="_blank" rel="noopener">S2 · Shopify — politiques et informations juridiques en France ↗</a><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/new-to-shopify-checklists/general-checklist" target="_blank" rel="noopener">S3 · Shopify — checklist générale nouvelle boutique ↗</a><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">S4 · DGCCRF — e-commerce B2C ↗</a><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/livraison-quelles-sont-les-obligations-du-professionnel-et-les-recours" target="_blank" rel="noopener">S5 · DGCCRF — livraison ↗</a><a href="https://www.cnil.fr/fr/definition/cookie" target="_blank" rel="noopener">S6 · CNIL — cookies ↗</a><a href="https://vat-one-stop-shop.ec.europa.eu/guides_en" target="_blank" rel="noopener">S7 · Commission européenne — OSS TVA ↗</a><a href="https://europa.eu/youreurope/business/product-rules-compliance/product-safety-and-liability/selling-products-safely/index_en.htm" target="_blank" rel="noopener">S8 · Your Europe — sécurité des produits ↗</a></div>
+ <div class="avoid"><b>À éviter</b><span>Recontrôlez les tarifs, seuils et règles avant une décision engageante.</span></div>
+ <div class="checkpoint"><b>Checkpoint</b><span>Vous savez où revenir vérifier une information qui peut évoluer.</span></div>
+ <label class="done"><input type="checkbox" data-done="27"><span>J’ai terminé cette étape</span></label>
+ </article></div><div class="nav"><div class="wrap navin"><button id="prev">Précédent</button><button class="next" id="next">Étape suivante</button></div></div></main>
+<div class="scrim" id="scrim"></div><aside class="drawer" id="drawer"><div class="drhead"><b>E-commerce &amp; Shopify 2026</b><span>Guide 02 · 28 étapes</span></div><div class="drlist" id="drlist"></div></aside>
+<script>
+const KEY="serGuide02";const pages=[...document.querySelectorAll(".page")];let idx=0;const $=id=>document.getElementById(id);
+function save(k,v){try{localStorage.setItem(KEY+k,v)}catch(e){}}function get(k){try{return localStorage.getItem(KEY+k)}catch(e){return null}}
+function show(i){if(i<0||i>=pages.length)return;idx=i;pages.forEach((p,n)=>p.classList.toggle("on",n===i));$("step").textContent="Étape "+(i+1)+" / "+pages.length;$("ptitle").textContent=pages[i].dataset.title;$("bar").style.width=((i+1)/pages.length*100)+"%";$("prev").disabled=i===0;$("next").disabled=i===pages.length-1;$("next").textContent=i===pages.length-1?"Terminé":"Étape suivante";[...$("drlist").children].forEach((b,n)=>b.classList.toggle("cur",n===i));save("Idx",i);closeMenu();scrollTo(0,0)}
+function openReader(){ $("cover").style.display="none";$("setup").style.display="none";$("reader").style.display="block";show(Number(get("Idx")||0));save("Reader","1") }
+$("start").onclick=()=>{$("cover").style.display="none";$("setup").style.display="block"};$("open").onclick=()=>{save("Diag",JSON.stringify({stage:$("d1").value,goal:$("d2").value,constraint:$("d3").value}));openReader()};$("prev").onclick=()=>show(idx-1);$("next").onclick=()=>show(idx+1);
+function closeMenu(){$("drawer").classList.remove("on");$("scrim").classList.remove("on")} $("menu").onclick=()=>{$("drawer").classList.add("on");$("scrim").classList.add("on")};$("scrim").onclick=closeMenu;
+$("drlist").innerHTML=pages.map((p,n)=>"<button>"+String(n+1).padStart(2,"0")+" · "+p.dataset.title+"</button>").join("");[...$("drlist").children].forEach((b,n)=>b.onclick=()=>show(n));
+document.querySelectorAll("[data-done]").forEach(c=>{c.checked=get("D"+c.dataset.done)==="1";c.onchange=()=>save("D"+c.dataset.done,c.checked?"1":"0")});
+addEventListener("load",()=>{if(get("Reader")==="1")openReader()});addEventListener("keydown",e=>{if(e.key==="ArrowRight")show(idx+1);if(e.key==="ArrowLeft")show(idx-1);if(e.key==="Escape")closeMenu()});
+</script></body></html>
