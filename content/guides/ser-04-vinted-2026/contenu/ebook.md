@@ -295,6 +295,46 @@ Auditez vos 10 annonces les plus anciennes.
 
 ---
 
+## 25. Distinguer vente personnelle et achat-revente
+Vendre des biens personnels dont vous n’avez plus l’usage n’est pas la même activité qu’acheter pour revendre avec intention de marge. Cette distinction change les questions fiscales, sociales et professionnelles.
+### Action maintenant
+Classez vos 30 dernières ventes : bien personnel, fabrication, achat-revente, autre.
+### Checkpoint
+- [ ] Vous savez quelle partie de votre activité nécessite une vérification fiscale ou professionnelle.
+
+---
+## 26. Construire un coût complet par article
+Prix d’achat, nettoyage, emballage, temps, boost éventuel, remise et litige réduisent la marge réelle.
+### Action maintenant
+Calculez la marge nette de 10 ventes récentes, pas seulement prix de vente moins prix d’achat.
+### Checkpoint
+- [ ] Vous connaissez votre marge médiane réelle.
+
+---
+## 27. Standardiser photos et mesures
+Une annonce fiable réduit questions et litiges. Utilisez la même séquence : face, dos, étiquette, défaut, mesure clé, détail matière.
+### Action maintenant
+Créez une checklist photo réutilisable avant chaque mise en ligne.
+### Checkpoint
+- [ ] Les défauts importants sont visibles et décrits.
+
+---
+## 28. Définir une politique de négociation
+Accepter toutes les offres détruit la marge ; refuser mécaniquement peut ralentir le stock. Définissez prix cible, plancher et durée avant baisse.
+### Action maintenant
+Ajoutez à chaque article : prix affiché, cible, plancher, date de révision.
+### Checkpoint
+- [ ] Une offre peut être acceptée ou refusée sans improviser.
+
+---
+## 29. Faire le bilan mensuel
+Mesurez stock dormant, marge, délai moyen de vente, litiges et temps passé. Si l’activité devient habituelle ou structurée, revalidez son cadre.
+### Action maintenant
+Créez un tableau mensuel à cinq indicateurs.
+### Checkpoint
+- [ ] Vous savez si vous videz un dressing ou exploitez une activité de revente.
+
+---
 ## Conclusion
 
 Le bon résultat n’est pas un écran de statistiques : c’est un système que vous comprenez, pouvez expliquer et améliorer sans masquer ses risques.
