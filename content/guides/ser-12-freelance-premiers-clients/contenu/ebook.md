@@ -295,6 +295,66 @@ Simulez un prospect de A à Z.
 
 ---
 
+## 25. Créer un système de preuve
+
+Avant d’avoir beaucoup de clients, utilisez démonstrations, audits, prototypes, cas personnels et résultats vérifiables pour réduire le risque perçu.
+
+### Action maintenant
+Préparez trois preuves montrant votre méthode et votre niveau.
+
+### Checkpoint
+- [ ] Votre offre n’exige pas que le prospect vous croie sur parole.
+
+---
+
+## 26. Standardiser devis et périmètre
+
+Définissez livrables, exclusions, calendrier, nombre de retours, paiement et conditions de changement.
+
+### Action maintenant
+Transformez votre dernier devis en modèle réutilisable.
+
+### Checkpoint
+- [ ] Le client sait ce qui est inclus et ce qui déclenche un avenant.
+
+---
+
+## 27. Préparer la facturation électronique
+
+Le calendrier français 2026/2027 impose de distinguer simple PDF et facture électronique dans le champ de la réforme.
+
+### Action maintenant
+Vérifiez si votre activité est dans le champ et si votre outil sait recevoir les factures électroniques.
+
+### Checkpoint
+- [ ] Votre organisation tient compte du calendrier officiel applicable.
+
+---
+
+## 28. Mesurer le pipeline, pas l’espoir
+
+Prospects ciblés, réponses, rendez-vous, devis, signatures et encaissements permettent d’identifier le vrai blocage.
+
+### Action maintenant
+Calculez vos taux de passage sur les 30 derniers prospects.
+
+### Checkpoint
+- [ ] Vous savez si le problème vient du ciblage, du message, de l’appel ou de l’offre.
+
+---
+
+## 29. Transformer un premier client en système
+
+Après livraison, demandez feedback, autorisation de cas client si pertinent, recommandation et besoin suivant.
+
+### Action maintenant
+Ajoutez une séquence de clôture à chaque mission.
+
+### Checkpoint
+- [ ] Chaque mission peut produire preuve, recommandation ou récurrence.
+
+---
+
 ## Fin du parcours
 
 Le système doit rester documenté, mesurable et révisable. Ce guide ne garantit ni audience, ni clients, ni revenus.
