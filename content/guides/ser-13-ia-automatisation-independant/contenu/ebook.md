@@ -295,6 +295,66 @@ Faites échouer volontairement le workflow.
 
 ---
 
+## 25. Appliquer les repères AI Act 2026
+
+Au 29 septembre 2026, certaines obligations sont déjà applicables, notamment des règles de transparence prévues par l’article 50 depuis le 2 août 2026, tandis que d’autres obligations restent phasées.
+
+### Action maintenant
+Pour chaque usage IA significatif, notez rôle, finalité, type de données et obligation potentielle.
+
+### Checkpoint
+- [ ] Vous ne traitez pas « l’AI Act » comme une règle uniforme pour tous les usages.
+
+---
+
+## 26. Encadrer les agents qui agissent
+
+Un agent capable d’envoyer, supprimer, publier, payer ou modifier une base doit avoir des limites plus strictes qu’un assistant qui propose un brouillon.
+
+### Action maintenant
+Listez les actions irréversibles et imposez validation humaine ou seuil adapté.
+
+### Checkpoint
+- [ ] Une erreur de modèle ne peut pas déclencher librement une action critique.
+
+---
+
+## 27. Tester les permissions minimales
+
+Une intégration ne doit pas recevoir plus de droits que nécessaire. Limitez scopes, comptes, environnements et durée des accès.
+
+### Action maintenant
+Réduisez les permissions d’un workflow existant au minimum fonctionnel.
+
+### Checkpoint
+- [ ] Une compromission aurait un rayon d’impact limité.
+
+---
+
+## 28. Créer un jeu de tests de non-régression
+
+Un changement de modèle, prompt ou API peut casser un workflow silencieusement.
+
+### Action maintenant
+Conservez 10 cas représentatifs et rejouez-les après toute modification importante.
+
+### Checkpoint
+- [ ] Une régression peut être détectée avant le client.
+
+---
+
+## 29. Revue trimestrielle sécurité / ROI / conformité
+
+Un workflow utile aujourd’hui peut devenir coûteux, inutile ou risqué après changement d’outil ou de règle.
+
+### Action maintenant
+Planifiez une revue trimestrielle avec propriétaire, coût, incidents, données et conformité.
+
+### Checkpoint
+- [ ] Les automatisations ont un cycle de vie et une date de révision.
+
+---
+
 ## Fin du parcours
 
 Le système doit rester documenté, mesurable et révisable. Ce guide ne garantit ni audience, ni clients, ni revenus.
