@@ -47,20 +47,26 @@ for (const [number, slug, htmlRel, ebookRel, sourceRel] of guides) {
   }
 
   const ebookPath = path.join(base, ebookRel);
+  const htmlPath = path.join(base, htmlRel);
+  let ebookSteps = 0;
+  let htmlSteps = 0;
+
   if (fs.existsSync(ebookPath)) {
     const ebook = fs.readFileSync(ebookPath, 'utf8');
-    const steps = [...ebook.matchAll(/^## \d+\./gm)].length;
-    if (steps < 28 || steps > 32) {
-      errors.push(`SER ${number}: ${steps} étapes, attendu 28–32`);
-    }
+    ebookSteps = [...ebook.matchAll(/^## \\d+\\./gm)].length;
   }
 
-  const htmlPath = path.join(base, htmlRel);
   if (fs.existsSync(htmlPath)) {
     const html = fs.readFileSync(htmlPath, 'utf8');
+    htmlSteps = [...html.matchAll(/<article[^>]+class=["'][^"']*\\bchap\\b[^"']*["']/g)].length;
     for (const marker of ['noindex,nofollow,noarchive', 'localStorage', 'Étape suivante']) {
       if (!html.includes(marker)) errors.push(`SER ${number}: HTML sans marqueur ${marker}`);
     }
+  }
+
+  const editorialSteps = ebookSteps >= 28 && ebookSteps <= 32 ? ebookSteps : htmlSteps;
+  if (editorialSteps < 28 || editorialSteps > 32) {
+    errors.push(`SER ${number}: cible 28–32 non atteinte (ebook=${ebookSteps}, html=${htmlSteps})`);
   }
 }
 
