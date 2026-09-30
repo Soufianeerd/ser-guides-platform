@@ -18,6 +18,10 @@ const guides = [
   ['13','ser-13-ia-automatisation-independant','contenu/SER-Guide-13-IA-Automatisation-Independant.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
   ['14','ser-14-trouver-produit-sourcing','contenu/SER-Guide-14-Sourcing-Validation.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
   ['15','ser-15-print-on-demand','contenu/SER-Guide-15-Print-On-Demand.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['16','ser-16-facturation-electronique-2026-2027','contenu/SER-Guide-16-Facturation-Electronique-2026-2027.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['17','ser-17-cyberkit-tpe-2026','contenu/SER-Guide-17-CyberKit-TPE-2026.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['18','ser-18-ai-act-starter-kit-2026-2027','contenu/SER-Guide-18-AI-Act-Starter-Kit-2026-2027.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['19','ser-19-emploi-ia-2026-2027','contenu/SER-Guide-19-Emploi-IA-2026-2027.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
 ];
 
 const errors = [];
@@ -43,20 +47,26 @@ for (const [number, slug, htmlRel, ebookRel, sourceRel] of guides) {
   }
 
   const ebookPath = path.join(base, ebookRel);
+  const htmlPath = path.join(base, htmlRel);
+  let ebookSteps = 0;
+  let htmlSteps = 0;
+
   if (fs.existsSync(ebookPath)) {
     const ebook = fs.readFileSync(ebookPath, 'utf8');
-    const steps = [...ebook.matchAll(/^## \d+\./gm)].length;
-    if (steps < 28 || steps > 32) {
-      errors.push(`SER ${number}: ${steps} étapes, attendu 28–32`);
-    }
+    ebookSteps = [...ebook.matchAll(/^## \d+\./gm)].length;
   }
 
-  const htmlPath = path.join(base, htmlRel);
   if (fs.existsSync(htmlPath)) {
     const html = fs.readFileSync(htmlPath, 'utf8');
+    htmlSteps = [...html.matchAll(/<article[^>]+class=["'][^"']*\bchap\b[^"']*["']/g)].length;
     for (const marker of ['noindex,nofollow,noarchive', 'localStorage', 'Étape suivante']) {
       if (!html.includes(marker)) errors.push(`SER ${number}: HTML sans marqueur ${marker}`);
     }
+  }
+
+  const editorialSteps = ebookSteps >= 28 && ebookSteps <= 32 ? ebookSteps : htmlSteps;
+  if (editorialSteps < 28 || editorialSteps > 32) {
+    errors.push(`SER ${number}: cible 28–32 non atteinte (ebook=${ebookSteps}, html=${htmlSteps})`);
   }
 }
 

@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#1E1B4B">
+<title>SER Guide 19 — Trouver un emploi avec l’IA</title>
+<style>
+:root{--ink:#1E1B4B;--accent:#4F46E5;--accent2:#FB7185;--paper:#F8F7FF;--card:#fff;--soft:#64748B;--rule:#E2E8F0;--danger:#9F1239;--dangerBg:#FFF1F2;--shadow:0 18px 50px -30px rgba(15,23,42,.35)}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}.wrap{max-width:780px;margin:auto;padding:0 22px}.seal{width:48px;height:48px;border:1.5px solid currentColor;display:grid;place-items:center;font-weight:800;letter-spacing:.08em;border-radius:12px}.cover{min-height:100dvh;background:var(--ink);color:#F8FAFC;display:flex;flex-direction:column;justify-content:space-between;padding:max(28px,env(safe-area-inset-top)) 0 30px;background-image:radial-gradient(80% 60% at 85% 15%,color-mix(in srgb,var(--accent) 40%,transparent),transparent 70%)}.coverTop{display:flex;gap:14px;align-items:center;color:#fff}.coverTop small{display:block;color:#CBD5E1}.hero{padding:46px 0}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;color:color-mix(in srgb,var(--accent2) 80%,white);text-transform:uppercase}.hero h1{font-size:clamp(42px,10vw,72px);line-height:.98;letter-spacing:-.045em;margin:12px 0 14px}.hero h1 em{display:block;font-style:normal;font-weight:500;color:#CBD5E1;font-size:.55em;line-height:1.15;margin-top:12px;letter-spacing:-.025em}.hero p{max-width:680px;font-size:18px;color:#CBD5E1}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.chips span{border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:7px 10px;font-size:12px;font-weight:700}.notice{border-left:3px solid var(--accent2);padding:10px 14px;background:rgba(255,255,255,.06);font-size:13px;color:#CBD5E1;border-radius:0 8px 8px 0}.start{width:100%;border:0;border-radius:10px;padding:16px;background:var(--accent);color:white;font-weight:800;cursor:pointer}.reader{display:none;padding-bottom:92px}.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}.topRow{height:62px;display:flex;align-items:center;gap:12px}.menu{border:1px solid var(--rule);background:#fff;border-radius:9px;width:42px;height:42px;cursor:pointer}.meta{flex:1;min-width:0}.meta b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta small{display:block;color:var(--soft);font-size:11px}.progress{height:3px;background:var(--rule)}.progress i{display:block;height:100%;width:0;background:var(--accent);transition:.25s}.chap{display:none;padding:38px 0 16px}.chap.on{display:block}.stepK{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin-bottom:10px}.chap h2{font-size:clamp(31px,7vw,46px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px}.copy{font-size:18px}.copy strong{font-weight:800}.action,.check,.sources{margin:28px 0;border:1px solid var(--rule);background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow)}.action{border-color:color-mix(in srgb,var(--accent) 35%,var(--rule));background:color-mix(in srgb,var(--accent) 6%,white)}.action>b,.check>b,.sources>b{display:block;font-size:11px;letter-spacing:.1em;color:var(--accent);margin-bottom:8px}.action p{margin:0}.check label{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--rule);cursor:pointer}.check label:first-of-type{border-top:0}.check input{width:20px;height:20px;accent-color:var(--accent);flex:0 0 auto}.check input:checked+span{text-decoration:line-through;color:var(--soft)}.sources a{display:block;padding:10px 0;border-top:1px solid var(--rule);color:var(--accent);font-weight:700;text-decoration:none}.sources a:first-of-type{border-top:0}.sources small{display:block;color:var(--soft);margin-top:12px}.bottom{position:fixed;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom)}.bottom .wrap{height:72px;display:flex;gap:10px;align-items:center}.navBtn{border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:10px;padding:13px 14px;font-weight:800;cursor:pointer}.navBtn.primary{flex:1;background:var(--accent);border-color:var(--accent);color:#fff}.navBtn:disabled{opacity:.35}.scrim{position:fixed;inset:0;background:rgba(15,23,42,.48);z-index:29;opacity:0;pointer-events:none;transition:.2s}.scrim.on{opacity:1;pointer-events:auto}.drawer{position:fixed;z-index:30;left:0;top:0;bottom:0;width:min(360px,90vw);background:#fff;transform:translateX(-102%);transition:.25s;display:flex;flex-direction:column;box-shadow:30px 0 60px -35px #000}.drawer.on{transform:none}.drawerHead{padding:max(22px,env(safe-area-inset-top)) 20px 18px;background:var(--ink);color:#fff}.drawerHead b{display:block}.drawerHead small{color:#CBD5E1}.toc{overflow:auto;padding:8px 0 28px}.tocItem{width:100%;border:0;background:#fff;text-align:left;padding:12px 18px;display:flex;gap:12px;cursor:pointer;color:var(--ink)}.tocItem:hover,.tocItem.active{background:color-mix(in srgb,var(--accent) 8%,white);color:var(--accent)}.tocItem span{font:700 11px ui-monospace,monospace;color:var(--soft);width:24px}.tocItem.active span{color:var(--accent)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#F1F5F9;padding:1px 5px;border-radius:4px;font-size:.9em}
+@media print{.cover,.top,.bottom,.drawer,.scrim{display:none!important}.reader{display:block!important;padding:0}.chap{display:block!important;page-break-before:always}.chap:first-child{page-break-before:auto}.wrap{max-width:760px}}
+</style>
+</head>
+<body>
+<section class="cover" id="cover">
+  <div class="wrap coverTop"><div class="seal">SER</div><div><b>Guide 19</b><small>SER Guides · Emploi &amp; Carrière · Édition 2026–2027</small></div></div>
+  <div class="wrap hero"><div class="eyebrow">GUIDE WEB INTERACTIF · VÉRIFIÉ LE 30/09/2026</div><h1>Trouver un emploi avec l’IA<em>CV, candidatures et entretiens sans devenir générique</em></h1><p>Utiliser l’IA pour mieux cibler, personnaliser et s’entraîner sans inventer une seule ligne de son parcours.</p><div class="chips"><span>30 étapes</span><span>checklists interactives</span><span>sources officielles</span><span>reprise automatique</span></div><div class="notice">Aucune méthode ne garantit une embauche. L’IA doit rester un assistant et toutes les informations transmises aux recruteurs doivent être exactes.</div></div>
+  <div class="wrap"><button class="start" id="start">Ouvrir le guide →</button></div>
+</section>
+
+<aside class="drawer" id="drawer"><div class="drawerHead"><b>SER Guide 19</b><small>Trouver un emploi avec l’IA</small></div><div class="toc"><button class="tocItem" data-go="0"><span>01</span>Définir une cible avant d’ouvrir l’IA</button>
+<button class="tocItem" data-go="1"><span>02</span>Créer votre CV maître</button>
+<button class="tocItem" data-go="2"><span>03</span>Construire votre inventaire de compétences</button>
+<button class="tocItem" data-go="3"><span>04</span>Faire analyser une offre</button>
+<button class="tocItem" data-go="4"><span>05</span>Construire une matrice de correspondance</button>
+<button class="tocItem" data-go="5"><span>06</span>Garder un CV lisible par les ATS</button>
+<button class="tocItem" data-go="6"><span>07</span>Adapter le titre du CV</button>
+<button class="tocItem" data-go="7"><span>08</span>Réécrire l’accroche sans cliché</button>
+<button class="tocItem" data-go="8"><span>09</span>Renforcer les expériences</button>
+<button class="tocItem" data-go="9"><span>10</span>Quantifier quand c’est vrai</button>
+<button class="tocItem" data-go="10"><span>11</span>Adapter les compétences</button>
+<button class="tocItem" data-go="11"><span>12</span>Optimiser LinkedIn</button>
+<button class="tocItem" data-go="12"><span>13</span>Vérifier votre e-réputation</button>
+<button class="tocItem" data-go="13"><span>14</span>Écrire une lettre réellement personnalisée</button>
+<button class="tocItem" data-go="14"><span>15</span>Écrire un email de candidature court</button>
+<button class="tocItem" data-go="15"><span>16</span>Contacter un recruteur</button>
+<button class="tocItem" data-go="16"><span>17</span>Construire des alertes</button>
+<button class="tocItem" data-go="17"><span>18</span>Tenir un tracker</button>
+<button class="tocItem" data-go="18"><span>19</span>Relancer proprement</button>
+<button class="tocItem" data-go="19"><span>20</span>Préparer l’entreprise avant l’entretien</button>
+<button class="tocItem" data-go="20"><span>21</span>Utiliser la méthode STAR</button>
+<button class="tocItem" data-go="21"><span>22</span>Faire une simulation avec l’IA</button>
+<button class="tocItem" data-go="22"><span>23</span>Préparer les questions difficiles</button>
+<button class="tocItem" data-go="23"><span>24</span>Préparer vos questions au recruteur</button>
+<button class="tocItem" data-go="24"><span>25</span>Préparer la négociation</button>
+<button class="tocItem" data-go="25"><span>26</span>Empêcher les hallucinations</button>
+<button class="tocItem" data-go="26"><span>27</span>Protéger vos données</button>
+<button class="tocItem" data-go="27"><span>28</span>Adapter au Luxembourg ou à la Suisse</button>
+<button class="tocItem" data-go="28"><span>29</span>Plan intensif sur 14 jours</button>
+<button class="tocItem" data-go="29"><span>30</span>Mesurer et améliorer</button></div></aside><div class="scrim" id="scrim"></div>
+
+<main class="reader" id="reader">
+  <header class="top"><div class="wrap topRow"><button class="menu" id="menu" aria-label="Sommaire">☰</button><div class="meta"><small id="counter">Étape 01 / 30</small><b id="currentTitle">Définir une cible avant d’ouvrir l’IA</b></div></div><div class="progress"><i id="bar"></i></div></header>
+  <div class="wrap">
+<article class="chap on" data-index="0" data-title="Définir une cible avant d’ouvrir l’IA">
+  <div class="stepK">ÉTAPE 01 / 30</div>
+  <h2>Définir une cible avant d’ouvrir l’IA</h2>
+  <div class="copy"><p>“Je cherche un travail” produit des réponses vagues.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Écrivez : poste visé, secteur, zone, type de contrat, salaire cible et contraintes.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="0-0"><span>Vous avez une cible principale et une cible secondaire.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="1" data-title="Créer votre CV maître">
+  <div class="stepK">ÉTAPE 02 / 30</div>
+  <h2>Créer votre CV maître</h2>
+  <div class="copy"><p>Le CV maître contient toutes vos expériences, compétences, outils et résultats. Il sert de source de vérité.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Regroupez votre parcours complet dans un document privé.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="1-0"><span>Rien n’est inventé.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="2" data-title="Construire votre inventaire de compétences">
+  <div class="stepK">ÉTAPE 03 / 30</div>
+  <h2>Construire votre inventaire de compétences</h2>
+  <div class="copy"><p>Séparez compétences techniques, métiers, langues, outils et comportements observables.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Associez chaque compétence à une preuve.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="2-0"><span>Chaque compétence importante peut être illustrée.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="3" data-title="Faire analyser une offre">
+  <div class="stepK">ÉTAPE 04 / 30</div>
+  <h2>Faire analyser une offre</h2>
+  <div class="copy"><p>L’IA peut extraire missions, compétences, mots-clés, critères obligatoires et signaux secondaires.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Demandez un tableau “exigence / preuve dans mon parcours / manque”.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="3-0"><span>L’analyse ne modifie pas votre expérience.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="4" data-title="Construire une matrice de correspondance">
+  <div class="stepK">ÉTAPE 05 / 30</div>
+  <h2>Construire une matrice de correspondance</h2>
+  <div class="copy"><p>Ce tableau évite les candidatures automatiques hors sujet.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Classez chaque offre : forte, moyenne ou faible correspondance.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="4-0"><span>Vous concentrez votre temps sur les offres pertinentes.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="5" data-title="Garder un CV lisible par les ATS">
+  <div class="stepK">ÉTAPE 06 / 30</div>
+  <h2>Garder un CV lisible par les ATS</h2>
+  <div class="copy"><p>Structure simple, titres standards, texte sélectionnable, dates cohérentes et informations essentielles clairement placées.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Exportez en PDF et vérifiez que le texte reste sélectionnable.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="5-0"><span>Votre CV n’est pas une image.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="6" data-title="Adapter le titre du CV">
+  <div class="stepK">ÉTAPE 07 / 30</div>
+  <h2>Adapter le titre du CV</h2>
+  <div class="copy"><p>Le titre doit refléter le poste réellement visé, pas une liste de dix métiers.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Utilisez l’intitulé courant du marché si votre expérience le justifie.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="6-0"><span>Le recruteur comprend votre cible en trois secondes.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="7" data-title="Réécrire l’accroche sans cliché">
+  <div class="stepK">ÉTAPE 08 / 30</div>
+  <h2>Réécrire l’accroche sans cliché</h2>
+  <div class="copy"><p>Évitez “motivé, dynamique, passionné” sans preuve.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Demandez à l’IA trois versions basées uniquement sur vos faits.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="7-0"><span>L’accroche contient rôle, expérience et valeur concrète.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="8" data-title="Renforcer les expériences">
+  <div class="stepK">ÉTAPE 09 / 30</div>
+  <h2>Renforcer les expériences</h2>
+  <div class="copy"><p>Une bonne ligne combine action, contexte et résultat lorsque vous avez une mesure fiable.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Transformez cinq tâches en réalisations factuelles.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="8-0"><span>Aucun chiffre n’a été inventé.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="9" data-title="Quantifier quand c’est vrai">
+  <div class="stepK">ÉTAPE 10 / 30</div>
+  <h2>Quantifier quand c’est vrai</h2>
+  <div class="copy"><p>Volumes, délais, taille de portefeuille, taux, budget ou nombre d’utilisateurs peuvent rendre l’expérience concrète.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Retrouvez les chiffres que vous pouvez défendre en entretien.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="9-0"><span>Chaque chiffre est explicable.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="10" data-title="Adapter les compétences">
+  <div class="stepK">ÉTAPE 11 / 30</div>
+  <h2>Adapter les compétences</h2>
+  <div class="copy"><p>Reprenez le vocabulaire du métier lorsque cela correspond vraiment à votre expérience.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Croisez offre et CV maître.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="10-0"><span>Aucun mot-clé n’est ajouté sans preuve.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="11" data-title="Optimiser LinkedIn">
+  <div class="stepK">ÉTAPE 12 / 30</div>
+  <h2>Optimiser LinkedIn</h2>
+  <div class="copy"><p>Titre, résumé, expériences et compétences doivent raconter la même cible que votre CV.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Alignez le titre LinkedIn avec votre recherche actuelle.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="11-0"><span>CV et LinkedIn ne se contredisent pas.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="12" data-title="Vérifier votre e-réputation">
+  <div class="stepK">ÉTAPE 13 / 30</div>
+  <h2>Vérifier votre e-réputation</h2>
+  <div class="copy"><p>Les recruteurs peuvent consulter vos profils publics.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Recherchez votre nom et vérifiez ce qui est public.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="12-0"><span>Vos profils principaux sont cohérents et professionnels.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="13" data-title="Écrire une lettre réellement personnalisée">
+  <div class="stepK">ÉTAPE 14 / 30</div>
+  <h2>Écrire une lettre réellement personnalisée</h2>
+  <div class="copy"><p>L’IA peut structurer, mais le fond doit relier entreprise, poste et expérience réelle.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Fournissez trois éléments précis sur l’entreprise et trois preuves de votre parcours.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="13-0"><span>La lettre ne pourrait pas être envoyée à 50 entreprises sans modification.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="14" data-title="Écrire un email de candidature court">
+  <div class="stepK">ÉTAPE 15 / 30</div>
+  <h2>Écrire un email de candidature court</h2>
+  <div class="copy"><p>L’email ne doit pas répéter toute la lettre.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Utilisez quatre blocs : contexte, valeur, pièces jointes, disponibilité.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="14-0"><span>Le message tient sur un écran.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="15" data-title="Contacter un recruteur">
+  <div class="stepK">ÉTAPE 16 / 30</div>
+  <h2>Contacter un recruteur</h2>
+  <div class="copy"><p>Un message utile vaut mieux qu’un “Bonjour, avez-vous des opportunités ?”.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Mentionnez rôle visé, compétence distinctive et raison du contact.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="15-0"><span>Votre demande est spécifique.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="16" data-title="Construire des alertes">
+  <div class="stepK">ÉTAPE 17 / 30</div>
+  <h2>Construire des alertes</h2>
+  <div class="copy"><p>Automatisez la découverte, pas la candidature.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez plusieurs alertes avec variantes d’intitulés et zones.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="16-0"><span>Vous recevez des offres ciblées.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="17" data-title="Tenir un tracker">
+  <div class="stepK">ÉTAPE 18 / 30</div>
+  <h2>Tenir un tracker</h2>
+  <div class="copy"><p>Entreprise, poste, date, source, contact, statut, relance, entretien, retour.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Centralisez toutes les candidatures.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="17-0"><span>Vous ne postulez pas deux fois par erreur.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="18" data-title="Relancer proprement">
+  <div class="stepK">ÉTAPE 19 / 30</div>
+  <h2>Relancer proprement</h2>
+  <div class="copy"><p>Une relance doit rappeler le poste et apporter un signal utile, pas mettre la pression.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Préparez un modèle que vous personnalisez en 60 secondes.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="18-0"><span>Chaque relance est datée dans le tracker.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="19" data-title="Préparer l’entreprise avant l’entretien">
+  <div class="stepK">ÉTAPE 20 / 30</div>
+  <h2>Préparer l’entreprise avant l’entretien</h2>
+  <div class="copy"><p>Activité, clients, produits, actualités, équipe et enjeux du poste.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Demandez à l’IA de structurer vos notes, puis vérifiez les faits sur des sources fiables.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="19-0"><span>Vous savez pourquoi cette entreprise vous intéresse.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="20" data-title="Utiliser la méthode STAR">
+  <div class="stepK">ÉTAPE 21 / 30</div>
+  <h2>Utiliser la méthode STAR</h2>
+  <div class="copy"><p>Situation, Tâche, Action, Résultat : un cadre simple pour raconter des expériences concrètes.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Préparez cinq histoires STAR.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="20-0"><span>Chaque histoire vient de votre parcours réel.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="21" data-title="Faire une simulation avec l’IA">
+  <div class="stepK">ÉTAPE 22 / 30</div>
+  <h2>Faire une simulation avec l’IA</h2>
+  <div class="copy"><p>Demandez un entretien réaliste, une question à la fois, puis un retour sur clarté, preuves et structure.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Faites une session de 20 minutes à voix haute.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="21-0"><span>Vous répondez sans lire un script.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="22" data-title="Préparer les questions difficiles">
+  <div class="stepK">ÉTAPE 23 / 30</div>
+  <h2>Préparer les questions difficiles</h2>
+  <div class="copy"><p>Trou dans le CV, reconversion, échec, départ rapide, manque d’expérience : mieux vaut préparer une réponse honnête.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez trois zones qui pourraient susciter une question.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="22-0"><span>Les réponses restent vraies et assumables.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="23" data-title="Préparer vos questions au recruteur">
+  <div class="stepK">ÉTAPE 24 / 30</div>
+  <h2>Préparer vos questions au recruteur</h2>
+  <div class="copy"><p>Management, objectifs des 90 premiers jours, équipe, priorités, outils et critères de réussite.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Choisissez cinq questions adaptées au poste.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="23-0"><span>Vous n’arrivez pas à la fin sans question.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="24" data-title="Préparer la négociation">
+  <div class="stepK">ÉTAPE 25 / 30</div>
+  <h2>Préparer la négociation</h2>
+  <div class="copy"><p>Rassemblez données de marché, niveau du poste, responsabilités et votre valeur, sans laisser l’IA inventer un “salaire moyen” non sourcé.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Définissez cible, minimum et arguments.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="24-0"><span>Votre position est préparée avant l’offre.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="25" data-title="Empêcher les hallucinations">
+  <div class="stepK">ÉTAPE 26 / 30</div>
+  <h2>Empêcher les hallucinations</h2>
+  <div class="copy"><p>L’IA peut ajouter une compétence parce qu’elle apparaît dans l’offre.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Ajoutez dans chaque prompt : “N’invente aucune compétence ou expérience absente de mon CV maître.”</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="25-0"><span>Chaque version est relue ligne par ligne.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="26" data-title="Protéger vos données">
+  <div class="stepK">ÉTAPE 27 / 30</div>
+  <h2>Protéger vos données</h2>
+  <div class="copy"><p>Évitez de transmettre inutilement adresse complète, identifiants, documents sensibles ou données de tiers.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez une version anonymisée de votre CV pour les tests IA.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="26-0"><span>Votre workflow utilise le minimum de données.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="27" data-title="Adapter au Luxembourg ou à la Suisse">
+  <div class="stepK">ÉTAPE 28 / 30</div>
+  <h2>Adapter au Luxembourg ou à la Suisse</h2>
+  <div class="copy"><p>Langues, marché, format des candidatures et attentes peuvent varier. Utilisez l’IA pour préparer des variantes, puis vérifiez les règles locales et les offres réelles.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez une version par marché visé.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="27-0"><span>Vous ne transposez pas automatiquement une candidature française.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="28" data-title="Plan intensif sur 14 jours">
+  <div class="stepK">ÉTAPE 29 / 30</div>
+  <h2>Plan intensif sur 14 jours</h2>
+  <div class="copy"><p>Jours 1–2 : cible et CV maître. 3–4 : CV/LinkedIn. 5–10 : candidatures ciblées et réseau. 11–14 : relances et simulations.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Bloquez deux créneaux quotidiens dédiés.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="28-0"><span>Votre recherche a un rythme concret.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="29" data-title="Mesurer et améliorer">
+  <div class="stepK">ÉTAPE 30 / 30</div>
+  <h2>Mesurer et améliorer</h2>
+  <div class="copy"><p>Suivez candidatures ciblées, réponses, entretiens, refus et raisons obtenues.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Chaque semaine, identifiez l’étape qui bloque : ciblage, CV, entretien ou volume.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="29-0"><span>Vous améliorez le système plutôt que d’envoyer plus au hasard.</span></label></section>
+  <section class="sources"><b>SOURCES OFFICIELLES</b><a href="https://www.francetravail.fr/actualites/a-laffiche/2026/candidats-ce-que-l-ia-change-vra.html" target="_blank" rel="noopener noreferrer">France Travail — ce que l’IA change pour les candidats ↗</a><a href="https://www.francetravail.fr/candidat/vos-recherches/bien-vous-organiser/comment-utiliser-l%27ia-pour-optim.html" target="_blank" rel="noopener noreferrer">France Travail — optimiser sa recherche avec l’IA ↗</a><a href="https://www.francetravail.fr/candidat/vos-recherches/preparer-votre-candidature/entretien/et-si-l%27ia-vous-aidait-a-prepare.html" target="_blank" rel="noopener noreferrer">France Travail — préparer un entretien avec l’IA ↗</a><small>Vérifiées le 30/09/2026. Les sources officielles priment en cas d’évolution.</small></section>
+</article></div>
+</main>
+
+<nav class="bottom" id="bottom" style="display:none"><div class="wrap"><button class="navBtn" id="prev">←</button><button class="navBtn primary" id="next">Étape suivante →</button></div></nav>
+
+<script>
+const GUIDE_KEY="serGuide19";
+const chapters=[...document.querySelectorAll(".chap")];
+const toc=[...document.querySelectorAll(".tocItem")];
+const start=document.getElementById("start"),cover=document.getElementById("cover"),reader=document.getElementById("reader"),bottom=document.getElementById("bottom");
+const prev=document.getElementById("prev"),next=document.getElementById("next"),bar=document.getElementById("bar"),counter=document.getElementById("counter"),currentTitle=document.getElementById("currentTitle");
+const drawer=document.getElementById("drawer"),scrim=document.getElementById("scrim"),menu=document.getElementById("menu");
+let index=Math.max(0,Math.min(chapters.length-1,Number(localStorage.getItem(GUIDE_KEY+":step")||0)));
+function openReader(){cover.style.display="none";reader.style.display="block";bottom.style.display="block";show(index);window.scrollTo(0,0)}
+function show(i){index=Math.max(0,Math.min(chapters.length-1,i));chapters.forEach((c,n)=>c.classList.toggle("on",n===index));toc.forEach((b,n)=>b.classList.toggle("active",n===index));counter.textContent="Étape "+String(index+1).padStart(2,"0")+" / "+chapters.length;currentTitle.textContent=chapters[index].dataset.title;bar.style.width=((index+1)/chapters.length*100)+"%";prev.disabled=index===0;next.textContent=index===chapters.length-1?"Terminer ✓":"Étape suivante →";localStorage.setItem(GUIDE_KEY+":step",String(index));closeDrawer();window.scrollTo({top:0,behavior:"smooth"})}
+function openDrawer(){drawer.classList.add("on");scrim.classList.add("on")} function closeDrawer(){drawer.classList.remove("on");scrim.classList.remove("on")}
+start.addEventListener("click",openReader);menu.addEventListener("click",openDrawer);scrim.addEventListener("click",closeDrawer);
+prev.addEventListener("click",()=>show(index-1));next.addEventListener("click",()=>{if(index<chapters.length-1)show(index+1);else window.scrollTo({top:0,behavior:"smooth"})});
+toc.forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.go))));
+document.querySelectorAll("[data-check]").forEach(cb=>{const key=GUIDE_KEY+":check:"+cb.dataset.check;cb.checked=localStorage.getItem(key)==="1";cb.addEventListener("change",()=>localStorage.setItem(key,cb.checked?"1":"0"))});
+</script>
+</body>
+</html>

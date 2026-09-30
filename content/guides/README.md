@@ -19,6 +19,10 @@ Un dossier par guide. La fiche publique vient de `data/guides.ts`; ce dossier co
 | 13 · IA & automatisation pour indépendant | **fact-check / prépublication** · ebook + web-book générés |
 | 14 · Sourcing & validation produit | **fact-check / prépublication** · ebook + web-book générés |
 | 15 · Print-on-Demand | **fact-check / prépublication** · ebook + web-book générés |
+| 16 · Facturation électronique 2026–2027 | **cadrage / prépublication** · Canva source + sources officielles |
+| 17 · CyberKit TPE | **production / prépublication** · Canva 30 pages + sources officielles |
+| 18 · AI Act Starter Kit | **cadrage / prépublication** · sources officielles UE |
+| 19 · Trouver un emploi avec l’IA | **cadrage / prépublication** · sources France Travail |
 
 ## Règle avant publication
 
@@ -33,3 +37,16 @@ Aucun guide 02–15 n'est marqué READY automatiquement. Avant publication comme
 8. seulement ensuite passage de `plannedGuides` vers `guides` dans `data/guides.ts`.
 
 Voir `AUDIT-PRODUCTION-2026-09-29.md` pour la hiérarchie de roadmap.
+
+## Vague SER 16–19 — ajout du 30/09/2026
+
+Les guides 16–19 prolongent la collection sur des besoins devenus immédiatement actionnables en 2026 : facturation électronique, cybersécurité TPE, conformité IA et recherche d’emploi assistée par IA.
+
+- **SER 16** : priorité commerciale forte liée au calendrier obligatoire 2026–2027.
+- **SER 17** : kit opérationnel cyber pour indépendants/TPE.
+- **SER 18** : contenu informatif sur l’AI Act, sans conseil juridique personnalisé.
+- **SER 19** : méthode pratique pour utiliser l’IA sans falsifier son parcours.
+- **Micro-entreprise 2027** : traité comme prochaine édition du **SER 01**, pas comme un nouveau numéro de guide.
+- **IA pour indépendants** : déjà couvert par **SER 13**, donc pas de doublon.
+
+Ces nouveaux guides restent en prépublication : aucun prix, checkout ou livraison live n’est activé automatiquement.

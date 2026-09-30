@@ -1,0 +1,23 @@
+{
+  "guide_id": "17",
+  "title": "CyberKit TPE",
+  "subtitle": "Sécuriser son entreprise en une journée",
+  "edition": "2026",
+  "locale": [
+    "fr"
+  ],
+  "status": "fact-check",
+  "price": null,
+  "page_target": 30,
+  "page_max": 35,
+  "reviewed_at": "2026-09-30",
+  "review_due_at": "2026-11-30",
+  "publication_blockers": [
+    "QA liens finale",
+    "web-book HTML",
+    "visuels boutique/Instagram",
+    "prix Stripe",
+    "mapping livraison",
+    "achat test"
+  ]
+}
