@@ -18,6 +18,10 @@ const guides = [
   ['13','ser-13-ia-automatisation-independant','contenu/SER-Guide-13-IA-Automatisation-Independant.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
   ['14','ser-14-trouver-produit-sourcing','contenu/SER-Guide-14-Sourcing-Validation.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
   ['15','ser-15-print-on-demand','contenu/SER-Guide-15-Print-On-Demand.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['16','ser-16-facturation-electronique-2026-2027','contenu/SER-Guide-16-Facturation-Electronique-2026-2027.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['17','ser-17-cyberkit-tpe-2026','contenu/SER-Guide-17-CyberKit-TPE-2026.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['18','ser-18-ai-act-starter-kit-2026-2027','contenu/SER-Guide-18-AI-Act-Starter-Kit-2026-2027.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
+  ['19','ser-19-emploi-ia-2026-2027','contenu/SER-Guide-19-Emploi-IA-2026-2027.html','contenu/ebook.md','sources/SOURCE_PACK.md'],
 ];
 
 const errors = [];
