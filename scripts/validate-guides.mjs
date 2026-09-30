@@ -53,12 +53,12 @@ for (const [number, slug, htmlRel, ebookRel, sourceRel] of guides) {
 
   if (fs.existsSync(ebookPath)) {
     const ebook = fs.readFileSync(ebookPath, 'utf8');
-    ebookSteps = [...ebook.matchAll(/^## \\d+\\./gm)].length;
+    ebookSteps = [...ebook.matchAll(/^## \d+\./gm)].length;
   }
 
   if (fs.existsSync(htmlPath)) {
     const html = fs.readFileSync(htmlPath, 'utf8');
-    htmlSteps = [...html.matchAll(/<article[^>]+class=["'][^"']*\\bchap\\b[^"']*["']/g)].length;
+    htmlSteps = [...html.matchAll(/<article[^>]+class=["'][^"']*\bchap\b[^"']*["']/g)].length;
     for (const marker of ['noindex,nofollow,noarchive', 'localStorage', 'Étape suivante']) {
       if (!html.includes(marker)) errors.push(`SER ${number}: HTML sans marqueur ${marker}`);
     }
