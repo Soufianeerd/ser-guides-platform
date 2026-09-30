@@ -36,6 +36,10 @@ export const plannedGuides=[
  {number:'12',title:'Freelance — trouver ses 10 premiers clients',titleEn:'Freelance — find your first 10 clients',category:'entreprise-business'},
  {number:'13',title:'IA & automatisation pour indépendant',titleEn:'AI & automation for freelancers',category:'entreprise-business'},
  {number:'14',title:'Trouver un produit à vendre — sourcing & validation',titleEn:'Find a product to sell — sourcing & validation',category:'ecommerce-social'},
- {number:'15',title:'Créer une marque sans stock — Print-on-Demand',titleEn:'Build a brand without inventory — Print-on-Demand',category:'ecommerce-social'}
+ {number:'15',title:'Créer une marque sans stock — Print-on-Demand',titleEn:'Build a brand without inventory — Print-on-Demand',category:'ecommerce-social'},
+ {number:'16',title:'Facturation électronique 2026–2027 — être prêt sans jargon',titleEn:'French e-invoicing 2026–2027 — get ready without the jargon',category:'administratif-fiscal'},
+ {number:'17',title:'CyberKit TPE — sécuriser son entreprise en une journée',titleEn:'Small Business CyberKit — secure your business in one day',category:'tech-informatique'},
+ {number:'18',title:'AI Act Starter Kit — utiliser l’IA en entreprise sans improviser',titleEn:'AI Act Starter Kit — use AI at work without improvising',category:'tech-informatique'},
+ {number:'19',title:'Trouver un emploi avec l’IA — CV, candidatures et entretiens',titleEn:'Job Search with AI — CV, applications and interviews',category:'emploi-carriere'}
 ];
 export const upcoming=niches.map(n=>({slug:n.slug,title:{fr:n.fr,en:n.en},category:{fr:'SER Guides',en:'SER Guides'}}));
