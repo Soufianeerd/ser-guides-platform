@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#0F172A">
+<title>SER Guide 17 — CyberKit TPE</title>
+<style>
+:root{--ink:#0F172A;--accent:#0891B2;--accent2:#06B6D4;--paper:#F8FAFC;--card:#fff;--soft:#64748B;--rule:#E2E8F0;--danger:#9F1239;--dangerBg:#FFF1F2;--shadow:0 18px 50px -30px rgba(15,23,42,.35)}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}.wrap{max-width:780px;margin:auto;padding:0 22px}.seal{width:48px;height:48px;border:1.5px solid currentColor;display:grid;place-items:center;font-weight:800;letter-spacing:.08em;border-radius:12px}.cover{min-height:100dvh;background:var(--ink);color:#F8FAFC;display:flex;flex-direction:column;justify-content:space-between;padding:max(28px,env(safe-area-inset-top)) 0 30px;background-image:radial-gradient(80% 60% at 85% 15%,color-mix(in srgb,var(--accent) 40%,transparent),transparent 70%)}.coverTop{display:flex;gap:14px;align-items:center;color:#fff}.coverTop small{display:block;color:#CBD5E1}.hero{padding:46px 0}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;color:color-mix(in srgb,var(--accent2) 80%,white);text-transform:uppercase}.hero h1{font-size:clamp(42px,10vw,72px);line-height:.98;letter-spacing:-.045em;margin:12px 0 14px}.hero h1 em{display:block;font-style:normal;font-weight:500;color:#CBD5E1;font-size:.55em;line-height:1.15;margin-top:12px;letter-spacing:-.025em}.hero p{max-width:680px;font-size:18px;color:#CBD5E1}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.chips span{border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:7px 10px;font-size:12px;font-weight:700}.notice{border-left:3px solid var(--accent2);padding:10px 14px;background:rgba(255,255,255,.06);font-size:13px;color:#CBD5E1;border-radius:0 8px 8px 0}.start{width:100%;border:0;border-radius:10px;padding:16px;background:var(--accent);color:white;font-weight:800;cursor:pointer}.reader{display:none;padding-bottom:92px}.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}.topRow{height:62px;display:flex;align-items:center;gap:12px}.menu{border:1px solid var(--rule);background:#fff;border-radius:9px;width:42px;height:42px;cursor:pointer}.meta{flex:1;min-width:0}.meta b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta small{display:block;color:var(--soft);font-size:11px}.progress{height:3px;background:var(--rule)}.progress i{display:block;height:100%;width:0;background:var(--accent);transition:.25s}.chap{display:none;padding:38px 0 16px}.chap.on{display:block}.stepK{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin-bottom:10px}.chap h2{font-size:clamp(31px,7vw,46px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px}.copy{font-size:18px}.copy strong{font-weight:800}.action,.check,.sources{margin:28px 0;border:1px solid var(--rule);background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow)}.action{border-color:color-mix(in srgb,var(--accent) 35%,var(--rule));background:color-mix(in srgb,var(--accent) 6%,white)}.action>b,.check>b,.sources>b{display:block;font-size:11px;letter-spacing:.1em;color:var(--accent);margin-bottom:8px}.action p{margin:0}.check label{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--rule);cursor:pointer}.check label:first-of-type{border-top:0}.check input{width:20px;height:20px;accent-color:var(--accent);flex:0 0 auto}.check input:checked+span{text-decoration:line-through;color:var(--soft)}.sources a{display:block;padding:10px 0;border-top:1px solid var(--rule);color:var(--accent);font-weight:700;text-decoration:none}.sources a:first-of-type{border-top:0}.sources small{display:block;color:var(--soft);margin-top:12px}.bottom{position:fixed;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom)}.bottom .wrap{height:72px;display:flex;gap:10px;align-items:center}.navBtn{border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:10px;padding:13px 14px;font-weight:800;cursor:pointer}.navBtn.primary{flex:1;background:var(--accent);border-color:var(--accent);color:#fff}.navBtn:disabled{opacity:.35}.scrim{position:fixed;inset:0;background:rgba(15,23,42,.48);z-index:29;opacity:0;pointer-events:none;transition:.2s}.scrim.on{opacity:1;pointer-events:auto}.drawer{position:fixed;z-index:30;left:0;top:0;bottom:0;width:min(360px,90vw);background:#fff;transform:translateX(-102%);transition:.25s;display:flex;flex-direction:column;box-shadow:30px 0 60px -35px #000}.drawer.on{transform:none}.drawerHead{padding:max(22px,env(safe-area-inset-top)) 20px 18px;background:var(--ink);color:#fff}.drawerHead b{display:block}.drawerHead small{color:#CBD5E1}.toc{overflow:auto;padding:8px 0 28px}.tocItem{width:100%;border:0;background:#fff;text-align:left;padding:12px 18px;display:flex;gap:12px;cursor:pointer;color:var(--ink)}.tocItem:hover,.tocItem.active{background:color-mix(in srgb,var(--accent) 8%,white);color:var(--accent)}.tocItem span{font:700 11px ui-monospace,monospace;color:var(--soft);width:24px}.tocItem.active span{color:var(--accent)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#F1F5F9;padding:1px 5px;border-radius:4px;font-size:.9em}
+@media print{.cover,.top,.bottom,.drawer,.scrim{display:none!important}.reader{display:block!important;padding:0}.chap{display:block!important;page-break-before:always}.chap:first-child{page-break-before:auto}.wrap{max-width:760px}}
+</style>
+</head>
+<body>
+<section class="cover" id="cover">
+  <div class="wrap coverTop"><div class="seal">SER</div><div><b>Guide 17</b><small>SER Guides · Tech &amp; Informatique · Édition 2026</small></div></div>
+  <div class="wrap hero"><div class="eyebrow">GUIDE WEB INTERACTIF · VÉRIFIÉ LE 30/09/2026</div><h1>CyberKit TPE<em>Sécuriser son entreprise en une journée</em></h1><p>Passer d’une sécurité improvisée à un socle simple : comptes, appareils, sauvegardes et réaction en cas d’incident.</p><div class="chips"><span>30 étapes</span><span>checklists interactives</span><span>sources officielles</span><span>reprise automatique</span></div><div class="notice">Bonnes pratiques générales. Ce guide ne remplace pas un audit de sécurité professionnel.</div></div>
+  <div class="wrap"><button class="start" id="start">Ouvrir le guide →</button></div>
+</section>
+
+<aside class="drawer" id="drawer"><div class="drawerHead"><b>SER Guide 17</b><small>CyberKit TPE</small></div><div class="toc"><button class="tocItem" data-go="0"><span>01</span>Faire l’état des lieux en 15 minutes</button>
+<button class="tocItem" data-go="1"><span>02</span>Classer les actifs par criticité</button>
+<button class="tocItem" data-go="2"><span>03</span>Inventorier les comptes</button>
+<button class="tocItem" data-go="3"><span>04</span>Utiliser un gestionnaire de mots de passe</button>
+<button class="tocItem" data-go="4"><span>05</span>Activer la MFA</button>
+<button class="tocItem" data-go="5"><span>06</span>Réduire les comptes administrateurs</button>
+<button class="tocItem" data-go="6"><span>07</span>Mettre à jour automatiquement</button>
+<button class="tocItem" data-go="7"><span>08</span>Construire une vraie sauvegarde</button>
+<button class="tocItem" data-go="8"><span>09</span>Tester la restauration</button>
+<button class="tocItem" data-go="9"><span>10</span>Sécuriser la messagerie</button>
+<button class="tocItem" data-go="10"><span>11</span>Reconnaître le phishing</button>
+<button class="tocItem" data-go="11"><span>12</span>Bloquer la fraude au virement</button>
+<button class="tocItem" data-go="12"><span>13</span>Protéger votre nom de domaine</button>
+<button class="tocItem" data-go="13"><span>14</span>Nettoyer les partages cloud</button>
+<button class="tocItem" data-go="14"><span>15</span>Chiffrer les appareils</button>
+<button class="tocItem" data-go="15"><span>16</span>Sécuriser les smartphones</button>
+<button class="tocItem" data-go="16"><span>17</span>Vérifier le Wi-Fi et le routeur</button>
+<button class="tocItem" data-go="17"><span>18</span>Encadrer le télétravail</button>
+<button class="tocItem" data-go="18"><span>19</span>Auditer les prestataires</button>
+<button class="tocItem" data-go="19"><span>20</span>Organiser les arrivées et départs</button>
+<button class="tocItem" data-go="20"><span>21</span>Collecter moins de données</button>
+<button class="tocItem" data-go="21"><span>22</span>Réagir à un ransomware</button>
+<button class="tocItem" data-go="22"><span>23</span>Réagir à une boîte mail compromise</button>
+<button class="tocItem" data-go="23"><span>24</span>Réagir à un compte critique compromis</button>
+<button class="tocItem" data-go="24"><span>25</span>Conserver les éléments utiles</button>
+<button class="tocItem" data-go="25"><span>26</span>Utiliser 17Cyber</button>
+<button class="tocItem" data-go="26"><span>27</span>Préparer un mini plan de continuité</button>
+<button class="tocItem" data-go="27"><span>28</span>Faire un exercice de 20 minutes</button>
+<button class="tocItem" data-go="28"><span>29</span>Suivre cinq indicateurs simples</button>
+<button class="tocItem" data-go="29"><span>30</span>Plan 1 jour, 7 jours, 30 jours</button></div></aside><div class="scrim" id="scrim"></div>
+
+<main class="reader" id="reader">
+  <header class="top"><div class="wrap topRow"><button class="menu" id="menu" aria-label="Sommaire">☰</button><div class="meta"><small id="counter">Étape 01 / 30</small><b id="currentTitle">Faire l’état des lieux en 15 minutes</b></div></div><div class="progress"><i id="bar"></i></div></header>
+  <div class="wrap">
+<article class="chap on" data-index="0" data-title="Faire l’état des lieux en 15 minutes">
+  <div class="stepK">ÉTAPE 01 / 30</div>
+  <h2>Faire l’état des lieux en 15 minutes</h2>
+  <div class="copy"><p>Avant d’acheter un outil, identifiez ce que vous devez protéger : messagerie, banque, fichiers clients, site, réseaux sociaux, outils métier.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez vos 10 actifs numériques les plus importants.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="0-0"><span>Vous savez ce qui arrêterait réellement votre activité.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="1" data-title="Classer les actifs par criticité">
+  <div class="stepK">ÉTAPE 02 / 30</div>
+  <h2>Classer les actifs par criticité</h2>
+  <div class="copy"><p>Tous les comptes ne se valent pas. Une boîte mail administrateur peut permettre de réinitialiser dix autres services.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Classez chaque actif : critique, important, secondaire.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="1-0"><span>Vos priorités sont visibles.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="2" data-title="Inventorier les comptes">
+  <div class="stepK">ÉTAPE 03 / 30</div>
+  <h2>Inventorier les comptes</h2>
+  <div class="copy"><p>Les comptes oubliés sont des portes d’entrée potentielles.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez services, propriétaire, email associé et niveau d’accès.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="2-0"><span>Les comptes orphelins sont identifiés.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="3" data-title="Utiliser un gestionnaire de mots de passe">
+  <div class="stepK">ÉTAPE 04 / 30</div>
+  <h2>Utiliser un gestionnaire de mots de passe</h2>
+  <div class="copy"><p>Un mot de passe unique par service évite qu’une fuite compromette toute l’entreprise.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Migrez d’abord email, banque, cloud et réseaux sociaux.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="3-0"><span>Vos comptes critiques n’utilisent plus le même mot de passe.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="4" data-title="Activer la MFA">
+  <div class="stepK">ÉTAPE 05 / 30</div>
+  <h2>Activer la MFA</h2>
+  <div class="copy"><p>L’authentification multifacteur ajoute une barrière quand un mot de passe est volé.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Activez-la sur email, banque, hébergeur, cloud, réseaux sociaux et gestionnaire de mots de passe.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="4-0"><span>Tous les comptes critiques ont une MFA.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="5" data-title="Réduire les comptes administrateurs">
+  <div class="stepK">ÉTAPE 06 / 30</div>
+  <h2>Réduire les comptes administrateurs</h2>
+  <div class="copy"><p>Travailler en permanence avec les droits maximum augmente l’impact d’une erreur ou d’un vol de session.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Séparez compte quotidien et compte administrateur lorsque possible.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="5-0"><span>Les droits élevés sont limités.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="6" data-title="Mettre à jour automatiquement">
+  <div class="stepK">ÉTAPE 07 / 30</div>
+  <h2>Mettre à jour automatiquement</h2>
+  <div class="copy"><p>Système, navigateur, extensions, CMS et plugins doivent recevoir leurs correctifs.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Activez les mises à jour automatiques et supprimez les logiciels abandonnés.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="6-0"><span>Les appareils critiques sont à jour.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="7" data-title="Construire une vraie sauvegarde">
+  <div class="stepK">ÉTAPE 08 / 30</div>
+  <h2>Construire une vraie sauvegarde</h2>
+  <div class="copy"><p>Une synchronisation cloud n’est pas toujours une sauvegarde. Une suppression ou un chiffrement peut se propager.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Prévoyez plusieurs copies sur des supports ou services distincts.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="7-0"><span>Une copie n’est pas accessible en permanence depuis le poste principal.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="8" data-title="Tester la restauration">
+  <div class="stepK">ÉTAPE 09 / 30</div>
+  <h2>Tester la restauration</h2>
+  <div class="copy"><p>Une sauvegarde inutilisable n’aide pas le jour de l’incident.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Restaurez un dossier test sur un autre emplacement.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="8-0"><span>Vous avez déjà restauré, pas seulement sauvegardé.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="9" data-title="Sécuriser la messagerie">
+  <div class="stepK">ÉTAPE 10 / 30</div>
+  <h2>Sécuriser la messagerie</h2>
+  <div class="copy"><p>La messagerie est souvent la clé de réinitialisation des autres comptes.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Vérifiez MFA, sessions actives, règles de transfert et adresses de récupération.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="9-0"><span>Aucune règle inconnue ne redirige vos emails.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="10" data-title="Reconnaître le phishing">
+  <div class="stepK">ÉTAPE 11 / 30</div>
+  <h2>Reconnaître le phishing</h2>
+  <div class="copy"><p>Urgence, pièce jointe inattendue, lien raccourci, faux service client : la forme change mais le principe reste le même.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Avant un clic sensible, ouvrez le site depuis vos favoris plutôt que depuis le message.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="10-0"><span>Vous savez vérifier une demande par un autre canal.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="11" data-title="Bloquer la fraude au virement">
+  <div class="stepK">ÉTAPE 12 / 30</div>
+  <h2>Bloquer la fraude au virement</h2>
+  <div class="copy"><p>Les changements de RIB et fausses factures peuvent détourner un paiement légitime.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Pour tout changement bancaire sensible, rappelez un contact connu avec un numéro déjà enregistré.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="11-0"><span>Un email seul ne peut pas modifier un bénéficiaire critique.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="12" data-title="Protéger votre nom de domaine">
+  <div class="stepK">ÉTAPE 13 / 30</div>
+  <h2>Protéger votre nom de domaine</h2>
+  <div class="copy"><p>Le domaine contrôle souvent site et emails.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Activez MFA chez le registrar, verrouillage de transfert et renouvellement automatique.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="12-0"><span>Le domaine ne dépend pas d’une seule personne non documentée.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="13" data-title="Nettoyer les partages cloud">
+  <div class="stepK">ÉTAPE 14 / 30</div>
+  <h2>Nettoyer les partages cloud</h2>
+  <div class="copy"><p>Un lien “toute personne avec le lien” peut rester actif des mois.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Passez en revue les dossiers partagés externes.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="13-0"><span>Les anciens accès ont été supprimés.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="14" data-title="Chiffrer les appareils">
+  <div class="stepK">ÉTAPE 15 / 30</div>
+  <h2>Chiffrer les appareils</h2>
+  <div class="copy"><p>Le chiffrement du disque réduit l’exposition si un ordinateur ou téléphone est perdu.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Vérifiez le chiffrement natif de vos appareils professionnels.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="14-0"><span>Vos appareils mobiles sensibles sont chiffrés.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="15" data-title="Sécuriser les smartphones">
+  <div class="stepK">ÉTAPE 16 / 30</div>
+  <h2>Sécuriser les smartphones</h2>
+  <div class="copy"><p>Le téléphone reçoit souvent codes MFA, emails, banque et messageries.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Activez verrouillage fort, mises à jour, localisation et effacement à distance si disponible.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="15-0"><span>Un téléphone perdu ne donne pas immédiatement accès à l’entreprise.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="16" data-title="Vérifier le Wi-Fi et le routeur">
+  <div class="stepK">ÉTAPE 17 / 30</div>
+  <h2>Vérifier le Wi-Fi et le routeur</h2>
+  <div class="copy"><p>Un routeur ancien, mot de passe par défaut ou firmware obsolète augmente le risque.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Changez les identifiants administrateur et vérifiez les mises à jour.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="16-0"><span>Les paramètres par défaut ont disparu.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="17" data-title="Encadrer le télétravail">
+  <div class="stepK">ÉTAPE 18 / 30</div>
+  <h2>Encadrer le télétravail</h2>
+  <div class="copy"><p>Les fichiers locaux non sauvegardés et réseaux publics créent de nouveaux risques.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Définissez où travailler, où stocker et comment accéder aux données sensibles.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="17-0"><span>Les règles sont écrites et simples.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="18" data-title="Auditer les prestataires">
+  <div class="stepK">ÉTAPE 19 / 30</div>
+  <h2>Auditer les prestataires</h2>
+  <div class="copy"><p>Agence web, comptable, freelance ou logiciel SaaS peuvent avoir accès à vos données.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez qui peut accéder à quoi.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="18-0"><span>Les accès prestataires sont connus.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="19" data-title="Organiser les arrivées et départs">
+  <div class="stepK">ÉTAPE 20 / 30</div>
+  <h2>Organiser les arrivées et départs</h2>
+  <div class="copy"><p>Un ancien salarié ou prestataire ne doit pas conserver ses accès.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez deux checklists : onboarding et offboarding.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="19-0"><span>Les accès sont retirés le jour du départ.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="20" data-title="Collecter moins de données">
+  <div class="stepK">ÉTAPE 21 / 30</div>
+  <h2>Collecter moins de données</h2>
+  <div class="copy"><p>Ce que vous ne stockez pas ne peut pas être volé chez vous.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Supprimez les exports anciens ou doublons sans raison de conservation.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="20-0"><span>Chaque donnée sensible a une utilité identifiée.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="21" data-title="Réagir à un ransomware">
+  <div class="stepK">ÉTAPE 22 / 30</div>
+  <h2>Réagir à un ransomware</h2>
+  <div class="copy"><p>Isolez les équipements touchés, évitez d’effacer les traces et demandez de l’assistance adaptée.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Imprimez une fiche avec contacts, sauvegardes et services essentiels.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="21-0"><span>Vous savez quoi couper et qui appeler.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="22" data-title="Réagir à une boîte mail compromise">
+  <div class="stepK">ÉTAPE 23 / 30</div>
+  <h2>Réagir à une boîte mail compromise</h2>
+  <div class="copy"><p>Changez le mot de passe depuis un appareil sain, révoquez les sessions, contrôlez MFA et règles de transfert.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Repérez aujourd’hui où se trouvent ces réglages chez votre fournisseur.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="22-0"><span>La procédure peut être exécutée sans improviser.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="23" data-title="Réagir à un compte critique compromis">
+  <div class="stepK">ÉTAPE 24 / 30</div>
+  <h2>Réagir à un compte critique compromis</h2>
+  <div class="copy"><p>Ne changez pas uniquement le mot de passe. Cherchez sessions, clés API, appareils connectés et mécanismes de récupération.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez les comptes qui exigeraient cette procédure.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="23-0"><span>Les comptes critiques ont un plan de reprise.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="24" data-title="Conserver les éléments utiles">
+  <div class="stepK">ÉTAPE 25 / 30</div>
+  <h2>Conserver les éléments utiles</h2>
+  <div class="copy"><p>Date, messages, captures, adresses, journaux et transactions peuvent aider au diagnostic.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez un dossier d’incident séparé et protégé.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="24-0"><span>Vous évitez de détruire les traces par réflexe.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="25" data-title="Utiliser 17Cyber">
+  <div class="stepK">ÉTAPE 26 / 30</div>
+  <h2>Utiliser 17Cyber</h2>
+  <div class="copy"><p>17Cyber est le service public d’assistance en ligne pour les victimes de cybermalveillance, y compris entreprises et associations.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Ajoutez 17Cyber.gouv.fr à votre fiche d’urgence.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="25-0"><span>Le lien est accessible même si votre poste principal est indisponible.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="26" data-title="Préparer un mini plan de continuité">
+  <div class="stepK">ÉTAPE 27 / 30</div>
+  <h2>Préparer un mini plan de continuité</h2>
+  <div class="copy"><p>Si email, site ou logiciel principal tombe, comment continuez-vous à servir les clients ?</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Écrivez un mode dégradé pour trois services critiques.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="26-0"><span>Votre activité peut continuer au minimum.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="27" data-title="Faire un exercice de 20 minutes">
+  <div class="stepK">ÉTAPE 28 / 30</div>
+  <h2>Faire un exercice de 20 minutes</h2>
+  <div class="copy"><p>Simulez : “la boîte mail dirigeant est piratée”. Qui décide ? Qui contacte la banque ? Qui prévient les clients ?</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Jouez le scénario avec les personnes concernées.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="27-0"><span>Les responsabilités sont claires.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="28" data-title="Suivre cinq indicateurs simples">
+  <div class="stepK">ÉTAPE 29 / 30</div>
+  <h2>Suivre cinq indicateurs simples</h2>
+  <div class="copy"><p>MFA activée, appareils à jour, restauration testée, comptes dormants, incidents signalés.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez un tableau mensuel d’une ligne.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="28-0"><span>La sécurité devient une routine mesurable.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="29" data-title="Plan 1 jour, 7 jours, 30 jours">
+  <div class="stepK">ÉTAPE 30 / 30</div>
+  <h2>Plan 1 jour, 7 jours, 30 jours</h2>
+  <div class="copy"><p>Jour 1 : comptes critiques, MFA, sauvegarde. Semaine 1 : appareils, partages, prestataires. Mois 1 : exercice, procédures, revue complète.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Choisissez une date de contrôle dans 30 jours.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="29-0"><span>Votre plan a une prochaine échéance.</span></label></section>
+  <section class="sources"><b>SOURCES OFFICIELLES</b><a href="https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence" target="_blank" rel="noopener noreferrer">France Num — Baromètre 2026 ↗</a><a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/mallettecyber-pro" target="_blank" rel="noopener noreferrer">Cybermalveillance.gouv.fr — MalletteCyber Pro ↗</a><a href="https://www.cybermalveillance.gouv.fr/17cyber" target="_blank" rel="noopener noreferrer">17Cyber ↗</a><a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/securisation-cybersecurite-professionnels" target="_blank" rel="noopener noreferrer">Mon ExpertCyber ↗</a><small>Vérifiées le 30/09/2026. Les sources officielles priment en cas d’évolution.</small></section>
+</article></div>
+</main>
+
+<nav class="bottom" id="bottom" style="display:none"><div class="wrap"><button class="navBtn" id="prev">←</button><button class="navBtn primary" id="next">Étape suivante →</button></div></nav>
+
+<script>
+const GUIDE_KEY="serGuide17";
+const chapters=[...document.querySelectorAll(".chap")];
+const toc=[...document.querySelectorAll(".tocItem")];
+const start=document.getElementById("start"),cover=document.getElementById("cover"),reader=document.getElementById("reader"),bottom=document.getElementById("bottom");
+const prev=document.getElementById("prev"),next=document.getElementById("next"),bar=document.getElementById("bar"),counter=document.getElementById("counter"),currentTitle=document.getElementById("currentTitle");
+const drawer=document.getElementById("drawer"),scrim=document.getElementById("scrim"),menu=document.getElementById("menu");
+let index=Math.max(0,Math.min(chapters.length-1,Number(localStorage.getItem(GUIDE_KEY+":step")||0)));
+function openReader(){cover.style.display="none";reader.style.display="block";bottom.style.display="block";show(index);window.scrollTo(0,0)}
+function show(i){index=Math.max(0,Math.min(chapters.length-1,i));chapters.forEach((c,n)=>c.classList.toggle("on",n===index));toc.forEach((b,n)=>b.classList.toggle("active",n===index));counter.textContent="Étape "+String(index+1).padStart(2,"0")+" / "+chapters.length;currentTitle.textContent=chapters[index].dataset.title;bar.style.width=((index+1)/chapters.length*100)+"%";prev.disabled=index===0;next.textContent=index===chapters.length-1?"Terminer ✓":"Étape suivante →";localStorage.setItem(GUIDE_KEY+":step",String(index));closeDrawer();window.scrollTo({top:0,behavior:"smooth"})}
+function openDrawer(){drawer.classList.add("on");scrim.classList.add("on")} function closeDrawer(){drawer.classList.remove("on");scrim.classList.remove("on")}
+start.addEventListener("click",openReader);menu.addEventListener("click",openDrawer);scrim.addEventListener("click",closeDrawer);
+prev.addEventListener("click",()=>show(index-1));next.addEventListener("click",()=>{if(index<chapters.length-1)show(index+1);else window.scrollTo({top:0,behavior:"smooth"})});
+toc.forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.go))));
+document.querySelectorAll("[data-check]").forEach(cb=>{const key=GUIDE_KEY+":check:"+cb.dataset.check;cb.checked=localStorage.getItem(key)==="1";cb.addEventListener("change",()=>localStorage.setItem(key,cb.checked?"1":"0"))});
+</script>
+</body>
+</html>
