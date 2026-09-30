@@ -1,0 +1,23 @@
+{
+  "guide_id": "18",
+  "title": "AI Act Starter Kit",
+  "subtitle": "Utiliser l’IA en entreprise sans improviser",
+  "edition": "2026–2027",
+  "locale": [
+    "fr"
+  ],
+  "status": "draft",
+  "price": null,
+  "page_target": 30,
+  "page_max": 35,
+  "reviewed_at": "2026-09-30",
+  "review_due_at": "2026-10-15",
+  "publication_blockers": [
+    "revue juridique éditoriale",
+    "web-book HTML",
+    "visuels boutique/Instagram",
+    "prix Stripe",
+    "mapping livraison",
+    "achat test"
+  ]
+}

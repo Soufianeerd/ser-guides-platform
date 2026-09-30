@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#0F172A">
+<title>SER Guide 18 — AI Act Starter Kit</title>
+<style>
+:root{--ink:#0F172A;--accent:#4F46E5;--accent2:#0891B2;--paper:#F8FAFC;--card:#fff;--soft:#64748B;--rule:#E2E8F0;--danger:#9F1239;--dangerBg:#FFF1F2;--shadow:0 18px 50px -30px rgba(15,23,42,.35)}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}.wrap{max-width:780px;margin:auto;padding:0 22px}.seal{width:48px;height:48px;border:1.5px solid currentColor;display:grid;place-items:center;font-weight:800;letter-spacing:.08em;border-radius:12px}.cover{min-height:100dvh;background:var(--ink);color:#F8FAFC;display:flex;flex-direction:column;justify-content:space-between;padding:max(28px,env(safe-area-inset-top)) 0 30px;background-image:radial-gradient(80% 60% at 85% 15%,color-mix(in srgb,var(--accent) 40%,transparent),transparent 70%)}.coverTop{display:flex;gap:14px;align-items:center;color:#fff}.coverTop small{display:block;color:#CBD5E1}.hero{padding:46px 0}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;color:color-mix(in srgb,var(--accent2) 80%,white);text-transform:uppercase}.hero h1{font-size:clamp(42px,10vw,72px);line-height:.98;letter-spacing:-.045em;margin:12px 0 14px}.hero h1 em{display:block;font-style:normal;font-weight:500;color:#CBD5E1;font-size:.55em;line-height:1.15;margin-top:12px;letter-spacing:-.025em}.hero p{max-width:680px;font-size:18px;color:#CBD5E1}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.chips span{border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:7px 10px;font-size:12px;font-weight:700}.notice{border-left:3px solid var(--accent2);padding:10px 14px;background:rgba(255,255,255,.06);font-size:13px;color:#CBD5E1;border-radius:0 8px 8px 0}.start{width:100%;border:0;border-radius:10px;padding:16px;background:var(--accent);color:white;font-weight:800;cursor:pointer}.reader{display:none;padding-bottom:92px}.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}.topRow{height:62px;display:flex;align-items:center;gap:12px}.menu{border:1px solid var(--rule);background:#fff;border-radius:9px;width:42px;height:42px;cursor:pointer}.meta{flex:1;min-width:0}.meta b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta small{display:block;color:var(--soft);font-size:11px}.progress{height:3px;background:var(--rule)}.progress i{display:block;height:100%;width:0;background:var(--accent);transition:.25s}.chap{display:none;padding:38px 0 16px}.chap.on{display:block}.stepK{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin-bottom:10px}.chap h2{font-size:clamp(31px,7vw,46px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px}.copy{font-size:18px}.copy strong{font-weight:800}.action,.check,.sources{margin:28px 0;border:1px solid var(--rule);background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow)}.action{border-color:color-mix(in srgb,var(--accent) 35%,var(--rule));background:color-mix(in srgb,var(--accent) 6%,white)}.action>b,.check>b,.sources>b{display:block;font-size:11px;letter-spacing:.1em;color:var(--accent);margin-bottom:8px}.action p{margin:0}.check label{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--rule);cursor:pointer}.check label:first-of-type{border-top:0}.check input{width:20px;height:20px;accent-color:var(--accent);flex:0 0 auto}.check input:checked+span{text-decoration:line-through;color:var(--soft)}.sources a{display:block;padding:10px 0;border-top:1px solid var(--rule);color:var(--accent);font-weight:700;text-decoration:none}.sources a:first-of-type{border-top:0}.sources small{display:block;color:var(--soft);margin-top:12px}.bottom{position:fixed;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom)}.bottom .wrap{height:72px;display:flex;gap:10px;align-items:center}.navBtn{border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:10px;padding:13px 14px;font-weight:800;cursor:pointer}.navBtn.primary{flex:1;background:var(--accent);border-color:var(--accent);color:#fff}.navBtn:disabled{opacity:.35}.scrim{position:fixed;inset:0;background:rgba(15,23,42,.48);z-index:29;opacity:0;pointer-events:none;transition:.2s}.scrim.on{opacity:1;pointer-events:auto}.drawer{position:fixed;z-index:30;left:0;top:0;bottom:0;width:min(360px,90vw);background:#fff;transform:translateX(-102%);transition:.25s;display:flex;flex-direction:column;box-shadow:30px 0 60px -35px #000}.drawer.on{transform:none}.drawerHead{padding:max(22px,env(safe-area-inset-top)) 20px 18px;background:var(--ink);color:#fff}.drawerHead b{display:block}.drawerHead small{color:#CBD5E1}.toc{overflow:auto;padding:8px 0 28px}.tocItem{width:100%;border:0;background:#fff;text-align:left;padding:12px 18px;display:flex;gap:12px;cursor:pointer;color:var(--ink)}.tocItem:hover,.tocItem.active{background:color-mix(in srgb,var(--accent) 8%,white);color:var(--accent)}.tocItem span{font:700 11px ui-monospace,monospace;color:var(--soft);width:24px}.tocItem.active span{color:var(--accent)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#F1F5F9;padding:1px 5px;border-radius:4px;font-size:.9em}
+@media print{.cover,.top,.bottom,.drawer,.scrim{display:none!important}.reader{display:block!important;padding:0}.chap{display:block!important;page-break-before:always}.chap:first-child{page-break-before:auto}.wrap{max-width:760px}}
+</style>
+</head>
+<body>
+<section class="cover" id="cover">
+  <div class="wrap coverTop"><div class="seal">SER</div><div><b>Guide 18</b><small>SER Guides · Tech &amp; Conformité · Édition 2026–2027</small></div></div>
+  <div class="wrap hero"><div class="eyebrow">GUIDE WEB INTERACTIF · VÉRIFIÉ LE 30/09/2026</div><h1>AI Act Starter Kit<em>Utiliser l’IA en entreprise sans improviser</em></h1><p>Cartographier vos usages IA, comprendre les rôles et mettre en place une gouvernance simple avant les cas sensibles.</p><div class="chips"><span>30 étapes</span><span>checklists interactives</span><span>sources officielles</span><span>reprise automatique</span></div><div class="notice">Contenu informatif uniquement. Il ne constitue pas un conseil juridique personnalisé.</div></div>
+  <div class="wrap"><button class="start" id="start">Ouvrir le guide →</button></div>
+</section>
+
+<aside class="drawer" id="drawer"><div class="drawerHead"><b>SER Guide 18</b><small>AI Act Starter Kit</small></div><div class="toc"><button class="tocItem" data-go="0"><span>01</span>Faire l’inventaire des usages IA</button>
+<button class="tocItem" data-go="1"><span>02</span>Identifier la finalité</button>
+<button class="tocItem" data-go="2"><span>03</span>Identifier votre rôle</button>
+<button class="tocItem" data-go="3"><span>04</span>Comprendre l’approche par le risque</button>
+<button class="tocItem" data-go="4"><span>05</span>Vérifier les pratiques interdites</button>
+<button class="tocItem" data-go="5"><span>06</span>Distinguer modèle et système</button>
+<button class="tocItem" data-go="6"><span>07</span>Connaître la date du 2 août 2026</button>
+<button class="tocItem" data-go="7"><span>08</span>Vérifier les obligations de transparence</button>
+<button class="tocItem" data-go="8"><span>09</span>Encadrer les contenus synthétiques</button>
+<button class="tocItem" data-go="9"><span>10</span>Traiter les deepfakes avec prudence</button>
+<button class="tocItem" data-go="10"><span>11</span>Identifier les usages potentiellement haut risque</button>
+<button class="tocItem" data-go="11"><span>12</span>Respecter les calendriers spécifiques</button>
+<button class="tocItem" data-go="12"><span>13</span>Garder une validation humaine utile</button>
+<button class="tocItem" data-go="13"><span>14</span>Documenter les données d’entrée</button>
+<button class="tocItem" data-go="14"><span>15</span>Réduire les données transmises</button>
+<button class="tocItem" data-go="15"><span>16</span>Auditer le fournisseur</button>
+<button class="tocItem" data-go="16"><span>17</span>Encadrer les contrats</button>
+<button class="tocItem" data-go="17"><span>18</span>Créer un registre interne IA</button>
+<button class="tocItem" data-go="18"><span>19</span>Créer une fiche par outil</button>
+<button class="tocItem" data-go="19"><span>20</span>Former les équipes</button>
+<button class="tocItem" data-go="20"><span>21</span>Écrire une politique IA interne</button>
+<button class="tocItem" data-go="21"><span>22</span>Encadrer le marketing</button>
+<button class="tocItem" data-go="22"><span>23</span>Encadrer le recrutement</button>
+<button class="tocItem" data-go="23"><span>24</span>Encadrer le service client</button>
+<button class="tocItem" data-go="24"><span>25</span>Distinguer AI Act et RGPD</button>
+<button class="tocItem" data-go="25"><span>26</span>Prévoir un incident IA</button>
+<button class="tocItem" data-go="26"><span>27</span>Réévaluer lors d’un changement</button>
+<button class="tocItem" data-go="27"><span>28</span>Plan de conformité sur 30 jours</button>
+<button class="tocItem" data-go="28"><span>29</span>Savoir quand consulter un spécialiste</button>
+<button class="tocItem" data-go="29"><span>30</span>Maintenir une veille officielle</button></div></aside><div class="scrim" id="scrim"></div>
+
+<main class="reader" id="reader">
+  <header class="top"><div class="wrap topRow"><button class="menu" id="menu" aria-label="Sommaire">☰</button><div class="meta"><small id="counter">Étape 01 / 30</small><b id="currentTitle">Faire l’inventaire des usages IA</b></div></div><div class="progress"><i id="bar"></i></div></header>
+  <div class="wrap">
+<article class="chap on" data-index="0" data-title="Faire l’inventaire des usages IA">
+  <div class="stepK">ÉTAPE 01 / 30</div>
+  <h2>Faire l’inventaire des usages IA</h2>
+  <div class="copy"><p>Commencez par les usages réels : rédaction, image, service client, recrutement, scoring, automatisation, analyse de documents.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez tous les outils IA utilisés, y compris les comptes personnels.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="0-0"><span>Les usages “dans l’ombre” sont inclus.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="1" data-title="Identifier la finalité">
+  <div class="stepK">ÉTAPE 02 / 30</div>
+  <h2>Identifier la finalité</h2>
+  <div class="copy"><p>Le même outil peut avoir des implications différentes selon qu’il résume un texte ou intervient dans une décision sensible.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Pour chaque usage, écrivez une phrase : “Nous utilisons cet outil pour…”</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="1-0"><span>Chaque usage a une finalité explicite.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="2" data-title="Identifier votre rôle">
+  <div class="stepK">ÉTAPE 03 / 30</div>
+  <h2>Identifier votre rôle</h2>
+  <div class="copy"><p>Le règlement distingue plusieurs rôles selon qui développe, met sur le marché, importe, distribue ou déploie/utilise un système.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Ne vous attribuez pas un rôle par intuition : documentez la chaîne fournisseur → entreprise → utilisateur.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="2-0"><span>Votre rôle est à confirmer usage par usage.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="3" data-title="Comprendre l’approche par le risque">
+  <div class="stepK">ÉTAPE 04 / 30</div>
+  <h2>Comprendre l’approche par le risque</h2>
+  <div class="copy"><p>L’AI Act n’impose pas la même logique à tous les systèmes. Il distingue notamment pratiques interdites, systèmes à haut risque et obligations de transparence.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Classez chaque usage : faible impact, transparence à vérifier, sensible/à analyser.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="3-0"><span>Les usages sensibles sont isolés.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="4" data-title="Vérifier les pratiques interdites">
+  <div class="stepK">ÉTAPE 05 / 30</div>
+  <h2>Vérifier les pratiques interdites</h2>
+  <div class="copy"><p>Certaines pratiques sont interdites. La qualification exacte dépend du fonctionnement et du contexte.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Pour tout usage pouvant influencer fortement une personne, consultez la source officielle avant déploiement.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="4-0"><span>Aucun usage sensible n’est lancé sans revue.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="5" data-title="Distinguer modèle et système">
+  <div class="stepK">ÉTAPE 06 / 30</div>
+  <h2>Distinguer modèle et système</h2>
+  <div class="copy"><p>Un modèle d’IA à usage général n’est pas la même chose qu’un système ou une application métier qui l’intègre.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Documentez fournisseur du modèle, application utilisée et intégrations intermédiaires.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="5-0"><span>Votre architecture n’est pas décrite comme “on utilise ChatGPT” uniquement.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="6" data-title="Connaître la date du 2 août 2026">
+  <div class="stepK">ÉTAPE 07 / 30</div>
+  <h2>Connaître la date du 2 août 2026</h2>
+  <div class="copy"><p>Selon le Service Desk officiel, certaines exigences de transparence et règles relatives aux modèles d’IA à usage général sont applicables et exécutoires depuis le 2 août 2026.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Repérez les usages comportant interaction utilisateur ou contenu synthétique.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="6-0"><span>Vous avez identifié les sujets de transparence.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="7" data-title="Vérifier les obligations de transparence">
+  <div class="stepK">ÉTAPE 08 / 30</div>
+  <h2>Vérifier les obligations de transparence</h2>
+  <div class="copy"><p>Certains systèmes doivent informer les personnes qu’elles interagissent avec une IA ou rendre identifiable certains contenus artificiels.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Listez chatbots, assistants publics et contenus générés destinés à être publiés.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="7-0"><span>Chaque usage a une règle de transparence à vérifier.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="8" data-title="Encadrer les contenus synthétiques">
+  <div class="stepK">ÉTAPE 09 / 30</div>
+  <h2>Encadrer les contenus synthétiques</h2>
+  <div class="copy"><p>Images, audio et vidéo générés ou manipulés peuvent nécessiter des mesures spécifiques selon le cas.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Conservez une trace de l’origine des contenus utilisés commercialement.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="8-0"><span>Votre équipe sait quels contenus ont été générés ou modifiés.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="9" data-title="Traiter les deepfakes avec prudence">
+  <div class="stepK">ÉTAPE 10 / 30</div>
+  <h2>Traiter les deepfakes avec prudence</h2>
+  <div class="copy"><p>Un contenu réaliste représentant une personne ou un événement peut créer des risques juridiques et réputationnels au-delà de l’AI Act.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Imposez une validation humaine avant publication de contenu réaliste généré.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="9-0"><span>Aucun deepfake commercial n’est publié automatiquement.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="10" data-title="Identifier les usages potentiellement haut risque">
+  <div class="stepK">ÉTAPE 11 / 30</div>
+  <h2>Identifier les usages potentiellement haut risque</h2>
+  <div class="copy"><p>Certains domaines, notamment liés à des décisions importantes concernant les personnes, peuvent relever d’un régime plus strict selon les critères du règlement.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Mettez recrutement, accès à des services essentiels et décisions automatisées dans une file “revue spécialisée”.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="10-0"><span>Les usages sensibles ne sont pas traités comme de simples outils marketing.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="11" data-title="Respecter les calendriers spécifiques">
+  <div class="stepK">ÉTAPE 12 / 30</div>
+  <h2>Respecter les calendriers spécifiques</h2>
+  <div class="copy"><p>Les dates ne sont pas identiques pour toutes les dispositions. Le Service Desk indique notamment des échéances ultérieures pour certaines catégories de systèmes à haut risque.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Ajoutez “date applicable” comme colonne de votre registre IA.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="11-0"><span>Vous ne résumez pas l’AI Act à une seule date.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="12" data-title="Garder une validation humaine utile">
+  <div class="stepK">ÉTAPE 13 / 30</div>
+  <h2>Garder une validation humaine utile</h2>
+  <div class="copy"><p>Une validation humaine n’a de valeur que si la personne peut comprendre, contester et arrêter la sortie.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Définissez qui peut refuser la recommandation de l’IA.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="12-0"><span>“Humain dans la boucle” n’est pas seulement une case à cocher.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="13" data-title="Documenter les données d’entrée">
+  <div class="stepK">ÉTAPE 14 / 30</div>
+  <h2>Documenter les données d’entrée</h2>
+  <div class="copy"><p>Données clients, salariés, documents internes et informations confidentielles n’ont pas toutes le même niveau de risque.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Pour chaque usage, notez les catégories de données utilisées.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="13-0"><span>Les données sensibles sont visibles dans le registre.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="14" data-title="Réduire les données transmises">
+  <div class="stepK">ÉTAPE 15 / 30</div>
+  <h2>Réduire les données transmises</h2>
+  <div class="copy"><p>Le besoin IA ne justifie pas d’envoyer tout un dossier client si trois informations suffisent.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Testez une version minimisée de votre workflow.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="14-0"><span>L’outil fonctionne avec moins de données.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="15" data-title="Auditer le fournisseur">
+  <div class="stepK">ÉTAPE 16 / 30</div>
+  <h2>Auditer le fournisseur</h2>
+  <div class="copy"><p>Documentation, sécurité, conditions d’utilisation, localisation, sous-traitants et options entreprise doivent être examinés.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez une fiche fournisseur standard.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="15-0"><span>Les décisions d’achat sont documentées.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="16" data-title="Encadrer les contrats">
+  <div class="stepK">ÉTAPE 17 / 30</div>
+  <h2>Encadrer les contrats</h2>
+  <div class="copy"><p>Un abonnement ne répond pas à lui seul à toutes vos obligations.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Vérifiez qui est responsable des données, logs, support, suppression et changements de service.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="16-0"><span>Les points critiques ne reposent pas sur une supposition.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="17" data-title="Créer un registre interne IA">
+  <div class="stepK">ÉTAPE 18 / 30</div>
+  <h2>Créer un registre interne IA</h2>
+  <div class="copy"><p>Outil, finalité, propriétaire, fournisseur, données, public impacté, contrôles, date de revue.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez le registre dans votre outil de travail habituel.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="17-0"><span>Vous pouvez lister tous vos usages IA en cinq minutes.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="18" data-title="Créer une fiche par outil">
+  <div class="stepK">ÉTAPE 19 / 30</div>
+  <h2>Créer une fiche par outil</h2>
+  <div class="copy"><p>La fiche évite de refaire l’analyse à chaque nouveau collaborateur.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Documentez le premier outil critique aujourd’hui.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="18-0"><span>Un nouveau salarié peut comprendre l’usage sans demander oralement.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="19" data-title="Former les équipes">
+  <div class="stepK">ÉTAPE 20 / 30</div>
+  <h2>Former les équipes</h2>
+  <div class="copy"><p>Une politique inutilement juridique sera ignorée. Les équipes doivent savoir quoi envoyer, quoi vérifier et quoi ne jamais automatiser.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Organisez une session de 30 minutes sur vos règles internes.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="19-0"><span>Les utilisateurs connaissent les limites.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="20" data-title="Écrire une politique IA interne">
+  <div class="stepK">ÉTAPE 21 / 30</div>
+  <h2>Écrire une politique IA interne</h2>
+  <div class="copy"><p>Autorisé, interdit, validation requise, données à ne pas transmettre, outils approuvés, procédure d’incident.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Limitez la première version à deux pages.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="20-0"><span>La politique est lisible.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="21" data-title="Encadrer le marketing">
+  <div class="stepK">ÉTAPE 22 / 30</div>
+  <h2>Encadrer le marketing</h2>
+  <div class="copy"><p>Vérifiez droits, transparence, exactitude des allégations et validation des contenus générés.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Ajoutez une case “contenu IA vérifié” au workflow de publication.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="21-0"><span>Une personne assume la validation finale.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="22" data-title="Encadrer le recrutement">
+  <div class="stepK">ÉTAPE 23 / 30</div>
+  <h2>Encadrer le recrutement</h2>
+  <div class="copy"><p>Un outil qui aide à reformuler une annonce n’a pas le même impact qu’un outil qui classe ou exclut des candidats.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Séparez assistance rédactionnelle et décision concernant les personnes.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="22-0"><span>Les usages RH sensibles sont revus à part.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="23" data-title="Encadrer le service client">
+  <div class="stepK">ÉTAPE 24 / 30</div>
+  <h2>Encadrer le service client</h2>
+  <div class="copy"><p>Un chatbot public doit avoir un périmètre clair, une voie d’escalade et des réponses contrôlées.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Définissez les sujets que le bot doit transférer à un humain.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="23-0"><span>Le chatbot sait s’arrêter.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="24" data-title="Distinguer AI Act et RGPD">
+  <div class="stepK">ÉTAPE 25 / 30</div>
+  <h2>Distinguer AI Act et RGPD</h2>
+  <div class="copy"><p>Les deux cadres peuvent se cumuler mais ne répondent pas aux mêmes questions.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Ajoutez une colonne “données personnelles ?” dans le registre.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="24-0"><span>Une revue AI Act ne remplace pas une revue données personnelles.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="25" data-title="Prévoir un incident IA">
+  <div class="stepK">ÉTAPE 26 / 30</div>
+  <h2>Prévoir un incident IA</h2>
+  <div class="copy"><p>Sortie discriminatoire, fuite de données, contenu faux publié, action automatisée incorrecte : définissez comment arrêter et documenter.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Créez un canal unique de signalement.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="25-0"><span>Un collaborateur sait à qui remonter un incident.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="26" data-title="Réévaluer lors d’un changement">
+  <div class="stepK">ÉTAPE 27 / 30</div>
+  <h2>Réévaluer lors d’un changement</h2>
+  <div class="copy"><p>Nouveau modèle, nouvelle finalité, nouvelle donnée ou nouvelle population peuvent modifier l’analyse.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Définissez les événements qui déclenchent une nouvelle revue.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="26-0"><span>Le registre n’est pas figé.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="27" data-title="Plan de conformité sur 30 jours">
+  <div class="stepK">ÉTAPE 28 / 30</div>
+  <h2>Plan de conformité sur 30 jours</h2>
+  <div class="copy"><p>Semaine 1 : inventaire. Semaine 2 : classement et fournisseurs. Semaine 3 : politique et contrôles. Semaine 4 : formation et revue des cas sensibles.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Assignez un responsable à chaque semaine.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="27-0"><span>Le plan a des propriétaires et des dates.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="28" data-title="Savoir quand consulter un spécialiste">
+  <div class="stepK">ÉTAPE 29 / 30</div>
+  <h2>Savoir quand consulter un spécialiste</h2>
+  <div class="copy"><p>Recrutement automatisé, décisions sensibles, systèmes destinés au marché, données fortement réglementées ou doute sur la qualification : demandez une analyse adaptée.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Définissez votre seuil d’escalade.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="28-0"><span>Vous savez quand arrêter l’auto-analyse.</span></label></section>
+  
+</article>
+
+<article class="chap" data-index="29" data-title="Maintenir une veille officielle">
+  <div class="stepK">ÉTAPE 30 / 30</div>
+  <h2>Maintenir une veille officielle</h2>
+  <div class="copy"><p>Le cadre et ses outils d’interprétation évoluent.</p></div>
+  <section class="action"><b>ACTION MAINTENANT</b><p>Conservez EUR-Lex et l’AI Act Service Desk comme références prioritaires.</p></section>
+  <section class="check"><b>CHECKPOINT</b><label><input type="checkbox" data-check="29-0"><span>Une mise à jour du guide peut être déclenchée rapidement.</span></label></section>
+  <section class="sources"><b>SOURCES OFFICIELLES</b><a href="https://ai-act-service-desk.ec.europa.eu/fr/ai-act/faq/quand-lapplication-de-la-loi-commence-t-elle" target="_blank" rel="noopener noreferrer">AI Act Service Desk — calendrier ↗</a><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer">EUR-Lex — règlement (UE) 2024/1689 ↗</a><a href="https://ai-act-service-desk.ec.europa.eu/" target="_blank" rel="noopener noreferrer">AI Act Service Desk ↗</a><small>Vérifiées le 30/09/2026. Les sources officielles priment en cas d’évolution.</small></section>
+</article></div>
+</main>
+
+<nav class="bottom" id="bottom" style="display:none"><div class="wrap"><button class="navBtn" id="prev">←</button><button class="navBtn primary" id="next">Étape suivante →</button></div></nav>
+
+<script>
+const GUIDE_KEY="serGuide18";
+const chapters=[...document.querySelectorAll(".chap")];
+const toc=[...document.querySelectorAll(".tocItem")];
+const start=document.getElementById("start"),cover=document.getElementById("cover"),reader=document.getElementById("reader"),bottom=document.getElementById("bottom");
+const prev=document.getElementById("prev"),next=document.getElementById("next"),bar=document.getElementById("bar"),counter=document.getElementById("counter"),currentTitle=document.getElementById("currentTitle");
+const drawer=document.getElementById("drawer"),scrim=document.getElementById("scrim"),menu=document.getElementById("menu");
+let index=Math.max(0,Math.min(chapters.length-1,Number(localStorage.getItem(GUIDE_KEY+":step")||0)));
+function openReader(){cover.style.display="none";reader.style.display="block";bottom.style.display="block";show(index);window.scrollTo(0,0)}
+function show(i){index=Math.max(0,Math.min(chapters.length-1,i));chapters.forEach((c,n)=>c.classList.toggle("on",n===index));toc.forEach((b,n)=>b.classList.toggle("active",n===index));counter.textContent="Étape "+String(index+1).padStart(2,"0")+" / "+chapters.length;currentTitle.textContent=chapters[index].dataset.title;bar.style.width=((index+1)/chapters.length*100)+"%";prev.disabled=index===0;next.textContent=index===chapters.length-1?"Terminer ✓":"Étape suivante →";localStorage.setItem(GUIDE_KEY+":step",String(index));closeDrawer();window.scrollTo({top:0,behavior:"smooth"})}
+function openDrawer(){drawer.classList.add("on");scrim.classList.add("on")} function closeDrawer(){drawer.classList.remove("on");scrim.classList.remove("on")}
+start.addEventListener("click",openReader);menu.addEventListener("click",openDrawer);scrim.addEventListener("click",closeDrawer);
+prev.addEventListener("click",()=>show(index-1));next.addEventListener("click",()=>{if(index<chapters.length-1)show(index+1);else window.scrollTo({top:0,behavior:"smooth"})});
+toc.forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.go))));
+document.querySelectorAll("[data-check]").forEach(cb=>{const key=GUIDE_KEY+":check:"+cb.dataset.check;cb.checked=localStorage.getItem(key)==="1";cb.addEventListener("change",()=>localStorage.setItem(key,cb.checked?"1":"0"))});
+</script>
+</body>
+</html>
