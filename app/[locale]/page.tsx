@@ -6,7 +6,13 @@ export default async function LocaleHome({params}:{params:Promise<{locale:Locale
  const {locale}=await params; const fr=locale==='fr';
 
  return <main>
-  <section className="premiumHero premiumHeroV2">
+  <section className="premiumHero premiumHeroV2 premiumHeroPhoto">
+    <img
+      className="premiumHeroPhotoBg"
+      src="/home/ser-hero.webp"
+      alt=""
+      aria-hidden="true"
+    />
     <div className="premiumHeroGrid">
       <div className="heroCopyPremium">
         <span className="serLabel">{fr?'GUIDES NUMÉRIQUES':'DIGITAL GUIDES'}</span>
@@ -24,21 +30,6 @@ export default async function LocaleHome({params}:{params:Promise<{locale:Locale
           <a className="heroSecondary" href="#how">{fr?'Comment ça marche ?':'How does it work?'}</a>
         </div>
       </div>
-
-      <div className="heroScene" aria-hidden="true">
-        <div className="deskBooks">
-          <b>{fr?'Des projets':'Projects'}</b>
-          <b>{fr?'Plus de liberté':'More freedom'}</b>
-          <b>{fr?'Une vie plus simple':'A simpler life'}</b>
-        </div>
-        <div className="deskMug"><span>{fr?'Un guide\npeut tout\nchanger':'One guide\ncan change\neverything'}</span></div>
-        <div className="deskLaptop"></div>
-        <div className="deskNote">{fr?'Petits guides.\nGrands changements.':'Small guides.\nBig changes.'}</div>
-        <div className="heroMethodCard">
-          <strong>{fr?'Une méthode simple':'A simple method'}</strong>
-          <span>{fr?'Comprendre → vérifier → agir':'Understand → verify → act'}</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -51,6 +42,56 @@ export default async function LocaleHome({params}:{params:Promise<{locale:Locale
       <a href={'/'+locale+'/guides'}>{fr?'Voir tous les guides':'View all guides'} →</a>
     </div>
     <HomeGuideCarousel locale={locale}/>
+  </section>
+
+  <section className="serVisualStories" aria-labelledby="ser-visual-stories-title">
+    <div className="serVisualStoriesHead">
+      <div>
+        <span className="serLabel">{fr?'PENSÉS POUR LE QUOTIDIEN':'MADE FOR REAL LIFE'}</span>
+        <h2 id="ser-visual-stories-title">{fr?'Des guides à garder sous la main.':'Guides worth keeping close.'}</h2>
+      </div>
+      <p>{fr
+        ?'Une bibliothèque claire, visuelle et pratique pour comprendre vite, décider sereinement et passer à l’action.'
+        :'A clear, visual and practical library to understand quickly, decide with confidence and take action.'}</p>
+    </div>
+
+    <div className="serVisualGrid">
+      <article className="serVisualCard serVisualCardOpen">
+        <img src="/home/ser-editorial-open-guide.webp" alt={fr?'Guide SER ouvert sur un bureau lumineux.':'An open SER guide on a bright desk.'}/>
+        <div>
+          <span>01</span>
+          <h3>{fr?'Comprendre sans jargon':'Understand without jargon'}</h3>
+          <p>{fr?'Des explications structurées pour aller directement à l’essentiel.':'Structured explanations that take you straight to what matters.'}</p>
+        </div>
+      </article>
+
+      <article className="serVisualCard">
+        <img src="/home/ser-library.webp" alt={fr?'Collection de guides aux tons crème et bleu marine.':'A collection of cream and navy guides.'}/>
+        <div>
+          <span>02</span>
+          <h3>{fr?'Une bibliothèque qui vous suit':'A library that stays with you'}</h3>
+          <p>{fr?'Des repères fiables à retrouver au moment où vous en avez besoin.':'Reliable references to return to exactly when you need them.'}</p>
+        </div>
+      </article>
+
+      <article className="serVisualCard">
+        <img src="/home/ser-ecosystem.webp" alt={fr?'Guides et cartes visuelles organisés comme un écosystème.':'Guides and visual cards arranged as an ecosystem.'}/>
+        <div>
+          <span>03</span>
+          <h3>{fr?'Relier l’essentiel':'Connect what matters'}</h3>
+          <p>{fr?'Chaque guide transforme une question complexe en prochaines étapes claires.':'Each guide turns a complex question into clear next steps.'}</p>
+        </div>
+      </article>
+
+      <article className="serVisualCard serVisualCardWide">
+        <img src="/home/ser-reading.webp" alt={fr?'Un guide ouvert dans un coin lecture calme et lumineux.':'An open guide in a calm, bright reading corner.'}/>
+        <div>
+          <span>04</span>
+          <h3>{fr?'Décider avec plus de sérénité':'Decide with more confidence'}</h3>
+          <p>{fr?'Le bon niveau de détail, sans bruit inutile.':'The right level of detail, without unnecessary noise.'}</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   <section className="categoryIcons" id="categories">
