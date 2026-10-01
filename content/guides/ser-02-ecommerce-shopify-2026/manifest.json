@@ -2,17 +2,21 @@
   "guide_id": "02",
   "niche_id": "ecommerce-social",
   "title": "E-commerce & Shopify 2026",
-  "status": "content-v1-complete",
-  "format": "web-book interactif",
+  "status": "web-book-fr-ready",
+  "format": "web-book interactif HTML",
   "purpose": "Créer une boutique en ligne cohérente, conforme et mesurable, puis aller jusqu’aux premières ventes sans confondre chiffre d’affaires et rentabilité.",
   "chapter_count": 17,
-  "last_reviewed": "2026-09-23",
+  "interactive_tools": [
+    "calculateur de marge par commande",
+    "calculateur de CAC maximal",
+    "seuil de rentabilité",
+    "score de validation produit"
+  ],
+  "delivery_file": "contenu/SER-Guide-02-Ecommerce-Shopify-2026.html",
+  "last_reviewed": "2026-10-01",
   "next_steps": [
-    "fact-check final",
-    "interactive calculators",
-    "FR web-book rendering",
     "English edition",
     "3 visual assets",
-    "Stripe product and delivery automation"
+    "attach Shopify Digital Products delivery file"
   ]
 }
