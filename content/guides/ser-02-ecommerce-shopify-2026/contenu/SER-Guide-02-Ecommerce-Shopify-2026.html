@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SER Guide 02 — E-commerce & Shopify 2026</title>
+<meta name="description" content="Guide pratique SER Guides : créer une boutique e-commerce cohérente, conforme et mesurable, puis aller jusqu'aux premières ventes.">
+<style>
+:root{--navy:#0b1726;--navy2:#12243a;--cream:#f7f2e9;--paper:#fffdf9;--ink:#141c27;--muted:#65717d;--line:#ded7cc;--blue:#607cff;--green:#1e9b73;--shadow:0 22px 60px rgba(11,23,38,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.layout{display:grid;grid-template-columns:310px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;background:var(--navy);color:#fff;padding:28px 22px;overflow:auto}.brand{font-weight:800;letter-spacing:.12em;font-size:12px}.edition{color:#93a2b4;font-size:12px;margin-top:5px}.progress{height:3px;background:#28394d;border-radius:99px;margin:22px 0}.progress i{display:block;height:100%;width:0;background:#8ba2ff;border-radius:99px}.search{width:100%;border:1px solid #31445a;border-radius:12px;background:#101f31;color:#fff;padding:12px 13px;margin-bottom:18px}.toc{display:flex;flex-direction:column;gap:2px}.toc a{display:grid;grid-template-columns:28px 1fr;gap:8px;text-decoration:none;color:#aebac7;font-size:12px;padding:8px 9px;border-radius:9px}.toc a:hover,.toc a.active{background:#162940;color:#fff}.toc span{color:#6d8096}.main{min-width:0}.hero{padding:74px clamp(24px,7vw,110px) 64px;background:radial-gradient(circle at 80% 20%,#d9e0ff 0,transparent 35%),linear-gradient(135deg,#fbf8f2,#eee7dc)}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:clamp(46px,7vw,86px);line-height:.95;letter-spacing:-.055em;margin:22px 0}.hero p{font-size:19px;max-width:800px;color:#4d5966}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.meta span{border:1px solid #cfc7ba;border-radius:999px;padding:7px 11px;font-size:12px;background:#fff8}.tools{padding:56px clamp(24px,7vw,110px);background:#fff}.tools h2,.sources h2{font-size:38px;letter-spacing:-.04em;margin:0 0 10px}.tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}.tool{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--paper)}.tool h3{margin:0 0 6px;font-size:20px}.tool p{color:var(--muted);font-size:13px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:9px}.fields label{font-size:11px;color:var(--muted)}.fields input{width:100%;margin-top:4px;border:1px solid var(--line);border-radius:9px;padding:9px;background:#fff;font:inherit}.result{margin-top:13px;padding:12px;border-radius:10px;background:#eef1ff;font-weight:700}.chapters{max-width:940px;margin:0 auto;padding:20px 28px 90px}.chapter{display:grid;grid-template-columns:72px minmax(0,1fr);gap:28px;padding:70px 0;border-bottom:1px solid var(--line)}.chapter-number{font-size:12px;color:#89929d;padding-top:12px}.chapter-content>h1{font-size:clamp(36px,5vw,56px);line-height:1.03;letter-spacing:-.045em;margin:0 0 34px}.chapter-content h2{font-size:28px;line-height:1.15;letter-spacing:-.025em;margin:42px 0 16px}.chapter-content h3{font-size:20px;margin:30px 0 12px}.chapter-content p{margin:12px 0}.chapter-content ul,.chapter-content ol{padding-left:22px}.chapter-content li{margin:7px 0}.chapter-content blockquote{margin:24px 0;padding:18px 22px;border-left:3px solid var(--blue);background:#edeffd;border-radius:0 12px 12px 0}.chapter-content code{background:#eee8df;border-radius:5px;padding:2px 5px}.src-ref{display:inline-block;background:#e8ecff;color:#304db6;padding:1px 5px;border-radius:5px;font-size:11px;font-weight:800}.table-wrap{overflow:auto;margin:22px 0}.table-wrap table{border-collapse:collapse;width:100%;font-size:14px}.table-wrap th,.table-wrap td{border:1px solid var(--line);padding:10px;text-align:left}.table-wrap th{background:#eee8df}.chapter-content hr{border:0;border-top:1px solid var(--line);margin:34px 0}.sources{background:var(--navy);color:#fff;padding:70px clamp(24px,7vw,110px)}.sources .source-body{max-width:960px}.sources p,.sources li{color:#b4c0cd}.sources a{color:#b8c6ff;word-break:break-word}.notice{padding:20px;border:1px solid #ddd4c7;background:#fffaf2;border-radius:14px;margin:24px 0}.mobile-toc{display:none;position:sticky;top:0;z-index:10;background:#0b1726;color:#fff;padding:12px 16px}.mobile-toc button{width:100%;background:#162940;color:white;border:0;border-radius:9px;padding:10px}.hidden-by-search{display:none!important}
+@media(max-width:920px){.layout{display:block}.sidebar{display:none}.mobile-toc{display:block}.hero,.tools,.sources{padding-left:22px;padding-right:22px}.tool-grid{grid-template-columns:1fr}.chapters{padding:0 20px 70px}.chapter{grid-template-columns:1fr;gap:5px;padding:55px 0}.chapter-number{padding:0}.fields{grid-template-columns:1fr}}
+@media print{.sidebar,.mobile-toc,.tools{display:none}.layout{display:block}.hero{padding:25px;background:white}.chapter{break-inside:avoid}.sources{background:white;color:black}}
+</style></head><body>
+<div class="mobile-toc"><button onclick="document.getElementById('mobile-menu').toggleAttribute('hidden')">Sommaire</button><div id="mobile-menu" hidden class="toc"><a href="#chapter-0" data-chapter="0"><span>00</span>Introduction</a><a href="#chapter-1" data-chapter="1"><span>01</span>Diagnostic express</a><a href="#chapter-2" data-chapter="2"><span>02</span>Trouver une niche et valider un produit</a><a href="#chapter-3" data-chapter="3"><span>03</span>Choisir son modèle e-commerce</a><a href="#chapter-4" data-chapter="4"><span>04</span>Économie unitaire : savoir si une vente vaut quelque chose</a><a href="#chapter-5" data-chapter="5"><span>05</span>Sourcing et fournisseurs</a><a href="#chapter-6" data-chapter="6"><span>06</span>Construire Shopify sans perdre une semaine sur le design</a><a href="#chapter-7" data-chapter="7"><span>07</span>Faire une fiche produit qui aide à décider</a><a href="#chapter-8" data-chapter="8"><span>08</span>Paiement, livraison, retours et SAV</a><a href="#chapter-9" data-chapter="9"><span>09</span>Conformité France : ce que votre boutique doit rendre clair</a><a href="#chapter-10" data-chapter="10"><span>10</span>TVA, douane et dropshipping transfrontalier</a><a href="#chapter-11" data-chapter="11"><span>11</span>Acquisition organique : contenu qui amène des clients</a><a href="#chapter-12" data-chapter="12"><span>12</span>UGC, créateurs et publicité</a><a href="#chapter-13" data-chapter="13"><span>13</span>Email, fidélisation et réachat</a><a href="#chapter-14" data-chapter="14"><span>14</span>Lire les chiffres sans se raconter d’histoire</a><a href="#chapter-15" data-chapter="15"><span>15</span>Plan de lancement sur 30 jours</a><a href="#chapter-16" data-chapter="16"><span>16</span>Templates &amp; checklists</a></div></div>
+<div class="layout"><aside class="sidebar"><div class="brand">SER GUIDES</div><div class="edition">Guide 02 · France · Révision 01/10/2026</div><div class="progress"><i id="progress"></i></div><input id="search" class="search" placeholder="Rechercher dans le guide…"><nav class="toc"><a href="#chapter-0" data-chapter="0"><span>00</span>Introduction</a><a href="#chapter-1" data-chapter="1"><span>01</span>Diagnostic express</a><a href="#chapter-2" data-chapter="2"><span>02</span>Trouver une niche et valider un produit</a><a href="#chapter-3" data-chapter="3"><span>03</span>Choisir son modèle e-commerce</a><a href="#chapter-4" data-chapter="4"><span>04</span>Économie unitaire : savoir si une vente vaut quelque chose</a><a href="#chapter-5" data-chapter="5"><span>05</span>Sourcing et fournisseurs</a><a href="#chapter-6" data-chapter="6"><span>06</span>Construire Shopify sans perdre une semaine sur le design</a><a href="#chapter-7" data-chapter="7"><span>07</span>Faire une fiche produit qui aide à décider</a><a href="#chapter-8" data-chapter="8"><span>08</span>Paiement, livraison, retours et SAV</a><a href="#chapter-9" data-chapter="9"><span>09</span>Conformité France : ce que votre boutique doit rendre clair</a><a href="#chapter-10" data-chapter="10"><span>10</span>TVA, douane et dropshipping transfrontalier</a><a href="#chapter-11" data-chapter="11"><span>11</span>Acquisition organique : contenu qui amène des clients</a><a href="#chapter-12" data-chapter="12"><span>12</span>UGC, créateurs et publicité</a><a href="#chapter-13" data-chapter="13"><span>13</span>Email, fidélisation et réachat</a><a href="#chapter-14" data-chapter="14"><span>14</span>Lire les chiffres sans se raconter d’histoire</a><a href="#chapter-15" data-chapter="15"><span>15</span>Plan de lancement sur 30 jours</a><a href="#chapter-16" data-chapter="16"><span>16</span>Templates &amp; checklists</a></nav></aside><main class="main">
+<header class="hero"><div class="eyebrow">E-commerce · Shopify · 2026</div><h1>De zéro aux premières ventes.</h1><p>Construire une boutique cohérente, comprendre sa marge, vérifier les points de conformité, obtenir ses premières visites et savoir exactement quoi améliorer ensuite.</p><div class="meta"><span>17 chapitres</span><span>4 calculateurs interactifs</span><span>templates & checklists</span><span>sources datées</span></div><div class="notice"><strong>Important.</strong> Ce guide est informatif. Les règles fiscales, douanières et de consommation dépendent de votre situation. Pour une décision engageante, vérifiez la source officielle applicable ou consultez le professionnel compétent.</div></header>
+<section class="tools"><div class="eyebrow">Outils interactifs</div><h2>Calculez avant de dépenser.</h2><p>Les résultats sont pédagogiques et servent à structurer vos hypothèses.</p>
+<div class="tool-grid">
+<div class="tool"><h3>Marge par commande</h3><p>Prix de vente moins tous les coûts variables.</p><div class="fields"><label>Prix TTC<input id="price" type="number" step=".01" value="59"></label><label>Produit<input id="cost" type="number" step=".01" value="17"></label><label>Emballage<input id="pack" type="number" step=".01" value="1.8"></label><label>Paiement<input id="pay" type="number" step=".01" value="1.7"></label><label>Livraison<input id="ship" type="number" step=".01" value="5"></label><label>Retours/SAV<input id="returns" type="number" step=".01" value="2.5"></label><label>Acquisition<input id="cac" type="number" step=".01" value="12"></label></div><div class="result" id="marginResult"></div></div>
+<div class="tool"><h3>CAC maximal</h3><p>Budget acquisition maximum selon votre marge cible.</p><div class="fields"><label>Marge avant acquisition<input id="preCac" type="number" step=".01" value="31"></label><label>Marge minimale souhaitée<input id="targetMargin" type="number" step=".01" value="15"></label></div><div class="result" id="cacResult"></div></div>
+<div class="tool"><h3>Seuil de rentabilité</h3><p>Nombre de commandes nécessaires pour couvrir vos charges fixes.</p><div class="fields"><label>Charges fixes mensuelles<input id="fixed" type="number" step=".01" value="600"></label><label>Marge par commande<input id="unitMargin" type="number" step=".01" value="20"></label></div><div class="result" id="breakResult"></div></div>
+<div class="tool"><h3>Score de validation produit</h3><p>Notez chaque critère de 1 à 5.</p><div class="fields"><label>Demande observable<input class="score" type="number" min="1" max="5" value="3"></label><label>Concurrence supportable<input class="score" type="number" min="1" max="5" value="3"></label><label>Marge potentielle<input class="score" type="number" min="1" max="5" value="3"></label><label>Logistique simple<input class="score" type="number" min="1" max="5" value="3"></label><label>Potentiel contenu<input class="score" type="number" min="1" max="5" value="3"></label><label>Potentiel réachat<input class="score" type="number" min="1" max="5" value="3"></label><label>Risque réglementaire faible<input class="score" type="number" min="1" max="5" value="3"></label><label>Différenciation<input class="score" type="number" min="1" max="5" value="3"></label></div><div class="result" id="scoreResult"></div></div>
+</div></section>
+<section class="chapters"><article class="chapter" id="chapter-0" data-title="00 — Introduction"><div class="chapter-number">00</div><div class="chapter-content"><h1>00 — Introduction</h1><h2 id="ce-que-vous-allez-construire">Ce que vous allez construire</h2>
+<p>À la fin de ce guide, vous devez être capable de répondre à cinq questions sans hésiter :</p>
+<ol>
+<li><strong>Qu’est-ce que je vends ?</strong></li>
+<li><strong>À qui ?</strong></li>
+<li><strong>Pourquoi cette personne achèterait-elle chez moi ?</strong></li>
+<li><strong>Combien me reste-t-il réellement par commande ?</strong></li>
+<li><strong>Comment vais-je obtenir mes premières ventes de façon mesurable ?</strong></li>
+</ol>
+<p>Le marché existe : selon la FEVAD, le e-commerce français a atteint <strong>196,4 milliards d’euros en 2025</strong>, avec 3,2 milliards de transactions. Cela ne signifie pas qu’une boutique créée aujourd’hui trouvera automatiquement des clients. Cela signifie que le commerce en ligne est devenu un canal mature, concurrentiel et installé dans les habitudes. <span class="src-ref">S1</span></p>
+<h2 id="le-piege-classique">Le piège classique</h2>
+<p>Beaucoup de débutants commencent dans cet ordre :</p>
+<p>logo → thème Shopify → couleurs → applications → produits → contenu → puis seulement : « comment vendre ? »</p>
+<p>SER vous propose l’ordre inverse :</p>
+<p><strong>problème → client → offre → marge → preuve → boutique → trafic → mesure → optimisation</strong></p>
+<p>Shopify est un outil. Une boutique n’est pas un business tant que l’offre, l’économie unitaire et l’acquisition ne fonctionnent pas.</p>
+<h2 id="votre-regle-de-travail">Votre règle de travail</h2>
+<p>À chaque décision, écrivez :</p>
+<ul>
+<li>ce que vous pensez être vrai ;</li>
+<li>comment vous allez le vérifier ;</li>
+<li>le chiffre qui vous dira si vous avez raison.</li>
+</ul>
+<p>Exemple :</p>
+<blockquote>
+<p>Hypothèse : « les étudiants veulent une gourde compacte qui tient dans un sac ».</p>
+<p>Test : 5 vidéos organiques + une page simple.</p>
+<p>Mesure : clics, ajouts panier, ventes.</p>
+</blockquote>
+<p>Vous ne cherchez pas à avoir raison immédiatement. Vous cherchez à <strong>apprendre rapidement sans brûler votre budget</strong>.</p></div></article>
+<article class="chapter" id="chapter-1" data-title="01 — Diagnostic express"><div class="chapter-number">01</div><div class="chapter-content"><h1>01 — Diagnostic express</h1><p>Répondez sans chercher à embellir votre projet.</p>
+<h2 id="a-votre-situation">A. Votre situation</h2>
+<p><strong>Budget réellement disponible au lancement</strong></p>
+<ul>
+<li>0–100 €</li>
+<li>100–500 €</li>
+<li>500–2 000 €</li>
+<li>plus de 2 000 €</li>
+</ul>
+<p><strong>Temps disponible</strong></p>
+<ul>
+<li>moins de 5 h/semaine</li>
+<li>5–10 h</li>
+<li>10–20 h</li>
+<li>temps plein</li>
+</ul>
+<p><strong>Compétence forte actuelle</strong></p>
+<ul>
+<li>produit / expertise métier</li>
+<li>création de contenu</li>
+<li>vente</li>
+<li>design / branding</li>
+<li>technique</li>
+<li>aucune pour le moment</li>
+</ul>
+<h2 id="b-votre-produit">B. Votre produit</h2>
+<p>Notez de 0 à 2 :</p>
+<ul>
+<li>problème client clair</li>
+<li>audience identifiable</li>
+<li>produit facile à expliquer</li>
+<li>marge potentielle correcte</li>
+<li>logistique supportable</li>
+<li>différenciation possible</li>
+<li>contenu démonstratif facile à produire</li>
+</ul>
+<p><strong>0–5 :</strong> ne construisez pas encore la boutique.</p>
+<p><strong>6–10 :</strong> testez le produit avec une page et du contenu.</p>
+<p><strong>11–14 :</strong> vous pouvez passer à une construction de boutique structurée.</p>
+<p>Ce score n’est pas une preuve de rentabilité. C’est un filtre pour éviter de consacrer trois semaines à un produit que vous n’avez jamais confronté au marché.</p>
+<h2 id="c-vos-7-reponses-obligatoires">C. Vos 7 réponses obligatoires</h2>
+<p>Avant Shopify, écrivez une phrase pour chacune :</p>
+<ol>
+<li>Mon client principal est…</li>
+<li>Son problème / désir principal est…</li>
+<li>Mon produit lui apporte…</li>
+<li>Mon prix cible est…</li>
+<li>Mon coût livré estimé est…</li>
+<li>Mon canal d’acquisition n°1 sera…</li>
+<li>La preuve principale qui rassurera le client sera…</li>
+</ol>
+<p>Tant que vous ne pouvez pas remplir cette page, ne passez pas une journée à choisir une police.</p></div></article>
+<article class="chapter" id="chapter-2" data-title="02 — Trouver une niche et valider un produit"><div class="chapter-number">02</div><div class="chapter-content"><h1>02 — Trouver une niche et valider un produit</h1><h2 id="une-niche-n-est-pas-simplement-une-categorie">Une niche n’est pas simplement une catégorie</h2>
+<p>« Beauté » est une catégorie.</p>
+<p>« Soins simples pour peau sensible chez les hommes qui débutent » est déjà un angle plus exploitable.</p>
+<p>Un bon angle réunit :</p>
+<ul>
+<li>une personne identifiable ;</li>
+<li>un problème ou désir fréquent ;</li>
+<li>une manière crédible de l’atteindre ;</li>
+<li>une offre que vous pouvez livrer avec une marge viable.</li>
+</ul>
+<h2 id="5-sources-d-idees-produit">5 sources d’idées produit</h2>
+<ol>
+<li><strong>Problèmes récurrents</strong> : forums, commentaires, avis 1–3 étoiles, FAQ.</li>
+<li><strong>Produits existants mal servis</strong> : délai, qualité, bundle, information, design, expérience.</li>
+<li><strong>Communautés</strong> : sport, métier, hobby, fandom, pratique spécialisée.</li>
+<li><strong>Produits à démonstration forte</strong> : avant/après légitime, usage visible, transformation fonctionnelle.</li>
+<li><strong>Expertise personnelle</strong> : accès fournisseur, compétence, communauté, distribution.</li>
+</ol>
+<p>Les listes de « produits tendance » peuvent nourrir la recherche, mais ne remplacent pas la validation. Shopify publie chaque année des catégories en progression, mais une tendance globale ne garantit pas une opportunité rentable pour votre audience. <span class="src-ref">S18</span></p>
+<h2 id="matrice-de-validation-ser">Matrice de validation SER</h2>
+<p>Attribuez 1 à 5 à chaque critère :</p>
+<ul>
+<li>demande observable</li>
+<li>concurrence supportable</li>
+<li>marge potentielle</li>
+<li>simplicité logistique</li>
+<li>potentiel de contenu</li>
+<li>potentiel de réachat</li>
+<li>risque réglementaire faible</li>
+<li>différenciation possible</li>
+</ul>
+<p><strong>Total / 40</strong></p>
+<p>Ne choisissez pas automatiquement le score le plus élevé. Utilisez la matrice pour voir où sont les faiblesses.</p>
+<h2 id="test-sans-gros-stock">Test sans gros stock</h2>
+<p>Avant 500 unités :</p>
+<ul>
+<li>créez 3 angles de positionnement ;</li>
+<li>préparez une page produit simple ;</li>
+<li>produisez 10 contenus courts ;</li>
+<li>recueillez des inscriptions, clics ou précommandes uniquement si le cadre commercial est conforme ;</li>
+<li>comparez intérêt et objections.</li>
+</ul>
+<p>La validation n’est pas : « mes amis trouvent ça cool ».</p>
+<p>La validation utile est un comportement : clic, inscription, demande, ajout panier, commande.</p></div></article>
+<article class="chapter" id="chapter-3" data-title="03 — Choisir son modèle e-commerce"><div class="chapter-number">03</div><div class="chapter-content"><h1>03 — Choisir son modèle e-commerce</h1><h2 id="1-stock-classique">1. Stock classique</h2>
+<p>Vous achetez ou produisez avant la vente.</p>
+<p><strong>Bon choix si :</strong></p>
+<ul>
+<li>vous voulez contrôler qualité et expédition ;</li>
+<li>le délai est important ;</li>
+<li>votre marge supporte l’immobilisation de stock.</li>
+</ul>
+<p><strong>À surveiller :</strong></p>
+<ul>
+<li>quantité minimale de commande ;</li>
+<li>stockage ;</li>
+<li>invendus ;</li>
+<li>trésorerie.</li>
+</ul>
+<h2 id="2-fabrication-fait-main">2. Fabrication / fait main</h2>
+<p>Intéressant pour différenciation et storytelling, mais votre capacité devient une contrainte de croissance.</p>
+<p>Mesurez toujours :</p>
+<p><strong>temps de production par unité × coût horaire cible</strong>.</p>
+<h2 id="3-print-on-demand">3. Print-on-demand</h2>
+<p>Pertinent pour tester des designs sans stock important.</p>
+<p>À contrôler :</p>
+<ul>
+<li>qualité réelle des échantillons ;</li>
+<li>marge après impression et livraison ;</li>
+<li>délai ;</li>
+<li>personnalisation de l’expérience colis.</li>
+</ul>
+<h2 id="4-dropshipping">4. Dropshipping</h2>
+<p>Le fournisseur expédie directement au client. Shopify le présente comme un modèle sans gestion directe du stock et de l’expédition. <span class="src-ref">S8</span></p>
+<p>Mais « pas de stock » ne signifie pas « pas de responsabilité ».</p>
+<p>Vous devez contrôler :</p>
+<ul>
+<li>fournisseur ;</li>
+<li>qualité ;</li>
+<li>délai réel ;</li>
+<li>suivi colis ;</li>
+<li>retours ;</li>
+<li>conformité produit ;</li>
+<li>TVA/douane selon origine et destination ;</li>
+<li>SAV.</li>
+</ul>
+<p><strong>2026 :</strong> les règles d’importation UE ont évolué. Toute stratégie de dropshipping hors UE doit être revue avec les règles douanières et fiscales à jour, et non copiée depuis une vidéo de 2023. <span class="src-ref">S8</span><span class="src-ref">S10</span></p>
+<h2 id="5-produit-digital">5. Produit digital</h2>
+<p>Exemples : guide, template, fichier, formation, ressource.</p>
+<p>Avantages :</p>
+<ul>
+<li>pas d’expédition physique ;</li>
+<li>coût marginal faible ;</li>
+<li>livraison automatisable.</li>
+</ul>
+<p>Mais la valeur dépend de la qualité, de la preuve et du résultat attendu. Les règles de rétractation peuvent différer pour certains contenus numériques lorsque les conditions légales sont réunies : vérifiez précisément votre cas. <span class="src-ref">S12</span></p>
+<h2 id="decision">Décision</h2>
+<p>Choisissez le modèle qui maximise :</p>
+<p><strong>contrôle + marge + qualité + vitesse d’apprentissage</strong>, pas celui qui semble le plus passif sur TikTok.</p></div></article>
+<article class="chapter" id="chapter-4" data-title="04 — Économie unitaire : savoir si une vente vaut quelque chose"><div class="chapter-number">04</div><div class="chapter-content"><h1>04 — Économie unitaire : savoir si une vente vaut quelque chose</h1><p>Une boutique peut afficher du chiffre d’affaires et perdre de l’argent.</p>
+<h2 id="la-formule-de-base">La formule de base</h2>
+<p><strong>Prix de vente TTC</strong></p>
+<p>− coût produit</p>
+<p>− emballage</p>
+<p>− frais de paiement</p>
+<p>− livraison réellement supportée</p>
+<p>− retours / casse / SAV estimés</p>
+<p>− acquisition</p>
+<p>= <strong>marge de contribution</strong></p>
+<p>Cette marge n’est pas votre bénéfice final : il reste encore les charges de structure, logiciels, comptabilité, fiscalité et votre rémunération.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Prix TTC : 59 €</p>
+<p>Produit : 17 €</p>
+<p>Emballage : 1,80 €</p>
+<p>Paiement : 1,70 €</p>
+<p>Livraison supportée : 5 €</p>
+<p>Provision retours/SAV : 2,50 €</p>
+<p>Acquisition : 12 €</p>
+<p><strong>Marge de contribution : 19 €</strong></p>
+<h2 id="cac-maximal">CAC maximal</h2>
+<p>Si votre marge avant acquisition est de 31 € et que vous souhaitez conserver au moins 15 € par première commande, votre <strong>CAC cible maximal</strong> est 16 €.</p>
+<p>Formule :</p>
+<p><strong>CAC max = marge avant acquisition − marge minimale souhaitée</strong></p>
+<h2 id="panier-moyen">Panier moyen</h2>
+<p>Le panier moyen peut augmenter via :</p>
+<ul>
+<li>bundles cohérents ;</li>
+<li>quantité ;</li>
+<li>produit complémentaire ;</li>
+<li>seuil de livraison gratuite ;</li>
+<li>upsell utile.</li>
+</ul>
+<p>Ne gonflez pas le panier avec des produits sans rapport : vous augmentez la complexité et parfois le taux d’abandon.</p>
+<h2 id="seuil-de-rentabilite-simplifie">Seuil de rentabilité simplifié</h2>
+<p>Charges fixes mensuelles / marge de contribution moyenne = nombre de commandes nécessaires pour couvrir les charges fixes.</p>
+<p>Exemple :</p>
+<p>600 € de charges fixes / 20 € de marge = <strong>30 commandes</strong>.</p>
+<h2 id="dashboard-minimal">Dashboard minimal</h2>
+<p>Suivez au moins :</p>
+<ul>
+<li>CA</li>
+<li>commandes</li>
+<li>panier moyen</li>
+<li>marge de contribution</li>
+<li>taux de conversion</li>
+<li>CAC</li>
+<li>taux de remboursement</li>
+<li>taux de réachat</li>
+</ul>
+<p>Le chiffre d’affaires seul est un indicateur incomplet.</p></div></article>
+<article class="chapter" id="chapter-5" data-title="05 — Sourcing et fournisseurs"><div class="chapter-number">05</div><div class="chapter-content"><h1>05 — Sourcing et fournisseurs</h1><p>Le fournisseur fait partie de votre expérience client, même si votre client ne connaît jamais son nom.</p>
+<h2 id="avant-de-signer">Avant de signer</h2>
+<p>Demandez :</p>
+<ul>
+<li>prix unitaire par palier ;</li>
+<li>MOQ ;</li>
+<li>délai de production ;</li>
+<li>délai moyen d’expédition ;</li>
+<li>options d’emballage ;</li>
+<li>politique défaut / casse ;</li>
+<li>certificats ou documents requis ;</li>
+<li>pays d’expédition ;</li>
+<li>conditions de paiement ;</li>
+<li>capacité mensuelle ;</li>
+<li>suivi colis ;</li>
+<li>adresse de retour.</li>
+</ul>
+<h2 id="commandez-un-echantillon">Commandez un échantillon</h2>
+<p>Testez comme un client :</p>
+<ul>
+<li>qualité visuelle ;</li>
+<li>odeur / matière / finitions ;</li>
+<li>emballage ;</li>
+<li>temps réel ;</li>
+<li>tracking ;</li>
+<li>conformité à la fiche fournisseur ;</li>
+<li>résistance du colis.</li>
+</ul>
+<p>Ne lancez pas une campagne publicitaire importante sur un produit que vous n’avez jamais vu.</p>
+<h2 id="verifiez-le-risque-reglementaire">Vérifiez le risque réglementaire</h2>
+<p>Plus la catégorie touche à :</p>
+<ul>
+<li>santé ;</li>
+<li>peau ;</li>
+<li>enfants ;</li>
+<li>alimentation ;</li>
+<li>sécurité ;</li>
+<li>électrique ;</li>
+<li>batteries ;</li>
+<li>substances ;</li>
+</ul>
+<p>plus la vérification réglementaire doit être forte.</p>
+<p>Un produit « viral » peut être un mauvais choix si vous ne pouvez pas prouver sa conformité.</p>
+<h2 id="grille-fournisseur-ser">Grille fournisseur SER</h2>
+<p>Notez /5 :</p>
+<ul>
+<li>qualité échantillon</li>
+<li>délai</li>
+<li>communication</li>
+<li>stabilité prix</li>
+<li>documentation</li>
+<li>capacité</li>
+<li>gestion des défauts</li>
+<li>personnalisation</li>
+</ul>
+<p>Conservez au minimum une solution alternative lorsque votre activité dépend fortement d’un fournisseur unique.</p>
+<h2 id="dropshipping-controle-supplementaire">Dropshipping : contrôle supplémentaire</h2>
+<p>Le vendeur reste l’interlocuteur commercial du client. Si le colis est lent, incomplet ou problématique, votre client vous contacte, pas votre fournisseur.</p>
+<p>Avant lancement, faites au moins :</p>
+<ol>
+<li>une commande France ;</li>
+<li>une commande avec retour ;</li>
+<li>une simulation de colis perdu ;</li>
+<li>une simulation de remboursement.</li>
+</ol></div></article>
+<article class="chapter" id="chapter-6" data-title="06 — Construire Shopify sans perdre une semaine sur le design"><div class="chapter-number">06</div><div class="chapter-content"><h1>06 — Construire Shopify sans perdre une semaine sur le design</h1><p>Shopify propose un parcours de configuration couvrant notamment produits, boutique, paiements et lancement. <span class="src-ref">S3</span><span class="src-ref">S5</span><span class="src-ref">S7</span></p>
+<p>Votre objectif n’est pas de faire un site « impressionnant ». Votre objectif est de rendre l’achat simple et rassurant.</p>
+<h2 id="architecture-minimale">Architecture minimale</h2>
+<p>Navigation recommandée pour une petite boutique :</p>
+<ul>
+<li>Accueil</li>
+<li>Boutique / catégories</li>
+<li>Produit</li>
+<li>À propos</li>
+<li>FAQ</li>
+<li>Contact</li>
+</ul>
+<p>Footer :</p>
+<ul>
+<li>livraison</li>
+<li>retours</li>
+<li>CGV</li>
+<li>mentions légales</li>
+<li>confidentialité</li>
+<li>cookies selon configuration</li>
+</ul>
+<h2 id="home">Home</h2>
+<p>La home doit rapidement expliquer :</p>
+<ul>
+<li>ce que vous vendez ;</li>
+<li>pour qui ;</li>
+<li>bénéfice ;</li>
+<li>produits phares ;</li>
+<li>preuves ;</li>
+<li>livraison / confiance ;</li>
+<li>CTA.</li>
+</ul>
+<h2 id="theme">Theme</h2>
+<p>Choisissez d’abord un thème :</p>
+<ul>
+<li>rapide ;</li>
+<li>responsive ;</li>
+<li>lisible ;</li>
+<li>compatible avec les fonctions nécessaires.</li>
+</ul>
+<p>N’ajoutez pas une application pour chaque détail visuel.</p>
+<h2 id="paiements">Paiements</h2>
+<p>Shopify Payments est disponible en France métropolitaine, sous réserve d’éligibilité et de vérification des informations demandées. <span class="src-ref">S6</span></p>
+<p>Testez :</p>
+<ul>
+<li>paiement carte ;</li>
+<li>paiement mobile lorsque disponible ;</li>
+<li>refus de paiement ;</li>
+<li>remboursement ;</li>
+<li>e-mail de confirmation.</li>
+</ul>
+<h2 id="livraison">Livraison</h2>
+<p>Créez une règle compréhensible :</p>
+<ul>
+<li>zones ;</li>
+<li>prix ;</li>
+<li>seuil gratuit éventuel ;</li>
+<li>délais réalistes ;</li>
+<li>tracking.</li>
+</ul>
+<p>La promesse affichée doit correspondre à votre capacité réelle.</p>
+<h2 id="checklist-pre-lancement">Checklist pré-lancement</h2>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; domaine connecté</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; favicon / identité</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; navigation mobile</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; produits complets</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; stock / variantes vérifiés</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; panier</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; checkout</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; paiement test</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; e-mails</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; livraison</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; retours</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; pages légales</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; analytics</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; cookies / consentement vérifiés</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; commande test complète</li>
+</ul></div></article>
+<article class="chapter" id="chapter-7" data-title="07 — Faire une fiche produit qui aide à décider"><div class="chapter-number">07</div><div class="chapter-content"><h1>07 — Faire une fiche produit qui aide à décider</h1><p>Une fiche produit n’a pas besoin de 40 blocs. Elle doit répondre aux bonnes questions dans le bon ordre.</p>
+<h2 id="au-dessus-de-la-ligne-de-flottaison">Au-dessus de la ligne de flottaison</h2>
+<p>Montrez immédiatement :</p>
+<ul>
+<li>produit ;</li>
+<li>nom ;</li>
+<li>bénéfice principal ;</li>
+<li>prix ;</li>
+<li>variantes ;</li>
+<li>preuve / note si réelle ;</li>
+<li>CTA ;</li>
+<li>information livraison essentielle.</li>
+</ul>
+<h2 id="vos-visuels">Vos visuels</h2>
+<p>Préparez :</p>
+<ol>
+<li>produit seul ;</li>
+<li>produit en situation ;</li>
+<li>détail ;</li>
+<li>échelle / taille ;</li>
+<li>bénéfice visible ;</li>
+<li>contenu de l’emballage ;</li>
+<li>vidéo courte si utile.</li>
+</ol>
+<p>Les photos doivent réduire l’incertitude.</p>
+<h2 id="texte">Texte</h2>
+<p>Évitez :</p>
+<blockquote>
+<p>Qualité premium exceptionnelle révolutionnaire.</p>
+</blockquote>
+<p>Préférez :</p>
+<blockquote>
+<p>Format 500 ml, bouchon étanche, passe dans un porte-gobelet standard.</p>
+</blockquote>
+<p>Le bénéfice explique <strong>pourquoi ça compte</strong>.</p>
+<p>La caractéristique explique <strong>ce que c’est</strong>.</p>
+<h2 id="structure-ser">Structure SER</h2>
+<h3 id="1-promesse">1. Promesse</h3>
+<p>Une phrase claire.</p>
+<h3 id="2-pourquoi-ce-produit">2. Pourquoi ce produit</h3>
+<p>3 bénéfices maximum au début.</p>
+<h3 id="3-preuves">3. Preuves</h3>
+<p>Avis réels, démonstration, matériaux, mesures, usage.</p>
+<h3 id="4-details">4. Détails</h3>
+<p>Caractéristiques et entretien.</p>
+<h3 id="5-livraison-retours">5. Livraison / retours</h3>
+<p>Pas cachés.</p>
+<h3 id="6-faq">6. FAQ</h3>
+<p>Répondez aux objections reçues en DM, commentaire ou SAV.</p>
+<h2 id="test-de-comprehension">Test de compréhension</h2>
+<p>Montrez la page 5 secondes à une personne.</p>
+<p>Elle doit pouvoir répondre :</p>
+<ul>
+<li>c’est quoi ?</li>
+<li>à quoi ça sert ?</li>
+<li>combien ça coûte ?</li>
+<li>comment je l’achète ?</li>
+</ul>
+<p>Sinon, simplifiez.</p></div></article>
+<article class="chapter" id="chapter-8" data-title="08 — Paiement, livraison, retours et SAV"><div class="chapter-number">08</div><div class="chapter-content"><h1>08 — Paiement, livraison, retours et SAV</h1><p>La vente ne s’arrête pas au bouton « payer ».</p>
+<h2 id="checkout">Checkout</h2>
+<p>Réduisez les surprises :</p>
+<ul>
+<li>prix cohérent ;</li>
+<li>frais de livraison connus ;</li>
+<li>délai annoncé ;</li>
+<li>moyens de paiement adaptés ;</li>
+<li>pas d’étape inutile.</li>
+</ul>
+<p>La DGCCRF rappelle qu’avant la commande, le consommateur doit pouvoir connaître les caractéristiques essentielles et le prix, et que le bouton final doit indiquer sans ambiguïté l’obligation de paiement. <span class="src-ref">S12</span></p>
+<h2 id="livraison">Livraison</h2>
+<p>Affichez une <strong>date ou un délai</strong> de livraison clair. La réglementation prévoit aussi un cadre lorsque le professionnel n’a pas indiqué de délai. <span class="src-ref">S12</span><span class="src-ref">S14</span></p>
+<p>Ne promettez pas « 5 jours » si votre fournisseur livre généralement en 12.</p>
+<h2 id="politique-de-retour">Politique de retour</h2>
+<p>Expliquez :</p>
+<ul>
+<li>délai ;</li>
+<li>procédure ;</li>
+<li>adresse ;</li>
+<li>état accepté ;</li>
+<li>frais éventuels ;</li>
+<li>remboursement.</li>
+</ul>
+<p>Pour de nombreuses ventes à distance B2C, le délai légal de rétractation est de 14 jours calendaires, avec exceptions prévues par la loi selon le type de bien ou service. <span class="src-ref">S12</span></p>
+<h2 id="sav">SAV</h2>
+<p>Créez 5 modèles :</p>
+<ol>
+<li>colis retardé ;</li>
+<li>produit endommagé ;</li>
+<li>erreur de taille / variante ;</li>
+<li>demande retour ;</li>
+<li>remboursement.</li>
+</ol>
+<p>Objectif : répondre vite sans improviser.</p>
+<h2 id="matrice-incident">Matrice incident</h2>
+<div class="table-wrap"><table><thead><tr><th>Incident</th><th>Action</th></tr></thead><tbody>
+<tr><td>Tracking bloqué</td><td>vérifier transporteur + informer client</td></tr>
+<tr><td>Colis déclaré livré mais absent</td><td>procédure transporteur + preuve</td></tr>
+<tr><td>Produit défectueux</td><td>demander éléments utiles sans rendre le parcours abusif</td></tr>
+<tr><td>Retour</td><td>envoyer procédure claire</td></tr>
+<tr><td>Remboursement</td><td>confirmer montant, moyen et délai</td></tr>
+</tbody></table></div>
+<p>Un bon SAV peut sauver une marque. Un mauvais SAV détruit la confiance plus vite qu’un mauvais logo.</p></div></article>
+<article class="chapter" id="chapter-9" data-title="09 — Conformité France : ce que votre boutique doit rendre clair"><div class="chapter-number">09</div><div class="chapter-content"><h1>09 — Conformité France : ce que votre boutique doit rendre clair</h1><p>Ce chapitre ne remplace pas un conseil juridique adapté à votre activité. Il vous donne les points à vérifier avant de vendre.</p>
+<h2 id="informations-precontractuelles">Informations précontractuelles</h2>
+<p>Avant la commande, le consommateur doit recevoir de manière lisible et compréhensible les informations essentielles prévues par la réglementation : caractéristiques du bien ou service, prix, modalités pertinentes, délai ou date de livraison, informations sur le professionnel et droit de rétractation lorsqu’il existe. <span class="src-ref">S12</span><span class="src-ref">S13</span><span class="src-ref">S15</span></p>
+<h2 id="prix">Prix</h2>
+<p>Le prix doit être affiché clairement. La DGCCRF rappelle que les prix à destination des consommateurs doivent être exprimés en euros et toutes taxes comprises, et que les coûts supplémentaires connus doivent être portés à la connaissance du consommateur avant la conclusion du contrat. <span class="src-ref">S15</span></p>
+<h2 id="bouton-final">Bouton final</h2>
+<p>Le client doit comprendre qu’il s’engage à payer. Évitez les libellés ambigus.</p>
+<h2 id="droit-de-retractation">Droit de rétractation</h2>
+<p>Pour de nombreuses ventes à distance B2C, le consommateur dispose de 14 jours calendaires. Des exceptions existent : produit personnalisé, certains biens périssables, certaines prestations ou contenus numériques selon les conditions légales. <span class="src-ref">S12</span></p>
+<p>Votre boutique doit préciser :</p>
+<ul>
+<li>si le droit existe ;</li>
+<li>son délai ;</li>
+<li>sa procédure ;</li>
+<li>les frais éventuels de retour ;</li>
+<li>le formulaire type lorsqu’il est requis.</li>
+</ul>
+<h2 id="confirmation-sur-support-durable">Confirmation sur support durable</h2>
+<p>Après la commande, conservez un processus permettant au client de recevoir les informations contractuelles sur un support durable, par exemple dans l’e-mail de confirmation lorsque cela répond aux exigences applicables. <span class="src-ref">S12</span></p>
+<h2 id="livraison">Livraison</h2>
+<p>Vous devez annoncer une date ou un délai. Si vous dépendez d’un fournisseur, votre organisation interne doit absorber cette dépendance au lieu de la transférer silencieusement au client. <span class="src-ref">S14</span></p>
+<h2 id="cookies-et-traceurs">Cookies et traceurs</h2>
+<p>Tous les cookies ne sont pas soumis au même régime. La CNIL distingue notamment les traceurs strictement nécessaires de ceux qui nécessitent un consentement préalable. <span class="src-ref">S16</span></p>
+<p>Avant lancement :</p>
+<ul>
+<li>listez les outils installés ;</li>
+<li>identifiez leurs traceurs ;</li>
+<li>vérifiez votre bannière ;</li>
+<li>refusez les déclenchements publicitaires avant consentement lorsque celui-ci est requis ;</li>
+<li>permettez de modifier le choix.</li>
+</ul>
+<h2 id="mentions-cgv-confidentialite">Mentions / CGV / confidentialité</h2>
+<p>Ne copiez pas un modèle sans le relire. Vos documents doivent correspondre à :</p>
+<ul>
+<li>votre entité ;</li>
+<li>votre adresse ;</li>
+<li>vos produits ;</li>
+<li>vos délais ;</li>
+<li>vos retours ;</li>
+<li>vos moyens de paiement ;</li>
+<li>vos traitements de données ;</li>
+<li>vos canaux de contact.</li>
+</ul>
+<h2 id="produits-reglementes">Produits réglementés</h2>
+<p>Plus la catégorie est sensible, plus le lancement doit être contrôlé. Une boutique ne rend pas un produit légal à vendre.</p></div></article>
+<article class="chapter" id="chapter-10" data-title="10 — TVA, douane et dropshipping transfrontalier"><div class="chapter-number">10</div><div class="chapter-content"><h1>10 — TVA, douane et dropshipping transfrontalier</h1><p>Les règles dépendent de votre statut, de l’origine des produits, du pays du client, du type de bien ou service et de votre organisation logistique. Ce chapitre sert à repérer les questions à poser, pas à calculer automatiquement votre TVA.</p>
+<h2 id="commencez-par-cartographier-les-flux">Commencez par cartographier les flux</h2>
+<p>Pour chaque produit, notez :</p>
+<ul>
+<li>pays d’établissement de votre entreprise ;</li>
+<li>pays de stockage ;</li>
+<li>pays d’expédition ;</li>
+<li>pays du client ;</li>
+<li>valeur de la commande ;</li>
+<li>produit physique ou numérique ;</li>
+<li>statut TVA applicable à votre entreprise.</li>
+</ul>
+<h2 id="vente-dans-l-ue">Vente dans l’UE</h2>
+<p>Les régimes OSS et IOSS peuvent simplifier certains flux transfrontaliers. Shopify documente les configurations fiscales de l’UE, mais rappelle que le marchand reste responsable de ses inscriptions et déclarations. <span class="src-ref">S9</span><span class="src-ref">S10</span><span class="src-ref">S11</span></p>
+<h2 id="seuil-de-ventes-transfrontalieres">Seuil de ventes transfrontalières</h2>
+<p>Shopify rappelle dans sa documentation UE le seuil de 10 000 € pour certaines ventes transfrontalières B2C au sein de l’UE, avec recours possible au régime OSS selon la situation. Vérifiez toujours la règle officielle et votre statut avant configuration. <span class="src-ref">S10</span><span class="src-ref">S11</span></p>
+<h2 id="dropshipping-depuis-hors-ue">Dropshipping depuis hors UE</h2>
+<p>En 2026, les règles douanières ont évolué. La documentation Shopify signale notamment des changements affectant les importations de faible valeur et recommande de vérifier IOSS, TVA et droits applicables. <span class="src-ref">S8</span><span class="src-ref">S10</span></p>
+<p>Ne construisez jamais votre marge avec :</p>
+<blockquote>
+<p>« le fournisseur met 8 € et moi je vends 29 € ».</p>
+</blockquote>
+<p>Ajoutez :</p>
+<ul>
+<li>taxes ;</li>
+<li>droits éventuels ;</li>
+<li>frais de traitement ;</li>
+<li>transport ;</li>
+<li>retours ;</li>
+<li>litiges ;</li>
+<li>remboursement ;</li>
+<li>change ;</li>
+<li>paiement.</li>
+</ul>
+<h2 id="produits-numeriques">Produits numériques</h2>
+<p>Le lieu du client peut influencer la TVA applicable aux services électroniques / produits numériques. Ne supposez pas que « digital = sans TVA ». <span class="src-ref">S9</span><span class="src-ref">S10</span></p>
+<h2 id="facturation-electronique">Facturation électronique</h2>
+<p>Au 23 septembre 2026, le calendrier officiel prévoit :</p>
+<ul>
+<li>capacité à recevoir des factures électroniques pour toutes les entreprises depuis le 1er septembre 2026 ;</li>
+<li>émission électronique / e-reporting pour les PME et micro-entreprises à partir du 1er septembre 2027 selon le calendrier publié. <span class="src-ref">S17</span></li>
+</ul>
+<p>Votre stack e-commerce et comptable doit être préparée en conséquence.</p>
+<h2 id="checklist-fiscale-avant-lancement">Checklist fiscale avant lancement</h2>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; statut de l’entreprise défini</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; franchise / TVA vérifiée</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; pays de stockage connus</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; pays de vente cibles définis</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; OSS/IOSS étudié si concerné</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; douane intégrée au calcul</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; logiciel comptable / facturation prêt</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; facturation électronique anticipée</li>
+</ul></div></article>
+<article class="chapter" id="chapter-11" data-title="11 — Acquisition organique : contenu qui amène des clients"><div class="chapter-number">11</div><div class="chapter-content"><h1>11 — Acquisition organique : contenu qui amène des clients</h1><p>Le contenu n’est pas seulement « poster régulièrement ». Il doit produire un signal mesurable : attention, clic, inscription, ajout panier ou vente.</p>
+<h2 id="5-familles-de-contenu">5 familles de contenu</h2>
+<h3 id="1-probleme">1. Problème</h3>
+<p>« Pourquoi votre gourde fuit dans votre sac ? »</p>
+<h3 id="2-demonstration">2. Démonstration</h3>
+<p>Montrez le produit en usage réel.</p>
+<h3 id="3-comparaison">3. Comparaison</h3>
+<p>Montrez une différence utile sans dénigrer ni inventer.</p>
+<h3 id="4-preuve">4. Preuve</h3>
+<p>Avis réel, résultat mesurable, coulisses de fabrication, test.</p>
+<h3 id="5-education">5. Éducation</h3>
+<p>Expliquez le problème plus largement que votre produit.</p>
+<h2 id="structure-d-une-video-courte">Structure d’une vidéo courte</h2>
+<ol>
+<li>hook 0–2 s</li>
+<li>problème 2–5 s</li>
+<li>démonstration 5–15 s</li>
+<li>preuve 15–25 s</li>
+<li>CTA 25–30 s</li>
+</ol>
+<p>Adaptez la durée au contenu. L’objectif n’est pas de respecter une formule rigide mais de supprimer les secondes inutiles.</p>
+<h2 id="les-hooks-a-tester">Les hooks à tester</h2>
+<ul>
+<li>« Avant d’acheter X, vérifiez ça. »</li>
+<li>« J’aurais aimé savoir ça avant… »</li>
+<li>« 3 erreurs qui coûtent cher quand… »</li>
+<li>« Pourquoi X ne marche pas pour tout le monde. »</li>
+<li>« Regardez ce qui se passe quand… »</li>
+<li>« X contre Y : lequel est vraiment adapté ? »</li>
+</ul>
+<h2 id="le-calendrier-30-contenus">Le calendrier 30 contenus</h2>
+<p>Préparez :</p>
+<ul>
+<li>8 problèmes</li>
+<li>6 démonstrations</li>
+<li>5 objections</li>
+<li>4 comparaisons</li>
+<li>4 coulisses</li>
+<li>3 preuves</li>
+</ul>
+<p>Tournez en batch.</p>
+<h2 id="seo-social">SEO social</h2>
+<p>Utilisez les mots que votre client emploie réellement dans :</p>
+<ul>
+<li>titre ;</li>
+<li>texte à l’écran ;</li>
+<li>légende ;</li>
+<li>voix ;</li>
+<li>FAQ.</li>
+</ul>
+<p>Ne bourrez pas de mots-clés. Soyez compréhensible.</p>
+<h2 id="quand-un-contenu-marche">Quand un contenu marche</h2>
+<p>Ne dites pas seulement « la vidéo a fait 50 000 vues ».</p>
+<p>Regardez :</p>
+<ul>
+<li>taux de clic ;</li>
+<li>visites profil ;</li>
+<li>clic lien ;</li>
+<li>ajout panier ;</li>
+<li>vente ;</li>
+<li>commentaire d’intention ;</li>
+<li>rétention vidéo.</li>
+</ul>
+<p>Une vidéo à 5 000 vues peut être plus rentable qu’une vidéo à 500 000 vues.</p></div></article>
+<article class="chapter" id="chapter-12" data-title="12 — UGC, créateurs et publicité"><div class="chapter-number">12</div><div class="chapter-content"><h1>12 — UGC, créateurs et publicité</h1><h2 id="ugc">UGC</h2>
+<p>Le contenu UGC peut servir à produire :</p>
+<ul>
+<li>démonstrations ;</li>
+<li>témoignages encadrés et authentiques ;</li>
+<li>scénarios d’usage ;</li>
+<li>publicités natives.</li>
+</ul>
+<p>Ne demandez jamais un faux témoignage.</p>
+<h2 id="brief-createur">Brief créateur</h2>
+<p>Votre brief doit contenir :</p>
+<ul>
+<li>cible ;</li>
+<li>problème ;</li>
+<li>bénéfice principal ;</li>
+<li>éléments interdits ;</li>
+<li>preuves disponibles ;</li>
+<li>format ;</li>
+<li>CTA ;</li>
+<li>durée ;</li>
+<li>droits d’utilisation ;</li>
+<li>date de livraison.</li>
+</ul>
+<h2 id="micro-createurs">Micro-créateurs</h2>
+<p>Un créateur de 8 000 abonnés très spécialisé peut générer plus de ventes qu’un compte généraliste de 200 000 abonnés.</p>
+<p>Évaluez :</p>
+<ul>
+<li>pertinence audience ;</li>
+<li>qualité commentaires ;</li>
+<li>historique sponsorisé ;</li>
+<li>qualité vidéo ;</li>
+<li>capacité à expliquer ;</li>
+<li>tarif / contenu.</li>
+</ul>
+<h2 id="paiement">Paiement</h2>
+<p>Séparez :</p>
+<ul>
+<li>création du contenu ;</li>
+<li>publication sur son compte ;</li>
+<li>droits publicitaires ;</li>
+<li>exclusivité ;</li>
+<li>durée d’utilisation.</li>
+</ul>
+<h2 id="publicite-ordre-de-test">Publicité : ordre de test</h2>
+<p>Ne lancez pas 12 audiences et 20 créatifs.</p>
+<p>Commencez :</p>
+<ol>
+<li>3–5 créatifs différents ;</li>
+<li>une offre identique ;</li>
+<li>un tracking propre ;</li>
+<li>un budget plafond ;</li>
+<li>une durée suffisante pour lire le signal.</li>
+</ol>
+<h2 id="diagnostic-pub">Diagnostic pub</h2>
+<h3 id="cpm-eleve">CPM élevé</h3>
+<p>Le marché, l’audience ou la période peut être coûteuse.</p>
+<h3 id="ctr-faible">CTR faible</h3>
+<p>Le créatif ou le message n’attire pas.</p>
+<h3 id="ctr-bon-conversion-faible">CTR bon, conversion faible</h3>
+<p>La page, l’offre, le prix ou la confiance posent problème.</p>
+<h3 id="conversion-bonne-rentabilite-faible">Conversion bonne, rentabilité faible</h3>
+<p>Le CAC est trop élevé ou votre marge trop faible.</p>
+<h2 id="regle">Règle</h2>
+<p>La publicité amplifie un système. Elle n’invente pas un bon produit.</p></div></article>
+<article class="chapter" id="chapter-13" data-title="13 — Email, fidélisation et réachat"><div class="chapter-number">13</div><div class="chapter-content"><h1>13 — Email, fidélisation et réachat</h1><p>Acquérir un client une seule fois coûte cher. Un système e-commerce durable doit travailler après la première commande.</p>
+<h2 id="les-flux-de-base">Les flux de base</h2>
+<h3 id="bienvenue">Bienvenue</h3>
+<p>Objectif : expliquer la marque et orienter vers les bons produits.</p>
+<h3 id="panier-abandonne">Panier abandonné</h3>
+<p>Rappelez le produit et réduisez les frictions. N’inventez pas une urgence.</p>
+<h3 id="post-achat">Post-achat</h3>
+<ul>
+<li>confirmation ;</li>
+<li>préparation ;</li>
+<li>suivi ;</li>
+<li>mode d’emploi ;</li>
+<li>demande d’avis au bon moment.</li>
+</ul>
+<h3 id="reachat">Réachat</h3>
+<p>Pertinent pour :</p>
+<ul>
+<li>consommables ;</li>
+<li>collections ;</li>
+<li>accessoires ;</li>
+<li>produits complémentaires.</li>
+</ul>
+<h2 id="segmentation-simple">Segmentation simple</h2>
+<p>Au minimum :</p>
+<ul>
+<li>prospect jamais acheteur ;</li>
+<li>premier achat ;</li>
+<li>client récurrent ;</li>
+<li>panier élevé ;</li>
+<li>catégorie achetée.</li>
+</ul>
+<p>Évitez d’envoyer la même campagne à tout le monde.</p>
+<h2 id="l-e-mail-qui-aide">L’e-mail qui aide</h2>
+<p>Un bon email peut :</p>
+<ul>
+<li>rappeler une utilisation ;</li>
+<li>résoudre un problème ;</li>
+<li>présenter un complément ;</li>
+<li>annoncer un nouveau produit ;</li>
+<li>réactiver un client.</li>
+</ul>
+<h2 id="mesures">Mesures</h2>
+<p>Suivez surtout :</p>
+<ul>
+<li>clic ;</li>
+<li>conversion ;</li>
+<li>revenu par campagne ;</li>
+<li>désabonnement ;</li>
+<li>spam ;</li>
+<li>réachat.</li>
+</ul>
+<p>Le taux d’ouverture est utile, mais il ne suffit pas à juger la performance commerciale.</p></div></article>
+<article class="chapter" id="chapter-14" data-title="14 — Lire les chiffres sans se raconter d’histoire"><div class="chapter-number">14</div><div class="chapter-content"><h1>14 — Lire les chiffres sans se raconter d’histoire</h1><p>Votre dashboard doit répondre à :</p>
+<p><strong>où est la fuite ?</strong></p>
+<h2 id="funnel">Funnel</h2>
+<ol>
+<li>impressions</li>
+<li>clics</li>
+<li>sessions</li>
+<li>vues produit</li>
+<li>ajouts panier</li>
+<li>checkout</li>
+<li>achats</li>
+<li>réachat</li>
+</ol>
+<h2 id="taux-de-conversion">Taux de conversion</h2>
+<p>Commandes / sessions × 100.</p>
+<p>Un taux « bon » dépend du secteur, du prix, du trafic et du device. Ne copiez pas un benchmark TikTok sans contexte.</p>
+<h2 id="analyse-par-canal">Analyse par canal</h2>
+<p>Séparez :</p>
+<ul>
+<li>organique social</li>
+<li>recherche</li>
+<li>email</li>
+<li>influence</li>
+<li>publicité</li>
+<li>direct</li>
+<li>referral</li>
+</ul>
+<p>Un taux global peut masquer un canal excellent et un canal catastrophique.</p>
+<h2 id="analyse-produit">Analyse produit</h2>
+<p>Pour chaque produit :</p>
+<ul>
+<li>vues</li>
+<li>ajouts panier</li>
+<li>conversion</li>
+<li>marge</li>
+<li>retours</li>
+<li>avis</li>
+<li>réachat</li>
+</ul>
+<h2 id="regle-hebdomadaire">Règle hebdomadaire</h2>
+<p>Chaque semaine :</p>
+<ol>
+<li>choisissez <strong>un problème</strong> ;</li>
+<li>formulez <strong>une hypothèse</strong> ;</li>
+<li>changez <strong>un élément</strong> ;</li>
+<li>observez ;</li>
+<li>documentez.</li>
+</ol>
+<p>Exemple :</p>
+<blockquote>
+<p>Problème : ajout panier élevé mais checkout faible.</p>
+<p>Hypothèse : frais de livraison inattendus.</p>
+<p>Test : afficher clairement les frais / seuil plus tôt.</p>
+<p>Mesure : taux checkout → achat.</p>
+</blockquote>
+<h2 id="ne-modifiez-pas-tout-en-meme-temps">Ne modifiez pas tout en même temps</h2>
+<p>Si vous changez prix, photos, texte, livraison et pub le même jour, vous ne saurez pas ce qui a produit l’effet.</p></div></article>
+<article class="chapter" id="chapter-15" data-title="15 — Plan de lancement sur 30 jours"><div class="chapter-number">15</div><div class="chapter-content"><h1>15 — Plan de lancement sur 30 jours</h1><p>Le but n’est pas d’attendre une boutique parfaite. Le but est de sortir une version sérieuse, mesurable et améliorable.</p>
+<h2 id="semaine-1-valider-l-offre">Semaine 1 — Valider l’offre</h2>
+<h3 id="jour-1">Jour 1</h3>
+<p>Définir :</p>
+<ul>
+<li>client principal ;</li>
+<li>problème ;</li>
+<li>produit ;</li>
+<li>prix cible ;</li>
+<li>canal d’acquisition principal.</li>
+</ul>
+<h3 id="jour-2">Jour 2</h3>
+<p>Analyser 10 concurrents :</p>
+<ul>
+<li>offre ;</li>
+<li>prix ;</li>
+<li>livraison ;</li>
+<li>preuve ;</li>
+<li>avis ;</li>
+<li>angle.</li>
+</ul>
+<h3 id="jour-3">Jour 3</h3>
+<p>Calculer :</p>
+<ul>
+<li>coût produit ;</li>
+<li>coût livraison ;</li>
+<li>coût emballage ;</li>
+<li>frais paiement ;</li>
+<li>marge avant acquisition ;</li>
+<li>CAC maximal.</li>
+</ul>
+<h3 id="jour-4">Jour 4</h3>
+<p>Commander / tester un échantillon.</p>
+<h3 id="jour-5">Jour 5</h3>
+<p>Écrire la proposition de valeur en une phrase.</p>
+<h3 id="jour-6">Jour 6</h3>
+<p>Préparer 3 angles de contenu.</p>
+<h3 id="jour-7">Jour 7</h3>
+<p>Décision : continuer, modifier ou abandonner.</p>
+<hr>
+<h2 id="semaine-2-construire">Semaine 2 — Construire</h2>
+<h3 id="jour-8">Jour 8</h3>
+<p>Créer Shopify et connecter le domaine.</p>
+<h3 id="jour-9">Jour 9</h3>
+<p>Configurer thème, navigation, couleurs, typographie.</p>
+<h3 id="jour-10">Jour 10</h3>
+<p>Créer les produits et variantes.</p>
+<h3 id="jour-11">Jour 11</h3>
+<p>Produire les visuels.</p>
+<h3 id="jour-12">Jour 12</h3>
+<p>Rédiger fiches produit.</p>
+<h3 id="jour-13">Jour 13</h3>
+<p>Configurer paiement et livraison.</p>
+<h3 id="jour-14">Jour 14</h3>
+<p>Créer pages légales, retour, FAQ, contact.</p>
+<hr>
+<h2 id="semaine-3-verifier-et-preparer-l-acquisition">Semaine 3 — Vérifier et préparer l’acquisition</h2>
+<h3 id="jour-15">Jour 15</h3>
+<p>Commande test desktop.</p>
+<h3 id="jour-16">Jour 16</h3>
+<p>Commande test mobile.</p>
+<h3 id="jour-17">Jour 17</h3>
+<p>Test e-mails et remboursement.</p>
+<h3 id="jour-18">Jour 18</h3>
+<p>Audit cookies / tracking / analytics.</p>
+<h3 id="jour-19">Jour 19</h3>
+<p>Créer 10 contenus courts.</p>
+<h3 id="jour-20">Jour 20</h3>
+<p>Préparer 5 nouveaux hooks.</p>
+<h3 id="jour-21">Jour 21</h3>
+<p>Identifier 20 créateurs / partenaires potentiels.</p>
+<hr>
+<h2 id="semaine-4-lancer-et-mesurer">Semaine 4 — Lancer et mesurer</h2>
+<h3 id="jour-22">Jour 22</h3>
+<p>Soft launch à une petite audience.</p>
+<h3 id="jour-23">Jour 23</h3>
+<p>Corriger bugs et objections.</p>
+<h3 id="jour-24">Jour 24</h3>
+<p>Publier 2 contenus.</p>
+<h3 id="jour-25">Jour 25</h3>
+<p>Publier 2 contenus supplémentaires.</p>
+<h3 id="jour-26">Jour 26</h3>
+<p>Analyser clic → produit → panier → checkout.</p>
+<h3 id="jour-27">Jour 27</h3>
+<p>Tester une amélioration de page.</p>
+<h3 id="jour-28">Jour 28</h3>
+<p>Relancer le contenu gagnant.</p>
+<h3 id="jour-29">Jour 29</h3>
+<p>Faire le bilan marge / CAC / retours.</p>
+<h3 id="jour-30">Jour 30</h3>
+<p>Écrire le plan du mois 2.</p>
+<hr>
+<h1 id="objectif-de-fin-de-mois">Objectif de fin de mois</h1>
+<p>Vous devez posséder :</p>
+<ul>
+<li>une boutique fonctionnelle ;</li>
+<li>une économie unitaire documentée ;</li>
+<li>une offre claire ;</li>
+<li>un système de contenu ;</li>
+<li>un dashboard ;</li>
+<li>une liste d’améliorations prioritaires.</li>
+</ul>
+<p>Le résultat n’est pas forcément 100 ventes. Le vrai résultat est un système où vous savez <strong>quoi tester ensuite</strong>.</p></div></article>
+<article class="chapter" id="chapter-16" data-title="16 — Templates &amp; checklists"><div class="chapter-number">16</div><div class="chapter-content"><h1>16 — Templates &amp; checklists</h1><h2 id="template-proposition-de-valeur">Template : proposition de valeur</h2>
+<blockquote>
+<p>Pour <strong>[type de client]</strong> qui veut <strong>[résultat]</strong>, <strong>[produit]</strong> permet <strong>[bénéfice principal]</strong> grâce à <strong>[différence / mécanisme]</strong>.</p>
+</blockquote>
+<p>Test : votre client cible comprend-il cette phrase immédiatement ?</p>
+<hr>
+<h2 id="template-brief-produit">Template : brief produit</h2>
+<p><strong>Client :</strong></p>
+<p><strong>Problème :</strong></p>
+<p><strong>Produit :</strong></p>
+<p><strong>Usage principal :</strong></p>
+<p><strong>Bénéfice n°1 :</strong></p>
+<p><strong>Preuve :</strong></p>
+<p><strong>Prix :</strong></p>
+<p><strong>Coût total livré :</strong></p>
+<p><strong>Marge avant acquisition :</strong></p>
+<p><strong>CAC max cible :</strong></p>
+<p><strong>Canal d’acquisition :</strong></p>
+<p><strong>Objection n°1 :</strong></p>
+<p><strong>Réponse :</strong></p>
+<hr>
+<h2 id="template-audit-fiche-produit">Template : audit fiche produit</h2>
+<h3 id="comprehension">Compréhension</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; produit identifiable en 5 secondes</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; bénéfice principal clair</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; prix visible</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; CTA visible</li>
+</ul>
+<h3 id="confiance">Confiance</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; livraison</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; retours</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; contact</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; preuves réelles</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; caractéristiques utiles</li>
+</ul>
+<h3 id="mobile">Mobile</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; images adaptées</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; CTA simple</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; aucun texte microscopique</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; aucune popup bloquante</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; checkout testé</li>
+</ul>
+<hr>
+<h2 id="template-calcul-de-marge">Template : calcul de marge</h2>
+<p>Prix TTC : ______</p>
+<p>Produit : − ______</p>
+<p>Emballage : − ______</p>
+<p>Paiement : − ______</p>
+<p>Livraison : − ______</p>
+<p>Retours/SAV : − ______</p>
+<p>Autres coûts variables : − ______</p>
+<p><strong>Marge avant acquisition : ______</strong></p>
+<p>CAC cible : − ______</p>
+<p><strong>Marge de contribution : ______</strong></p>
+<hr>
+<h2 id="template-contenu-court">Template : contenu court</h2>
+<p><strong>Hook :</strong></p>
+<p><strong>Problème :</strong></p>
+<p><strong>Démonstration :</strong></p>
+<p><strong>Preuve :</strong></p>
+<p><strong>CTA :</strong></p>
+<p>Version B du hook :</p>
+<p>Version C du hook :</p>
+<hr>
+<h2 id="template-message-createur">Template : message créateur</h2>
+<blockquote>
+<p>Bonjour [Prénom],</p>
+<p>Je travaille sur [marque / produit], destiné à [audience]. J’aime particulièrement votre contenu sur [élément précis].</p>
+<p>Nous cherchons [type de collaboration].</p>
+<p>Brief : [résultat attendu].</p>
+<p>Livrables : [format].</p>
+<p>Usage demandé : [organique / ads / durée].</p>
+<p>Budget : [montant ou demande de tarif].</p>
+<p>Si cela vous intéresse, je vous envoie le brief complet.</p>
+</blockquote>
+<p>Personnalisez le message. N’envoyez pas 500 copies génériques.</p>
+<hr>
+<h2 id="checklist-finale-de-lancement">Checklist finale de lancement</h2>
+<h3 id="business">Business</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; client défini</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; problème défini</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; produit testé</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; fournisseur testé</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; marge calculée</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; CAC max connu</li>
+</ul>
+<h3 id="boutique">Boutique</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; domaine</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; mobile</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; paiement</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; livraison</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; email</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; retours</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; pages légales</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; cookies</li>
+</ul>
+<h3 id="acquisition">Acquisition</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; 10 contenus prêts</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; 3 angles</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; analytics</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; UTM / attribution organisée</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; créateurs identifiés</li>
+</ul>
+<h3 id="pilotage">Pilotage</h3>
+<ul>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; dashboard</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; budget plafond</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; seuil de stop</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; hypothèse n°1</li>
+<li>&lt;span class="check"&gt;□&lt;/span&gt; date de bilan</li>
+</ul>
+<hr>
+<h1 id="regle-finale-ser">Règle finale SER</h1>
+<p>Ne cherchez pas à « avoir une boutique ».</p>
+<p>Cherchez à construire un système où :</p>
+<p><strong>une audience rencontre une offre claire → la boutique convertit → la commande reste rentable → l’expérience donne envie de revenir → les chiffres indiquent quoi améliorer.</strong></p></div></article></section>
+<section class="sources" id="sources"><div class="source-body"><div class="eyebrow">Sources</div><h2>Sources & mise à jour</h2><h1 id="ser-guide-02-source-pack">SER Guide 02 — Source pack</h1>
+<p>Dernière revue : <strong>23/09/2026</strong></p>
+<p>Ce dossier sert de base factuelle au guide. Les règles fiscales, douanières, de consommation et les conditions des plateformes doivent être revérifiées avant chaque nouvelle édition.</p>
+<h2 id="marche-tendances">Marché &amp; tendances</h2>
+<p><strong><span class="src-ref">S1</span> FEVAD — Bilan du e-commerce en France 2025</strong></p>
+<p><a href="https://www.fevad.com/bilan-du-e-commerce-en-france-les-francais-ont-depense-pres-de-200-milliards-deuros-sur-internet-en-2025/" target="_blank" rel="noopener">https://www.fevad.com/bilan-du-e-commerce-en-france-les-francais-ont-depense-pres-de-200-milliards-deuros-sur-internet-en-2025/</a></p>
+<p>Points utiles : 196,4 Md€ de CA e-commerce en 2025, +7 % sur un an, 3,2 Md de transactions, panier moyen 62 €.</p>
+<p><strong><span class="src-ref">S2</span> FEVAD — Chiffres clés 2026 / baromètres 2026</strong></p>
+<p><a href="https://www.fevad.com/" target="_blank" rel="noopener">https://www.fevad.com/</a></p>
+<p>Points utiles : suivi des audiences, tendances de consommation et évolution du commerce en ligne en France.</p>
+<h2 id="shopify-creation-de-boutique">Shopify / création de boutique</h2>
+<p><strong><span class="src-ref">S3</span> Shopify France — Comment créer une boutique en ligne en 2026 ?</strong></p>
+<p><a href="https://www.shopify.com/fr/blog/guide-complet-pour-creer-votre-boutique-en-ligne" target="_blank" rel="noopener">https://www.shopify.com/fr/blog/guide-complet-pour-creer-votre-boutique-en-ligne</a></p>
+<p><strong><span class="src-ref">S4</span> Shopify France — Comment vendre en ligne : 9 étapes (2026)</strong></p>
+<p><a href="https://www.shopify.com/fr/blog/comment-vendre-en-ligne" target="_blank" rel="noopener">https://www.shopify.com/fr/blog/comment-vendre-en-ligne</a></p>
+<p><strong><span class="src-ref">S5</span> Shopify Help — Liste de contrôle pour vendre en France</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/intro-to-shopify/initial-setup/sell-in-france/france-getting-started-to-do</a></p>
+<p><strong><span class="src-ref">S6</span> Shopify Help — Shopify Payments en France</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/payments/shopify-payments/supported-countries/france" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/payments/shopify-payments/supported-countries/france</a></p>
+<p><strong><span class="src-ref">S7</span> Shopify Help — Boutique en ligne</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/online-store" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/online-store</a></p>
+<h2 id="dropshipping-tva-douane">Dropshipping / TVA / douane</h2>
+<p><strong><span class="src-ref">S8</span> Shopify Help — Conformité dropshipping</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/compliance/legal/dropshipping" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/compliance/legal/dropshipping</a></p>
+<p>Points à revérifier à chaque édition : obligations vendeur, règles d’importation, frais/droits applicables.</p>
+<p><strong><span class="src-ref">S9</span> Shopify Help — Taxes UE</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/taxes/eu" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/taxes/eu</a></p>
+<p><strong><span class="src-ref">S10</span> Shopify Help — Référence taxes UE / OSS / IOSS</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/taxes/eu/eu-tax-reference" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/taxes/eu/eu-tax-reference</a></p>
+<p><strong><span class="src-ref">S11</span> Shopify Help — Configuration taxes UE</strong></p>
+<p><a href="https://help.shopify.com/fr/manual/taxes/eu/eu-tax-setup" target="_blank" rel="noopener">https://help.shopify.com/fr/manual/taxes/eu/eu-tax-setup</a></p>
+<h2 id="droit-de-la-consommation-france">Droit de la consommation France</h2>
+<p><strong><span class="src-ref">S12</span> DGCCRF — E-commerce : règles entre professionnels et consommateurs</strong></p>
+<p><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs" target="_blank" rel="noopener">https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/e-commerce-les-regles-entre-professionnels-et-consommateurs</a></p>
+<p>Points utiles : informations obligatoires, bouton de commande sans ambiguïté, rétractation, livraison, remboursement.</p>
+<p><strong><span class="src-ref">S13</span> DGCCRF — Informations précontractuelles</strong></p>
+<p><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-informations-precontractuelles" target="_blank" rel="noopener">https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-informations-precontractuelles</a></p>
+<p><strong><span class="src-ref">S14</span> DGCCRF — Livraison : obligations du professionnel</strong></p>
+<p><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/livraison-quelles-sont-les-obligations-du-professionnel-et-les-recours" target="_blank" rel="noopener">https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/livraison-quelles-sont-les-obligations-du-professionnel-et-les-recours</a></p>
+<p><strong><span class="src-ref">S15</span> DGCCRF — Information sur les prix</strong></p>
+<p><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/linformation-sur-les-prix" target="_blank" rel="noopener">https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/linformation-sur-les-prix</a></p>
+<h2 id="cookies-donnees">Cookies / données</h2>
+<p><strong><span class="src-ref">S16</span> CNIL — Définition et usages des cookies</strong></p>
+<p><a href="https://www.cnil.fr/fr/definition/cookie" target="_blank" rel="noopener">https://www.cnil.fr/fr/definition/cookie</a></p>
+<p>Point utile : certains traceurs strictement nécessaires sont exemptés de consentement ; d’autres nécessitent un consentement préalable.</p>
+<h2 id="facturation-electronique">Facturation électronique</h2>
+<p><strong><span class="src-ref">S17</span> Ministère de l’Économie — Facturation électronique</strong></p>
+<p><a href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" target="_blank" rel="noopener">https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises</a></p>
+<p>Calendrier indiqué au 23/09/2026 : réception obligatoire pour toutes les entreprises depuis le 1er septembre 2026 ; émission/e-reporting pour PME et micro-entreprises à partir du 1er septembre 2027 selon le calendrier officiel publié.</p>
+<h2 id="produits-tendance-recherche-produit">Produits tendance / recherche produit</h2>
+<p><strong><span class="src-ref">S18</span> Shopify France — Produits tendance à vendre en 2026</strong></p>
+<p><a href="https://www.shopify.com/fr/blog/produits-tendance-a-vendre" target="_blank" rel="noopener">https://www.shopify.com/fr/blog/produits-tendance-a-vendre</a></p>
+<hr>
+<h2 id="regles-editoriales-ser">Règles éditoriales SER</h2>
+<ol>
+<li>Aucun chiffre plateforme n’est présenté comme permanent : toujours dater.</li>
+<li>Aucune règle fiscale n’est généralisée sans préciser qu’elle dépend du statut, du pays, du type de produit et des flux.</li>
+<li>Les obligations consommateur sont distinguées des bonnes pratiques marketing.</li>
+<li>Le guide ne promet jamais rentabilité, viralité ou revenu garanti.</li>
+<li>Les chapitres sur TVA, douane, produits réglementés, données personnelles et rétractation comportent un renvoi vers la source officielle.</li>
+</ol></div></section>
+</main></div>
+<script>
+const num=id=>parseFloat(document.getElementById(id).value)||0;
+function calc(){
+ const m=num('price')-num('cost')-num('pack')-num('pay')-num('ship')-num('returns')-num('cac');
+ document.getElementById('marginResult').textContent='Marge de contribution : '+m.toFixed(2).replace('.',',')+' €';
+ const c=num('preCac')-num('targetMargin');
+ document.getElementById('cacResult').textContent='CAC maximal cible : '+Math.max(0,c).toFixed(2).replace('.',',')+' €';
+ const u=num('unitMargin'), f=num('fixed');
+ document.getElementById('breakResult').textContent=u>0?'Seuil : '+Math.ceil(f/u)+' commandes/mois':'La marge doit être positive.';
+ const total=[...document.querySelectorAll('.score')].reduce((a,e)=>a+(parseFloat(e.value)||0),0);
+ document.getElementById('scoreResult').textContent='Score : '+total+' / 40 — '+(total<20?'faiblesses importantes à traiter':total<28?'à tester avant de construire lourdement':'base intéressante à confronter au marché');
+}
+document.querySelectorAll('input[type=number]').forEach(e=>e.addEventListener('input',calc));calc();
+const progress=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h?scrollY/h*100:0)+'%'});
+const links=[...document.querySelectorAll('.sidebar .toc a')], chaptersEls=[...document.querySelectorAll('.chapter')];
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.dataset.chapter===e.target.id.replace('chapter-','')))}}),{rootMargin:'-35% 0px -55%'});chaptersEls.forEach(c=>obs.observe(c));
+const search=document.getElementById('search');search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();chaptersEls.forEach(c=>c.classList.toggle('hidden-by-search',q&&!c.innerText.toLowerCase().includes(q)))});
+</script></body></html>
