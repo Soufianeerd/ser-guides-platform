@@ -2,20 +2,32 @@
 
 | Champ | Valeur |
 |---|---|
-| Statut | **en préparation** — rédaction v1 terminée (`manifest.json` : `content-v1-complete`) |
-| Prix | à définir |
-| Niveau | débutant → premières ventes (diagnostic 7 questions) |
-| Catégorie | E-commerce & Réseaux sociaux |
-| Date de mise à jour | 2026-09-23 |
+| Statut | **web-book FR prêt à livrer** |
+| Prix Shopify | **12,99 €** |
+| Niveau | débutant → premières ventes |
+| Catégorie | E-commerce |
+| Dernière revue | **2026-10-01** |
 
-## Où est quoi (structure d'origine conservée)
-| Rôle standard | Fichier(s) ici |
-|---|---|
-| contenu | `ebook.md` (version assemblée) + `chapters/00…16.md` (17 chapitres) |
-| sources | `SOURCE_PACK.md`, `BRIEF.md`, `BOOK_MAP.md` |
-| images / prompts-images / promo | dossiers créés, vides |
-| métadonnées | `manifest.json` |
+## Fichier client
 
-Les fichiers existants n'ont pas été déplacés : ce dossier est alimenté par un autre outil qui s'attend à ces chemins.
+`contenu/SER-Guide-02-Ecommerce-Shopify-2026.html`
 
-Prochaines étapes (manifest) : fact-check final, interactive calculators, FR web-book rendering, English edition, 3 visual assets, Stripe product and delivery automation.
+Le web-book autonome contient :
+- 17 chapitres ;
+- 4 outils interactifs : marge, CAC maximal, seuil de rentabilité et score de validation produit ;
+- templates et checklists de lancement ;
+- plan d’action sur 30 jours ;
+- navigation, recherche et suivi de lecture ;
+- sources et références datées.
+
+## Sources de production
+
+- `chapters/00…16.md` : chapitres sources ;
+- `SOURCE_PACK.md` : pack de sources ;
+- `BOOK_MAP.md` / `BRIEF.md` : cadrage éditorial ;
+- `ebook.md` : version assemblée courte ;
+- `manifest.json` : état de production.
+
+## Livraison
+
+Produit Shopify Digital Products : à attacher au produit SER Guide 02 avant publication.
