@@ -1,0 +1,27 @@
+{
+  "guide_id": "03",
+  "niche_id": "ecommerce-social",
+  "title": "TikTok Shop 2026 — lancer sa boutique et obtenir ses premières ventes",
+  "status": "web-book-fr-ready",
+  "format": "web-book interactif HTML",
+  "purpose": "Lancer TikTok Shop en France avec une boutique conforme, une marge calculée, une logistique fiable et un système de contenu/affiliation mesurable.",
+  "chapter_count": 16,
+  "interactive_tools": [
+    "diagnostic TikTok Shop",
+    "calculateur de marge nette",
+    "simulateur de commission créateur",
+    "seuil de rentabilité",
+    "score potentiel TikTok Shop",
+    "checklist lancement persistante",
+    "générateur de brief créateur",
+    "tableau KPI hebdomadaire"
+  ],
+  "delivery_file": "contenu/SER-Guide-03-TikTok-Shop-2026.html",
+  "last_reviewed": "2026-10-02",
+  "primary_sources": "TikTok Shop Academy + DGCCRF + Commission européenne",
+  "next_steps": [
+    "cover/social assets",
+    "Shopify product creation",
+    "English edition"
+  ]
+}
