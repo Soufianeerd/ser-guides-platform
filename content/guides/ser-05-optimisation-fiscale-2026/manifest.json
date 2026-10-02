@@ -1,0 +1,14 @@
+{
+  "id": "ser-05",
+  "slug": "optimisation-fiscale-2026",
+  "title": "Optimisation fiscale 2026",
+  "subtitle": "Décider avec les règles, pas avec les mythes",
+  "edition": "2026",
+  "locale": "fr-FR",
+  "status": "production",
+  "updatedAt": "2026-10-02",
+  "entry": "contenu/index.html",
+  "robots": "noindex,nofollow",
+  "features": ["diagnostic", "personalized-route", "is-calculator", "ir-bracket-tool", "checklist", "copy-template", "local-progress", "print"],
+  "palette": {"ink":"#18201F","accent":"#C58A35","paper":"#F7F3EA"}
+}
