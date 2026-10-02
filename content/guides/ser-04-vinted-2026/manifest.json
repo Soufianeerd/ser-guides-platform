@@ -1,0 +1,28 @@
+{
+  "guide_id": "04",
+  "niche_id": "revente-seconde-main",
+  "title": "Vinted 2026 — vendre plus vite et mieux marger",
+  "status": "web-book-fr-ready",
+  "format": "web-book interactif HTML",
+  "purpose": "Aider particuliers et vendeurs professionnels à mieux vendre sur Vinted en distinguant statut, fiscalité, qualité d'annonce, marge, rotation, expédition et retours.",
+  "chapter_count": 16,
+  "interactive_tools": [
+    "diagnostic particulier / professionnel",
+    "calculateur de marge",
+    "calculateur de prix plancher",
+    "tracker DAC7 informatif",
+    "score qualité annonce",
+    "générateur de titre",
+    "générateur de description",
+    "checklist publication persistante",
+    "calcul rotation du stock"
+  ],
+  "delivery_file": "contenu/SER-Guide-04-Vinted-2026.html",
+  "last_reviewed": "2026-10-02",
+  "primary_sources": "Vinted Help / Vinted Pro + impots.gouv.fr + economie.gouv.fr",
+  "next_steps": [
+    "cover/social assets",
+    "Shopify product creation",
+    "English edition"
+  ]
+}
