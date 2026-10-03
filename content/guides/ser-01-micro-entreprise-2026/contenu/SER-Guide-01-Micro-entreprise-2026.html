@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <title>SER Guide 01 — Micro-entreprise 2026 · Optimiser puis déclarer</title>
-<meta name="description" content="Guide web interactif SER Guides pour préparer, optimiser et déclarer une micro-entreprise en 2026.">
-<meta name="theme-color" content="#0F172A">
-<meta name="robots" content="noindex,nofollow,noarchive">
+<meta content="Guide web interactif SER Guides pour préparer, optimiser et déclarer une micro-entreprise en 2026." name="description"/>
+<meta content="#0F172A" name="theme-color"/>
+<meta content="noindex,nofollow,noarchive" name="robots"/>
 <style>
 :root{
   --noir:#0F172A;
@@ -397,452 +398,442 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 .version-line{font:600 12px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--soft);margin-top:16px}
 @media print{#cover,#setup,.topbar,.navbar,.drawer,.scrim{display:none!important}#reader{display:block!important;padding:0}.chap{display:block!important;page-break-before:always;animation:none}.chap:first-child{page-break-before:auto}.wrap{max-width:760px}.action-link{color:#000;background:#fff;border:1px solid #CBD5E1}.action-link small{color:#475569}}
 
+
+
+/* ───────── Illustrations éditoriales ───────── */
+.visual-block{margin:30px 0 34px}
+.visual-block>.visual-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:0 0 12px}
+.visual-block>.visual-head .k{font-family:"Inter",system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--emeraude)}
+.visual-block>.visual-head p{margin:0;font-size:13.5px;color:var(--soft);text-align:right}
+.guide-visual{margin:26px 0 30px}
+.guide-visual,.visual-card{background:var(--card);border:1px solid var(--rule);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.visual-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;text-align:inherit;color:inherit}
+.guide-visual img,.visual-card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#fff}
+.guide-visual figcaption,.visual-card figcaption{padding:11px 14px 13px;border-top:1px solid var(--rule);font:500 12.5px/1.45 "Inter",system-ui,sans-serif;color:var(--soft);background:#fff}
+.visual-carousel{display:grid;grid-auto-flow:column;grid-auto-columns:92%;gap:12px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;padding:2px 2px 10px;scrollbar-width:thin;scrollbar-color:#CBD5E1 transparent}
+.visual-card{scroll-snap-align:start;margin:0}
+.visual-card .visual-open{position:relative}
+.visual-card .visual-open:after,.guide-visual .visual-open:after{content:"Agrandir";position:absolute;right:10px;bottom:10px;padding:6px 9px;border-radius:999px;background:rgba(15,23,42,.86);color:#fff;font:700 10.5px/1 "Inter",system-ui,sans-serif;letter-spacing:.02em;opacity:0;transform:translateY(4px);transition:.18s}
+.visual-card .visual-open:hover:after,.guide-visual .visual-open:hover:after{opacity:1;transform:none}
+.visual-tip{display:flex;align-items:center;gap:8px;margin:8px 0 0;font:500 12px/1.4 "Inter",system-ui,sans-serif;color:var(--soft)}
+.visual-tip:before{content:"↔";display:grid;place-items:center;width:24px;height:24px;border-radius:999px;background:var(--emeraude-pale);color:#0E7490;font-weight:800}
+.visual-lightbox{position:fixed;inset:0;z-index:100;background:rgba(15,23,42,.92);display:none;align-items:center;justify-content:center;padding:18px}
+.visual-lightbox.on{display:flex}
+.visual-lightbox__inner{position:relative;width:min(1180px,96vw);max-height:94dvh;display:flex;flex-direction:column;gap:8px}
+.visual-lightbox img{display:block;max-width:100%;max-height:86dvh;object-fit:contain;margin:auto;border-radius:8px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.visual-lightbox__caption{font:500 12.5px/1.4 "Inter",system-ui,sans-serif;color:#CBD5E1;text-align:center}
+.visual-lightbox__close{position:absolute;right:8px;top:8px;width:42px;height:42px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(15,23,42,.82);color:white;font:700 24px/1 "Inter",system-ui,sans-serif;cursor:pointer;z-index:2}
+@media(max-width:620px){.visual-carousel{grid-auto-columns:96%}.visual-block>.visual-head{display:block}.visual-block>.visual-head p{text-align:left;margin-top:5px}.guide-visual,.visual-block{margin:22px 0 26px}.guide-visual figcaption,.visual-card figcaption{font-size:12px}.visual-card .visual-open:after,.guide-visual .visual-open:after{opacity:.92;transform:none}}
+@media print{.visual-carousel{display:block;overflow:visible}.visual-card{margin:14px 0;break-inside:avoid}.visual-lightbox{display:none!important}.visual-open:after{display:none!important}.guide-visual{break-inside:avoid}}
 </style>
 </head>
 <body>
-
 <!-- ══════════ COUVERTURE ══════════ -->
 <section id="cover">
-  <div class="wrap cov-top">
-    <div class="seal"><b>SER</b></div>
-    <div class="meta"><i>Guide 01</i>SER Guides · Collection Administratif & Finance<br>Édition 2026</div>
-  </div>
-  <div class="wrap cov-mid">
-    <div class="hero-badge">GUIDE WEB INTERACTIF · DONNÉES VÉRIFIÉES LE 12 SEPT. 2026</div>
-    <h1 class="display">Micro-entreprise<em>optimiser puis déclarer</em></h1>
-    <div class="rule-or"></div>
-    <p>Avant de déclarer, sécurisez d’abord les choix qui peuvent vous faire économiser de l’argent : ACRE, ARE/ARCE, régime fiscal, TVA, prix et aides. Ensuite, suivez les démarches Urssaf et impôts pas à pas, avec des liens directs vers les services officiels.
+<div class="wrap cov-top">
+<div class="seal"><b>SER</b></div>
+<div class="meta"><i>Guide 01</i>SER Guides · Collection Administratif &amp; Finance<br/>Édition 2026</div>
+</div>
+<div class="wrap cov-mid">
+<div class="hero-badge">GUIDE WEB INTERACTIF · DONNÉES VÉRIFIÉES LE 12 SEPT. 2026</div>
+<h1 class="display">Micro-entreprise<em>optimiser puis déclarer</em></h1>
+<div class="rule-or"></div>
+<p>Avant de déclarer, sécurisez d’abord les choix qui peuvent vous faire économiser de l’argent : ACRE, ARE/ARCE, régime fiscal, TVA, prix et aides. Ensuite, suivez les démarches Urssaf et impôts pas à pas, avec des liens directs vers les services officiels.
     <div class="release-strip"><span>✓ 2026 vérifié</span><span>✓ parcours personnalisé</span><span>✓ simulateurs intégrés</span><span>✓ liens officiels</span></div>
-    <div class="scope-note"><strong>Périmètre :</strong> micro-entreprise classique en France métropolitaine (vente, services BIC, libéral BNC, Cipav). Les DROM, activités réglementées particulières, meublés de tourisme et situations mixtes complexes peuvent suivre des règles spécifiques.</div></p>
-  </div>
-  <div class="wrap">
-    <p class="devise">« Décider juste. Agir simple. »</p>
-    <button class="cta" id="go">Construire mon parcours en 30 secondes</button>
-  </div>
+<div class="scope-note"><strong>Périmètre :</strong> micro-entreprise classique en France métropolitaine (vente, services BIC, libéral BNC, Cipav). Les DROM, activités réglementées particulières, meublés de tourisme et situations mixtes complexes peuvent suivre des règles spécifiques.</div></p>
+</div>
+<div class="wrap">
+<p class="devise">« Décider juste. Agir simple. »</p>
+<button class="cta" id="go">Construire mon parcours en 30 secondes</button>
+</div>
 </section>
-
 <!-- ══════════ DIAGNOSTIC PERSONNALISÉ ══════════ -->
 <section id="setup">
-  <div class="diag-shell">
-    <div class="diag-brand"><div class="seal sm"><b>SER</b></div><div><b>SER Guides · Diagnostic 2026</b><span>Vos réponses restent dans votre navigateur.</span></div></div>
-    <div id="quickSetup">
-      <section class="quick-screen on" id="quickStage">
-        <div class="quick-kicker">30 secondes · aucun compte requis</div>
-        <h2 class="quick-title">Où en êtes-vous ?</h2>
-        <p class="quick-lede">On vous montre d’abord uniquement ce qui est utile maintenant. Vous pourrez affiner plus tard si vous le souhaitez.</p>
-        <div class="quick-options" id="quickStageOptions">
-          <button type="button" class="quick-choice" data-stage="before"><span class="quick-icon">01</span><span><b>Je vais créer ma micro</b><small>Je veux éviter les mauvais choix avant de commencer.</small></span></button>
-          <button type="button" class="quick-choice" data-stage="created"><span class="quick-icon">02</span><span><b>Ma micro est déjà créée</b><small>Je veux vérifier que je n’ai rien oublié et organiser mes déclarations.</small></span></button>
-          <button type="button" class="quick-choice" data-stage="declare"><span class="quick-icon">03</span><span><b>Je dois déclarer maintenant</b><small>Je veux aller rapidement à l’Urssaf ou aux impôts sans me tromper.</small></span></button>
-        </div>
-      </section>
-
-      <section class="quick-screen" id="quickActivity">
-        <div class="quick-kicker">Dernière question</div>
-        <h2 class="quick-title">Quelle est votre activité principale ?</h2>
-        <p class="quick-lede">C’est tout ce qu’il nous faut pour adapter les taux et les rubriques du guide.</p>
-        <div class="quick-options" id="quickActivityOptions">
-          <button type="button" class="quick-choice" data-activity="vente"><span class="quick-icon">V</span><span><b>Vente de marchandises</b><small>Achat-revente, e-commerce, restauration, hébergement.</small></span></button>
-          <button type="button" class="quick-choice" data-activity="serviceBIC"><span class="quick-icon">S</span><span><b>Services commerciaux</b><small>Nettoyage, livraison, conseil commercial, services BIC…</small></span></button>
-          <button type="button" class="quick-choice" data-activity="artisan"><span class="quick-icon">A</span><span><b>Services artisanaux</b><small>Bâtiment, coiffure, réparation, dépannage, métiers artisanaux…</small></span></button>
-          <button type="button" class="quick-choice" data-activity="bnc"><span class="quick-icon">L</span><span><b>Activité libérale</b><small>Développeur, consultant, graphiste, rédacteur, coach…</small></span></button>
-          <button type="button" class="quick-choice" data-activity="cipav"><span class="quick-icon">C</span><span><b>Profession relevant de la Cipav</b><small>Professions réglementées ou rattachées à la Cipav.</small></span></button>
-        </div>
-        <div class="quick-actions"><button type="button" id="quickBack">Retour</button></div>
-      </section>
-
-      <section class="quick-screen" id="quickResult">
-        <div class="quick-plan"><div class="eyebrow">Votre parcours express</div><h2 id="quickResultTitle">Votre guide est prêt</h2><p id="quickResultText">—</p></div>
-        <div class="quick-tasks" id="quickTasks"></div>
-        <div class="quick-actions"><button type="button" id="quickEdit">Modifier</button><button type="button" class="primary" id="quickOpen">Ouvrir mon guide</button></div>
-        <button type="button" class="quick-advanced" id="quickAdvanced">Affiner mes aides et options (facultatif · 2 min)</button>
-        <p class="quick-note">Vous pouvez commencer immédiatement. Le diagnostic avancé sert uniquement à affiner ACRE, France Travail, fiscalité, TVA et aides locales.</p>
-      </section>
-    </div>
-
-    <div id="diagWizard">
-      <div class="diag-topline"><div class="diag-stepcount" id="diagStepCount">Étape 1 sur 7</div><div class="diag-mini">≈ 2 min</div></div>
-      <div class="diag-progress"><i id="diagBar"></i></div>
-
-      <section class="diag-panel on" data-diag-step="0">
-        <h2>Quelle activité allez-vous exercer ?</h2><p class="lede">Cela détermine vos taux sociaux, votre abattement fiscal, vos seuils et les rubriques du guide qui vous concernent.</p>
-        <div class="diag-options" id="diagActivity">
-          <button type="button" class="diag-option" data-value="vente"><span class="dot"></span><span><b>Vente de marchandises</b><small>Achat-revente, e-commerce, restauration, hébergement.</small></span></button>
-          <button type="button" class="diag-option" data-value="serviceBIC"><span class="dot"></span><span><b>Prestations de services commerciales (BIC)</b><small>Nettoyage, transport, services commerciaux et activités assimilées.</small></span></button>
-          <button type="button" class="diag-option" data-value="artisan"><span class="dot"></span><span><b>Prestations artisanales (BIC)</b><small>Bâtiment, coiffure, réparation, dépannage, métiers artisanaux.</small></span></button>
-          <button type="button" class="diag-option" data-value="bnc"><span class="dot"></span><span><b>Activité libérale — régime général</b><small>Développeur, consultant, graphiste, rédacteur, coach…</small></span></button>
-          <button type="button" class="diag-option" data-value="cipav"><span class="dot"></span><span><b>Profession libérale relevant de la Cipav</b><small>Professions réglementées ou rattachées à la Cipav.</small></span></button>
-        </div><div class="diag-error" id="err0">Choisissez votre type d’activité.</div>
-      </section>
-
-      <section class="diag-panel" data-diag-step="1">
-        <h2>Où en êtes-vous aujourd’hui ?</h2><p class="lede">Le guide doit savoir si certaines décisions sont encore à prendre ou si un délai est déjà en cours.</p>
-        <div class="diag-options" id="diagStage">
-          <button type="button" class="diag-option" data-value="before"><span class="dot"></span><span><b>Je n’ai pas encore créé ma micro-entreprise</b><small>Vous êtes au meilleur moment pour optimiser avant toute formalité.</small></span></button>
-          <button type="button" class="diag-option" data-value="created"><span class="dot"></span><span><b>Elle est déjà créée</b><small>Le diagnostic vérifiera les délais encore ouverts.</small></span></button>
-        </div>
-        <div class="diag-field" id="creationDateWrap" style="display:none;margin-top:16px"><label for="creationDate">Date de début d’activité</label><input type="date" id="creationDate" min="2025-01-01" max="2026-12-31"><p class="diag-help">La date permet notamment de calculer votre échéance ACRE à 60 jours en 2026.</p></div>
-        <div class="diag-error" id="err1">Indiquez où vous en êtes et, si vous avez déjà créé, la date de début d’activité.</div>
-      </section>
-
-      <section class="diag-panel" data-diag-step="2">
-        <h2>Pouvez-vous entrer dans un cas ACRE ?</h2><p class="lede">Depuis 2026, l’ACRE n’est plus automatique : il faut être éligible et déposer la demande dans les 60 jours.</p>
-        <div class="diag-field"><label for="acreCriterion">Situation au moment de la création</label><select id="acreCriterion"><option value="">Choisir…</option><option value="are">Demandeur d’emploi indemnisé</option><option value="ft6">Demandeur d’emploi non indemnisé, inscrit 6 mois sur les 18 derniers mois</option><option value="rsa">Bénéficiaire du RSA ou de l’ASS</option><option value="young">18 à 25 ans révolus</option><option value="u30">Moins de 30 ans non indemnisé faute de durée suffisante</option><option value="u30h">Moins de 30 ans reconnu handicapé</option><option value="judicial">Reprise d’une entreprise en sauvegarde/redressement/liquidation</option><option value="cape">Titulaire d’un CAPE remplissant les conditions</option><option value="qpv">Création/reprise en QPV</option><option value="prepare">Bénéficiaire de la PreParE</option><option value="zfrr">Activité en ZFRR ou ZFRR+</option><option value="none">Aucune de ces situations</option></select></div>
-        <div class="diag-field" style="margin-top:14px"><label for="acreRecent">Avez-vous bénéficié de l’ACRE au cours des 3 dernières années ?</label><select id="acreRecent"><option value="">Choisir…</option><option value="no">Non</option><option value="yes">Oui</option><option value="unknown">Je ne sais pas</option></select></div>
-        <div class="diag-error" id="err2">Renseignez ces deux éléments pour que le diagnostic puisse évaluer l’ACRE.</div>
-      </section>
-
-      <section class="diag-panel" data-diag-step="3">
-        <h2>Avez-vous des droits France Travail ?</h2><p class="lede">ARE et ARCE répondent à deux stratégies de trésorerie différentes et ne se cumulent pas entre elles.</p>
-        <div class="diag-options" id="diagFT">
-          <button type="button" class="diag-option" data-value="are"><span class="dot"></span><span><b>Oui, j’ai des droits ARE</b><small>Le guide vous fera comparer maintien mensuel et ARCE en capital.</small></span></button>
-          <button type="button" class="diag-option" data-value="registered"><span class="dot"></span><span><b>Je suis inscrit à France Travail mais sans ARE</b><small>Vous pouvez tout de même être concerné par certains dispositifs.</small></span></button>
-          <button type="button" class="diag-option" data-value="none"><span class="dot"></span><span><b>Non</b><small>Le guide ne vous encombrera pas avec ARE / ARCE.</small></span></button>
-        </div><div class="diag-error" id="err3">Choisissez votre situation France Travail.</div>
-      </section>
-
-      <section class="diag-panel" data-diag-step="4">
-        <h2>Votre foyer peut-il accéder au versement libératoire ?</h2><p class="lede">Pour 2026, le critère de RFR repose sur votre revenu fiscal de référence 2024 et votre nombre de parts.</p>
-        <div class="diag-grid"><div class="diag-field"><label for="diagRfr">RFR 2024 (€)</label><input type="number" id="diagRfr" min="0" step="100" placeholder="Ex. 24 500"></div><div class="diag-field"><label for="diagParts">Nombre de parts fiscales</label><input type="number" id="diagParts" min="0.5" step="0.25" value="1"></div></div>
-        <p class="diag-help">Le plafond 2026 est de 29 315 € par part. Le diagnostic vérifie ce critère mais ne remplace pas la vérification finale des autres conditions.</p>
-        <div class="diag-error" id="err4">Saisissez votre RFR 2024 et votre nombre de parts.</div>
-      </section>
-
-      <section class="diag-panel" data-diag-step="5">
-        <h2>Quel niveau d’activité prévoyez-vous ?</h2><p class="lede">On s’en sert pour détecter les cas où la micro mérite d’être comparée au réel et pour anticiper la TVA.</p>
-        <div class="diag-grid"><div class="diag-field"><label for="diagCA">CA annuel estimé (€)</label><input type="number" id="diagCA" min="0" step="1000" value="30000"></div><div class="diag-field"><label for="diagCosts">Frais professionnels annuels (€)</label><input type="number" id="diagCosts" min="0" step="500" value="5000"></div></div>
-        <p class="diag-help">Incluez vos outils, matières, logiciels, déplacements, commissions, sous-traitance, local, matériel amorti économiquement, etc.</p>
-        <div class="diag-error" id="err5">Renseignez une estimation de chiffre d’affaires et de frais.</div>
-      </section>
-
-      <section class="diag-panel" data-diag-step="6">
-        <h2>Où sera située l’activité ?</h2><p class="lede">Les aides et parcours d’accompagnement varient selon le territoire.</p>
-        <div class="diag-field"><label for="diagRegion">Région</label><select id="diagRegion"><option value="">Choisir…</option><option>Auvergne-Rhône-Alpes</option><option>Bourgogne-Franche-Comté</option><option>Bretagne</option><option>Centre-Val de Loire</option><option>Corse</option><option>Grand Est</option><option>Hauts-de-France</option><option>Île-de-France</option><option>Normandie</option><option>Nouvelle-Aquitaine</option><option>Occitanie</option><option>Pays de la Loire</option><option>Provence-Alpes-Côte d’Azur</option></select></div>
-        <p class="diag-help">Le guide utilisera cette information pour vous orienter vers les dispositifs territoriaux. Cette édition applique les taux standards de métropole ; les DROM suivent des barèmes sociaux spécifiques.</p>
-        <div class="diag-error" id="err6">Choisissez votre région.</div>
-      </section>
-
-      <div class="diag-nav" id="diagNav"><button type="button" id="diagBack">Retour</button><button type="button" class="grow" id="diagNext">Continuer</button></div>
-    </div>
-
-    <section class="diag-result" id="diagResult">
-      <div class="plan-hero"><div class="eyebrow">Votre diagnostic SER · 2026</div><h2>Votre plan avant de commencer</h2><p id="planIntro">—</p></div>
-      <div class="plan-summary" id="planSummary"></div>
-      <div class="plan-list" id="planList"></div>
-      <div class="diag-nav"><button type="button" id="diagRestart">Modifier mes réponses</button><button type="button" class="grow" id="startGuide">Ouvrir mon guide personnalisé</button></div>
-    </section>
-  </div>
+<div class="diag-shell">
+<div class="diag-brand"><div class="seal sm"><b>SER</b></div><div><b>SER Guides · Diagnostic 2026</b><span>Vos réponses restent dans votre navigateur.</span></div></div>
+<div id="quickSetup">
+<section class="quick-screen on" id="quickStage">
+<div class="quick-kicker">30 secondes · aucun compte requis</div>
+<h2 class="quick-title">Où en êtes-vous ?</h2>
+<p class="quick-lede">On vous montre d’abord uniquement ce qui est utile maintenant. Vous pourrez affiner plus tard si vous le souhaitez.</p>
+<div class="quick-options" id="quickStageOptions">
+<button class="quick-choice" data-stage="before" type="button"><span class="quick-icon">01</span><span><b>Je vais créer ma micro</b><small>Je veux éviter les mauvais choix avant de commencer.</small></span></button>
+<button class="quick-choice" data-stage="created" type="button"><span class="quick-icon">02</span><span><b>Ma micro est déjà créée</b><small>Je veux vérifier que je n’ai rien oublié et organiser mes déclarations.</small></span></button>
+<button class="quick-choice" data-stage="declare" type="button"><span class="quick-icon">03</span><span><b>Je dois déclarer maintenant</b><small>Je veux aller rapidement à l’Urssaf ou aux impôts sans me tromper.</small></span></button>
+</div>
 </section>
-
+<section class="quick-screen" id="quickActivity">
+<div class="quick-kicker">Dernière question</div>
+<h2 class="quick-title">Quelle est votre activité principale ?</h2>
+<p class="quick-lede">C’est tout ce qu’il nous faut pour adapter les taux et les rubriques du guide.</p>
+<div class="quick-options" id="quickActivityOptions">
+<button class="quick-choice" data-activity="vente" type="button"><span class="quick-icon">V</span><span><b>Vente de marchandises</b><small>Achat-revente, e-commerce, restauration, hébergement.</small></span></button>
+<button class="quick-choice" data-activity="serviceBIC" type="button"><span class="quick-icon">S</span><span><b>Services commerciaux</b><small>Nettoyage, livraison, conseil commercial, services BIC…</small></span></button>
+<button class="quick-choice" data-activity="artisan" type="button"><span class="quick-icon">A</span><span><b>Services artisanaux</b><small>Bâtiment, coiffure, réparation, dépannage, métiers artisanaux…</small></span></button>
+<button class="quick-choice" data-activity="bnc" type="button"><span class="quick-icon">L</span><span><b>Activité libérale</b><small>Développeur, consultant, graphiste, rédacteur, coach…</small></span></button>
+<button class="quick-choice" data-activity="cipav" type="button"><span class="quick-icon">C</span><span><b>Profession relevant de la Cipav</b><small>Professions réglementées ou rattachées à la Cipav.</small></span></button>
+</div>
+<div class="quick-actions"><button id="quickBack" type="button">Retour</button></div>
+</section>
+<section class="quick-screen" id="quickResult">
+<div class="quick-plan"><div class="eyebrow">Votre parcours express</div><h2 id="quickResultTitle">Votre guide est prêt</h2><p id="quickResultText">—</p></div>
+<div class="quick-tasks" id="quickTasks"></div>
+<div class="quick-actions"><button id="quickEdit" type="button">Modifier</button><button class="primary" id="quickOpen" type="button">Ouvrir mon guide</button></div>
+<button class="quick-advanced" id="quickAdvanced" type="button">Affiner mes aides et options (facultatif · 2 min)</button>
+<p class="quick-note">Vous pouvez commencer immédiatement. Le diagnostic avancé sert uniquement à affiner ACRE, France Travail, fiscalité, TVA et aides locales.</p>
+</section>
+</div>
+<div id="diagWizard">
+<div class="diag-topline"><div class="diag-stepcount" id="diagStepCount">Étape 1 sur 7</div><div class="diag-mini">≈ 2 min</div></div>
+<div class="diag-progress"><i id="diagBar"></i></div>
+<section class="diag-panel on" data-diag-step="0">
+<h2>Quelle activité allez-vous exercer ?</h2><p class="lede">Cela détermine vos taux sociaux, votre abattement fiscal, vos seuils et les rubriques du guide qui vous concernent.</p>
+<div class="diag-options" id="diagActivity">
+<button class="diag-option" data-value="vente" type="button"><span class="dot"></span><span><b>Vente de marchandises</b><small>Achat-revente, e-commerce, restauration, hébergement.</small></span></button>
+<button class="diag-option" data-value="serviceBIC" type="button"><span class="dot"></span><span><b>Prestations de services commerciales (BIC)</b><small>Nettoyage, transport, services commerciaux et activités assimilées.</small></span></button>
+<button class="diag-option" data-value="artisan" type="button"><span class="dot"></span><span><b>Prestations artisanales (BIC)</b><small>Bâtiment, coiffure, réparation, dépannage, métiers artisanaux.</small></span></button>
+<button class="diag-option" data-value="bnc" type="button"><span class="dot"></span><span><b>Activité libérale — régime général</b><small>Développeur, consultant, graphiste, rédacteur, coach…</small></span></button>
+<button class="diag-option" data-value="cipav" type="button"><span class="dot"></span><span><b>Profession libérale relevant de la Cipav</b><small>Professions réglementées ou rattachées à la Cipav.</small></span></button>
+</div><div class="diag-error" id="err0">Choisissez votre type d’activité.</div>
+</section>
+<section class="diag-panel" data-diag-step="1">
+<h2>Où en êtes-vous aujourd’hui ?</h2><p class="lede">Le guide doit savoir si certaines décisions sont encore à prendre ou si un délai est déjà en cours.</p>
+<div class="diag-options" id="diagStage">
+<button class="diag-option" data-value="before" type="button"><span class="dot"></span><span><b>Je n’ai pas encore créé ma micro-entreprise</b><small>Vous êtes au meilleur moment pour optimiser avant toute formalité.</small></span></button>
+<button class="diag-option" data-value="created" type="button"><span class="dot"></span><span><b>Elle est déjà créée</b><small>Le diagnostic vérifiera les délais encore ouverts.</small></span></button>
+</div>
+<div class="diag-field" id="creationDateWrap" style="display:none;margin-top:16px"><label for="creationDate">Date de début d’activité</label><input id="creationDate" max="2026-12-31" min="2025-01-01" type="date"/><p class="diag-help">La date permet notamment de calculer votre échéance ACRE à 60 jours en 2026.</p></div>
+<div class="diag-error" id="err1">Indiquez où vous en êtes et, si vous avez déjà créé, la date de début d’activité.</div>
+</section>
+<section class="diag-panel" data-diag-step="2">
+<h2>Pouvez-vous entrer dans un cas ACRE ?</h2><p class="lede">Depuis 2026, l’ACRE n’est plus automatique : il faut être éligible et déposer la demande dans les 60 jours.</p>
+<div class="diag-field"><label for="acreCriterion">Situation au moment de la création</label><select id="acreCriterion"><option value="">Choisir…</option><option value="are">Demandeur d’emploi indemnisé</option><option value="ft6">Demandeur d’emploi non indemnisé, inscrit 6 mois sur les 18 derniers mois</option><option value="rsa">Bénéficiaire du RSA ou de l’ASS</option><option value="young">18 à 25 ans révolus</option><option value="u30">Moins de 30 ans non indemnisé faute de durée suffisante</option><option value="u30h">Moins de 30 ans reconnu handicapé</option><option value="judicial">Reprise d’une entreprise en sauvegarde/redressement/liquidation</option><option value="cape">Titulaire d’un CAPE remplissant les conditions</option><option value="qpv">Création/reprise en QPV</option><option value="prepare">Bénéficiaire de la PreParE</option><option value="zfrr">Activité en ZFRR ou ZFRR+</option><option value="none">Aucune de ces situations</option></select></div>
+<div class="diag-field" style="margin-top:14px"><label for="acreRecent">Avez-vous bénéficié de l’ACRE au cours des 3 dernières années ?</label><select id="acreRecent"><option value="">Choisir…</option><option value="no">Non</option><option value="yes">Oui</option><option value="unknown">Je ne sais pas</option></select></div>
+<div class="diag-error" id="err2">Renseignez ces deux éléments pour que le diagnostic puisse évaluer l’ACRE.</div>
+</section>
+<section class="diag-panel" data-diag-step="3">
+<h2>Avez-vous des droits France Travail ?</h2><p class="lede">ARE et ARCE répondent à deux stratégies de trésorerie différentes et ne se cumulent pas entre elles.</p>
+<div class="diag-options" id="diagFT">
+<button class="diag-option" data-value="are" type="button"><span class="dot"></span><span><b>Oui, j’ai des droits ARE</b><small>Le guide vous fera comparer maintien mensuel et ARCE en capital.</small></span></button>
+<button class="diag-option" data-value="registered" type="button"><span class="dot"></span><span><b>Je suis inscrit à France Travail mais sans ARE</b><small>Vous pouvez tout de même être concerné par certains dispositifs.</small></span></button>
+<button class="diag-option" data-value="none" type="button"><span class="dot"></span><span><b>Non</b><small>Le guide ne vous encombrera pas avec ARE / ARCE.</small></span></button>
+</div><div class="diag-error" id="err3">Choisissez votre situation France Travail.</div>
+</section>
+<section class="diag-panel" data-diag-step="4">
+<h2>Votre foyer peut-il accéder au versement libératoire ?</h2><p class="lede">Pour 2026, le critère de RFR repose sur votre revenu fiscal de référence 2024 et votre nombre de parts.</p>
+<div class="diag-grid"><div class="diag-field"><label for="diagRfr">RFR 2024 (€)</label><input id="diagRfr" min="0" placeholder="Ex. 24 500" step="100" type="number"/></div><div class="diag-field"><label for="diagParts">Nombre de parts fiscales</label><input id="diagParts" min="0.5" step="0.25" type="number" value="1"/></div></div>
+<p class="diag-help">Le plafond 2026 est de 29 315 € par part. Le diagnostic vérifie ce critère mais ne remplace pas la vérification finale des autres conditions.</p>
+<div class="diag-error" id="err4">Saisissez votre RFR 2024 et votre nombre de parts.</div>
+</section>
+<section class="diag-panel" data-diag-step="5">
+<h2>Quel niveau d’activité prévoyez-vous ?</h2><p class="lede">On s’en sert pour détecter les cas où la micro mérite d’être comparée au réel et pour anticiper la TVA.</p>
+<div class="diag-grid"><div class="diag-field"><label for="diagCA">CA annuel estimé (€)</label><input id="diagCA" min="0" step="1000" type="number" value="30000"/></div><div class="diag-field"><label for="diagCosts">Frais professionnels annuels (€)</label><input id="diagCosts" min="0" step="500" type="number" value="5000"/></div></div>
+<p class="diag-help">Incluez vos outils, matières, logiciels, déplacements, commissions, sous-traitance, local, matériel amorti économiquement, etc.</p>
+<div class="diag-error" id="err5">Renseignez une estimation de chiffre d’affaires et de frais.</div>
+</section>
+<section class="diag-panel" data-diag-step="6">
+<h2>Où sera située l’activité ?</h2><p class="lede">Les aides et parcours d’accompagnement varient selon le territoire.</p>
+<div class="diag-field"><label for="diagRegion">Région</label><select id="diagRegion"><option value="">Choisir…</option><option>Auvergne-Rhône-Alpes</option><option>Bourgogne-Franche-Comté</option><option>Bretagne</option><option>Centre-Val de Loire</option><option>Corse</option><option>Grand Est</option><option>Hauts-de-France</option><option>Île-de-France</option><option>Normandie</option><option>Nouvelle-Aquitaine</option><option>Occitanie</option><option>Pays de la Loire</option><option>Provence-Alpes-Côte d’Azur</option></select></div>
+<p class="diag-help">Le guide utilisera cette information pour vous orienter vers les dispositifs territoriaux. Cette édition applique les taux standards de métropole ; les DROM suivent des barèmes sociaux spécifiques.</p>
+<div class="diag-error" id="err6">Choisissez votre région.</div>
+</section>
+<div class="diag-nav" id="diagNav"><button id="diagBack" type="button">Retour</button><button class="grow" id="diagNext" type="button">Continuer</button></div>
+</div>
+<section class="diag-result" id="diagResult">
+<div class="plan-hero"><div class="eyebrow">Votre diagnostic SER · 2026</div><h2>Votre plan avant de commencer</h2><p id="planIntro">—</p></div>
+<div class="plan-summary" id="planSummary"></div>
+<div class="plan-list" id="planList"></div>
+<div class="diag-nav"><button id="diagRestart" type="button">Modifier mes réponses</button><button class="grow" id="startGuide" type="button">Ouvrir mon guide personnalisé</button></div>
+</section>
+</div>
+</section>
 <!-- ══════════ LECTEUR ══════════ -->
 <main id="reader">
-  <div class="topbar">
-    <div class="wrap">
-      <button class="iconbtn" id="menu" aria-label="Sommaire">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 5.5h15M3 10.5h15M3 15.5h10"/></svg>
-      </button>
-      <div class="topmeta">
-        <div class="k" id="tk">Étape 1</div>
-        <div class="t" id="tt">—</div>
-      </div>
-      <div class="seal sm" style="color:var(--emeraude)"><b>SER</b></div>
-    </div>
-    <div class="bar"><i id="barfill"></i></div>
-  </div>
-
-  <div class="wrap">
-
-  <article class="chap" data-t="Avant toute démarche : aides & argent">
-    <span class="chap-k"><s></s>À faire avant de déclarer</span>
-    <h2 class="display">Commencez par ce qui peut vous faire économiser de l’argent</h2>
-    <p class="lead">Avant la première déclaration — et, pour certains choix, avant même de créer ou d’engager une dépense — vérifiez ces points. L’objectif est d’éviter le « j’aurais dû le faire avant ».</p>
-    <div class="service-card"><div class="eyebrow">Les changements 2026 à connaître</div><h3>Trois règles ont un impact immédiat</h3><p><strong>Seuils micro :</strong> 203 100 € en vente et 83 600 € en services. <strong>ACRE :</strong> demande sous 60 jours ; pour une création à partir du 1er juillet 2026, exonération ramenée à 25 %. <strong>Facturation électronique :</strong> réception obligatoire depuis le 1er septembre 2026 ; émission pour les micro-entreprises à partir du 1er septembre 2027.</p></div>
-
-    <div class="preflight">
-      <div class="pre-card urgent"><span class="num">1</span><h4>Vérifiez d’abord que la micro‑entreprise est bien le bon régime</h4><p>Si vos charges réelles sont élevées, si vous achetez beaucoup de matériel ou si votre activité doit grossir vite, la simplicité de la micro peut coûter plus cher qu’un régime réel. Faites la comparaison avant de vous enfermer dans un mauvais choix.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/R18323" target="_blank" rel="noopener">Comparer les statuts avec le simulateur officiel ↗</a></div>
-      <div class="pre-card urgent"><span class="num">2</span><h4>ACRE : ne laissez pas passer le délai</h4><p>Depuis le 1er janvier 2026, l’ACRE doit être demandée à l’Urssaf dans les 60 jours suivant le début d’activité. Pour une création à compter du 1er juillet 2026, le taux de cotisations pendant l’ACRE correspond à 75 % du taux normal, soit une exonération de 25 %. Une création antérieure au 1er juillet 2026 relève d’un niveau de réduction différent : vérifiez votre date de début sur l’Urssaf.</p><a class="mini" href="https://www.urssaf.fr/accueil/exoneration-acre-createur.html" target="_blank" rel="noopener">Vérifier et demander l’ACRE sur l’Urssaf ↗</a></div>
-      <div class="pre-card money"><span class="num">3</span><h4>Si vous avez des droits chômage : comparez ARE et ARCE avant de choisir</h4><p>L’ARCE représente 60 % du capital correspondant aux droits ARE restants, avec une déduction de 3 % pour le financement des retraites complémentaires, puis un versement en deux fois. Le second intervient 6 mois après le premier sous conditions. ARE et ARCE sont deux stratégies différentes et ne se cumulent pas ; l’ARCE suppose notamment de bénéficier de l’ACRE.</p><a class="mini" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" target="_blank" rel="noopener">Comparer ARE / ARCE sur France Travail ↗</a></div>
-      <div class="pre-card"><span class="num">4</span><h4>Versement libératoire : décidez avant l’échéance, pas par défaut</h4><p>Pour une création, l’option peut être exercée lors de la formalité ou au plus tard le dernier jour du 3e mois suivant celui de la création. Si vous êtes déjà en activité, la date clé est le 30 septembre pour une application l’année suivante. En 2026, le plafond de RFR 2024 est de 29 315 € par part.</p><a class="mini" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" target="_blank" rel="noopener">Vérifier les conditions officielles ↗</a></div>
-      <div class="pre-card"><span class="num">5</span><h4>TVA : fixez vos prix en sachant quand vous pourrez basculer</h4><p>Les seuils de franchise actuellement publiés sont de 85 000 € / 93 500 € pour les ventes et 37 500 € / 41 250 € pour les autres prestations. Un prix fixé sans anticiper la TVA peut réduire votre marge le jour du basculement.</p><a class="mini" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" target="_blank" rel="noopener">Voir les seuils TVA officiels ↗</a></div>
-      <div class="pre-card"><span class="num">6</span><h4>Compte dédié, assurance et organisation : mettez la structure en place dès le départ</h4><p>Un compte dédié devient obligatoire pour l’entrepreneur individuel lorsque le chiffre d’affaires dépasse 10 000 € pendant deux années consécutives ; certaines activités imposent aussi une assurance professionnelle. Même avant l’obligation, séparer les flux simplifie la preuve des encaissements et la trésorerie.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/F21118" target="_blank" rel="noopener">Vérifier la règle du compte dédié ↗</a></div>
-      <div class="pre-card money"><span class="num">7</span><h4>Aides territoriales : cherchez avant de payer une dépense</h4><p>Les régions, départements et collectivités peuvent financer un accompagnement, une garantie, un prêt d’honneur, un microcrédit ou certaines dépenses. Certains dispositifs exigent un dépôt avant l’achat ou avant une étape du projet.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/F35930" target="_blank" rel="noopener">Rechercher les aides par territoire dans la base de référence ↗</a></div>
-    </div>
-
-    <div class="region-tool">
-      <h3>Les aides locales : cherchez par territoire</h3>
-      <p>Les dispositifs changent selon la région, le département, la commune et la date. Sélectionnez votre région pour mémoriser votre territoire, puis utilisez la page officielle de recherche de financements et d’accompagnements.</p>
-      <label for="regionSel">Région</label>
-      <select id="regionSel">
-        <option value="">Choisir…</option>
-        <option>Auvergne-Rhône-Alpes</option><option>Bourgogne-Franche-Comté</option><option>Bretagne</option><option>Centre-Val de Loire</option><option>Corse</option><option>Grand Est</option><option>Hauts-de-France</option><option>Île-de-France</option><option>Normandie</option><option>Nouvelle-Aquitaine</option><option>Occitanie</option><option>Pays de la Loire</option><option>Provence-Alpes-Côte d’Azur</option>
-      </select>
-      <div class="region-result" id="regionResult">Sélectionnez une région.</div>
-      <a class="action-link" style="margin-bottom:0" href="https://entreprendre.service-public.fr/vosdroits/F35930" target="_blank" rel="noopener"><span>Rechercher les aides et financements ↗</span><small>Service Public Entreprendre</small></a>
-    </div>
-  </article>
-
-  <article class="chap" data-t="Avant toute démarche : optimiser votre net">
-    <span class="chap-k"><s></s>À faire avant de déclarer</span>
-    <h2 class="display">Construisez votre stratégie de net avant le premier encaissement</h2>
-    <p class="lead">La déclaration n’optimise rien à elle seule. L’optimisation se décide en amont : régime, option fiscale, prix, TVA, frais, aides et trésorerie.</p>
-    <div class="decision">
-      <h3>Test express : vos frais réels dépassent-ils l’abattement micro ?</h3>
-      <label for="mca">CA annuel estimé</label><input id="mca" type="number" value="30000" min="0" step="1000">
-      <label for="mch">Frais professionnels annuels réels</label><input id="mch" type="number" value="5000" min="0" step="500">
-      <label for="mtype">Votre activité</label><select id="mtype"><option value="vente">Vente — abattement fiscal 71 %</option><option value="service">Services BIC — abattement 50 %</option><option value="bnc">BNC — abattement 34 %</option></select>
-      <div class="answer" id="manswer">Renseignez vos montants : le guide compare vos frais réels à l’abattement fiscal théorique.</div>
-    </div>
-    <div class="box warn"><span class="bt">⚠ Ce test n’est pas une conclusion fiscale</span><p>Comparer frais réels et abattement permet seulement de repérer les cas où une simulation micro / réel mérite d’être faite. Les cotisations, la TVA, la protection sociale, la comptabilité et la situation du foyer comptent aussi.</p></div>
-    <div class="keyline"><div><b id="reservePct">—</b><span>réserve minimale recommandée sur chaque encaissement pour cotisations + CFP, selon votre activité</span></div><div><b>3 poches</b><span>exploitation · charges/impôts · réserve de sécurité</span></div></div>
-    <h3>Ordre de décision recommandé</h3>
-    <ol class="steps">
-      <li class="step"><button class="sh"><span class="sn">1</span><span>Comparer micro / réel / autre forme avant l’immatriculation ou avant un changement</span></button><div class="sb" hidden><p>Commencez par le simulateur de statut officiel. Si vos frais sont structurels, ne choisissez pas la micro uniquement parce qu’elle est simple.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/R18323" target="_blank" rel="noopener">Ouvrir le simulateur ↗</a></div></li>
-      <li class="step"><button class="sh"><span class="sn">2</span><span>Déterminer les aides et droits avant les dépenses sensibles</span></button><div class="sb" hidden><p>ACRE, France Travail, aides régionales, QPV/FRR ou aides sectorielles n’ont pas les mêmes déclencheurs. Cherchez d’abord, dépensez ensuite.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">3</span><span>Choisir versement libératoire et périodicité en connaissance de cause</span></button><div class="sb" hidden><p>Le versement libératoire peut être utile pour un foyer imposable mais défavorable dans d’autres cas. La périodicité mensuelle peut faciliter le suivi de trésorerie et, selon l’Urssaf, est conseillée pour certains demandeurs d’emploi ou bénéficiaires de minima sociaux.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">4</span><span>Fixer vos prix avec cotisations, TVA future et temps non facturé</span></button><div class="sb" hidden><p>Votre tarif doit intégrer les cotisations, la CFP, l’impôt, les outils, le temps commercial, les périodes non facturées et une marge de sécurité. Sinon le chiffre d’affaires peut paraître bon alors que votre revenu réel est faible.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">5</span><span>Automatiser la provision dès chaque encaissement</span></button><div class="sb" hidden><p>Transférez immédiatement la réserve calculée vers un compte ou une poche séparée. Ce qui reste après cette provision est beaucoup plus proche de ce que vous pouvez réellement utiliser.</p></div></li>
-    </ol>
-    <a class="action-link secondary" href="https://entreprendre.service-public.fr/vosdroits/R19567" target="_blank" rel="noopener"><span>Simuler officiellement les revenus d’un indépendant ↗</span><small>Service Public Entreprendre</small></a>
-  </article>
-
-  <!-- 1 -->
-  <article class="chap" data-t="Les deux déclarations">
-    <span class="chap-k"><s></s>Chapitre 1</span>
-    <h2 class="display">Les deux déclarations qu'on confond tout le temps</h2>
-    <p class="lead">Le point essentiel : la déclaration sociale Urssaf et la déclaration fiscale annuelle sont deux démarches distinctes. Les confondre entraîne la plupart des erreurs de débutant.</p><div class="path-note"><span>↗</span><div><b>Pas encore immatriculé ?</b><br>Ne passez pas par un site privé payant par erreur. La création, modification et cessation d’entreprise passent par le Guichet unique officiel.</div></div><a class="action-link secondary" href="https://formalites.entreprises.gouv.fr/" target="_blank" rel="noopener"><span>Ouvrir le Guichet unique officiel ↗</span><small>formalites.entreprises.gouv.fr</small></a>
-    <p><strong>La déclaration URSSAF</strong> porte sur le chiffre d'affaires encaissé sur un mois ou un trimestre. Elle sert à calculer vos cotisations sociales. Vous la faites 12 fois ou 4 fois par an.</p>
-    <p><strong>La déclaration de revenus</strong>, formulaire 2042-C-PRO, porte sur le chiffre d’affaires de l’année civile précédente. Elle se fait au printemps suivant : au printemps 2026 vous déclarez les revenus 2025 ; si vous démarrez en 2026, votre chiffre d’affaires 2026 sera déclaré au printemps 2027.</p>
-    <div class="box warn"><span class="bt">⚠ La déclaration Urssaf ne remplace jamais la déclaration fiscale</span>
-      <p>La déclaration Urssaf et la déclaration fiscale restent deux démarches distinctes. Vous devez vérifier que votre chiffre d’affaires annuel figure dans la bonne rubrique de la 2042‑C‑PRO, y compris si vous avez choisi le versement libératoire.</p></div>
-    <h3>Ce que vous déclarez, exactement</h3>
-    <p>Toujours le chiffre d'affaires <strong>encaissé</strong>, jamais facturé. Une facture émise en décembre et payée en janvier se déclare en janvier.</p>
-    <p>Et toujours le montant <strong>brut</strong>, sans rien déduire : ni frais, ni matériel, ni déplacements, ni commissions de plateforme. C'est la logique du régime micro — vous ne déduisez rien, en échange l'administration applique un abattement forfaitaire à votre place.</p>
-  </article>
-
-  <!-- 2 -->
-  <article class="chap" data-t="La déclaration URSSAF">
-    <span class="chap-k"><s></s>Chapitre 2</span>
-    <h2 class="display">Votre déclaration URSSAF, pas à pas</h2>
-    <p class="lead">Cinq minutes. Il vous faut le total encaissé sur la période et vos identifiants.</p>
-    <div class="service-card"><div class="eyebrow">Service officiel</div><h3>Auto-Entrepreneur Urssaf</h3><p>Préparez le total réellement encaissé sur la période. Le bouton ci-dessous ouvre le service officiel dans un nouvel onglet ; gardez ce guide ouvert à côté.</p></div>
-    <a class="action-link" href="https://www.autoentrepreneur.urssaf.fr/" target="_blank" rel="noopener"><span>Ouvrir mon compte Auto‑Entrepreneur Urssaf ↗</span><small>Site officiel<br>autoentrepreneur.urssaf.fr</small></a>
-
-    <ol class="steps">
-      <li class="step"><button class="sh"><span class="sn">1</span><span>Connectez-vous à votre espace</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Cliquez sur le bouton « Ouvrir mon compte Auto‑Entrepreneur Urssaf » juste au-dessus. Vous arrivez sur le service officiel <strong>autoentrepreneur.urssaf.fr</strong>, puis utilisez « Mon compte » / « Se connecter » selon l’intitulé affiché. Vos identifiants vous ont été envoyés à l'immatriculation.</p>
-        <p>Identifiant perdu ? Le lien « Identifiants oubliés » les renvoie sur l'adresse mail déclarée à la création. Vérifiez vos spams, le mail atterrit souvent là.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">2</span><span>Ouvrez « Déclarer et payer »</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Dans le menu principal, cliquez sur <strong>Déclarer et payer</strong>. La période à déclarer s'affiche automatiquement, vous n'avez pas à la choisir.</p>
-        <p>Aucune période n'apparaît ? C'est normal dans deux cas : vous êtes dans vos 90 premiers jours d'activité, ou vous avez déjà déclaré cette période.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">3</span><span>Saisissez votre chiffre d'affaires</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Un champ apparaît, intitulé selon votre activité. <strong id="s3"></strong></p>
-        <p>Entrez le total encaissé sur la période, arrondi à l'euro. Pas de centimes, pas d'espaces.</p>
-        <p>Plusieurs activités de natures différentes ? Plusieurs champs s'affichent : ventilez chaque euro dans la bonne ligne. Se tromper de ligne, c'est se tromper de taux.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">4</span><span>Vérifiez le montant calculé</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>L'écran affiche vos cotisations. Le taux appliqué doit être <strong id="s4"></strong>.</p>
-        <p>Si le taux affiché ne correspond pas, ne validez pas : votre activité est probablement mal codée chez l'URSSAF. Contactez-les avant l'échéance.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">5</span><span>Payez et gardez l'accusé</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Télépaiement ou carte bancaire. Le prélèvement part à la date d'échéance, pas le jour de la déclaration.</p>
-        <p>Téléchargez l'accusé de réception et rangez-le. C'est votre preuve en cas de litige, et il vous servira pour un prêt, une location ou une demande d'aide.</p></div></li>
-    </ol>
-    <div class="box warn"><span class="bt">⚠ Zéro euro se déclare aussi</span>
-      <p>Aucun encaissement sur la période ? Vous devez quand même déclarer 0. Une déclaration manquante ou tardive peut entraîner une pénalité et, en cas d'absences répétées, des régularisations sur une base forfaitaire. Le montant peut évoluer : vérifiez l'information affichée par l'Urssaf au moment de votre échéance.</p></div>
-  </article>
-
-  <!-- 3 -->
-  <article class="chap" data-t="Ce qu'il vous reste">
-    <span class="chap-k"><s></s>Chapitre 3</span>
-    <h2 class="display">Combien il vous reste, réellement</h2>
-    <p class="lead">Votre chiffre d'affaires n'est pas votre revenu. Entrez ce que vous avez encaissé.</p>
-    <div class="sim">
-      <label for="ca">Chiffre d'affaires encaissé sur la période</label>
-      <div class="field"><input type="number" id="ca" value="3000" min="0" step="100" inputmode="numeric"><span class="cur">€</span></div>
-      <div class="seg" id="segvl">
-        <button data-vl="0" aria-pressed="true">Sans versement libératoire</button>
-        <button data-vl="1" aria-pressed="false">Avec</button>
-      </div>
-      <div class="res" id="res"></div>
-    </div>
-    <div class="box tip"><span class="bt">◆ La règle qui sauve la trésorerie</span>
-      <p>Provisionnez le jour de l'encaissement, pas le jour de l'échéance. À chaque virement client reçu, mettez immédiatement le pourcentage de côté sur un compte séparé. En trimestriel, ce sont trois mois de cotisations qui tombent d'un coup — c'est là que les gens se font avoir.</p></div>
-    <h3>Les taux 2026, toutes activités</h3>
-    <table class="tbl"><thead><tr><th>Activité</th><th>Cotisations</th><th>Vers. lib.</th></tr></thead><tbody id="rates"></tbody></table>
-    <p style="font-size:15px;color:var(--soft)">S'ajoute la contribution à la formation professionnelle (CFP) : 0,1 % pour les commerçants, 0,2 % pour les professions libérales et certaines prestations commerciales, 0,3 % pour les artisans. Le diagnostic distingue désormais services commerciaux et artisanaux pour éviter de sous-estimer cette contribution.</p>
-  </article>
-
-  <!-- 4 -->
-  <article class="chap" data-t="Vos échéances">
-    <span class="chap-k"><s></s>Chapitre 4</span>
-    <h2 class="display">Vos échéances de l'année</h2>
-    <p class="lead">Choisissez votre rythme de déclaration pour voir vos dates.</p>
-    <div class="seg" id="segr" style="border-color:var(--rule)">
-      <button data-r="trim" aria-pressed="true">Trimestriel</button>
-      <button data-r="mens" aria-pressed="false">Mensuel</button>
-    </div>
-    <div id="cal"></div>
-    <div class="box note"><span class="bt">● Vos 90 premiers jours</span>
-      <p>Votre première déclaration n'intervient qu'après un délai minimum de 90 jours d'activité. En mensuel, vous déclarez le mois suivant ces trois mois, en cumulant les périodes écoulées. En trimestriel, à l'échéance du trimestre civil qui suit. Ne vous inquiétez pas de ne rien voir avant.</p></div>
-    <p>Le choix entre mensuel et trimestriel se fait à la création et vaut pour l'année civile. Vous pouvez le modifier avant le 31 janvier, pour une prise d'effet au 1<sup>er</sup> janvier suivant.</p>
-    <h3>Les deux autres dates de l'année</h3>
-    <ul>
-      <li><strong>Déclaration de revenus</strong> — entre avril et juin, date limite selon votre département.</li>
-      <li><strong>CFE</strong> — pas de CFE à payer l’année de création, mais pensez à la déclaration initiale 1447-C-SD avant le 31 décembre de cette année. L’année suivante, la base d’imposition bénéficie en principe d’une réduction de 50 %. Si vous n’avez aucun local et que votre CA annuel ne dépasse pas 5 000 €, vous pouvez être exonéré. L’avis est dématérialisé dans l’espace professionnel impots.gouv.fr.</li>
-    </ul>
-    <a class="action-link secondary" href="https://entreprendre.service-public.fr/vosdroits/F23999" target="_blank" rel="noopener"><span>Vérifier votre CFE et les exonérations ↗</span><small>Service Public Entreprendre</small></a>
-  </article>
-
-  <!-- 5 -->
-  <article class="chap" data-t="La 2042-C-PRO">
-    <span class="chap-k"><s></s>Chapitre 5</span>
-    <h2 class="display">La 2042-C-PRO, pas à pas</h2>
-    <p class="lead">Une fois la bonne rubrique identifiée, la logique est simple : déclarer le chiffre d’affaires annuel brut dans la catégorie correspondant à votre activité.</p>
-    <div class="box note"><span class="bt">● Attention à l’année déclarée</span><p>Le millésime 2026 de la 2042-C-PRO concerne les revenus 2025. Si votre activité a commencé en 2026, vous utiliserez la déclaration mise à disposition au printemps 2027 pour déclarer votre chiffre d’affaires 2026.</p></div>
-    <div class="service-card"><div class="eyebrow">Service officiel</div><h3>Déclaration de revenus sur impots.gouv.fr</h3><p>Vous déclarez votre chiffre d’affaires annuel dans votre déclaration personnelle. Ouvrez votre espace Finances publiques, puis gardez les étapes ci-dessous sous les yeux.</p></div>
-    <a class="action-link" href="https://cfspart.impots.gouv.fr/" target="_blank" rel="noopener"><span>Me connecter à mon espace Finances publiques ↗</span><small>Connexion officielle<br>impots.gouv.fr</small></a>
-<a class="action-link secondary" href="https://www.impots.gouv.fr/node/12190" target="_blank" rel="noopener"><span>Ouvrir le pas‑à‑pas DGFiP 2026 ↗</span><small>Aide officielle</small></a>
+<div class="topbar">
+<div class="wrap">
+<button aria-label="Sommaire" class="iconbtn" id="menu">
+<svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-width="1.7" viewbox="0 0 21 21" width="21"><path d="M3 5.5h15M3 10.5h15M3 15.5h10"></path></svg>
+</button>
+<div class="topmeta">
+<div class="k" id="tk">Étape 1</div>
+<div class="t" id="tt">—</div>
 </div>
-<a class="action-link secondary" href="https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/2042-CPRO.pdf" target="_blank" rel="noopener"><span>Ouvrir la 2042‑C‑PRO 2026 · revenus 2025 ↗</span><small>DGFiP · Cerfa 11222*28</small></a>
-    <ol class="steps">
-      <li class="step"><button class="sh"><span class="sn">1</span><span>Connectez-vous à impots.gouv.fr</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Espace particulier, avec votre numéro fiscal. C'est bien votre déclaration <em>personnelle</em> : en micro-entreprise, votre activité n'a pas de déclaration séparée.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">2</span><span>Faites apparaître le bon formulaire</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>À l'étape 3 du parcours, cochez la case <strong>« Revenus des professions non salariées »</strong>. C'est elle qui fait apparaître la déclaration complémentaire 2042-C-PRO. Sans elle, vous ne trouverez jamais où saisir votre chiffre d'affaires.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">3</span><span>Trouvez votre rubrique</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p id="s5r"></p><p>Puis choisissez la sous-partie correspondant à votre situation : avec ou sans versement libératoire. Ce ne sont pas les mêmes cases.</p></div></li>
-      <li class="step"><button class="sh"><span class="sn">4</span><span>Saisissez le montant brut</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Reportez votre chiffre d'affaires <strong>brut encaissé sur l'année civile</strong>. Pas le bénéfice, pas le net après cotisations. Le brut, celui-là même que vous avez déclaré à l'URSSAF, cumulé sur 12 mois.</p><p id="s5a"></p></div></li>
-      <li class="step"><button class="sh"><span class="sn">5</span><span>Ne remplissez pas une case « prélèvements sociaux » par automatisme</span><svg class="chev" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"/></svg></button>
-        <div class="sb" hidden><p>Les cases 5HY à 5JY appartiennent à une rubrique spécifique relative à des revenus à soumettre aux prélèvements sociaux. Le chiffre d'affaires courant d'une micro-entreprise se déclare dans les rubriques micro-BIC ou micro-BNC prévues à cet effet. N'inscrivez rien dans 5HY par réflexe : utilisez la notice 2042-C-PRO 2026 ou l'aide en ligne si une situation particulière vous concerne.</p></div></li>
-    </ol>
-    <div class="box tip"><span class="bt">◆ Vérification en dix secondes</span>
-      <p>Avant de valider, le total saisi doit être exactement égal à la somme de vos déclarations URSSAF de l'année. Ouvrez vos accusés et additionnez. Si ça ne tombe pas juste, cherchez l'écart maintenant — pas dans trois ans, lors d'un contrôle.</p></div>
-  </article>
+<div class="seal sm" style="color:var(--emeraude)"><b>SER</b></div>
+</div>
+<div class="bar"><i id="barfill"></i></div>
+</div>
+<div class="wrap">
+<article class="chap" data-t="Avant toute démarche : aides &amp; argent">
+<span class="chap-k"><s></s>À faire avant de déclarer</span>
+<h2 class="display">Commencez par ce qui peut vous faire économiser de l’argent</h2>
+<p class="lead">Avant la première déclaration — et, pour certains choix, avant même de créer ou d’engager une dépense — vérifiez ces points. L’objectif est d’éviter le « j’aurais dû le faire avant ».</p>
+<div class="service-card"><div class="eyebrow">Les changements 2026 à connaître</div><h3>Trois règles ont un impact immédiat</h3><p><strong>Seuils micro :</strong> 203 100 € en vente et 83 600 € en services. <strong>ACRE :</strong> demande sous 60 jours ; pour une création à partir du 1er juillet 2026, exonération ramenée à 25 %. <strong>Facturation électronique :</strong> réception obligatoire depuis le 1er septembre 2026 ; émission pour les micro-entreprises à partir du 1er septembre 2027.</p></div>
+<div class="preflight">
+<div class="pre-card urgent"><span class="num">1</span><h4>Vérifiez d’abord que la micro‑entreprise est bien le bon régime</h4><p>Si vos charges réelles sont élevées, si vous achetez beaucoup de matériel ou si votre activité doit grossir vite, la simplicité de la micro peut coûter plus cher qu’un régime réel. Faites la comparaison avant de vous enfermer dans un mauvais choix.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/R18323" rel="noopener" target="_blank">Comparer les statuts avec le simulateur officiel ↗</a></div>
+<div class="pre-card urgent"><span class="num">2</span><h4>ACRE : ne laissez pas passer le délai</h4><p>Depuis le 1er janvier 2026, l’ACRE doit être demandée à l’Urssaf dans les 60 jours suivant le début d’activité. Pour une création à compter du 1er juillet 2026, le taux de cotisations pendant l’ACRE correspond à 75 % du taux normal, soit une exonération de 25 %. Une création antérieure au 1er juillet 2026 relève d’un niveau de réduction différent : vérifiez votre date de début sur l’Urssaf.</p><a class="mini" href="https://www.urssaf.fr/accueil/exoneration-acre-createur.html" rel="noopener" target="_blank">Vérifier et demander l’ACRE sur l’Urssaf ↗</a></div>
+<div class="pre-card money"><span class="num">3</span><h4>Si vous avez des droits chômage : comparez ARE et ARCE avant de choisir</h4><p>L’ARCE représente 60 % du capital correspondant aux droits ARE restants, avec une déduction de 3 % pour le financement des retraites complémentaires, puis un versement en deux fois. Le second intervient 6 mois après le premier sous conditions. ARE et ARCE sont deux stratégies différentes et ne se cumulent pas ; l’ARCE suppose notamment de bénéficier de l’ACRE.</p><a class="mini" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" rel="noopener" target="_blank">Comparer ARE / ARCE sur France Travail ↗</a></div>
+<div class="pre-card"><span class="num">4</span><h4>Versement libératoire : décidez avant l’échéance, pas par défaut</h4><p>Pour une création, l’option peut être exercée lors de la formalité ou au plus tard le dernier jour du 3e mois suivant celui de la création. Si vous êtes déjà en activité, la date clé est le 30 septembre pour une application l’année suivante. En 2026, le plafond de RFR 2024 est de 29 315 € par part.</p><a class="mini" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" rel="noopener" target="_blank">Vérifier les conditions officielles ↗</a></div>
+<div class="pre-card"><span class="num">5</span><h4>TVA : fixez vos prix en sachant quand vous pourrez basculer</h4><p>Les seuils de franchise actuellement publiés sont de 85 000 € / 93 500 € pour les ventes et 37 500 € / 41 250 € pour les autres prestations. Un prix fixé sans anticiper la TVA peut réduire votre marge le jour du basculement.</p><a class="mini" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" rel="noopener" target="_blank">Voir les seuils TVA officiels ↗</a></div>
+<div class="pre-card"><span class="num">6</span><h4>Compte dédié, assurance et organisation : mettez la structure en place dès le départ</h4><p>Un compte dédié devient obligatoire pour l’entrepreneur individuel lorsque le chiffre d’affaires dépasse 10 000 € pendant deux années consécutives ; certaines activités imposent aussi une assurance professionnelle. Même avant l’obligation, séparer les flux simplifie la preuve des encaissements et la trésorerie.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/F21118" rel="noopener" target="_blank">Vérifier la règle du compte dédié ↗</a></div>
+<div class="pre-card money"><span class="num">7</span><h4>Aides territoriales : cherchez avant de payer une dépense</h4><p>Les régions, départements et collectivités peuvent financer un accompagnement, une garantie, un prêt d’honneur, un microcrédit ou certaines dépenses. Certains dispositifs exigent un dépôt avant l’achat ou avant une étape du projet.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/F35930" rel="noopener" target="_blank">Rechercher les aides par territoire dans la base de référence ↗</a></div>
+</div>
+<div class="region-tool">
+<h3>Les aides locales : cherchez par territoire</h3>
+<p>Les dispositifs changent selon la région, le département, la commune et la date. Sélectionnez votre région pour mémoriser votre territoire, puis utilisez la page officielle de recherche de financements et d’accompagnements.</p>
+<label for="regionSel">Région</label>
+<select id="regionSel">
+<option value="">Choisir…</option>
+<option>Auvergne-Rhône-Alpes</option><option>Bourgogne-Franche-Comté</option><option>Bretagne</option><option>Centre-Val de Loire</option><option>Corse</option><option>Grand Est</option><option>Hauts-de-France</option><option>Île-de-France</option><option>Normandie</option><option>Nouvelle-Aquitaine</option><option>Occitanie</option><option>Pays de la Loire</option><option>Provence-Alpes-Côte d’Azur</option>
+</select>
+<div class="region-result" id="regionResult">Sélectionnez une région.</div>
+<a class="action-link" href="https://entreprendre.service-public.fr/vosdroits/F35930" rel="noopener" style="margin-bottom:0" target="_blank"><span>Rechercher les aides et financements ↗</span><small>Service Public Entreprendre</small></a>
+</div>
+<section aria-label="Repères visuels du chapitre" class="visual-block"><div class="visual-head"><div class="k">Résumé visuel</div><p>Les repères à retenir avant d’engager vos premières démarches.</p></div><div class="visual-carousel" tabindex="0"><figure class="visual-card"><button aria-label="Agrandir l’illustration : Plan de préparation avant le lancement d’une micro-entreprise" class="visual-open" type="button"><img alt="Plan de préparation avant le lancement d’une micro-entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-preflight-plan.webp?v=1791017488" width="1400"/></button><figcaption>Vue d’ensemble : compte dédié, assurance, aides, TVA, organisation et prix.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" class="visual-open" type="button"><img alt="Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-acre-are-arce.webp?v=1791017494" width="1400"/></button><figcaption>ACRE, ARE et ARCE : les trois dispositifs à distinguer avant de choisir.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Compte dédié, assurance et organisation de la micro-entreprise" class="visual-open" type="button"><img alt="Compte dédié, assurance et organisation de la micro-entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-structure-compte-assurance.webp?v=1791017500" width="1400"/></button><figcaption>Une structure simple pour séparer les flux, vérifier les assurances et garder une routine administrative.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" class="visual-open" type="button"><img alt="Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-aides-locales.webp?v=1791017506" width="1400"/></button><figcaption>Les aides territoriales varient selon la région, le département, la commune et le projet.</figcaption></figure></div><div class="visual-tip">Faites défiler les visuels. Touchez une image pour l’agrandir.</div></section></article>
+<article class="chap" data-t="Avant toute démarche : optimiser votre net">
+<span class="chap-k"><s></s>À faire avant de déclarer</span>
+<h2 class="display">Construisez votre stratégie de net avant le premier encaissement</h2>
+<p class="lead">La déclaration n’optimise rien à elle seule. L’optimisation se décide en amont : régime, option fiscale, prix, TVA, frais, aides et trésorerie.</p>
+<div class="decision">
+<h3>Test express : vos frais réels dépassent-ils l’abattement micro ?</h3>
+<label for="mca">CA annuel estimé</label><input id="mca" min="0" step="1000" type="number" value="30000"/>
+<label for="mch">Frais professionnels annuels réels</label><input id="mch" min="0" step="500" type="number" value="5000"/>
+<label for="mtype">Votre activité</label><select id="mtype"><option value="vente">Vente — abattement fiscal 71 %</option><option value="service">Services BIC — abattement 50 %</option><option value="bnc">BNC — abattement 34 %</option></select>
+<div class="answer" id="manswer">Renseignez vos montants : le guide compare vos frais réels à l’abattement fiscal théorique.</div>
+</div>
+<div class="box warn"><span class="bt">⚠ Ce test n’est pas une conclusion fiscale</span><p>Comparer frais réels et abattement permet seulement de repérer les cas où une simulation micro / réel mérite d’être faite. Les cotisations, la TVA, la protection sociale, la comptabilité et la situation du foyer comptent aussi.</p></div>
+<div class="keyline"><div><b id="reservePct">—</b><span>réserve minimale recommandée sur chaque encaissement pour cotisations + CFP, selon votre activité</span></div><div><b>3 poches</b><span>exploitation · charges/impôts · réserve de sécurité</span></div></div>
+<h3>Ordre de décision recommandé</h3>
+<ol class="steps">
+<li class="step"><button class="sh"><span class="sn">1</span><span>Comparer micro / réel / autre forme avant l’immatriculation ou avant un changement</span></button><div class="sb" hidden=""><p>Commencez par le simulateur de statut officiel. Si vos frais sont structurels, ne choisissez pas la micro uniquement parce qu’elle est simple.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/R18323" rel="noopener" target="_blank">Ouvrir le simulateur ↗</a></div></li>
+<li class="step"><button class="sh"><span class="sn">2</span><span>Déterminer les aides et droits avant les dépenses sensibles</span></button><div class="sb" hidden=""><p>ACRE, France Travail, aides régionales, QPV/FRR ou aides sectorielles n’ont pas les mêmes déclencheurs. Cherchez d’abord, dépensez ensuite.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">3</span><span>Choisir versement libératoire et périodicité en connaissance de cause</span></button><div class="sb" hidden=""><p>Le versement libératoire peut être utile pour un foyer imposable mais défavorable dans d’autres cas. La périodicité mensuelle peut faciliter le suivi de trésorerie et, selon l’Urssaf, est conseillée pour certains demandeurs d’emploi ou bénéficiaires de minima sociaux.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">4</span><span>Fixer vos prix avec cotisations, TVA future et temps non facturé</span></button><div class="sb" hidden=""><p>Votre tarif doit intégrer les cotisations, la CFP, l’impôt, les outils, le temps commercial, les périodes non facturées et une marge de sécurité. Sinon le chiffre d’affaires peut paraître bon alors que votre revenu réel est faible.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">5</span><span>Automatiser la provision dès chaque encaissement</span></button><div class="sb" hidden=""><p>Transférez immédiatement la réserve calculée vers un compte ou une poche séparée. Ce qui reste après cette provision est beaucoup plus proche de ce que vous pouvez réellement utiliser.</p></div></li>
+</ol>
+<a class="action-link secondary" href="https://entreprendre.service-public.fr/vosdroits/R19567" rel="noopener" target="_blank"><span>Simuler officiellement les revenus d’un indépendant ↗</span><small>Service Public Entreprendre</small></a>
+</article>
+<!-- 1 -->
+<article class="chap" data-t="Les deux déclarations">
+<span class="chap-k"><s></s>Chapitre 1</span>
+<h2 class="display">Les deux déclarations qu'on confond tout le temps</h2>
+<p class="lead">Le point essentiel : la déclaration sociale Urssaf et la déclaration fiscale annuelle sont deux démarches distinctes. Les confondre entraîne la plupart des erreurs de débutant.</p><div class="path-note"><span>↗</span><div><b>Pas encore immatriculé ?</b><br/>Ne passez pas par un site privé payant par erreur. La création, modification et cessation d’entreprise passent par le Guichet unique officiel.</div></div><a class="action-link secondary" href="https://formalites.entreprises.gouv.fr/" rel="noopener" target="_blank"><span>Ouvrir le Guichet unique officiel ↗</span><small>formalites.entreprises.gouv.fr</small></a>
+<p><strong>La déclaration URSSAF</strong> porte sur le chiffre d'affaires encaissé sur un mois ou un trimestre. Elle sert à calculer vos cotisations sociales. Vous la faites 12 fois ou 4 fois par an.</p>
+<p><strong>La déclaration de revenus</strong>, formulaire 2042-C-PRO, porte sur le chiffre d’affaires de l’année civile précédente. Elle se fait au printemps suivant : au printemps 2026 vous déclarez les revenus 2025 ; si vous démarrez en 2026, votre chiffre d’affaires 2026 sera déclaré au printemps 2027.</p>
+<div class="box warn"><span class="bt">⚠ La déclaration Urssaf ne remplace jamais la déclaration fiscale</span>
+<p>La déclaration Urssaf et la déclaration fiscale restent deux démarches distinctes. Vous devez vérifier que votre chiffre d’affaires annuel figure dans la bonne rubrique de la 2042‑C‑PRO, y compris si vous avez choisi le versement libératoire.</p></div>
+<h3>Ce que vous déclarez, exactement</h3>
+<p>Toujours le chiffre d'affaires <strong>encaissé</strong>, jamais facturé. Une facture émise en décembre et payée en janvier se déclare en janvier.</p>
+<p>Et toujours le montant <strong>brut</strong>, sans rien déduire : ni frais, ni matériel, ni déplacements, ni commissions de plateforme. C'est la logique du régime micro — vous ne déduisez rien, en échange l'administration applique un abattement forfaitaire à votre place.</p>
+</article>
+<!-- 2 -->
+<article class="chap" data-t="La déclaration URSSAF">
+<span class="chap-k"><s></s>Chapitre 2</span>
+<h2 class="display">Votre déclaration URSSAF, pas à pas</h2>
+<p class="lead">Cinq minutes. Il vous faut le total encaissé sur la période et vos identifiants.</p>
+<div class="service-card"><div class="eyebrow">Service officiel</div><h3>Auto-Entrepreneur Urssaf</h3><p>Préparez le total réellement encaissé sur la période. Le bouton ci-dessous ouvre le service officiel dans un nouvel onglet ; gardez ce guide ouvert à côté.</p></div>
+<a class="action-link" href="https://www.autoentrepreneur.urssaf.fr/" rel="noopener" target="_blank"><span>Ouvrir mon compte Auto‑Entrepreneur Urssaf ↗</span><small>Site officiel<br/>autoentrepreneur.urssaf.fr</small></a>
+<ol class="steps">
+<li class="step"><button class="sh"><span class="sn">1</span><span>Connectez-vous à votre espace</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Cliquez sur le bouton « Ouvrir mon compte Auto‑Entrepreneur Urssaf » juste au-dessus. Vous arrivez sur le service officiel <strong>autoentrepreneur.urssaf.fr</strong>, puis utilisez « Mon compte » / « Se connecter » selon l’intitulé affiché. Vos identifiants vous ont été envoyés à l'immatriculation.</p>
+<p>Identifiant perdu ? Le lien « Identifiants oubliés » les renvoie sur l'adresse mail déclarée à la création. Vérifiez vos spams, le mail atterrit souvent là.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">2</span><span>Ouvrez « Déclarer et payer »</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Dans le menu principal, cliquez sur <strong>Déclarer et payer</strong>. La période à déclarer s'affiche automatiquement, vous n'avez pas à la choisir.</p>
+<p>Aucune période n'apparaît ? C'est normal dans deux cas : vous êtes dans vos 90 premiers jours d'activité, ou vous avez déjà déclaré cette période.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">3</span><span>Saisissez votre chiffre d'affaires</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Un champ apparaît, intitulé selon votre activité. <strong id="s3"></strong></p>
+<p>Entrez le total encaissé sur la période, arrondi à l'euro. Pas de centimes, pas d'espaces.</p>
+<p>Plusieurs activités de natures différentes ? Plusieurs champs s'affichent : ventilez chaque euro dans la bonne ligne. Se tromper de ligne, c'est se tromper de taux.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">4</span><span>Vérifiez le montant calculé</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>L'écran affiche vos cotisations. Le taux appliqué doit être <strong id="s4"></strong>.</p>
+<p>Si le taux affiché ne correspond pas, ne validez pas : votre activité est probablement mal codée chez l'URSSAF. Contactez-les avant l'échéance.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">5</span><span>Payez et gardez l'accusé</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Télépaiement ou carte bancaire. Le prélèvement part à la date d'échéance, pas le jour de la déclaration.</p>
+<p>Téléchargez l'accusé de réception et rangez-le. C'est votre preuve en cas de litige, et il vous servira pour un prêt, une location ou une demande d'aide.</p></div></li>
+</ol>
+<div class="box warn"><span class="bt">⚠ Zéro euro se déclare aussi</span>
+<p>Aucun encaissement sur la période ? Vous devez quand même déclarer 0. Une déclaration manquante ou tardive peut entraîner une pénalité et, en cas d'absences répétées, des régularisations sur une base forfaitaire. Le montant peut évoluer : vérifiez l'information affichée par l'Urssaf au moment de votre échéance.</p></div>
+</article>
+<!-- 3 -->
+<article class="chap" data-t="Ce qu'il vous reste">
+<span class="chap-k"><s></s>Chapitre 3</span>
+<h2 class="display">Combien il vous reste, réellement</h2>
+<p class="lead">Votre chiffre d'affaires n'est pas votre revenu. Entrez ce que vous avez encaissé.</p>
+<div class="sim">
+<label for="ca">Chiffre d'affaires encaissé sur la période</label>
+<div class="field"><input id="ca" inputmode="numeric" min="0" step="100" type="number" value="3000"/><span class="cur">€</span></div>
+<div class="seg" id="segvl">
+<button aria-pressed="true" data-vl="0">Sans versement libératoire</button>
+<button aria-pressed="false" data-vl="1">Avec</button>
+</div>
+<div class="res" id="res"></div>
+</div>
+<div class="box tip"><span class="bt">◆ La règle qui sauve la trésorerie</span>
+<p>Provisionnez le jour de l'encaissement, pas le jour de l'échéance. À chaque virement client reçu, mettez immédiatement le pourcentage de côté sur un compte séparé. En trimestriel, ce sont trois mois de cotisations qui tombent d'un coup — c'est là que les gens se font avoir.</p></div>
+<h3>Les taux 2026, toutes activités</h3>
+<table class="tbl"><thead><tr><th>Activité</th><th>Cotisations</th><th>Vers. lib.</th></tr></thead><tbody id="rates"></tbody></table>
+<p style="font-size:15px;color:var(--soft)">S'ajoute la contribution à la formation professionnelle (CFP) : 0,1 % pour les commerçants, 0,2 % pour les professions libérales et certaines prestations commerciales, 0,3 % pour les artisans. Le diagnostic distingue désormais services commerciaux et artisanaux pour éviter de sous-estimer cette contribution.</p>
+</article>
+<!-- 4 -->
+<article class="chap" data-t="Vos échéances">
+<span class="chap-k"><s></s>Chapitre 4</span>
+<h2 class="display">Vos échéances de l'année</h2>
+<p class="lead">Choisissez votre rythme de déclaration pour voir vos dates.</p>
+<div class="seg" id="segr" style="border-color:var(--rule)">
+<button aria-pressed="true" data-r="trim">Trimestriel</button>
+<button aria-pressed="false" data-r="mens">Mensuel</button>
+</div>
+<div id="cal"></div>
+<div class="box note"><span class="bt">● Vos 90 premiers jours</span>
+<p>Votre première déclaration n'intervient qu'après un délai minimum de 90 jours d'activité. En mensuel, vous déclarez le mois suivant ces trois mois, en cumulant les périodes écoulées. En trimestriel, à l'échéance du trimestre civil qui suit. Ne vous inquiétez pas de ne rien voir avant.</p></div>
+<p>Le choix entre mensuel et trimestriel se fait à la création et vaut pour l'année civile. Vous pouvez le modifier avant le 31 janvier, pour une prise d'effet au 1<sup>er</sup> janvier suivant.</p>
+<h3>Les deux autres dates de l'année</h3>
+<ul>
+<li><strong>Déclaration de revenus</strong> — entre avril et juin, date limite selon votre département.</li>
+<li><strong>CFE</strong> — pas de CFE à payer l’année de création, mais pensez à la déclaration initiale 1447-C-SD avant le 31 décembre de cette année. L’année suivante, la base d’imposition bénéficie en principe d’une réduction de 50 %. Si vous n’avez aucun local et que votre CA annuel ne dépasse pas 5 000 €, vous pouvez être exonéré. L’avis est dématérialisé dans l’espace professionnel impots.gouv.fr.</li>
+</ul>
+<a class="action-link secondary" href="https://entreprendre.service-public.fr/vosdroits/F23999" rel="noopener" target="_blank"><span>Vérifier votre CFE et les exonérations ↗</span><small>Service Public Entreprendre</small></a>
+</article>
+<!-- 5 -->
+<article class="chap" data-t="La 2042-C-PRO">
+<span class="chap-k"><s></s>Chapitre 5</span>
+<h2 class="display">La 2042-C-PRO, pas à pas</h2>
+<p class="lead">Une fois la bonne rubrique identifiée, la logique est simple : déclarer le chiffre d’affaires annuel brut dans la catégorie correspondant à votre activité.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Pas à pas visuel de la déclaration 2042-C-PRO sur impots.gouv.fr" class="visual-open" type="button"><img alt="Pas à pas visuel de la déclaration 2042-C-PRO sur impots.gouv.fr" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-2042-c-pro.webp?v=1791017513" width="1400"/></button><figcaption>Repère visuel complémentaire : utilisez toujours les libellés réellement affichés dans votre espace impots.gouv.fr.</figcaption></figure>
+<div class="box note"><span class="bt">● Attention à l’année déclarée</span><p>Le millésime 2026 de la 2042-C-PRO concerne les revenus 2025. Si votre activité a commencé en 2026, vous utiliserez la déclaration mise à disposition au printemps 2027 pour déclarer votre chiffre d’affaires 2026.</p></div>
+<div class="service-card"><div class="eyebrow">Service officiel</div><h3>Déclaration de revenus sur impots.gouv.fr</h3><p>Vous déclarez votre chiffre d’affaires annuel dans votre déclaration personnelle. Ouvrez votre espace Finances publiques, puis gardez les étapes ci-dessous sous les yeux.</p></div>
+<a class="action-link" href="https://cfspart.impots.gouv.fr/" rel="noopener" target="_blank"><span>Me connecter à mon espace Finances publiques ↗</span><small>Connexion officielle<br/>impots.gouv.fr</small></a>
+<a class="action-link secondary" href="https://www.impots.gouv.fr/node/12190" rel="noopener" target="_blank"><span>Ouvrir le pas‑à‑pas DGFiP 2026 ↗</span><small>Aide officielle</small></a>
+</article></div>
+<a class="action-link secondary" href="https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/2042-CPRO.pdf" rel="noopener" target="_blank"><span>Ouvrir la 2042‑C‑PRO 2026 · revenus 2025 ↗</span><small>DGFiP · Cerfa 11222*28</small></a>
+<ol class="steps">
+<li class="step"><button class="sh"><span class="sn">1</span><span>Connectez-vous à impots.gouv.fr</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Espace particulier, avec votre numéro fiscal. C'est bien votre déclaration <em>personnelle</em> : en micro-entreprise, votre activité n'a pas de déclaration séparée.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">2</span><span>Faites apparaître le bon formulaire</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>À l'étape 3 du parcours, cochez la case <strong>« Revenus des professions non salariées »</strong>. C'est elle qui fait apparaître la déclaration complémentaire 2042-C-PRO. Sans elle, vous ne trouverez jamais où saisir votre chiffre d'affaires.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">3</span><span>Trouvez votre rubrique</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p id="s5r"></p><p>Puis choisissez la sous-partie correspondant à votre situation : avec ou sans versement libératoire. Ce ne sont pas les mêmes cases.</p></div></li>
+<li class="step"><button class="sh"><span class="sn">4</span><span>Saisissez le montant brut</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Reportez votre chiffre d'affaires <strong>brut encaissé sur l'année civile</strong>. Pas le bénéfice, pas le net après cotisations. Le brut, celui-là même que vous avez déclaré à l'URSSAF, cumulé sur 12 mois.</p><p id="s5a"></p></div></li>
+<li class="step"><button class="sh"><span class="sn">5</span><span>Ne remplissez pas une case « prélèvements sociaux » par automatisme</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
+<div class="sb" hidden=""><p>Les cases 5HY à 5JY appartiennent à une rubrique spécifique relative à des revenus à soumettre aux prélèvements sociaux. Le chiffre d'affaires courant d'une micro-entreprise se déclare dans les rubriques micro-BIC ou micro-BNC prévues à cet effet. N'inscrivez rien dans 5HY par réflexe : utilisez la notice 2042-C-PRO 2026 ou l'aide en ligne si une situation particulière vous concerne.</p></div></li>
+</ol>
+<div class="box tip"><span class="bt">◆ Vérification en dix secondes</span>
+<p>Avant de valider, le total saisi doit être exactement égal à la somme de vos déclarations URSSAF de l'année. Ouvrez vos accusés et additionnez. Si ça ne tombe pas juste, cherchez l'écart maintenant — pas dans trois ans, lors d'un contrôle.</p></div>
 
-  <!-- 6 -->
-  <article class="chap" data-t="Versement libératoire">
-    <span class="chap-k"><s></s>Chapitre 6</span>
-    <h2 class="display">Versement libératoire : pour vous ou pas</h2>
-    <p class="lead">Payer son impôt au fil de l'eau, en même temps que ses cotisations. Bonne idée pour certains, argent perdu pour d'autres.</p>
-    <p>L'option consiste à régler votre impôt sur le revenu sous forme d'un pourcentage supplémentaire du chiffre d'affaires. Tout est payé en temps réel : pas d'acompte, pas de solde l'année suivante.</p>
-    <p id="vlr"></p>
-    <h3>Le test simple</h3>
-    <p>L'éligibilité ne dit pas si l'option est avantageuse. Son intérêt dépend de l'ensemble des revenus du foyer, du quotient familial, des réductions et crédits d'impôt, ainsi que du chiffre d'affaires attendu. Un foyer non imposable a souvent intérêt à éviter le versement libératoire, mais un foyer imposable n'y gagne pas automatiquement : comparez les deux scénarios avant d'opter.</p>
-    <div class="box warn"><span class="bt">⚠ Le piège le plus fréquent du statut</span>
-      <p>Ne choisissez pas cette option par réflexe. Le test du RFR vérifie seulement l'éligibilité : il faut ensuite comparer le coût du versement libératoire avec l'impôt qui résulterait du barème progressif dans votre foyer.</p></div>
-    <p>Pour en bénéficier, votre revenu fiscal de référence de l'année N-2 ne doit pas dépasser un plafond par part de quotient familial. Le renoncement se demande <strong>avant le 30 septembre</strong>, pour une prise d'effet l'année suivante.</p>
-  </article>
+<!-- 6 -->
+<article class="chap" data-t="Versement libératoire">
+<span class="chap-k"><s></s>Chapitre 6</span>
+<h2 class="display">Versement libératoire : pour vous ou pas</h2>
+<p class="lead">Payer son impôt au fil de l'eau, en même temps que ses cotisations. Bonne idée pour certains, argent perdu pour d'autres.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Parcours de vérification du versement libératoire de l’impôt sur le revenu" class="visual-open" type="button"><img alt="Parcours de vérification du versement libératoire de l’impôt sur le revenu" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-versement-liberatoire.webp?v=1791017520" width="1400"/></button><figcaption>Le RFR détermine l’éligibilité, mais le guide vous aide ensuite à comparer l’intérêt réel de l’option.</figcaption></figure>
+<p>L'option consiste à régler votre impôt sur le revenu sous forme d'un pourcentage supplémentaire du chiffre d'affaires. Tout est payé en temps réel : pas d'acompte, pas de solde l'année suivante.</p>
+<p id="vlr"></p>
+<h3>Le test simple</h3>
+<p>L'éligibilité ne dit pas si l'option est avantageuse. Son intérêt dépend de l'ensemble des revenus du foyer, du quotient familial, des réductions et crédits d'impôt, ainsi que du chiffre d'affaires attendu. Un foyer non imposable a souvent intérêt à éviter le versement libératoire, mais un foyer imposable n'y gagne pas automatiquement : comparez les deux scénarios avant d'opter.</p>
+<div class="box warn"><span class="bt">⚠ Le piège le plus fréquent du statut</span>
+<p>Ne choisissez pas cette option par réflexe. Le test du RFR vérifie seulement l'éligibilité : il faut ensuite comparer le coût du versement libératoire avec l'impôt qui résulterait du barème progressif dans votre foyer.</p></div>
+<p>Pour en bénéficier, votre revenu fiscal de référence de l'année N-2 ne doit pas dépasser un plafond par part de quotient familial. Le renoncement se demande <strong>avant le 30 septembre</strong>, pour une prise d'effet l'année suivante.</p>
+</article>
+<!-- 7 -->
+<article class="chap" data-t="TVA et plafonds">
+<span class="chap-k"><s></s>Chapitre 7</span>
+<h2 class="display">TVA et plafonds : les deux seuils à surveiller</h2>
+<p class="lead">Deux seuils différents, souvent confondus. Le second est beaucoup plus bas, et c'est celui qui surprend.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Infographie sur la TVA, les plafonds et les pièces à conserver" class="visual-open" type="button"><img alt="Infographie sur la TVA, les plafonds et les pièces à conserver" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-tva-plafonds-controle.webp?v=1791017526" width="1400"/></button><figcaption>Ne confondez pas plafond du régime micro et franchise en base de TVA ; vérifiez les seuils officiels avant une opération sensible.</figcaption></figure>
+<h3>Le plafond de votre régime</h3>
+<p id="plaf"></p>
+<p>Un dépassement pendant deux années civiles consécutives fait basculer automatiquement vers un régime réel d'imposition. Ce n'est pas une catastrophe, mais ça change toute votre comptabilité : anticipez plutôt que de le découvrir.</p>
+<h3>La franchise de TVA</h3>
+<p>En 2026, les seuils nationaux de franchise en base sont notamment de <strong>85 000 €</strong> (année précédente) et <strong>93 500 €</strong> (année en cours) pour les ventes, et <strong>37 500 €</strong> / <strong>41 250 €</strong> pour les autres prestations de services. Si le seuil majoré de l’année en cours est dépassé, la franchise cesse à compter de la date du dépassement.</p>
+<div class="box note"><span class="bt">● À vérifier avant une grosse facture</span><p>Les règles de TVA ont beaucoup évolué politiquement depuis 2025. Les seuils ci-dessus sont ceux publiés par Bercy au moment de cette édition. Vérifiez-les avant une opération qui vous ferait franchir un seuil.</p></div>
+<p>Surveillez votre chiffre d'affaires cumulé dès que vous approchez. Passer la TVA en cours d'année sans l'avoir vu venir, c'est devoir la régulariser sur des factures déjà encaissées, de votre poche.</p>
+</article>
+<!-- 8 -->
+<article class="chap" data-t="En cas de contrôle">
+<span class="chap-k"><s></s>Chapitre 8</span>
+<h2 class="display">Ce qu'il faut pouvoir montrer en cas de contrôle</h2>
+<p class="lead">Le régime micro allège la comptabilité. Il ne supprime pas l'obligation d'expliquer votre chiffre d'affaires.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist des documents à conserver en cas de contrôle d’une micro-entreprise" class="visual-open" type="button"><img alt="Checklist des documents à conserver en cas de contrôle d’une micro-entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-controle-documents.webp?v=1791017532" width="1400"/></button><figcaption>Livre de recettes, factures, justificatifs, relevés et preuves de déclaration : organisez le dossier avant d’en avoir besoin.</figcaption></figure>
+<p>À conserver <strong>dix ans</strong> :</p>
+<ul>
+<li><strong>Le livre des recettes</strong> — obligatoire, chronologique, détaillé : date, client, montant, mode de règlement.</li>
+<li><strong>Le registre des achats</strong> — obligatoire pour les activités de vente.</li>
+<li>Vos factures émises, numérotées sans trou dans la séquence.</li>
+<li>Vos relevés d'encaissement et attestations de plateformes.</li>
+<li>Vos accusés de déclaration URSSAF.</li>
+</ul>
+<div class="box note"><span class="bt">● Facturation électronique : ce qui est déjà obligatoire au 12 septembre 2026</span>
+<p>Depuis le <strong>1<sup>er</sup> septembre 2026</strong>, toutes les entreprises assujetties à la TVA, y compris celles en franchise en base, doivent pouvoir <strong>recevoir</strong> des factures électroniques via une plateforme agréée. Pour les micro-entreprises, l'obligation générale d'<strong>émettre</strong> des factures électroniques et de transmettre les données concernées est prévue au <strong>1<sup>er</sup> septembre 2027</strong>. Les opérations bénéficiant d'une exonération de TVA peuvent relever de règles différentes.</p></div>
+<a class="action-link secondary" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank"><span>Vérifier le calendrier officiel de facturation électronique ↗</span><small>Ministère de l'Économie</small></a>
+</article>
+<!-- sources -->
+<article class="chap" data-t="Sources officielles 2026">
+<span class="chap-k"><s></s>Vérification</span>
+<h2 class="display">Sources officielles et mises à jour</h2>
+<p class="lead">Chaque chiffre sensible doit pouvoir être revérifié en un clic. Vérification réalisée le 12 septembre 2026 à partir de sources administratives et institutionnelles de référence. C’est une règle de la collection SER Guides.</p>
+<div class="source-row">
+<a class="source-pill" href="https://www.urssaf.fr/accueil/actualites/acre-nouvelles-regles-demarches.html" rel="noopener" target="_blank">Urssaf · ACRE 2026 ↗</a>
+<a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprises-quel-est-le-montant-de-vos-cotisations-sociales" rel="noopener" target="_blank">Bercy · cotisations &amp; ACRE 2026 ↗</a>
+<a class="source-pill" href="https://entreprendre.service-public.fr/vosdroits/F33339" rel="noopener" target="_blank">Service-Public · taux sociaux 2026 ↗</a>
+<a class="source-pill" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" rel="noopener" target="_blank">Impôts · versement libératoire ↗</a>
+<a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" rel="noopener" target="_blank">Bercy · TVA ↗</a>
+<a class="source-pill" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" rel="noopener" target="_blank">France Travail · ARE / ARCE ↗</a>
+<a class="source-pill" href="https://www.service-public.fr/particuliers/vosdroits/R55376" rel="noopener" target="_blank">Service-Public · formulaire ACRE ↗</a>
+<a class="source-pill" href="https://entreprendre.service-public.fr/vosdroits/F35930" rel="noopener" target="_blank">Base nationale des aides par territoire ↗</a>
+<a class="source-pill" href="https://www.impots.gouv.fr/node/12190" rel="noopener" target="_blank">DGFiP · pas-à-pas déclaration 2026 ↗</a>
+<a class="source-pill" href="https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/2042-CPRO.pdf" rel="noopener" target="_blank">DGFiP · 2042-C-PRO 2026 (revenus 2025) ↗</a>
+<a class="source-pill" href="https://formalites.entreprises.gouv.fr/" rel="noopener" target="_blank">Guichet unique · formalités d’entreprise ↗</a>
+<a class="source-pill" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank">Bercy · facturation électronique 2026/2027 ↗</a>
+<a class="source-pill" href="https://www.urssaf.fr/files/live/sites/urssaffr/files/autres/Diaporama_Auto-entrepreneur.pdf" rel="noopener" target="_blank">Urssaf · guide Auto-entrepreneur 2026 ↗</a>
+</div>
+<div class="box tip"><span class="bt">◆ Méthode SER Guides</span><p>Les chiffres sensibles sont rattachés à une source administrative et les démarches renvoient vers les services officiels. Les règles peuvent évoluer : utilisez toujours le lien source lorsqu’une décision importante dépend d’un seuil, d’un délai ou d’une éligibilité.</p></div>
+</article>
+<!-- 9 -->
+<article class="chap" data-t="Votre checklist">
+<span class="chap-k"><s></s>Chapitre 9</span>
+<h2 class="display">Votre checklist</h2>
+<p class="lead">Neuf points. Si les neuf sont cochés, vous ne risquez plus grand-chose.</p>
+<div class="ckbar"><span class="n" id="ckn">0</span><span class="l">sur 9 points validés</span></div>
+<ul class="ck" id="ck">
+<li><input id="c1" type="checkbox"/><label for="c1">Je connais mon taux de cotisations et je l'ai vérifié sur mon espace URSSAF</label></li>
+<li><input id="c2" type="checkbox"/><label for="c2">Mes échéances sont dans mon agenda, avec un rappel une semaine avant</label></li>
+<li><input id="c3" type="checkbox"/><label for="c3">Je provisionne mes cotisations à chaque encaissement, sur un compte séparé</label></li>
+<li><input id="c4" type="checkbox"/><label for="c4">Je déclare même quand mon chiffre d'affaires est à zéro</label></li>
+<li><input id="c5" type="checkbox"/><label for="c5">Mon livre des recettes est à jour et tenu chronologiquement</label></li>
+<li><input id="c6" type="checkbox"/><label for="c6">J'ai tranché la question du versement libératoire selon mon foyer</label></li>
+<li><input id="c7" type="checkbox"/><label for="c7">Je surveille mon chiffre d'affaires cumulé face aux deux seuils</label></li>
+<li><input id="c8" type="checkbox"/><label for="c8">J'ai vérifié ma CFE, l'exonération de première année et la déclaration initiale 1447-C-SD</label></li>
+<li><input id="c9" type="checkbox"/><label for="c9">Je conserve mes accusés et factures, et j’ai vérifié ma capacité à recevoir les factures électroniques depuis le 1er septembre 2026</label></li>
+</ul>
+<figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist finale du micro-entrepreneur en 2026" class="visual-open" type="button"><img alt="Checklist finale du micro-entrepreneur en 2026" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-checklist-finale.webp?v=1791017539" width="1400"/></button><figcaption>Résumé visuel : cette illustration complète la checklist interactive ci-dessus ; les cases du guide restent la référence à cocher et à enregistrer.</figcaption></figure></article>
+<!-- 10 -->
+<article class="chap" data-t="Colophon">
+<span class="chap-k"><s></s>Fin du guide</span>
+<h2 class="display">Vous savez faire.</h2>
+<p class="lead">Vous avez maintenant un parcours simple pour préparer vos choix, déclarer au bon endroit et vérifier les échéances importantes. Gardez ce guide sous la main à chaque étape.</p>
+<div class="colo">
+<div class="seal"><b>SER</b></div>
+<p class="dv">« Décider juste. Agir simple. »</p>
+<p>Guide 01 — SER Guides · Collection Administratif &amp; Finance<br/>Édition 2026 · Version 1.0 · Vérifiée le 12 septembre 2026</p>
+<p class="fine"><strong>Guide d’information, pas de conseil juridique, fiscal ou comptable personnalisé.</strong> Les taux, seuils et dates indiqués correspondent aux sources publiques consultées au 12 septembre 2026. La réglementation peut évoluer. Vérifiez toujours le service officiel avant une option irréversible ou une échéance sensible. Les cas DROM, activités réglementées, location meublée, activités mixtes complexes ou situations internationales peuvent nécessiter une vérification spécifique.</p><p class="fine">© 2026 SER Guides. Tous droits réservés. Reproduction, revente ou diffusion non autorisée interdites.</p>
+</div>
+</article>
 
-  <!-- 7 -->
-  <article class="chap" data-t="TVA et plafonds">
-    <span class="chap-k"><s></s>Chapitre 7</span>
-    <h2 class="display">TVA et plafonds : les deux seuils à surveiller</h2>
-    <p class="lead">Deux seuils différents, souvent confondus. Le second est beaucoup plus bas, et c'est celui qui surprend.</p>
-    <h3>Le plafond de votre régime</h3>
-    <p id="plaf"></p>
-    <p>Un dépassement pendant deux années civiles consécutives fait basculer automatiquement vers un régime réel d'imposition. Ce n'est pas une catastrophe, mais ça change toute votre comptabilité : anticipez plutôt que de le découvrir.</p>
-    <h3>La franchise de TVA</h3>
-    <p>En 2026, les seuils nationaux de franchise en base sont notamment de <strong>85 000 €</strong> (année précédente) et <strong>93 500 €</strong> (année en cours) pour les ventes, et <strong>37 500 €</strong> / <strong>41 250 €</strong> pour les autres prestations de services. Si le seuil majoré de l’année en cours est dépassé, la franchise cesse à compter de la date du dépassement.</p>
-    <div class="box note"><span class="bt">● À vérifier avant une grosse facture</span><p>Les règles de TVA ont beaucoup évolué politiquement depuis 2025. Les seuils ci-dessus sont ceux publiés par Bercy au moment de cette édition. Vérifiez-les avant une opération qui vous ferait franchir un seuil.</p></div>
-    <p>Surveillez votre chiffre d'affaires cumulé dès que vous approchez. Passer la TVA en cours d'année sans l'avoir vu venir, c'est devoir la régulariser sur des factures déjà encaissées, de votre poche.</p>
-  </article>
-
-  <!-- 8 -->
-  <article class="chap" data-t="En cas de contrôle">
-    <span class="chap-k"><s></s>Chapitre 8</span>
-    <h2 class="display">Ce qu'il faut pouvoir montrer en cas de contrôle</h2>
-    <p class="lead">Le régime micro allège la comptabilité. Il ne supprime pas l'obligation d'expliquer votre chiffre d'affaires.</p>
-    <p>À conserver <strong>dix ans</strong> :</p>
-    <ul>
-      <li><strong>Le livre des recettes</strong> — obligatoire, chronologique, détaillé : date, client, montant, mode de règlement.</li>
-      <li><strong>Le registre des achats</strong> — obligatoire pour les activités de vente.</li>
-      <li>Vos factures émises, numérotées sans trou dans la séquence.</li>
-      <li>Vos relevés d'encaissement et attestations de plateformes.</li>
-      <li>Vos accusés de déclaration URSSAF.</li>
-    </ul>
-    <div class="box note"><span class="bt">● Facturation électronique : ce qui est déjà obligatoire au 12 septembre 2026</span>
-      <p>Depuis le <strong>1<sup>er</sup> septembre 2026</strong>, toutes les entreprises assujetties à la TVA, y compris celles en franchise en base, doivent pouvoir <strong>recevoir</strong> des factures électroniques via une plateforme agréée. Pour les micro-entreprises, l'obligation générale d'<strong>émettre</strong> des factures électroniques et de transmettre les données concernées est prévue au <strong>1<sup>er</sup> septembre 2027</strong>. Les opérations bénéficiant d'une exonération de TVA peuvent relever de règles différentes.</p></div>
-    <a class="action-link secondary" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" target="_blank" rel="noopener"><span>Vérifier le calendrier officiel de facturation électronique ↗</span><small>Ministère de l'Économie</small></a>
-  </article>
-
-
-    <!-- sources -->
-  <article class="chap" data-t="Sources officielles 2026">
-    <span class="chap-k"><s></s>Vérification</span>
-    <h2 class="display">Sources officielles et mises à jour</h2>
-    <p class="lead">Chaque chiffre sensible doit pouvoir être revérifié en un clic. Vérification réalisée le 12 septembre 2026 à partir de sources administratives et institutionnelles de référence. C’est une règle de la collection SER Guides.</p>
-    <div class="source-row">
-      <a class="source-pill" href="https://www.urssaf.fr/accueil/actualites/acre-nouvelles-regles-demarches.html" target="_blank" rel="noopener">Urssaf · ACRE 2026 ↗</a>
-      <a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprises-quel-est-le-montant-de-vos-cotisations-sociales" target="_blank" rel="noopener">Bercy · cotisations & ACRE 2026 ↗</a>
-      <a class="source-pill" href="https://entreprendre.service-public.fr/vosdroits/F33339" target="_blank" rel="noopener">Service-Public · taux sociaux 2026 ↗</a>
-      <a class="source-pill" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" target="_blank" rel="noopener">Impôts · versement libératoire ↗</a>
-      <a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" target="_blank" rel="noopener">Bercy · TVA ↗</a>
-      <a class="source-pill" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" target="_blank" rel="noopener">France Travail · ARE / ARCE ↗</a>
-      <a class="source-pill" href="https://www.service-public.fr/particuliers/vosdroits/R55376" target="_blank" rel="noopener">Service-Public · formulaire ACRE ↗</a>
-      <a class="source-pill" href="https://entreprendre.service-public.fr/vosdroits/F35930" target="_blank" rel="noopener">Base nationale des aides par territoire ↗</a>
-      <a class="source-pill" href="https://www.impots.gouv.fr/node/12190" target="_blank" rel="noopener">DGFiP · pas-à-pas déclaration 2026 ↗</a>
-      <a class="source-pill" href="https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/2042-CPRO.pdf" target="_blank" rel="noopener">DGFiP · 2042-C-PRO 2026 (revenus 2025) ↗</a>
-      <a class="source-pill" href="https://formalites.entreprises.gouv.fr/" target="_blank" rel="noopener">Guichet unique · formalités d’entreprise ↗</a>
-      <a class="source-pill" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" target="_blank" rel="noopener">Bercy · facturation électronique 2026/2027 ↗</a>
-      <a class="source-pill" href="https://www.urssaf.fr/files/live/sites/urssaffr/files/autres/Diaporama_Auto-entrepreneur.pdf" target="_blank" rel="noopener">Urssaf · guide Auto-entrepreneur 2026 ↗</a>
-    </div>
-    <div class="box tip"><span class="bt">◆ Méthode SER Guides</span><p>Les chiffres sensibles sont rattachés à une source administrative et les démarches renvoient vers les services officiels. Les règles peuvent évoluer : utilisez toujours le lien source lorsqu’une décision importante dépend d’un seuil, d’un délai ou d’une éligibilité.</p></div>
-  </article>
-
-  <!-- 9 -->
-  <article class="chap" data-t="Votre checklist">
-    <span class="chap-k"><s></s>Chapitre 9</span>
-    <h2 class="display">Votre checklist</h2>
-    <p class="lead">Neuf points. Si les neuf sont cochés, vous ne risquez plus grand-chose.</p>
-    <div class="ckbar"><span class="n" id="ckn">0</span><span class="l">sur 9 points validés</span></div>
-    <ul class="ck" id="ck">
-      <li><input type="checkbox" id="c1"><label for="c1">Je connais mon taux de cotisations et je l'ai vérifié sur mon espace URSSAF</label></li>
-      <li><input type="checkbox" id="c2"><label for="c2">Mes échéances sont dans mon agenda, avec un rappel une semaine avant</label></li>
-      <li><input type="checkbox" id="c3"><label for="c3">Je provisionne mes cotisations à chaque encaissement, sur un compte séparé</label></li>
-      <li><input type="checkbox" id="c4"><label for="c4">Je déclare même quand mon chiffre d'affaires est à zéro</label></li>
-      <li><input type="checkbox" id="c5"><label for="c5">Mon livre des recettes est à jour et tenu chronologiquement</label></li>
-      <li><input type="checkbox" id="c6"><label for="c6">J'ai tranché la question du versement libératoire selon mon foyer</label></li>
-      <li><input type="checkbox" id="c7"><label for="c7">Je surveille mon chiffre d'affaires cumulé face aux deux seuils</label></li>
-      <li><input type="checkbox" id="c8"><label for="c8">J'ai vérifié ma CFE, l'exonération de première année et la déclaration initiale 1447-C-SD</label></li>
-      <li><input type="checkbox" id="c9"><label for="c9">Je conserve mes accusés et factures, et j’ai vérifié ma capacité à recevoir les factures électroniques depuis le 1er septembre 2026</label></li>
-    </ul>
-  </article>
-
-  <!-- 10 -->
-  <article class="chap" data-t="Colophon">
-    <span class="chap-k"><s></s>Fin du guide</span>
-    <h2 class="display">Vous savez faire.</h2>
-    <p class="lead">Vous avez maintenant un parcours simple pour préparer vos choix, déclarer au bon endroit et vérifier les échéances importantes. Gardez ce guide sous la main à chaque étape.</p>
-    <div class="colo">
-      <div class="seal"><b>SER</b></div>
-      <p class="dv">« Décider juste. Agir simple. »</p>
-      <p>Guide 01 — SER Guides · Collection Administratif & Finance<br>Édition 2026 · Version 1.0 · Vérifiée le 12 septembre 2026</p>
-      <p class="fine"><strong>Guide d’information, pas de conseil juridique, fiscal ou comptable personnalisé.</strong> Les taux, seuils et dates indiqués correspondent aux sources publiques consultées au 12 septembre 2026. La réglementation peut évoluer. Vérifiez toujours le service officiel avant une option irréversible ou une échéance sensible. Les cas DROM, activités réglementées, location meublée, activités mixtes complexes ou situations internationales peuvent nécessiter une vérification spécifique.</p><p class="fine">© 2026 SER Guides. Tous droits réservés. Reproduction, revente ou diffusion non autorisée interdites.</p>
-    </div>
-  </article>
-
-  </div>
-
-  <nav class="navbar"><div class="wrap">
-    <button class="nb" id="prev">Précédent</button>
-    <button class="nb primary" id="next">Étape suivante</button>
-  </div></nav>
+<nav class="navbar"><div class="wrap">
+<button class="nb" id="prev">Précédent</button>
+<button class="nb primary" id="next">Étape suivante</button>
+</div></nav>
 </main>
-
 <!-- ══════════ SOMMAIRE ══════════ -->
 <div class="scrim" id="scrim"></div>
 <aside class="drawer" id="drawer">
-  <div class="dr-top">
-    <div class="seal sm"><b>SER</b></div>
-    <div><b>Micro-entreprise : optimiser puis déclarer</b><span>SER Guides · Guide 01 · 2026</span></div>
-  </div>
-  <div class="dr-list" id="drlist"></div>
-  <div class="dr-foot">
-    <div class="prof">Votre activité<b id="pn">—</b></div>
-    <button id="chg">Changer d'activité</button>
-  </div>
+<div class="dr-top">
+<div class="seal sm"><b>SER</b></div>
+<div><b>Micro-entreprise : optimiser puis déclarer</b><span>SER Guides · Guide 01 · 2026</span></div>
+</div>
+<div class="dr-list" id="drlist"></div>
+<div class="dr-foot">
+<div class="prof">Votre activité<b id="pn">—</b></div>
+<button id="chg">Changer d'activité</button>
+</div>
 </aside>
-
-<script>
+<div aria-label="Agrandissement de l’illustration" aria-modal="true" class="visual-lightbox" id="visualLightbox" role="dialog"><div class="visual-lightbox__inner"><button aria-label="Fermer l’illustration" class="visual-lightbox__close" type="button">×</button><img alt="" id="visualLightboxImg"/><div class="visual-lightbox__caption" id="visualLightboxCaption"></div></div></div><script>
 const P={
  vente:{name:"Vente de marchandises",cot:12.3,vl:1.0,abat:71,cfp:0.1,plafond:"203 100 €",
   champ:"Il s'intitule « Vente de marchandises » ou « Chiffre d'affaires — ventes ».",
@@ -1047,5 +1038,24 @@ window.addEventListener('load',()=>{
   }catch(e){}
 });
 </script>
-</body>
+<script>
+(function(){
+  const box=document.getElementById('visualLightbox');
+  if(!box) return;
+  const target=document.getElementById('visualLightboxImg');
+  const caption=document.getElementById('visualLightboxCaption');
+  const close=box.querySelector('.visual-lightbox__close');
+  let last=null;
+  function shut(){box.classList.remove('on');document.body.style.overflow='';target.removeAttribute('src');if(last)last.focus()}
+  document.querySelectorAll('.visual-open').forEach(btn=>btn.addEventListener('click',()=>{
+    const img=btn.querySelector('img'); if(!img)return;
+    last=btn; target.src=img.src; target.alt=img.alt||'';
+    const fig=btn.closest('figure'); const cap=fig&&fig.querySelector('figcaption'); caption.textContent=cap?cap.textContent:'';
+    box.classList.add('on');document.body.style.overflow='hidden';close.focus();
+  }));
+  close.addEventListener('click',shut);
+  box.addEventListener('click',e=>{if(e.target===box)shut()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box.classList.contains('on'))shut()});
+})();
+</script></body>
 </html>
