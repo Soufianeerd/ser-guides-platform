@@ -407,14 +407,13 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 .visual-block>.visual-head p{margin:0;font-size:13.5px;color:var(--soft);text-align:right}
 .guide-visual{margin:26px 0 30px}
 .guide-visual,.visual-card{background:var(--card);border:1px solid var(--rule);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
-.visual-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;text-align:inherit;color:inherit}
+.visual-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;text-align:inherit;color:inherit;position:relative}
 .guide-visual img,.visual-card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#fff}
 .guide-visual figcaption,.visual-card figcaption{padding:11px 14px 13px;border-top:1px solid var(--rule);font:500 12.5px/1.45 "Inter",system-ui,sans-serif;color:var(--soft);background:#fff}
 .visual-carousel{display:grid;grid-auto-flow:column;grid-auto-columns:92%;gap:12px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;padding:2px 2px 10px;scrollbar-width:thin;scrollbar-color:#CBD5E1 transparent}
 .visual-card{scroll-snap-align:start;margin:0}
-.visual-card .visual-open{position:relative}
-.visual-card .visual-open:after,.guide-visual .visual-open:after{content:"Agrandir";position:absolute;right:10px;bottom:10px;padding:6px 9px;border-radius:999px;background:rgba(15,23,42,.86);color:#fff;font:700 10.5px/1 "Inter",system-ui,sans-serif;letter-spacing:.02em;opacity:0;transform:translateY(4px);transition:.18s}
-.visual-card .visual-open:hover:after,.guide-visual .visual-open:hover:after{opacity:1;transform:none}
+.visual-open:after{content:"Agrandir";position:absolute;right:10px;bottom:10px;padding:6px 9px;border-radius:999px;background:rgba(15,23,42,.86);color:#fff;font:700 10.5px/1 "Inter",system-ui,sans-serif;letter-spacing:.02em;opacity:0;transform:translateY(4px);transition:.18s}
+.visual-open:hover:after{opacity:1;transform:none}
 .visual-tip{display:flex;align-items:center;gap:8px;margin:8px 0 0;font:500 12px/1.4 "Inter",system-ui,sans-serif;color:var(--soft)}
 .visual-tip:before{content:"↔";display:grid;place-items:center;width:24px;height:24px;border-radius:999px;background:var(--emeraude-pale);color:#0E7490;font-weight:800}
 .visual-lightbox{position:fixed;inset:0;z-index:100;background:rgba(15,23,42,.92);display:none;align-items:center;justify-content:center;padding:18px}
@@ -423,7 +422,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 .visual-lightbox img{display:block;max-width:100%;max-height:86dvh;object-fit:contain;margin:auto;border-radius:8px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.35)}
 .visual-lightbox__caption{font:500 12.5px/1.4 "Inter",system-ui,sans-serif;color:#CBD5E1;text-align:center}
 .visual-lightbox__close{position:absolute;right:8px;top:8px;width:42px;height:42px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(15,23,42,.82);color:white;font:700 24px/1 "Inter",system-ui,sans-serif;cursor:pointer;z-index:2}
-@media(max-width:620px){.visual-carousel{grid-auto-columns:96%}.visual-block>.visual-head{display:block}.visual-block>.visual-head p{text-align:left;margin-top:5px}.guide-visual,.visual-block{margin:22px 0 26px}.guide-visual figcaption,.visual-card figcaption{font-size:12px}.visual-card .visual-open:after,.guide-visual .visual-open:after{opacity:.92;transform:none}}
+@media(max-width:620px){.visual-carousel{grid-auto-columns:96%}.visual-block>.visual-head{display:block}.visual-block>.visual-head p{text-align:left;margin-top:5px}.guide-visual,.visual-block{margin:22px 0 26px}.guide-visual figcaption,.visual-card figcaption{font-size:12px}.visual-open:after{opacity:.92;transform:none}}
 @media print{.visual-carousel{display:block;overflow:visible}.visual-card{margin:14px 0;break-inside:avoid}.visual-lightbox{display:none!important}.visual-open:after{display:none!important}.guide-visual{break-inside:avoid}}
 </style>
 </head>
@@ -588,7 +587,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <div class="region-result" id="regionResult">Sélectionnez une région.</div>
 <a class="action-link" href="https://entreprendre.service-public.fr/vosdroits/F35930" rel="noopener" style="margin-bottom:0" target="_blank"><span>Rechercher les aides et financements ↗</span><small>Service Public Entreprendre</small></a>
 </div>
-<section aria-label="Repères visuels du chapitre" class="visual-block"><div class="visual-head"><div class="k">Résumé visuel</div><p>Les repères à retenir avant d’engager vos premières démarches.</p></div><div class="visual-carousel" tabindex="0"><figure class="visual-card"><button aria-label="Agrandir l’illustration : Plan de préparation avant le lancement d’une micro-entreprise" class="visual-open" type="button"><img alt="Plan de préparation avant le lancement d’une micro-entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-preflight-plan.webp?v=1791017488" width="1400"/></button><figcaption>Vue d’ensemble : compte dédié, assurance, aides, TVA, organisation et prix.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" class="visual-open" type="button"><img alt="Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-acre-are-arce.webp?v=1791017494" width="1400"/></button><figcaption>ACRE, ARE et ARCE : les trois dispositifs à distinguer avant de choisir.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Compte dédié, assurance et organisation de la micro-entreprise" class="visual-open" type="button"><img alt="Compte dédié, assurance et organisation de la micro-entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-structure-compte-assurance.webp?v=1791017500" width="1400"/></button><figcaption>Une structure simple pour séparer les flux, vérifier les assurances et garder une routine administrative.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" class="visual-open" type="button"><img alt="Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-aides-locales.webp?v=1791017506" width="1400"/></button><figcaption>Les aides territoriales varient selon la région, le département, la commune et le projet.</figcaption></figure></div><div class="visual-tip">Faites défiler les visuels. Touchez une image pour l’agrandir.</div></section></article>
+<section aria-label="Repères visuels du chapitre" class="visual-block"><div class="visual-head"><div class="k">Résumé visuel</div><p>Les repères à retenir avant d’engager vos premières démarches.</p></div><div class="visual-carousel" tabindex="0"><figure class="visual-card"><button aria-label="Agrandir l’illustration : Plan de préparation avant le lancement d’une micro-entreprise" class="visual-open" type="button"><img alt="Plan de préparation avant le lancement d’une micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-preflight-plan.webp?v=1791017488" width="1100"/></button><figcaption>Vue d’ensemble : compte dédié, assurance, aides, TVA, organisation et prix.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" class="visual-open" type="button"><img alt="Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-acre-are-arce.webp?v=1791017494" width="1100"/></button><figcaption>ACRE, ARE et ARCE : les trois dispositifs à distinguer avant de choisir.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Compte dédié, assurance et organisation de la micro-entreprise" class="visual-open" type="button"><img alt="Compte dédié, assurance et organisation de la micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-structure-compte-assurance.webp?v=1791017500" width="1100"/></button><figcaption>Une structure simple pour séparer les flux, vérifier les assurances et garder une routine administrative.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" class="visual-open" type="button"><img alt="Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-aides-locales.webp?v=1791017506" width="1100"/></button><figcaption>Les aides territoriales varient selon la région, le département, la commune et le projet.</figcaption></figure></div><div class="visual-tip">Faites défiler les visuels. Touchez une image pour l’agrandir.</div></section></article>
 <article class="chap" data-t="Avant toute démarche : optimiser votre net">
 <span class="chap-k"><s></s>À faire avant de déclarer</span>
 <h2 class="display">Construisez votre stratégie de net avant le premier encaissement</h2>
@@ -697,12 +696,11 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <article class="chap" data-t="La 2042-C-PRO">
 <span class="chap-k"><s></s>Chapitre 5</span>
 <h2 class="display">La 2042-C-PRO, pas à pas</h2>
-<p class="lead">Une fois la bonne rubrique identifiée, la logique est simple : déclarer le chiffre d’affaires annuel brut dans la catégorie correspondant à votre activité.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Pas à pas visuel de la déclaration 2042-C-PRO sur impots.gouv.fr" class="visual-open" type="button"><img alt="Pas à pas visuel de la déclaration 2042-C-PRO sur impots.gouv.fr" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-2042-c-pro.webp?v=1791017513" width="1400"/></button><figcaption>Repère visuel complémentaire : utilisez toujours les libellés réellement affichés dans votre espace impots.gouv.fr.</figcaption></figure>
+<p class="lead">Une fois la bonne rubrique identifiée, la logique est simple : déclarer le chiffre d’affaires annuel brut dans la catégorie correspondant à votre activité.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Pas à pas visuel de la déclaration 2042-C-PRO sur impots.gouv.fr" class="visual-open" type="button"><img alt="Pas à pas visuel de la déclaration 2042-C-PRO sur impots.gouv.fr" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-2042-c-pro.webp?v=1791017513" width="1100"/></button><figcaption>Repère visuel complémentaire : utilisez toujours les libellés réellement affichés dans votre espace impots.gouv.fr.</figcaption></figure>
 <div class="box note"><span class="bt">● Attention à l’année déclarée</span><p>Le millésime 2026 de la 2042-C-PRO concerne les revenus 2025. Si votre activité a commencé en 2026, vous utiliserez la déclaration mise à disposition au printemps 2027 pour déclarer votre chiffre d’affaires 2026.</p></div>
 <div class="service-card"><div class="eyebrow">Service officiel</div><h3>Déclaration de revenus sur impots.gouv.fr</h3><p>Vous déclarez votre chiffre d’affaires annuel dans votre déclaration personnelle. Ouvrez votre espace Finances publiques, puis gardez les étapes ci-dessous sous les yeux.</p></div>
 <a class="action-link" href="https://cfspart.impots.gouv.fr/" rel="noopener" target="_blank"><span>Me connecter à mon espace Finances publiques ↗</span><small>Connexion officielle<br/>impots.gouv.fr</small></a>
 <a class="action-link secondary" href="https://www.impots.gouv.fr/node/12190" rel="noopener" target="_blank"><span>Ouvrir le pas‑à‑pas DGFiP 2026 ↗</span><small>Aide officielle</small></a>
-</article></div>
 <a class="action-link secondary" href="https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/2042-CPRO.pdf" rel="noopener" target="_blank"><span>Ouvrir la 2042‑C‑PRO 2026 · revenus 2025 ↗</span><small>DGFiP · Cerfa 11222*28</small></a>
 <ol class="steps">
 <li class="step"><button class="sh"><span class="sn">1</span><span>Connectez-vous à impots.gouv.fr</span><svg class="chev" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 15 15" width="15"><path d="M3.5 5.5L7.5 9.5L11.5 5.5"></path></svg></button>
@@ -718,12 +716,12 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 </ol>
 <div class="box tip"><span class="bt">◆ Vérification en dix secondes</span>
 <p>Avant de valider, le total saisi doit être exactement égal à la somme de vos déclarations URSSAF de l'année. Ouvrez vos accusés et additionnez. Si ça ne tombe pas juste, cherchez l'écart maintenant — pas dans trois ans, lors d'un contrôle.</p></div>
-
+</article>
 <!-- 6 -->
 <article class="chap" data-t="Versement libératoire">
 <span class="chap-k"><s></s>Chapitre 6</span>
 <h2 class="display">Versement libératoire : pour vous ou pas</h2>
-<p class="lead">Payer son impôt au fil de l'eau, en même temps que ses cotisations. Bonne idée pour certains, argent perdu pour d'autres.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Parcours de vérification du versement libératoire de l’impôt sur le revenu" class="visual-open" type="button"><img alt="Parcours de vérification du versement libératoire de l’impôt sur le revenu" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-versement-liberatoire.webp?v=1791017520" width="1400"/></button><figcaption>Le RFR détermine l’éligibilité, mais le guide vous aide ensuite à comparer l’intérêt réel de l’option.</figcaption></figure>
+<p class="lead">Payer son impôt au fil de l'eau, en même temps que ses cotisations. Bonne idée pour certains, argent perdu pour d'autres.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Parcours de vérification du versement libératoire de l’impôt sur le revenu" class="visual-open" type="button"><img alt="Parcours de vérification du versement libératoire de l’impôt sur le revenu" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-versement-liberatoire.webp?v=1791017520" width="1100"/></button><figcaption>Le RFR détermine l’éligibilité, mais le guide vous aide ensuite à comparer l’intérêt réel de l’option.</figcaption></figure>
 <p>L'option consiste à régler votre impôt sur le revenu sous forme d'un pourcentage supplémentaire du chiffre d'affaires. Tout est payé en temps réel : pas d'acompte, pas de solde l'année suivante.</p>
 <p id="vlr"></p>
 <h3>Le test simple</h3>
@@ -736,7 +734,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <article class="chap" data-t="TVA et plafonds">
 <span class="chap-k"><s></s>Chapitre 7</span>
 <h2 class="display">TVA et plafonds : les deux seuils à surveiller</h2>
-<p class="lead">Deux seuils différents, souvent confondus. Le second est beaucoup plus bas, et c'est celui qui surprend.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Infographie sur la TVA, les plafonds et les pièces à conserver" class="visual-open" type="button"><img alt="Infographie sur la TVA, les plafonds et les pièces à conserver" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-tva-plafonds-controle.webp?v=1791017526" width="1400"/></button><figcaption>Ne confondez pas plafond du régime micro et franchise en base de TVA ; vérifiez les seuils officiels avant une opération sensible.</figcaption></figure>
+<p class="lead">Deux seuils différents, souvent confondus. Le second est beaucoup plus bas, et c'est celui qui surprend.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Infographie sur la TVA, les plafonds et les pièces à conserver" class="visual-open" type="button"><img alt="Infographie sur la TVA, les plafonds et les pièces à conserver" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-tva-plafonds-controle.webp?v=1791017526" width="1100"/></button><figcaption>Ne confondez pas plafond du régime micro et franchise en base de TVA ; vérifiez les seuils officiels avant une opération sensible.</figcaption></figure>
 <h3>Le plafond de votre régime</h3>
 <p id="plaf"></p>
 <p>Un dépassement pendant deux années civiles consécutives fait basculer automatiquement vers un régime réel d'imposition. Ce n'est pas une catastrophe, mais ça change toute votre comptabilité : anticipez plutôt que de le découvrir.</p>
@@ -749,7 +747,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <article class="chap" data-t="En cas de contrôle">
 <span class="chap-k"><s></s>Chapitre 8</span>
 <h2 class="display">Ce qu'il faut pouvoir montrer en cas de contrôle</h2>
-<p class="lead">Le régime micro allège la comptabilité. Il ne supprime pas l'obligation d'expliquer votre chiffre d'affaires.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist des documents à conserver en cas de contrôle d’une micro-entreprise" class="visual-open" type="button"><img alt="Checklist des documents à conserver en cas de contrôle d’une micro-entreprise" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-controle-documents.webp?v=1791017532" width="1400"/></button><figcaption>Livre de recettes, factures, justificatifs, relevés et preuves de déclaration : organisez le dossier avant d’en avoir besoin.</figcaption></figure>
+<p class="lead">Le régime micro allège la comptabilité. Il ne supprime pas l'obligation d'expliquer votre chiffre d'affaires.</p><figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist des documents à conserver en cas de contrôle d’une micro-entreprise" class="visual-open" type="button"><img alt="Checklist des documents à conserver en cas de contrôle d’une micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-controle-documents.webp?v=1791017532" width="1100"/></button><figcaption>Livre de recettes, factures, justificatifs, relevés et preuves de déclaration : organisez le dossier avant d’en avoir besoin.</figcaption></figure>
 <p>À conserver <strong>dix ans</strong> :</p>
 <ul>
 <li><strong>Le livre des recettes</strong> — obligatoire, chronologique, détaillé : date, client, montant, mode de règlement.</li>
@@ -801,7 +799,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <li><input id="c8" type="checkbox"/><label for="c8">J'ai vérifié ma CFE, l'exonération de première année et la déclaration initiale 1447-C-SD</label></li>
 <li><input id="c9" type="checkbox"/><label for="c9">Je conserve mes accusés et factures, et j’ai vérifié ma capacité à recevoir les factures électroniques depuis le 1er septembre 2026</label></li>
 </ul>
-<figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist finale du micro-entrepreneur en 2026" class="visual-open" type="button"><img alt="Checklist finale du micro-entrepreneur en 2026" decoding="async" height="1050" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-checklist-finale.webp?v=1791017539" width="1400"/></button><figcaption>Résumé visuel : cette illustration complète la checklist interactive ci-dessus ; les cases du guide restent la référence à cocher et à enregistrer.</figcaption></figure></article>
+<figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist finale du micro-entrepreneur en 2026" class="visual-open" type="button"><img alt="Checklist finale du micro-entrepreneur en 2026" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-checklist-finale.webp?v=1791017539" width="1100"/></button><figcaption>Résumé visuel : cette illustration complète la checklist interactive ci-dessus ; les cases du guide restent la référence à cocher et à enregistrer.</figcaption></figure></article>
 <!-- 10 -->
 <article class="chap" data-t="Colophon">
 <span class="chap-k"><s></s>Fin du guide</span>
@@ -814,7 +812,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <p class="fine"><strong>Guide d’information, pas de conseil juridique, fiscal ou comptable personnalisé.</strong> Les taux, seuils et dates indiqués correspondent aux sources publiques consultées au 12 septembre 2026. La réglementation peut évoluer. Vérifiez toujours le service officiel avant une option irréversible ou une échéance sensible. Les cas DROM, activités réglementées, location meublée, activités mixtes complexes ou situations internationales peuvent nécessiter une vérification spécifique.</p><p class="fine">© 2026 SER Guides. Tous droits réservés. Reproduction, revente ou diffusion non autorisée interdites.</p>
 </div>
 </article>
-
+</div>
 <nav class="navbar"><div class="wrap">
 <button class="nb" id="prev">Précédent</button>
 <button class="nb primary" id="next">Étape suivante</button>
@@ -1038,24 +1036,5 @@ window.addEventListener('load',()=>{
   }catch(e){}
 });
 </script>
-<script>
-(function(){
-  const box=document.getElementById('visualLightbox');
-  if(!box) return;
-  const target=document.getElementById('visualLightboxImg');
-  const caption=document.getElementById('visualLightboxCaption');
-  const close=box.querySelector('.visual-lightbox__close');
-  let last=null;
-  function shut(){box.classList.remove('on');document.body.style.overflow='';target.removeAttribute('src');if(last)last.focus()}
-  document.querySelectorAll('.visual-open').forEach(btn=>btn.addEventListener('click',()=>{
-    const img=btn.querySelector('img'); if(!img)return;
-    last=btn; target.src=img.src; target.alt=img.alt||'';
-    const fig=btn.closest('figure'); const cap=fig&&fig.querySelector('figcaption'); caption.textContent=cap?cap.textContent:'';
-    box.classList.add('on');document.body.style.overflow='hidden';close.focus();
-  }));
-  close.addEventListener('click',shut);
-  box.addEventListener('click',e=>{if(e.target===box)shut()});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box.classList.contains('on'))shut()});
-})();
-</script></body>
+<script>(function(){const box=document.getElementById('visualLightbox');if(!box)return;const target=document.getElementById('visualLightboxImg'),caption=document.getElementById('visualLightboxCaption'),close=box.querySelector('.visual-lightbox__close');let last=null;function shut(){box.classList.remove('on');document.body.style.overflow='';target.removeAttribute('src');if(last)last.focus()}document.querySelectorAll('.visual-open').forEach(btn=>btn.addEventListener('click',()=>{const img=btn.querySelector('img');if(!img)return;last=btn;target.src=img.src;target.alt=img.alt||'';const f=btn.closest('figure'),c=f&&f.querySelector('figcaption');caption.textContent=c?c.textContent:'';box.classList.add('on');document.body.style.overflow='hidden';close.focus()}));close.addEventListener('click',shut);box.addEventListener('click',e=>{if(e.target===box)shut()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box.classList.contains('on'))shut()})})();</script></body>
 </html>
