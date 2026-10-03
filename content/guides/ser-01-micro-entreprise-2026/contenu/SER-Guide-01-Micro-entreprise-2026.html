@@ -305,6 +305,11 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 .quick-card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:16px;box-shadow:var(--shadow)}
 .quick-card b{display:block;font:600 13px/1.2 "Inter",sans-serif;color:var(--soft);margin-bottom:7px}.quick-card strong{font:700 24px/1 "Manrope",serif;color:var(--emeraude)}
 .source-row{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0}.source-pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule);border-radius:999px;padding:7px 10px;font:600 11.5px/1 "Inter",sans-serif;text-decoration:none;color:var(--ink);background:white}.source-pill:hover{border-color:var(--emeraude);color:var(--emeraude)}
+.chapter-resources{margin:26px 0 4px;padding:16px;border:1px solid var(--rule);border-radius:9px;background:linear-gradient(180deg,#fff,#F8FAFC)}
+.cr-head{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-family:"Inter",system-ui,sans-serif}.cr-head>div{display:grid;gap:2px}.cr-head b{font-size:14px;color:var(--ink)}.cr-head small{font-size:11.5px;color:var(--soft);font-weight:500}.cr-dot{width:9px;height:9px;margin-top:6px;border-radius:50%;background:var(--emeraude);box-shadow:0 0 0 5px var(--emeraude-pale)}
+.resource-grid{display:grid;grid-template-columns:1fr;gap:8px}.resource-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 12px;border:1px solid var(--rule);border-radius:7px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .12s,background .15s}.resource-link:hover{border-color:var(--emeraude);background:#F0FDFF;transform:translateY(-1px)}.resource-link span{display:grid;gap:2px}.resource-link b{font:650 12.5px/1.25 "Inter",system-ui,sans-serif}.resource-link small{font:500 10.5px/1.35 "Inter",system-ui,sans-serif;color:var(--soft)}.resource-link em{font:650 10px/1.25 "Inter",system-ui,sans-serif;color:#0E7490;font-style:normal;text-align:right;max-width:90px}
+.source-groups{display:grid;gap:15px;margin:20px 0}.source-group{padding:14px;border:1px solid var(--rule);border-radius:8px;background:#fff}.source-group h3{font:700 13px/1.2 "Inter",system-ui,sans-serif;margin:0 0 9px}.source-group .source-row{margin:0}
+@media(min-width:760px){.resource-grid{grid-template-columns:1fr 1fr}}
 .aid-grid{display:grid;gap:10px;margin:20px 0}.aid-card{background:white;border:1px solid var(--rule);border-radius:8px;padding:17px;position:relative}.aid-card .tag{display:inline-block;font:700 10px/1 "Inter",sans-serif;letter-spacing:.06em;text-transform:uppercase;background:var(--or-pale);color:#7d5a1f;padding:6px 8px;border-radius:999px;margin-bottom:10px}.aid-card h4{font:700 18px/1.2 "Inter",sans-serif;margin:0 0 7px}.aid-card p{font-size:15.5px;margin:0}.money{font:700 27px/1 "Manrope",serif;color:var(--emeraude);margin:9px 0}.decision{background:linear-gradient(135deg,var(--noir),#0E3040);color:#edf2ef;border-radius:10px;padding:20px;margin:24px 0}.decision h3{margin-top:0;color:white}.decision label{display:block;font:600 12px/1.3 "Inter",sans-serif;color:#a9beb6;margin:14px 0 6px}.decision select,.decision input{width:100%;background:rgba(255,255,255,.08);color:white;border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:12px;font:500 14px/1 "Inter",sans-serif}.decision option{color:#111}.decision .answer{margin-top:16px;padding:14px;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.08);border-radius:7px;color:#fff;font-size:15px}.mini-kpi{display:flex;gap:9px;overflow:auto;padding-bottom:4px;margin:18px 0}.mini-kpi span{min-width:max-content;border:1px solid var(--rule);background:white;border-radius:999px;padding:8px 11px;font:600 11.5px/1 "Inter",sans-serif;color:var(--soft)}
 @media(min-width:760px){.wrap{max-width:760px}.aid-grid{grid-template-columns:1fr 1fr}.quick-grid{grid-template-columns:repeat(4,1fr)}}
 
@@ -568,7 +573,7 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <p class="lead">Avant la première déclaration — et, pour certains choix, avant même de créer ou d’engager une dépense — vérifiez ces points. L’objectif est d’éviter le « j’aurais dû le faire avant ».</p>
 <div class="service-card"><div class="eyebrow">Les changements 2026 à connaître</div><h3>Trois règles ont un impact immédiat</h3><p><strong>Seuils micro :</strong> 203 100 € en vente et 83 600 € en services. <strong>ACRE :</strong> demande sous 60 jours ; pour une création à partir du 1er juillet 2026, exonération ramenée à 25 %. <strong>Facturation électronique :</strong> réception obligatoire depuis le 1er septembre 2026 ; émission pour les micro-entreprises à partir du 1er septembre 2027.</p></div>
 <div class="preflight">
-<div class="pre-card urgent"><span class="num">1</span><h4>Vérifiez d’abord que la micro‑entreprise est bien le bon régime</h4><p>Si vos charges réelles sont élevées, si vous achetez beaucoup de matériel ou si votre activité doit grossir vite, la simplicité de la micro peut coûter plus cher qu’un régime réel. Faites la comparaison avant de vous enfermer dans un mauvais choix.</p><a class="mini" href="https://entreprendre.service-public.fr/vosdroits/R18323" rel="noopener" target="_blank">Comparer les statuts avec le simulateur officiel ↗</a></div>
+<div class="pre-card urgent"><span class="num">1</span><h4>Vérifiez d’abord que la micro‑entreprise est bien le bon régime</h4><p>Si vos charges réelles sont élevées, si vous achetez beaucoup de matériel ou si votre activité doit grossir vite, la simplicité de la micro peut coûter plus cher qu’un régime réel. Faites la comparaison avant de vous enfermer dans un mauvais choix.</p><a class="mini" href="https://entreprendre.service-public.gouv.fr/vosdroits/R71957" rel="noopener" target="_blank">Comparer les statuts avec l’assistant officiel ↗</a></div>
 <div class="pre-card urgent"><span class="num">2</span><h4>ACRE : ne laissez pas passer le délai</h4><p>Depuis le 1er janvier 2026, l’ACRE doit être demandée à l’Urssaf dans les 60 jours suivant le début d’activité. Pour une création à compter du 1er juillet 2026, le taux de cotisations pendant l’ACRE correspond à 75 % du taux normal, soit une exonération de 25 %. Une création antérieure au 1er juillet 2026 relève d’un niveau de réduction différent : vérifiez votre date de début sur l’Urssaf.</p><a class="mini" href="https://www.urssaf.fr/accueil/exoneration-acre-createur.html" rel="noopener" target="_blank">Vérifier et demander l’ACRE sur l’Urssaf ↗</a></div>
 <div class="pre-card money"><span class="num">3</span><h4>Si vous avez des droits chômage : comparez ARE et ARCE avant de choisir</h4><p>L’ARCE représente 60 % du capital correspondant aux droits ARE restants, avec une déduction de 3 % pour le financement des retraites complémentaires, puis un versement en deux fois. Le second intervient 6 mois après le premier sous conditions. ARE et ARCE sont deux stratégies différentes et ne se cumulent pas ; l’ARCE suppose notamment de bénéficier de l’ACRE.</p><a class="mini" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" rel="noopener" target="_blank">Comparer ARE / ARCE sur France Travail ↗</a></div>
 <div class="pre-card"><span class="num">4</span><h4>Versement libératoire : décidez avant l’échéance, pas par défaut</h4><p>Pour une création, l’option peut être exercée lors de la formalité ou au plus tard le dernier jour du 3e mois suivant celui de la création. Si vous êtes déjà en activité, la date clé est le 30 septembre pour une application l’année suivante. En 2026, le plafond de RFR 2024 est de 29 315 € par part.</p><a class="mini" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" rel="noopener" target="_blank">Vérifier les conditions officielles ↗</a></div>
@@ -587,7 +592,20 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <div class="region-result" id="regionResult">Sélectionnez une région.</div>
 <a class="action-link" href="https://entreprendre.service-public.fr/vosdroits/F35930" rel="noopener" style="margin-bottom:0" target="_blank"><span>Rechercher les aides et financements ↗</span><small>Service Public Entreprendre</small></a>
 </div>
-<section aria-label="Repères visuels du chapitre" class="visual-block"><div class="visual-head"><div class="k">Résumé visuel</div><p>Les repères à retenir avant d’engager vos premières démarches.</p></div><div class="visual-carousel" tabindex="0"><figure class="visual-card"><button aria-label="Agrandir l’illustration : Plan de préparation avant le lancement d’une micro-entreprise" class="visual-open" type="button"><img alt="Plan de préparation avant le lancement d’une micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-preflight-plan.webp?v=1791017488" width="1100"/></button><figcaption>Vue d’ensemble : compte dédié, assurance, aides, TVA, organisation et prix.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" class="visual-open" type="button"><img alt="Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-acre-are-arce.webp?v=1791017494" width="1100"/></button><figcaption>ACRE, ARE et ARCE : les trois dispositifs à distinguer avant de choisir.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Compte dédié, assurance et organisation de la micro-entreprise" class="visual-open" type="button"><img alt="Compte dédié, assurance et organisation de la micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-structure-compte-assurance.webp?v=1791017500" width="1100"/></button><figcaption>Une structure simple pour séparer les flux, vérifier les assurances et garder une routine administrative.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" class="visual-open" type="button"><img alt="Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-aides-locales.webp?v=1791017506" width="1100"/></button><figcaption>Les aides territoriales varient selon la région, le département, la commune et le projet.</figcaption></figure></div><div class="visual-tip">Faites défiler les visuels. Touchez une image pour l’agrandir.</div></section></article>
+<section aria-label="Repères visuels du chapitre" class="visual-block"><div class="visual-head"><div class="k">Résumé visuel</div><p>Les repères à retenir avant d’engager vos premières démarches.</p></div><div class="visual-carousel" tabindex="0"><figure class="visual-card"><button aria-label="Agrandir l’illustration : Plan de préparation avant le lancement d’une micro-entreprise" class="visual-open" type="button"><img alt="Plan de préparation avant le lancement d’une micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-preflight-plan.webp?v=1791017488" width="1100"/></button><figcaption>Vue d’ensemble : compte dédié, assurance, aides, TVA, organisation et prix.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" class="visual-open" type="button"><img alt="Comparatif ACRE, ARE et ARCE pour un créateur d’entreprise en France" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-acre-are-arce.webp?v=1791017494" width="1100"/></button><figcaption>ACRE, ARE et ARCE : les trois dispositifs à distinguer avant de choisir.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Compte dédié, assurance et organisation de la micro-entreprise" class="visual-open" type="button"><img alt="Compte dédié, assurance et organisation de la micro-entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-structure-compte-assurance.webp?v=1791017500" width="1100"/></button><figcaption>Une structure simple pour séparer les flux, vérifier les assurances et garder une routine administrative.</figcaption></figure><figure class="visual-card"><button aria-label="Agrandir l’illustration : Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" class="visual-open" type="button"><img alt="Carte de France et pistes pour rechercher les aides locales à la création d’entreprise" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-aides-locales.webp?v=1791017506" width="1100"/></button><figcaption>Les aides territoriales varient selon la région, le département, la commune et le projet.</figcaption></figure></div><div class="visual-tip">Faites défiler les visuels. Touchez une image pour l’agrandir.</div></section>
+<section class="chapter-resources" data-resources-for="preflight" aria-label="Pour préparer votre création">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour préparer votre création</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/R71957" target="_blank" rel="noopener"><span><b>Trouver le bon statut juridique</b><small>Comparer micro, EI et sociétés selon votre projet.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F11677" target="_blank" rel="noopener"><span><b>ACRE : conditions et démarche 2026</b><small>Vérifier l’éligibilité, les justificatifs et le délai.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" target="_blank" rel="noopener"><span><b>ARE / ARCE : comparer avant de choisir</b><small>Aide au retour à l’emploi ou capital de démarrage.</small></span><em>France Travail ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F35930" target="_blank" rel="noopener"><span><b>Rechercher les aides de votre territoire</b><small>Région, département, commune et accompagnements.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://bpifrance-creation.fr/entrepreneur/nous-decouvrir/accompagnement-financement-entreprise" target="_blank" rel="noopener"><span><b>Accompagnement et financement</b><small>Réseaux, prêts, garanties et solutions de financement.</small></span><em>Bpifrance Création ↗</em></a>
+    <a class="resource-link" href="https://www.cci.fr/ressources" target="_blank" rel="noopener"><span><b>Ressources création d’entreprise</b><small>Guides et accompagnement du réseau consulaire.</small></span><em>CCI France ↗</em></a>
+    <a class="resource-link" href="https://www.artisanat.fr/nous-connaitre/vous-accompagner/creation-entreprise" target="_blank" rel="noopener"><span><b>Créer une entreprise artisanale</b><small>Parcours, formalités et accompagnement métiers.</small></span><em>CMA France ↗</em></a>
+  </div>
+</section>
+</article>
 <article class="chap" data-t="Avant toute démarche : optimiser votre net">
 <span class="chap-k"><s></s>À faire avant de déclarer</span>
 <h2 class="display">Construisez votre stratégie de net avant le premier encaissement</h2>
@@ -610,6 +628,16 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <li class="step"><button class="sh"><span class="sn">5</span><span>Automatiser la provision dès chaque encaissement</span></button><div class="sb" hidden=""><p>Transférez immédiatement la réserve calculée vers un compte ou une poche séparée. Ce qui reste après cette provision est beaucoup plus proche de ce que vous pouvez réellement utiliser.</p></div></li>
 </ol>
 <a class="action-link secondary" href="https://entreprendre.service-public.fr/vosdroits/R19567" rel="noopener" target="_blank"><span>Simuler officiellement les revenus d’un indépendant ↗</span><small>Service Public Entreprendre</small></a>
+
+<section class="chapter-resources" data-resources-for="optimiser-net" aria-label="Pour chiffrer avant le premier encaissement">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour chiffrer avant le premier encaissement</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur" target="_blank" rel="noopener"><span><b>Simulateur auto-entrepreneur</b><small>Estimer revenu net, cotisations et options avec vos hypothèses.</small></span><em>Urssaf ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F37353" target="_blank" rel="noopener"><span><b>Régime micro-social 2026</b><small>Seuils, taux, déclaration et fonctionnement social.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23267" target="_blank" rel="noopener"><span><b>Régime fiscal de la micro-entreprise</b><small>Micro-BIC/BNC, abattements et versement libératoire.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F32353" target="_blank" rel="noopener"><span><b>Dépassement des seuils</b><small>Comprendre quand et comment on sort du régime micro.</small></span><em>Service Public ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 1 -->
 <article class="chap" data-t="Les deux déclarations">
@@ -623,6 +651,15 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <h3>Ce que vous déclarez, exactement</h3>
 <p>Toujours le chiffre d'affaires <strong>encaissé</strong>, jamais facturé. Une facture émise en décembre et payée en janvier se déclare en janvier.</p>
 <p>Et toujours le montant <strong>brut</strong>, sans rien déduire : ni frais, ni matériel, ni déplacements, ni commissions de plateforme. C'est la logique du régime micro — vous ne déduisez rien, en échange l'administration applique un abattement forfaitaire à votre place.</p>
+
+<section class="chapter-resources" data-resources-for="declarations" aria-label="Les trois portes d’entrée à ne pas confondre">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Les trois portes d’entrée à ne pas confondre</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://formalites.entreprises.gouv.fr/" target="_blank" rel="noopener"><span><b>Créer, modifier ou cesser l’entreprise</b><small>Formalités légales de l’entreprise : pas la déclaration de CA.</small></span><em>Guichet unique ↗</em></a>
+    <a class="resource-link" href="https://annuaire-entreprises.data.gouv.fr/" target="_blank" rel="noopener"><span><b>Retrouver votre entreprise et le RNE</b><small>Vérifier SIREN/SIRET, activité et données publiques.</small></span><em>Annuaire entreprises ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur" target="_blank" rel="noopener"><span><b>Déclarer les revenus d’une micro-entreprise</b><small>Comprendre la déclaration fiscale annuelle et la 2042-C-PRO.</small></span><em>impots.gouv.fr ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 2 -->
 <article class="chap" data-t="La déclaration URSSAF">
@@ -651,6 +688,15 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 </ol>
 <div class="box warn"><span class="bt">⚠ Zéro euro se déclare aussi</span>
 <p>Aucun encaissement sur la période ? Vous devez quand même déclarer 0. Une déclaration manquante ou tardive peut entraîner une pénalité et, en cas d'absences répétées, des régularisations sur une base forfaitaire. Le montant peut évoluer : vérifiez l'information affichée par l'Urssaf au moment de votre échéance.</p></div>
+
+<section class="chapter-resources" data-resources-for="urssaf" aria-label="Pour déclarer sans quitter le bon parcours">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour déclarer sans quitter le bon parcours</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://www.autoentrepreneur.urssaf.fr/" target="_blank" rel="noopener"><span><b>Déclarer le chiffre d’affaires</b><small>Accès au compte officiel Auto-Entrepreneur Urssaf.</small></span><em>Urssaf ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F36232" target="_blank" rel="noopener"><span><b>Cotisations sociales 2026</b><small>Taux, périodicité, première déclaration et paiement.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23266" target="_blank" rel="noopener"><span><b>Obligations comptables</b><small>Livre de recettes, registre des achats, factures et compte dédié.</small></span><em>Service Public ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 3 -->
 <article class="chap" data-t="Ce qu'il vous reste">
@@ -671,6 +717,15 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <h3>Les taux 2026, toutes activités</h3>
 <table class="tbl"><thead><tr><th>Activité</th><th>Cotisations</th><th>Vers. lib.</th></tr></thead><tbody id="rates"></tbody></table>
 <p style="font-size:15px;color:var(--soft)">S'ajoute la contribution à la formation professionnelle (CFP) : 0,1 % pour les commerçants, 0,2 % pour les professions libérales et certaines prestations commerciales, 0,3 % pour les artisans. Le diagnostic distingue désormais services commerciaux et artisanaux pour éviter de sous-estimer cette contribution.</p>
+
+<section class="chapter-resources" data-resources-for="reste-net" aria-label="Pour vérifier les calculs du chapitre">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour vérifier les calculs du chapitre</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur" target="_blank" rel="noopener"><span><b>Simulateur de revenu auto-entrepreneur</b><small>Comparer chiffre d’affaires, charges et revenu disponible.</small></span><em>Urssaf ↗</em></a>
+    <a class="resource-link" href="https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprises-quel-est-le-montant-de-vos-cotisations-sociales" target="_blank" rel="noopener"><span><b>Cotisations et ACRE 2026</b><small>Repères officiels sur les taux applicables.</small></span><em>Bercy ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F37353" target="_blank" rel="noopener"><span><b>Micro-social : fonctionnement complet</b><small>Base de calcul, CA encaissé et cas particuliers.</small></span><em>Service Public ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 4 -->
 <article class="chap" data-t="Vos échéances">
@@ -691,6 +746,15 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <li><strong>CFE</strong> — pas de CFE à payer l’année de création, mais pensez à la déclaration initiale 1447-C-SD avant le 31 décembre de cette année. L’année suivante, la base d’imposition bénéficie en principe d’une réduction de 50 %. Si vous n’avez aucun local et que votre CA annuel ne dépasse pas 5 000 €, vous pouvez être exonéré. L’avis est dématérialisé dans l’espace professionnel impots.gouv.fr.</li>
 </ul>
 <a class="action-link secondary" href="https://entreprendre.service-public.fr/vosdroits/F23999" rel="noopener" target="_blank"><span>Vérifier votre CFE et les exonérations ↗</span><small>Service Public Entreprendre</small></a>
+
+<section class="chapter-resources" data-resources-for="echeances" aria-label="Pour vos échéances fiscales et administratives">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour vos échéances fiscales et administratives</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23999" target="_blank" rel="noopener"><span><b>CFE du micro-entrepreneur</b><small>Exonérations, première année et fonctionnement de l’avis.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/professionnel/je-cree-mon-espace-professionnel-securise" target="_blank" rel="noopener"><span><b>Créer votre espace professionnel</b><small>TVA, CFE et principaux impôts professionnels.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://cfspro-idp.impots.gouv.fr/" target="_blank" rel="noopener"><span><b>Connexion espace professionnel</b><small>Accéder directement à votre compte fiscal professionnel.</small></span><em>DGFiP ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 5 -->
 <article class="chap" data-t="La 2042-C-PRO">
@@ -716,6 +780,16 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 </ol>
 <div class="box tip"><span class="bt">◆ Vérification en dix secondes</span>
 <p>Avant de valider, le total saisi doit être exactement égal à la somme de vos déclarations URSSAF de l'année. Ouvrez vos accusés et additionnez. Si ça ne tombe pas juste, cherchez l'écart maintenant — pas dans trois ans, lors d'un contrôle.</p></div>
+
+<section class="chapter-resources" data-resources-for="2042" aria-label="Pour la déclaration annuelle de revenus">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour la déclaration annuelle de revenus</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://www.impots.gouv.fr/formulaire/2042/declaration-des-revenus" target="_blank" rel="noopener"><span><b>2042 / 2042-C-PRO — millésime 2026</b><small>Page canonique des formulaires et notices à jour.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur" target="_blank" rel="noopener"><span><b>Déclarer les revenus de votre micro</b><small>Explication officielle micro-BIC, micro-BNC et abattements.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/particulier/professions-independantes" target="_blank" rel="noopener"><span><b>Professions indépendantes</b><small>Comprendre BIC, BNC et déclaration à l’impôt sur le revenu.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://cfspart.impots.gouv.fr/" target="_blank" rel="noopener"><span><b>Connexion espace particulier</b><small>Accéder au service de déclaration des revenus du foyer.</small></span><em>DGFiP ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 6 -->
 <article class="chap" data-t="Versement libératoire">
@@ -729,6 +803,16 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <div class="box warn"><span class="bt">⚠ Le piège le plus fréquent du statut</span>
 <p>Ne choisissez pas cette option par réflexe. Le test du RFR vérifie seulement l'éligibilité : il faut ensuite comparer le coût du versement libératoire avec l'impôt qui résulterait du barème progressif dans votre foyer.</p></div>
 <p>Pour en bénéficier, votre revenu fiscal de référence de l'année N-2 ne doit pas dépasser un plafond par part de quotient familial. Le renoncement se demande <strong>avant le 30 septembre</strong>, pour une prise d'effet l'année suivante.</p>
+
+<section class="chapter-resources" data-resources-for="versement" aria-label="Pour décider avant d’opter">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour décider avant d’opter</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" target="_blank" rel="noopener"><span><b>Présentation du versement libératoire</b><small>Principe, taux et fonctionnement général.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-sous-quelles-conditions-puis-je-opter-pour-l" target="_blank" rel="noopener"><span><b>Puis-je opter en 2026 ?</b><small>RFR, délais, conditions cumulatives et cas de création.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-ai-je-toujours-interet-opter-pour-le" target="_blank" rel="noopener"><span><b>Est-ce réellement intéressant ?</b><small>Comparer l’option avec le barème progressif du foyer.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/questions/theme/micro-entrepreneur-auto-entrepreneur-/128" target="_blank" rel="noopener"><span><b>Toutes les questions micro-entrepreneur</b><small>TVA, seuils, charges, CFE et fiscalité réunies.</small></span><em>impots.gouv.fr ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 7 -->
 <article class="chap" data-t="TVA et plafonds">
@@ -742,6 +826,15 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <p>En 2026, les seuils nationaux de franchise en base sont notamment de <strong>85 000 €</strong> (année précédente) et <strong>93 500 €</strong> (année en cours) pour les ventes, et <strong>37 500 €</strong> / <strong>41 250 €</strong> pour les autres prestations de services. Si le seuil majoré de l’année en cours est dépassé, la franchise cesse à compter de la date du dépassement.</p>
 <div class="box note"><span class="bt">● À vérifier avant une grosse facture</span><p>Les règles de TVA ont beaucoup évolué politiquement depuis 2025. Les seuils ci-dessus sont ceux publiés par Bercy au moment de cette édition. Vérifiez-les avant une opération qui vous ferait franchir un seuil.</p></div>
 <p>Surveillez votre chiffre d'affaires cumulé dès que vous approchez. Passer la TVA en cours d'année sans l'avoir vu venir, c'est devoir la régulariser sur des factures déjà encaissées, de votre poche.</p>
+
+<section class="chapter-resources" data-resources-for="tva" aria-label="Pour vérifier avant une facture qui change votre situation">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour vérifier avant une facture qui change votre situation</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" target="_blank" rel="noopener"><span><b>Franchise en base de TVA</b><small>Seuils en vigueur et conséquences du dépassement.</small></span><em>Bercy ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F32353" target="_blank" rel="noopener"><span><b>Dépassement des seuils micro</b><small>Ne pas confondre régime micro et franchise de TVA.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://www.impots.gouv.fr/professionnel/je-cree-mon-espace-professionnel-securise" target="_blank" rel="noopener"><span><b>Créer l’espace fiscal professionnel</b><small>Nécessaire pour plusieurs démarches et impôts professionnels.</small></span><em>impots.gouv.fr ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- 8 -->
 <article class="chap" data-t="En cas de contrôle">
@@ -759,26 +852,71 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <div class="box note"><span class="bt">● Facturation électronique : ce qui est déjà obligatoire au 12 septembre 2026</span>
 <p>Depuis le <strong>1<sup>er</sup> septembre 2026</strong>, toutes les entreprises assujetties à la TVA, y compris celles en franchise en base, doivent pouvoir <strong>recevoir</strong> des factures électroniques via une plateforme agréée. Pour les micro-entreprises, l'obligation générale d'<strong>émettre</strong> des factures électroniques et de transmettre les données concernées est prévue au <strong>1<sup>er</sup> septembre 2027</strong>. Les opérations bénéficiant d'une exonération de TVA peuvent relever de règles différentes.</p></div>
 <a class="action-link secondary" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank"><span>Vérifier le calendrier officiel de facturation électronique ↗</span><small>Ministère de l'Économie</small></a>
+
+<section class="chapter-resources" data-resources-for="controle" aria-label="Pour constituer un dossier propre et vérifiable">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Pour constituer un dossier propre et vérifiable</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23266" target="_blank" rel="noopener"><span><b>Obligations comptables du micro-entrepreneur</b><small>Recettes, achats, facturation, pièces et compte dédié.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F36018" target="_blank" rel="noopener"><span><b>Registres obligatoires</b><small>Quels registres tenir selon la nature de l’activité.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/vosdroits/F10029" target="_blank" rel="noopener"><span><b>Durée de conservation des documents</b><small>Factures, justificatifs, documents fiscaux et commerciaux.</small></span><em>Service Public ↗</em></a>
+    <a class="resource-link" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" target="_blank" rel="noopener"><span><b>Facturation électronique 2026–2027</b><small>Calendrier, réception, émission et e-reporting.</small></span><em>Bercy ↗</em></a>
+    <a class="resource-link" href="https://www.economie.gouv.fr/entreprises/quest-ce-que-lannuaire-de-la-facturation-electronique" target="_blank" rel="noopener"><span><b>Annuaire de la facturation électronique</b><small>Comprendre l’annuaire et retrouver les plateformes de réception.</small></span><em>Bercy ↗</em></a>
+  </div>
+</section>
 </article>
 <!-- sources -->
 <article class="chap" data-t="Sources officielles 2026">
 <span class="chap-k"><s></s>Vérification</span>
 <h2 class="display">Sources officielles et mises à jour</h2>
-<p class="lead">Chaque chiffre sensible doit pouvoir être revérifié en un clic. Vérification réalisée le 12 septembre 2026 à partir de sources administratives et institutionnelles de référence. C’est une règle de la collection SER Guides.</p>
-<div class="source-row">
-<a class="source-pill" href="https://www.urssaf.fr/accueil/actualites/acre-nouvelles-regles-demarches.html" rel="noopener" target="_blank">Urssaf · ACRE 2026 ↗</a>
-<a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprises-quel-est-le-montant-de-vos-cotisations-sociales" rel="noopener" target="_blank">Bercy · cotisations &amp; ACRE 2026 ↗</a>
-<a class="source-pill" href="https://entreprendre.service-public.fr/vosdroits/F33339" rel="noopener" target="_blank">Service-Public · taux sociaux 2026 ↗</a>
-<a class="source-pill" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" rel="noopener" target="_blank">Impôts · versement libératoire ↗</a>
-<a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" rel="noopener" target="_blank">Bercy · TVA ↗</a>
-<a class="source-pill" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" rel="noopener" target="_blank">France Travail · ARE / ARCE ↗</a>
-<a class="source-pill" href="https://www.service-public.fr/particuliers/vosdroits/R55376" rel="noopener" target="_blank">Service-Public · formulaire ACRE ↗</a>
-<a class="source-pill" href="https://entreprendre.service-public.fr/vosdroits/F35930" rel="noopener" target="_blank">Base nationale des aides par territoire ↗</a>
-<a class="source-pill" href="https://www.impots.gouv.fr/node/12190" rel="noopener" target="_blank">DGFiP · pas-à-pas déclaration 2026 ↗</a>
-<a class="source-pill" href="https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/2042-CPRO.pdf" rel="noopener" target="_blank">DGFiP · 2042-C-PRO 2026 (revenus 2025) ↗</a>
-<a class="source-pill" href="https://formalites.entreprises.gouv.fr/" rel="noopener" target="_blank">Guichet unique · formalités d’entreprise ↗</a>
-<a class="source-pill" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank">Bercy · facturation électronique 2026/2027 ↗</a>
-<a class="source-pill" href="https://www.urssaf.fr/files/live/sites/urssaffr/files/autres/Diaporama_Auto-entrepreneur.pdf" rel="noopener" target="_blank">Urssaf · guide Auto-entrepreneur 2026 ↗</a>
+<p class="lead">Chaque chiffre sensible doit pouvoir être revérifié en un clic. Les données de cette édition sont rattachées à leurs sources administratives et institutionnelles ; la bibliothèque de liens a été enrichie et revérifiée le 3 octobre 2026. C’est une règle de la collection SER Guides.</p>
+<div class="source-groups">
+  <section class="source-group"><h3>Création, statut et accompagnement</h3><div class="source-row">
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/R71957" rel="noopener" target="_blank">Service Public · choisir le statut ↗</a>
+    <a class="source-pill" href="https://formalites.entreprises.gouv.fr/" rel="noopener" target="_blank">Guichet unique · formalités ↗</a>
+    <a class="source-pill" href="https://annuaire-entreprises.data.gouv.fr/" rel="noopener" target="_blank">Annuaire des entreprises ↗</a>
+    <a class="source-pill" href="https://bpifrance-creation.fr/entrepreneur/nous-decouvrir/accompagnement-financement-entreprise" rel="noopener" target="_blank">Bpifrance Création ↗</a>
+    <a class="source-pill" href="https://www.cci.fr/ressources" rel="noopener" target="_blank">CCI France · ressources ↗</a>
+    <a class="source-pill" href="https://www.artisanat.fr/nous-connaitre/vous-accompagner/creation-entreprise" rel="noopener" target="_blank">CMA France · création ↗</a>
+  </div></section>
+  <section class="source-group"><h3>ACRE, France Travail et aides</h3><div class="source-row">
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F11677" rel="noopener" target="_blank">Service Public · ACRE 2026 ↗</a>
+    <a class="source-pill" href="https://www.urssaf.fr/accueil/exoneration-acre-createur.html" rel="noopener" target="_blank">Urssaf · ACRE ↗</a>
+    <a class="source-pill" href="https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html" rel="noopener" target="_blank">France Travail · ARE / ARCE ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F15252" rel="noopener" target="_blank">Service Public · ARCE ↗</a>
+    <a class="source-pill" href="https://mes-aides.francetravail.fr/" rel="noopener" target="_blank">France Travail · Mes aides ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F35930" rel="noopener" target="_blank">Aides territoriales ↗</a>
+  </div></section>
+  <section class="source-group"><h3>Urssaf, cotisations et fonctionnement micro</h3><div class="source-row">
+    <a class="source-pill" href="https://www.autoentrepreneur.urssaf.fr/" rel="noopener" target="_blank">Urssaf · déclarer le CA ↗</a>
+    <a class="source-pill" href="https://mon-entreprise.urssaf.fr/simulateurs/auto-entrepreneur" rel="noopener" target="_blank">Urssaf · simulateur revenu ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F36232" rel="noopener" target="_blank">Service Public · cotisations 2026 ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F37353" rel="noopener" target="_blank">Service Public · micro-social ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23267" rel="noopener" target="_blank">Service Public · micro-fiscal ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F32353" rel="noopener" target="_blank">Service Public · dépassement seuils ↗</a>
+    <a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entreprises-quel-est-le-montant-de-vos-cotisations-sociales" rel="noopener" target="_blank">Bercy · cotisations 2026 ↗</a>
+  </div></section>
+  <section class="source-group"><h3>Impôt sur le revenu et 2042-C-PRO</h3><div class="source-row">
+    <a class="source-pill" href="https://www.impots.gouv.fr/formulaire/2042/declaration-des-revenus" rel="noopener" target="_blank">DGFiP · formulaires 2042 / C-PRO ↗</a>
+    <a class="source-pill" href="https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur" rel="noopener" target="_blank">DGFiP · déclarer ses revenus micro ↗</a>
+    <a class="source-pill" href="https://www.impots.gouv.fr/particulier/professions-independantes" rel="noopener" target="_blank">DGFiP · professions indépendantes ↗</a>
+    <a class="source-pill" href="https://cfspart.impots.gouv.fr/" rel="noopener" target="_blank">DGFiP · espace particulier ↗</a>
+    <a class="source-pill" href="https://www.impots.gouv.fr/professionnel/le-versement-liberatoire" rel="noopener" target="_blank">DGFiP · versement libératoire ↗</a>
+    <a class="source-pill" href="https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-sous-quelles-conditions-puis-je-opter-pour-l" rel="noopener" target="_blank">DGFiP · conditions du versement ↗</a>
+    <a class="source-pill" href="https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-ai-je-toujours-interet-opter-pour-le" rel="noopener" target="_blank">DGFiP · intérêt du versement ↗</a>
+  </div></section>
+  <section class="source-group"><h3>TVA, CFE et espace professionnel</h3><div class="source-row">
+    <a class="source-pill" href="https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva" rel="noopener" target="_blank">Bercy · franchise TVA ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23999" rel="noopener" target="_blank">Service Public · CFE ↗</a>
+    <a class="source-pill" href="https://www.impots.gouv.fr/professionnel/je-cree-mon-espace-professionnel-securise" rel="noopener" target="_blank">DGFiP · créer espace pro ↗</a>
+    <a class="source-pill" href="https://cfspro-idp.impots.gouv.fr/" rel="noopener" target="_blank">DGFiP · connexion espace pro ↗</a>
+  </div></section>
+  <section class="source-group"><h3>Comptabilité, contrôle et facturation électronique</h3><div class="source-row">
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F23266" rel="noopener" target="_blank">Service Public · obligations comptables ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F36018" rel="noopener" target="_blank">Service Public · registres obligatoires ↗</a>
+    <a class="source-pill" href="https://entreprendre.service-public.gouv.fr/vosdroits/F10029" rel="noopener" target="_blank">Service Public · conservation documents ↗</a>
+    <a class="source-pill" href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank">Bercy · facturation électronique ↗</a>
+    <a class="source-pill" href="https://www.economie.gouv.fr/entreprises/quest-ce-que-lannuaire-de-la-facturation-electronique" rel="noopener" target="_blank">Bercy · annuaire e-facturation ↗</a>
+  </div></section>
 </div>
 <div class="box tip"><span class="bt">◆ Méthode SER Guides</span><p>Les chiffres sensibles sont rattachés à une source administrative et les démarches renvoient vers les services officiels. Les règles peuvent évoluer : utilisez toujours le lien source lorsqu’une décision importante dépend d’un seuil, d’un délai ou d’une éligibilité.</p></div>
 </article>
@@ -799,7 +937,18 @@ body:before{content:"SER GUIDES";position:fixed;right:10px;bottom:78px;z-index:2
 <li><input id="c8" type="checkbox"/><label for="c8">J'ai vérifié ma CFE, l'exonération de première année et la déclaration initiale 1447-C-SD</label></li>
 <li><input id="c9" type="checkbox"/><label for="c9">Je conserve mes accusés et factures, et j’ai vérifié ma capacité à recevoir les factures électroniques depuis le 1er septembre 2026</label></li>
 </ul>
-<figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist finale du micro-entrepreneur en 2026" class="visual-open" type="button"><img alt="Checklist finale du micro-entrepreneur en 2026" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-checklist-finale.webp?v=1791017539" width="1100"/></button><figcaption>Résumé visuel : cette illustration complète la checklist interactive ci-dessus ; les cases du guide restent la référence à cocher et à enregistrer.</figcaption></figure></article>
+<figure class="guide-visual"><button aria-label="Agrandir l’illustration : Checklist finale du micro-entrepreneur en 2026" class="visual-open" type="button"><img alt="Checklist finale du micro-entrepreneur en 2026" decoding="async" height="825" loading="lazy" src="https://cdn.shopify.com/s/files/1/1035/3242/9641/files/ser-guide-01-checklist-finale.webp?v=1791017539" width="1100"/></button><figcaption>Résumé visuel : cette illustration complète la checklist interactive ci-dessus ; les cases du guide restent la référence à cocher et à enregistrer.</figcaption></figure>
+<section class="chapter-resources" data-resources-for="checklist" aria-label="Les cinq accès à garder en favoris">
+  <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span><div><b>Les cinq accès à garder en favoris</b><small>Liens officiels et institutionnels utiles pour cette étape</small></div></div>
+  <div class="resource-grid">
+    <a class="resource-link" href="https://formalites.entreprises.gouv.fr/" target="_blank" rel="noopener"><span><b>Guichet unique</b><small>Création, modification et cessation.</small></span><em>Formalités ↗</em></a>
+    <a class="resource-link" href="https://www.autoentrepreneur.urssaf.fr/" target="_blank" rel="noopener"><span><b>Auto-Entrepreneur Urssaf</b><small>Déclaration de chiffre d’affaires et cotisations.</small></span><em>Urssaf ↗</em></a>
+    <a class="resource-link" href="https://cfspart.impots.gouv.fr/" target="_blank" rel="noopener"><span><b>Espace particulier</b><small>Déclaration annuelle 2042-C-PRO.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://cfspro-idp.impots.gouv.fr/" target="_blank" rel="noopener"><span><b>Espace professionnel</b><small>CFE, TVA et services fiscaux professionnels.</small></span><em>impots.gouv.fr ↗</em></a>
+    <a class="resource-link" href="https://entreprendre.service-public.gouv.fr/" target="_blank" rel="noopener"><span><b>Service Public Entreprendre</b><small>Règles, démarches, formulaires et simulateurs officiels.</small></span><em>Service Public ↗</em></a>
+  </div>
+</section>
+</article>
 <!-- 10 -->
 <article class="chap" data-t="Colophon">
 <span class="chap-k"><s></s>Fin du guide</span>
