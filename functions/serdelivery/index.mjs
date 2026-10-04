@@ -257,7 +257,24 @@ export default {
     try {
       const url = new URL(request.url);
       if (request.method === "GET" && url.pathname === "/health") {
-        return json({ ok: true, service: "serdelivery", version: 1 });
+        const checks = {
+          shopifyShop: Boolean(process.env.SHOPIFY_SHOP),
+          shopifyClientId: Boolean(process.env.SHOPIFY_CLIENT_ID),
+          shopifyClientSecret: Boolean(process.env.SHOPIFY_CLIENT_SECRET),
+          resendApiKey: Boolean(process.env.RESEND_API_KEY),
+          resendFrom: Boolean(process.env.RESEND_FROM),
+          signingSecret: Boolean(process.env.GUIDE_SIGNING_SECRET),
+          guideAccessToken: Boolean(process.env.GUIDE_ACCESS_TOKEN),
+          setupSecret: Boolean(process.env.SETUP_SECRET),
+          sersyncBaseUrl: Boolean(process.env.SERSYNC_BASE_URL || process.env.NEON_FUNCTION_SERSYNC_BASE_URL),
+          publicBaseUrl: Boolean(process.env.PUBLIC_BASE_URL),
+        };
+        return json({
+          ok: Object.values(checks).every(Boolean),
+          service: "serdelivery",
+          version: 2,
+          checks,
+        });
       }
       if (request.method === "POST" && url.pathname === "/setup-shopify") {
         return await handleSetup(request);
