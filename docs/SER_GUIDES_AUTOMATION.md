@@ -8,7 +8,7 @@ This branch contains the source of the production delivery function before it is
 2. The function validates the Shopify HMAC using the app client secret.
 3. It detects purchased SKUs matching `SER-XX`.
 4. It emails signed buyer links through Resend.
-5. `/access?token=...` proxies the current guide from `sersync`, so a buyer always opens the latest HTML synchronized from GitHub.
+5. `/access?token=...` resolves the current `SER-XX` HTML directly from the GitHub `main` tree, so a buyer always opens the latest committed guide without redeploying Shopify or `sersync`.
 6. `/setup-shopify` exchanges the Shopify Client ID/Secret using the client-credentials grant and registers the webhook once.
 
 ## Required environment variables
@@ -19,12 +19,13 @@ Do **not** commit any values.
 - `SHOPIFY_CLIENT_ID`
 - `SHOPIFY_CLIENT_SECRET`
 - `GUIDE_SIGNING_SECRET` — long random secret; keep stable or old buyer links will break.
-- `GUIDE_ACCESS_TOKEN` — the private token currently used by `sersync`.
 - `RESEND_API_KEY`
 - `RESEND_FROM` — verified sender, for example `SER Guides <guides@serguides.fr>`.
 - `PUBLIC_BASE_URL` — production invocation URL of `serdelivery`, without a trailing slash.
 - `SETUP_SECRET` — long random secret used only for `POST /setup-shopify`.
-- Optional: `SERSYNC_BASE_URL`; otherwise the Neon-managed `NEON_FUNCTION_SERSYNC_BASE_URL` is used.
+- Optional: `GUIDES_GITHUB_REPO` (defaults to `Soufianeerd/ser-guides-platform`).
+- Optional: `GUIDES_GITHUB_BRANCH` (defaults to `main`).
+- Optional: `GITHUB_TOKEN` if the repository becomes private later.
 
 ## Routes
 
