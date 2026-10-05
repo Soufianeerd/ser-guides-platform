@@ -220,26 +220,90 @@ async function handleOrdersPaid(request) {
   return json({ ok: true, delivered: guides.map((g) => g.sku), emailId: delivery.emailId });
 }
 
+const GUIDE_TREE_TTL_MS = 5 * 60 * 1000;
+let guideTreeCache = { at: 0, map: new Map() };
+
+async function getGuideMap() {
+  if (Date.now() - guideTreeCache.at < GUIDE_TREE_TTL_MS && guideTreeCache.map.size) {
+    return guideTreeCache.map;
+  }
+
+  const repo = process.env.GUIDES_GITHUB_REPO || "Soufianeerd/ser-guides-platform";
+  const branch = process.env.GUIDES_GITHUB_BRANCH || "main";
+  const headers = {
+    accept: "application/vnd.github+json",
+    "user-agent": "ser-guides-automation",
+  };
+  if (process.env.GITHUB_TOKEN) {
+    headers.authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  }
+
+  const response = await fetch(
+    `https://api.github.com/repos/${repo}/git/trees/${encodeURIComponent(branch)}?recursive=1`,
+    { headers }
+  );
+  if (!response.ok) {
+    throw new Error(`GitHub tree lookup failed: ${response.status}`);
+  }
+
+  const data = await response.json();
+  const map = new Map();
+
+  for (const node of data.tree || []) {
+    if (node.type !== "blob" || !node.path?.endsWith(".html")) continue;
+    const match = node.path.match(
+      /^content\/guides\/ser-(\d{2})-[^/]+\/contenu\/([^/]+\.html)$/i
+    );
+    if (!match) continue;
+    map.set(`SER-${match[1]}`, node.path);
+  }
+
+  guideTreeCache = { at: Date.now(), map };
+  return map;
+}
+
+async function fetchLatestGuideHtml(sku) {
+  const map = await getGuideMap();
+  const path = map.get(sku.toUpperCase());
+  if (!path) return null;
+
+  const repo = process.env.GUIDES_GITHUB_REPO || "Soufianeerd/ser-guides-platform";
+  const branch = process.env.GUIDES_GITHUB_BRANCH || "main";
+  const rawUrl =
+    `https://raw.githubusercontent.com/${repo}/${encodeURIComponent(branch)}/${path}`;
+
+  const headers = { accept: "text/html" };
+  if (process.env.GITHUB_TOKEN) {
+    headers.authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  }
+
+  const response = await fetch(rawUrl, {
+    headers,
+    cache: "no-store",
+  });
+  if (!response.ok) {
+    throw new Error(`Guide fetch failed for ${sku}: ${response.status}`);
+  }
+  return response;
+}
+
 async function handleAccess(request) {
   const url = new URL(request.url);
   const payload = verifyAccess(url.searchParams.get("token"));
   if (!payload) return new Response("Lien invalide.", { status: 401 });
 
-  const base =
-    process.env.SERSYNC_BASE_URL ||
-    process.env.NEON_FUNCTION_SERSYNC_BASE_URL;
-  if (!base) return new Response("Service de guide indisponible.", { status: 503 });
+  const response = await fetchLatestGuideHtml(payload.sku.toUpperCase());
+  if (!response) return new Response("Guide introuvable.", { status: 404 });
 
-  const live = `${base.replace(/\/$/, "")}/guide/${encodeURIComponent(payload.sku.toUpperCase())}?token=${encodeURIComponent(required("GUIDE_ACCESS_TOKEN"))}`;
-  const response = await fetch(live, { headers: { accept: "text/html" } });
-  if (!response.ok) return new Response("Guide temporairement indisponible.", { status: 502 });
-
-  const headers = new Headers(response.headers);
-  headers.set("content-type", "text/html; charset=utf-8");
-  headers.set("cache-control", "private, no-store, max-age=0");
-  headers.set("x-robots-tag", "noindex, nofollow, noarchive");
-  headers.delete("content-length");
-  return new Response(response.body, { status: 200, headers });
+  const html = await response.text();
+  return new Response(html, {
+    status: 200,
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "private, no-store, max-age=0",
+      "x-robots-tag": "noindex, nofollow, noarchive",
+    },
+  });
 }
 
 async function handleSetup(request) {
@@ -264,10 +328,10 @@ export default {
           resendApiKey: Boolean(process.env.RESEND_API_KEY),
           resendFrom: Boolean(process.env.RESEND_FROM),
           signingSecret: Boolean(process.env.GUIDE_SIGNING_SECRET),
-          guideAccessToken: Boolean(process.env.GUIDE_ACCESS_TOKEN),
           setupSecret: Boolean(process.env.SETUP_SECRET),
-          sersyncBaseUrl: Boolean(process.env.SERSYNC_BASE_URL || process.env.NEON_FUNCTION_SERSYNC_BASE_URL),
           publicBaseUrl: Boolean(process.env.PUBLIC_BASE_URL),
+          guidesGithubRepo: Boolean(process.env.GUIDES_GITHUB_REPO || "Soufianeerd/ser-guides-platform"),
+          guidesGithubBranch: Boolean(process.env.GUIDES_GITHUB_BRANCH || "main"),
         };
         return json({
           ok: Object.values(checks).every(Boolean),
