@@ -1,7 +1,7 @@
 export type Locale='fr'|'en';
 export type Guide={slug:string;number:string;category:{fr:string;en:string};title:{fr:string;en:string};description:{fr:string;en:string};price:string;edition:string;available:boolean;checkout?:string;deck?:{fr:string[];en?:string[]};};
 export const guides:Guide[]=[{
- slug:'micro-entreprise-2026',number:'01',category:{fr:'Entreprise & fiscalité',en:'Business & tax'},title:{fr:'Micro-entreprise 2026',en:'French Micro-business 2026'},description:{fr:'Créer, déclarer, optimiser et gérer sa micro-entreprise avec une feuille de route claire.',en:'Start, declare, optimize and manage a French micro-business with a clear roadmap.'},price:'12,99 €',edition:'2026',available:true,checkout:'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',deck:{fr:['/guides/micro-entreprise-2026/fr/01-hook.png','/guides/micro-entreprise-2026/fr/02-sources.png','/guides/micro-entreprise-2026/fr/03-guide.png']}
+ slug:'micro-entreprise-2026',number:'01',category:{fr:'Entreprise & fiscalité',en:'Business & tax'},title:{fr:'Micro-entreprise 2026',en:'French Micro-business 2026'},description:{fr:'Créer, déclarer, optimiser et gérer sa micro-entreprise avec une feuille de route claire.',en:'Start, declare, optimize and manage a French micro-business with a clear roadmap.'},price:'12,99 €',edition:'2026',available:true,checkout:'https://serguides.fr/products/ser-guide-01-micro-entreprise-2026-optimiser-puis-declarer',deck:{fr:['/guides/micro-entreprise-2026/fr/01-hook.png','/guides/micro-entreprise-2026/fr/02-sources.png','/guides/micro-entreprise-2026/fr/03-guide.png']}
 }];
 
 export const niches=[
