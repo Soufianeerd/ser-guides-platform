@@ -2,6 +2,27 @@ export type Locale='fr'|'en';
 export type Guide={slug:string;number:string;category:{fr:string;en:string};title:{fr:string;en:string};description:{fr:string;en:string};price:string;edition:string;available:boolean;checkout?:string;deck?:{fr:string[];en?:string[]};};
 export const guides:Guide[]=[{
  slug:'micro-entreprise-2026',number:'01',category:{fr:'Entreprise & fiscalité',en:'Business & tax'},title:{fr:'Micro-entreprise 2026',en:'French Micro-business 2026'},description:{fr:'Créer, déclarer, optimiser et gérer sa micro-entreprise avec une feuille de route claire.',en:'Start, declare, optimize and manage a French micro-business with a clear roadmap.'},price:'12,99 €',edition:'2026',available:true,checkout:'https://buy.stripe.com/14AdR9ayhbFS2n5aQHeUU06',deck:{fr:['/guides/micro-entreprise-2026/fr/01-hook.png','/guides/micro-entreprise-2026/fr/02-sources.png','/guides/micro-entreprise-2026/fr/03-guide.png']}
+},
+{
+ slug:'shopify-2026',number:'02',category:{fr:'E-commerce & Réseaux sociaux',en:'E-commerce & Social'},
+ title:{fr:'Shopify 2026 : lancer une boutique e-commerce',en:'Shopify 2026: launch an online store'},
+ description:{fr:'17 chapitres, calculateurs de marge et de coût d’acquisition, checklists et plan de lancement sur 30 jours.',en:'17 chapters, margin and acquisition calculators, checklists and a 30-day launch plan.'},
+ price:'12,99 €',edition:'2026',available:true,
+ checkout:'https://serguides.fr/products/ser-guide-02-e-commerce-shopify-2026-de-zero-aux-premieres-ventes'
+},
+{
+ slug:'tiktok-shop-2026',number:'03',category:{fr:'E-commerce & Réseaux sociaux',en:'E-commerce & Social'},
+ title:{fr:'TikTok Shop 2026 : lancer et obtenir ses premières ventes',en:'TikTok Shop 2026: launch and get first sales'},
+ description:{fr:'16 chapitres, diagnostic de préparation, calculateurs de marge et générateurs de briefs créateurs.',en:'16 chapters, readiness checks, margin calculators and creator brief templates.'},
+ price:'12,99 €',edition:'2026',available:true,
+ checkout:'https://serguides.fr/products/ser-guide-03-tiktok-shop-2026-lancer-sa-boutique-et-obtenir-ses-premieres-ventes'
+},
+{
+ slug:'vinted-2026',number:'04',category:{fr:'Revente & Seconde main',en:'Reselling & Second hand'},
+ title:{fr:'Vinted 2026 : vendre plus vite et mieux marger',en:'Vinted 2026: sell faster and protect margins'},
+ description:{fr:'16 chapitres, diagnostic particulier/professionnel, calculateurs de prix et outils d’annonces.',en:'16 chapters, seller classification guide, pricing calculators and listing tools.'},
+ price:'12,99 €',edition:'2026',available:true,
+ checkout:'https://serguides.fr/products/ser-guide-04-vinted-2026-vendre-plus-vite-et-mieux-marger'
 }];
 
 export const niches=[
@@ -23,9 +44,6 @@ export const niches=[
 ];
 
 export const plannedGuides=[
- {number:'02',title:'E-commerce & Shopify 2026 — de zéro aux premières ventes',titleEn:'E-commerce & Shopify 2026 — from zero to first sales',category:'ecommerce-social'},
- {number:'03',title:'TikTok Shop 2026 — lancer sa boutique et obtenir ses premières ventes',titleEn:'TikTok Shop 2026 — launch your shop and get first sales',category:'ecommerce-social'},
- {number:'04',title:'Vinted 2026 — vendre plus vite et mieux marger',titleEn:'Vinted 2026 — sell faster and improve margins',category:'revente-seconde-main'},
  {number:'05',title:'Optimisation fiscale 2026 — payer ce qu’il faut, pas plus',titleEn:'Tax optimization 2026 — pay what you owe, not more',category:'administratif-fiscal'},
  {number:'06',title:'Dropshipping 2026 France / UE',titleEn:'Dropshipping 2026 France / EU',category:'ecommerce-social'},
  {number:'07',title:'TikTok 2026 — construire une audience qui convertit',titleEn:'TikTok 2026 — build an audience that converts',category:'ecommerce-social'},
