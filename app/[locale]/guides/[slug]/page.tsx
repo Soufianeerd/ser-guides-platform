@@ -1,4 +1,21 @@
 import GuideDeck from '../../../../components/GuideDeck';import {guides,type Locale} from '../../../../data/guides';import {getDictionary} from '../../../../data/dictionaries';import {notFound} from 'next/navigation';
+import type {Metadata} from 'next';
+
+export async function generateMetadata({params}:{params:Promise<{locale:Locale;slug:string}>}):Promise<Metadata>{
+ const {locale,slug}=await params;
+ const guide=guides.find(g=>g.slug===slug&&g.available);
+ if(!guide)return {title:'Guide introuvable',robots:{index:false,follow:false}};
+ const title=guide.title[locale];
+ const description=guide.description[locale];
+ const path='/'+locale+'/guides/'+guide.slug;
+ return {
+  title,
+  description,
+  alternates:{canonical:path,languages:{fr:'/fr/guides/'+guide.slug,en:'/en/guides/'+guide.slug}},
+  openGraph:{title,description,url:'https://serguides.fr'+path,type:'website'},
+ };
+}
+
 export default async function Guide({params}:{params:Promise<{locale:Locale;slug:string}>}){const {locale,slug}=await params;const g=guides.find(x=>x.slug===slug);if(!g)notFound();const d=getDictionary(locale);const fr=locale==='fr';return <main><section className="productHero"><div className="productMedia">{g.deck?.fr?.length
  ? <GuideDeck/>
  : <div className="realCover"><span>SER GUIDES · {g.number}</span><div><small>{g.category[locale]}</small><h3>{g.title[locale]}</h3></div><strong>{g.price}</strong></div>
