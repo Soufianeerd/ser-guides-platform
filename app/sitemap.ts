@@ -1,28 +1,20 @@
-import type { MetadataRoute } from 'next';
+import type {MetadataRoute} from 'next';
+import {guides} from '../data/guides';
 
-const base='https://serguides.fr';
+const origin='https://serguides.fr';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes=[
-    '',
-    '/fr',
-    '/fr/guides',
-    '/fr/a-propos',
-    '/fr/blog',
-    '/fr/guides/micro-entreprise-2026',
-    '/en',
-    '/en/guides',
-    '/en/a-propos',
-    '/en/blog',
-    '/en/guides/micro-entreprise-2026',
-    '/connexion',
-    '/compte'
-  ];
-  const now=new Date();
-  return routes.map((route)=>({
-    url:base+route,
-    lastModified:now,
-    changeFrequency:route.includes('/guides')?'weekly':'monthly',
-    priority:route===''||route==='/fr'?1:route.includes('/guides')?0.9:0.6
-  }));
+export default function sitemap():MetadataRoute.Sitemap {
+ const routes=[
+  '/fr','/fr/guides','/fr/a-propos','/fr/blog',
+  '/en','/en/guides','/en/a-propos','/en/blog',
+  ...guides.filter(g=>g.available).flatMap(g=>[
+   '/fr/guides/'+g.slug,
+   '/en/guides/'+g.slug
+  ])
+ ];
+ return routes.map(route=>({
+  url:origin+route,
+  changeFrequency:route.includes('/guides/')?'monthly':'weekly',
+  priority:route==='/fr'||route==='/en'?1:route.includes('/guides/')?0.9:0.6
+ }));
 }
