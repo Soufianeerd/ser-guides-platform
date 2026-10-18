@@ -8,7 +8,6 @@ export const metadata={
     template:'%s | SER Guides'
   },
   description:'Des guides numériques pratiques, interactifs et sourcés pour comprendre, décider et agir.',
-  alternates:{canonical:'/'},
   openGraph:{
     title:'SER Guides — Des réponses concrètes',
     description:'Des guides numériques pratiques, interactifs et sourcés pour comprendre, décider et agir.',
