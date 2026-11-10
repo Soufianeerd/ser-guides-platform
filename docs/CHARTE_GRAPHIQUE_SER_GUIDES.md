@@ -1,5 +1,5 @@
 # SER Guides — Charte graphique & système éditorial
-**Version 1.0 — 10 novembre 2026 · Source de vérité pour toutes les créations SER Guides**
+**Version 1.1 — 10 novembre 2026 · Source de vérité pour toutes les créations SER Guides**
 
 ## 0. Statut et références analysées
 Charte établie à partir du site `serguides.fr`, des variables de `app/globals.css`, des web-books 01, 02 et 03 et de la boutique Shopify connectée. Elle unifie **les futures créations sans modifier silencieusement les quatre fiches et visuels déjà actifs**.
@@ -117,3 +117,83 @@ Contraintes :
 ## 11. Gouvernance
 Ce document est la référence canonique : `docs/CHARTE_GRAPHIQUE_SER_GUIDES.md`.
 Toute évolution visuelle doit être versionnée et comparée avec les guides existants. Les anciens guides sont conservés par défaut ; harmonisation rétroactive seulement sur demande.
+
+
+## 12. Iconographie documentaire, marques et preuves — EXIGENCE OBLIGATOIRE (version 1.1, 10 novembre 2026)
+
+**Décision éditoriale :** chaque SER Guide doit ressembler à un ouvrage de référence visuellement documenté, et non à un texte générique agrémenté de visuels artificiels. Cette section prévaut en cas de conflit avec une indication ancienne plus permissive.
+
+### 12.1 Images réelles, thématiques et utiles
+
+- Rechercher activement des **photos authentiques**, visuels de situations réelles, objets de la profession, reproductions de documents sous droits vérifiés, exemples d'interfaces et captures officielles quand les conditions permettent leur reproduction commerciale.
+- Varier les types : photo du contexte métier ; interface/service véritable et version datée ; schéma original explicitant une procédure ; tableau de données ; document officiel ; résultat avant/après **réel** (ou simulation clairement signalée).
+- Chaque chapitre important doit être illustré lorsqu'un visuel aide vraiment à comprendre ; **cible éditoriale 6–12 éléments visuels substantiels** pour un guide de taille habituelle, adaptée à la matière, jamais un quota rempli par des images décoratives.
+- Une illustration visuelle **doit servir une explication**, avec légende (« ce que montre l'image »), mention de provenance, éventuelle version/date, et texte alternatif descriptif. Référencer les images au voisinage du paragraphe pertinent, pas en mosaïque gratuite.
+- Privilégier une photo source autorisée et vérifiable à une image IA réaliste. Si une image est générée (schéma, illustration conceptuelle, scénarisation), la signaler comme **illustration générée / simulation** lorsqu'une confusion avec un fait serait possible ; ne jamais l'utiliser comme preuve de produit, rendement, résultat ou événement.
+- Les captures d'écran d'outils, de produits et d'applications doivent être **authentiques, datées, vérifiées et juridiquement réutilisables**. Masquer toute donnée personnelle et tout secret. Ne pas inventer des interfaces ou des fonctionnalités dans un visuel crédibilisant.
+- Pour des contenus autonomes HTML, embarquer les images autorisées de façon optimisée (WebP/AVIF/PNG, dimensions raisonnables, compression et textes alternatifs), conserver les crédits et les conditions des licences.
+
+### 12.2 Marques, plateformes et logos
+
+- Nommer explicitement les entreprises, plateformes, logiciels, institutions et produits concernés : Shopify, Vinted, TikTok Shop, URSSAF, Stripe, etc. Il est préférable de montrer le monde réel plutôt que des noms fictifs.
+- Les marques peuvent être **décrites, comparées et référencées factuellement**, avec liens vers les sites et documentations officiels ; aucune affirmation de partenariat, d'agrément ou de recommandation par la marque sans preuve.
+- Pour un logo officiel, chercher son kit de marque et lire les **conditions de reproduction commerciale**. Utiliser un logo UNIQUEMENT si le droit applicable et les conditions de la marque autorisent précisément son contexte d'utilisation ou si l'autorisation requise a été obtenue ; enregistrer la justification dans le registre média.
+- **Exemple concret : Shopify** publie ses éléments de marque mais exige généralement une autorisation écrite pour leurs usages. Le libre téléchargement n'est pas une autorisation automatique pour une couverture d'e-book payant. Source : https://www.shopify.com/brand-assets et https://www.shopify.com/legal/trademarks.
+- À défaut de droit de reproduction prouvé : mentionner le **nom en texte neutre**, donner un lien officiel, utiliser un schéma original non contrefaisant ; ne pas recréer, détourer, redessiner ou imiter le logo.
+- Quand le logo est effectivement autorisé, le réserver à la **référence explicative pertinente**, respecter les contraintes d'identité et ajouter une mention de marques appartenant à leurs titulaires. Pas de logo tiers positionné comme caution commerciale, « partenaire », « certifié » ou marque de coédition.
+- Les visuels pris sur Google Images, une page presse ou un blog ne sont **pas libres de réutilisation par défaut** ; un site qui affiche une image ne donne aucun droit de la republier.
+- Les licences **CC BY** peuvent autoriser la réutilisation commerciale à condition de créditer l'auteur, relier la licence et indiquer les changements. Les licences **CC BY-NC** excluent l'usage commercial ; contrôler aussi SA/ND et les droits de marque/personne. Références : https://creativecommons.org/licenses/by/4.0/ ; https://creativecommons.org/licenses/by-nc/4.0/ ; https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/fr.
+
+### 12.3 Citations, sources et démonstration
+
+- **Toute affirmation significative doit être traçable**, notamment : tarif, règlement, délai, plafond, évolution du marché, nombre d'utilisateurs, part de marché, performance, comparaison de produits ou citation de personne.
+- Donner des références **cliquables au fil du chapitre**, numérotées [1], [2], etc., reliées à une bibliographie finale avec titre de source, organisme/auteur, date de publication ou mise à jour, URL précise, date de consultation et pertinence.
+- Favoriser la documentation officielle des plateformes et administrations, données primaires (Eurostat, INSEE, Fevad, rapports institutionnels, publications d'entreprises) et études identifiables ; séparer faits constatés, hypothèses et conseils de l'auteur.
+- Citations **exactes, courtes, entre guillemets, attribuées à l'auteur et reliées à l'URL source**. Limiter les extraits pour respecter les droits d'auteur ; ne jamais écrire une citation fictive, une statistique reconstituée ou attribuer une paraphrase à un locuteur.
+- Une référence vers la page d'accueil d'un organisme ne remplace pas le lien vers la **page ou le tableau précis** qui prouve le chiffre.
+- L'information sensible à la date (réglementation, TVA, règles d'une plateforme, tarifs) porte une date de consultation et un avertissement de réévaluation si elle peut changer.
+
+### 12.4 Chiffres, tableaux et graphiques : preuve reproductible
+
+- Quand le sujet le justifie, enrichir le guide de **véritables graphiques** : courbe d'évolution, comparaison de tarifs vérifiés, composition d'un coût, chronologie, distribution ou avant/après chiffré. Cible : au moins deux figures quantitatives pour un sujet riche en données ; pour les autres, préférer un schéma utile plutôt que d'inventer des chiffres.
+- Chaque graphique présente un titre informatif, l'unité, la période, le territoire, la méthode, la légende et le **lien exact vers la donnée source** avec date de récupération. Exposer un tableau de données sous-jacent et préciser tout calcul ou retraitement.
+- Enregistrer les données utilisées dans `data/figures/<nom>.csv` ou `.json` dans le dossier du guide pour rendre le graphe **recalculable**. Vérifier les totaux, catégories, taux, devises et arrondis.
+- Interdire les exemples chiffrés présentés comme résultats réels, les axes trompeurs, « études » inventées, faux taux de conversion, fausses courbes de ventes et coûts sans fondement.
+- Distinguer graphiquement **Données observées**, **Calcul à partir des sources**, **Simulation pédagogique**, avec légende explicite. Une simulation doit afficher ses hypothèses, pas se faire passer pour une mesure.
+- Les données Eurostat sont généralement réutilisables y compris commercialement sous réserve de citer la source et respecter les droits additionnels spécifiques : https://ec.europa.eu/eurostat/help/copyright-notice.
+
+### 12.5 Dossiers de preuves à livrer par e-book
+
+Pour chaque guide, créer/maintenir et vérifier en plus des fichiers déjà requis :
+
+1. `MEDIA_REGISTER.md` : une ligne par image, capture, graphique réutilisé ou logo, avec **ID, titre, emplacement, URL source d'origine, auteur/titulaire, licence/autorisation, contexte commercial autorisé, attribution affichée, date de vérification, et statut utilisable/bloqué**.
+2. `EVIDENCE_LEDGER.md` : une ligne par chiffre ou affirmation à risque, avec **énoncé précis, valeur/unité/périmètre/période, source primaire et URL précise, date et niveau de certitude**, et point du chapitre où la source est affichée.
+3. `data/figures/` : pour chaque graphique quantitatif, données CSV/JSON, description de l'opération effectuée et URL des tables sources.
+4. `SOURCE_PACK.md` : bibliographie de travail claire, avec date, vérification et statut ; le web-book doit afficher au lecteur les citations et sources pertinentes sans lui imposer d'ouvrir les fichiers de développement.
+5. Les visuels réutilisables et compressés, avec légendes et alt text ; aucun lien d'image fragile dépendant d'un jeton temporaire.
+
+### 12.6 Critères bloquants de qualité
+
+Une production n'est **pas « prête à valider »** si l'un de ces points est vrai :
+- Visuels de remplissage générés sans contexte, images trouvées sans droits vérifiés, logo sans fondement d'autorisation, citation inventée.
+- Statistique ou graphique sans données vérifiables et source précise, simulateur présenté comme résultat réel.
+- Graphique attrayant mais trompeur (unité, axes ou dates absentes).
+- Texte uniquement générique, aucune démonstration concrète, capture ou illustration métier utile quand elle est possible.
+- Citations uniquement regroupées en dernière page sans lien au passage concerné.
+- Non-concordance entre les fonctionnalités annoncées sur la couverture/la boutique et les éléments effectivement fournis.
+- Le rapport de PR ne montre pas au moins **un aperçu réel des visuels**, un extrait de citations/sources, un exemple de graphe traçable quand pertinent et le résultat du contrôle des droits.
+
+Si les photos, logos ou données nécessaires ne sont pas juridiquement ou factuellement accessibles, **ne pas les inventer** : préparer une alternative documentée et signaler le blocage dans la PR.
+
+### 12.7 Vérifications qualité supplémentaires
+
+- [ ] Photos de métier authentiques, pertinentes, nettes, réutilisation commerciale vérifiée.
+- [ ] Captures, illustrations et schémas explicatifs liés au chapitre, tous légendés.
+- [ ] Marques citées avec liens officiels et statut de droits de logos vérifié.
+- [ ] Sources concrètes cliquables dans le corps et dans la bibliographie.
+- [ ] Citations exactes, courtes et attribuées.
+- [ ] Chiffres vérifiés et datés ; aucune fausse preuve.
+- [ ] Données sources CSV/JSON de chaque figure quantitative disponibles et relues.
+- [ ] Périmètre/période/unités/méthode visibles sur les graphiques.
+- [ ] `MEDIA_REGISTER.md` et `EVIDENCE_LEDGER.md` complets, images correctement créditées.
+- [ ] Aperçu media/graphique inclus dans la pull request, pas de mise en vente sans validation.
