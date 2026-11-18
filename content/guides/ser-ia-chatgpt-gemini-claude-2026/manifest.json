@@ -1,0 +1,22 @@
+{
+  "id": "ser-ia-chatgpt-gemini-claude-2026-lab",
+  "title": "SER Guides — Laboratoire IA",
+  "edition": "2026-11-18",
+  "locale": "fr",
+  "status": "draft_not_for_delivery",
+  "format": "single-file-html",
+  "entry": "laboratoire-ia.html",
+  "shopify_product_id": "gid://shopify/Product/10541206602057",
+  "shopify_product_status": "ACTIVE",
+  "shopify_delivered_format": "PDF",
+  "publication_allowed": false,
+  "assets_external": 0,
+  "chapters": 6,
+  "media_rights": "no-third-party-media",
+  "qa": {
+    "static": "pending",
+    "mobile_browser": "pending",
+    "delivery": "not-tested",
+    "pdf_content": "not-audited"
+  }
+}
